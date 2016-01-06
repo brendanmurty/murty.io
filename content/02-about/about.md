@@ -8,4 +8,4 @@ I created an [open-source](https://bitbucket.org/brendanmurty/upcomingtasks.com)
 
 I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty), track music statistics on [Last.fm](http://www.last.fm/user/brendanmurty) and manage my code on [GitHub](https://github.com/brendanmurty) and [Bitbucket](https://bitbucket.org/brendanmurty/).
 
-I enjoy spending time with [family](http://islamurty.com/) and friends, [playing games](http://steamcommunity.com/id/brendanmurty) and reviewing [schnitzels](http://schnitmydadsays.com/).
+I enjoy spending time with [family](http://islamurty.com/) and friends, reviewing [schnitzels](http://schnitmydadsays.com/) and playing [Diablo 3](http://us.battle.net/d3/en/profile/murty-1877/career), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
