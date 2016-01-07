@@ -130,23 +130,25 @@ function list_items($pages_object,$type='all',$mode='all'){
 
 		// Instagram
 		$instagram = new \Instagram($GLOBALS['auth_instagram_client'], $GLOBALS['auth_instagram_secret'], '');
-		if($instagram){
+		if ($instagram) {
 			// Show posts by "brendan.murty"
 			$instagram_results = $instagram->getUserMedia('990505523', '10');
-			if($instagram_results){
+			if ($instagram_results) {
 				$post_items = '';
 				$i = 0;
-				foreach($instagram_results->data as $post){
-					if($post){
+				foreach ($instagram_results->data as $post) {
+					if ($post) {
 						$post_date = date_human(date('j M y', $post->created_time));
 						$post_date_specific = date('D M d H:i:s Y', $post->created_time);
 						$items[$i]['date'] = $post_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-post"><a href="'.$post->link.'" title="View this post on Instagram"><img src="'.$post->images->standard_resolution->url.'" /><span class="summary">';
-						if($post->caption && array_key_exists('text', $post->caption)){
+
+						if ($post->caption && array_key_exists('text', $post->caption)) {
 							$items[$i]['content'] .= excerpt($post->caption->text, 90);
-						}else{
-							$items[$i]['content'] .= 'Post by @'.$username;
+						} else {
+							$items[$i]['content'] .= 'Post by @' . $post->user->username;
 						}
+
 						$items[$i]['content'] .= '</span><span class="label"><span class="fa fa-instagram"></span>Posted '.$post_date.'</span></a></li>';
 						$i++;
 					}
@@ -156,18 +158,20 @@ function list_items($pages_object,$type='all',$mode='all'){
 			// Show posts liked by "brendan.murty"
 			$instagram->setAccessToken($GLOBALS['auth_instagram_user']);
 			$liked = $instagram->getUserLikes('10');
-			if($liked){
-				foreach($liked->data as $like){
-					if($like){
+			if ($liked) {
+				foreach ($liked->data as $like) {
+					if ($like) {
 						$like_date = date_human(date('j M y', $like->created_time));
 						$like_date_specific = date('D M d H:i:s Y', $like->created_time);
 						$items[$i]['date'] = $like_date_specific;
 						$items[$i]['content'] = '<li class="instagram instagram-liked"><a href="'.$like->link.'" title="View this post on Instagram"><img src="'.$like->images->standard_resolution->url.'" /><span class="summary">';
+
 						if($like->caption && array_key_exists('text', $like->caption)){
 							$items[$i]['content'] .= excerpt($like->caption->text, 90);
-						}else{
-							$items[$i]['content'] .= 'Post by @'.$like->user->username;
+						} else {
+							$items[$i]['content'] .= 'Post by @' . $post->user->username;
 						}
+
 						$items[$i]['content'] .= '</span><span class="label"><span class="fa fa-instagram"></span>Liked '.$like_date.'</span></a></li>';
 						$i++;
 					}
