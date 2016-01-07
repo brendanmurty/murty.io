@@ -169,7 +169,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 						if($like->caption && array_key_exists('text', $like->caption)){
 							$items[$i]['content'] .= excerpt($like->caption->text, 90);
 						} else {
-							$items[$i]['content'] .= 'Post by @' . $post->user->username;
+							$items[$i]['content'] .= 'Liked by @' . $post->user->username;
 						}
 
 						$items[$i]['content'] .= '</span><span class="label"><span class="fa fa-instagram"></span>Liked '.$like_date.'</span></a></li>';
