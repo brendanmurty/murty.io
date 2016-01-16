@@ -14,11 +14,11 @@
 			$nav_actions .= '<a href="/resume">View my resumé</a>';
 		}
 
-		if($nav_actions != '') {
+		if ($nav_actions != '') {
 			echo '<nav class="actions">' . $nav_actions . '</nav>';
 		}
 
-		if ($page_name != 'resume') {
+		if ($page_name != 'resume' && $page_name != 'about') {
 		?>
 		<footer>
 			<div class="credits">
