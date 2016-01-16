@@ -22,9 +22,6 @@
 		if ($page_name != 'resume') {
 		?>
 		<footer>
-			<div class="about">
-				<?php echo kirbytext($site->about()) ?>
-			</div>
 			<div class="credits">
 				<?php echo kirbytext($site->copyright()) ?>
 			</div>
