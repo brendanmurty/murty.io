@@ -225,24 +225,26 @@ function list_pages($pages_object, $site_object, $page_object) {
 	foreach($pages as $page) {
 		$link = '/' . $page->uri();
 		$title = $page->title();
-		if ($link != '/' && $link != '/home') {
-			if ($link == '/post') {
-				$link = '/posts';
-				$title = 'Posts';
-			} elseif ($link == '/link') {
-				$link = '/links';
-				$title = 'Links';
-			} elseif ($link == '/tag') {
-				$link = '/tags';
-				$title = 'Tags';
-			}
-			$list .= '<li';
-			if ($link == $current || ($link == '/posts' && page_type($page_object) == 'post')) {
-				$list .= ' class="current"';
-			}
-			$link_description = 'Go to the ' . $title . ' page';
-			$list .= '><a href="' . $link . '" title="' . $link_description . '" aria-label="' . $link_description . '">' . $title . '</a></li>';
+
+		if ($link == '/post') {
+			$link = '/posts';
+			$title = 'Posts';
+		} elseif ($link == '/link') {
+			$link = '/links';
+			$title = 'Links';
+		} elseif ($link == '/tag') {
+			$link = '/tags';
+			$title = 'Tags';
 		}
+
+		$list .= '<li';
+
+		if ($link == $current || ($link == '/posts' && page_type($page_object) == 'post')) {
+			$list .= ' class="current"';
+		}
+
+		$link_description = 'Go to the ' . $title . ' page';
+		$list .= '><a href="' . $link . '" title="' . $link_description . '" aria-label="' . $link_description . '">' . $title . '</a></li>';
 	}
 	$list .= '</ul>';
 	return $list;
