@@ -120,7 +120,8 @@ header .social li a:hover, nav.pages a:hover{color:#2fa382}
 #container nav .last a, #container nav li:last-child a{margin-right:0}
 #container nav .fa{font-size:22px;line-height:30px}
 #container nav.actions{padding-top:0}
-#container nav.actions a{color:#fff;background:#3ec7a0;text-transform:none;padding:8px 15px 6px;margin:0 20px 20px 0;font-size:18px;border-radius:2px;border-bottom:2px solid #2fa382}
+#container nav.actions a{color:#fff;background:#3ec7a0;text-transform:none;padding:10px 16px;margin:0 0 20px 20px;font-size:18px;border-radius:6px;border-bottom:2px solid #2fa382}
+#container nav.actions a:first-child{margin-left:0}
 #container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{background-color:#2fa382}
 
 /* Footer */
