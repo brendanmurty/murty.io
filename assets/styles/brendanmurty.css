@@ -131,7 +131,7 @@ footer .half{float:left;clear:none;width:50%;margin:0}
 footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center}
 footer .about{margin:0 0 20px}
 footer .about p{margin:0}
-footer .credits{margin:0;font-size:14px;color:#555}
+footer .credits{margin:0;font-size:16px;color:#555}
 footer .credits p{text-align:center;margin:0}
 footer ul{margin:0;padding:0}
 
@@ -248,7 +248,7 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.item-listing li:nth-child(3n+3){margin-right:0}
 }
 @media only screen and (max-width:1000px){
-	header,footer,nav,article,section#about,#container nav{width:96%;padding:4% 2%}
+	header,footer,nav,article,section#about,#container nav{width:96%;padding:2%}
 	.type_home header{padding:6% 2%;width:96%}
 	.type_home article{padding-top:6%;padding-bottom:6%}
 	.spinner{margin-top:6%}
@@ -268,9 +268,10 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
 	.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
 	.name_about p,.name_contact p{clear:both}
-	#container nav.pages{position:relative;left:-50%;padding:4% 0;width:100%}
-	#container nav.pages h1, #container nav.pages ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center;left:50%}
-	#container nav.pages h1{margin-bottom:10px;}
+	#container nav.pages{padding:4% 0;width:100%}
+	#container nav.pages h1, #container nav.pages ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center}
+	#container nav.pages ul{margin-top:8px}
+	#container nav.pages h1{margin-bottom:10px}
 	#container nav.pages li{float:none;display:inline-block}
 	.name_resume article h3,.name_resume article p,.name_resume article ul{display:block;width:auto;clear:both}
 	.name_resume article p{margin-top:30px;padding:0;float:left}
@@ -281,7 +282,7 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	header h1 span{display:none}
 	header .social{width:100%;margin:20px auto;float:left}
 	header .social li{width:33.3%}
-	#container nav li a{margin-right:20px;font-size:24px}
+	#container nav li a{margin-right:20px}
 	.type_home .posts li.more a{width:96%}
 	ul.item-listing .type{height:50px;width:50px;border-radius:50px;margin-top:6px}
 	ul.item-listing .type .fa{font-size:25px;line-height:52px}
