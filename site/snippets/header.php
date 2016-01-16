@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20151110c";
+$css_update_date = "20160116";
 $js_update_date = "20140906";
 
 snippet('auth');
@@ -69,7 +69,7 @@ if($page->isVisible() || $page_name == "home"){
 <meta property="og:title" content="<?= $page_title ?>">
 <meta property="og:url" content="<?= html($page->url()) ?>">
 <meta property="og:image" content="<?= $page_image ?>">
-<link href="http://fonts.googleapis.com/css?family=Merriweather:400,700|Merriweather+Sans:400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/assets/styles/brendanmurty.css?v=<?= $css_update_date ?>">
 <link rel="stylesheet" href="/assets/styles/font-awesome.min.css">
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
@@ -110,12 +110,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 				<img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" alt="Profile picture of Brendan" />
 			</a>
 
-			<h2>Web Developer</h2>
+			<h2><strong>Brendan</strong> is a Web Developer with over five years of commercial <a href="/about" title="Learn more about me" aria-label="Learn more about me">experience</a>.</h2>
 
-			<?php if ($page_name == 'resume') { ?>
-			<h3>Over five years of commercial experience.<h3>
-			<?php } else { ?>
-			<h3>Over five years of commercial <a href="/about" title="Learn more about me" aria-label="Learn more about me">experience</a>.</h3>
+			<?php if ($page_name != 'resume') { ?>
 			<ul class="social">
 				<li>
 					<a href="mailto:brendan@murty.id.au" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
