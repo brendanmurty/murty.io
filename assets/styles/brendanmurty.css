@@ -291,7 +291,7 @@ section#content.loaded .item-listing li{-webkit-animation: fadein 3s;-moz-animat
 	ul.item-listing .title{line-height:55px}
 	ul.item-listing > li:first-child{margin-top:0}
 	ul.item-listing .about .date .separator,article.item .about .date .separator{display:none;margin:0}
-	#container{width:100%;padding:0;text-align:left}
+	#container{width:100%;padding:0 0 4%}
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
 	section#about p,section#about h2{font-size:24px;line-height:30px}
