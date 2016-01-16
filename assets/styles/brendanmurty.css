@@ -106,7 +106,7 @@ header h1 a, header h2 a{color:#3ec7a0}
 header .social{width:420px;margin:40px auto 0}
 header .social li{list-style:none outside none;float:left;width:70px;height:70px;line-height:70px;text-align:center;margin:0;padding:0}
 header .social li a{font-size:35px}
-header .social li a:visited, nav.pages a:visited{color:#3ec7a0}
+header .social li a:visited, nav.pages a:visited, header h2 a:visited{color:#3ec7a0}
 header .social li a:hover, nav.pages a:hover{color:#2fa382}
 
 /* Navigation */
