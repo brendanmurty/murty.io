@@ -5,7 +5,7 @@ brendan.murty.id.au
 
 Here's my entire [personal website](http://brendan.murty.id.au) built on [Kirby CMS](http://getkirby.com/), coded in [Sublime Text](http://www.sublimetext.com/) and hosted by [Digital Ocean](http://digitalocean.com).
 
-I've built a customised [pulse feed](https://bitbucket.org/brendanmurty/brendan.murty.id.au/src/master/site/snippets/libs_list.php) on the [home page](https://bitbucket.org/brendanmurty/brendan.murty.id.au/src/master/site/templates/home.php) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty) and [Instagram](https://instagram.com/brendan.murty).
+I've built a customised [pulse feed](https://bitbucket.org/brendanmurty/brendan.murty.id.au/src/master/site/snippets/libs_list.php) on the [home page](https://bitbucket.org/brendanmurty/brendan.murty.id.au/src/master/site/templates/home.php) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty), [GitHub](https://github.com/brendanmurty), [Instagram](https://instagram.com/brendan.murty) and [Pinboard](https://pinboard.in/u:brendanmurty).
 
 ## Why
 
