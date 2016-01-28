@@ -8,8 +8,8 @@ function page_description($page_object) {
 		$description = 'Blog posts by written by Brendan';
 	} elseif ($item_type == 'search') {
 		$description = 'Search posts and pages';
-	} elseif ($item_type == 'home') {
-		$description = 'A passionate Sydney based web developer';
+	} elseif ($item_type == 'home' || $item_type == '') {
+		$description = 'Brendan is a Web Developer with over five years of varied development experience.';
 	} else {
 		// Extract and remove links and image embeds from the page content
 		$description = preg_replace('/\[(.*)\]/', '$1', $page_object->content()->text());
