@@ -178,27 +178,6 @@ function list_items($pages_object,$type='all',$mode='all'){
 				}
 			}
 		}
-
-		// Pinboard
-		$http = new Guzzle\Http\Client();
-		$request = $http->createRequest('GET', 'https://api.pinboard.in/v1/posts/recent?format=json&count=20&auth_token=' . $GLOBALS['auth_pinboard_api']);
-		$response = $http->send($request);
-
-		if ($response && $response->getStatusCode() == '200') {
-			$pinboard = json_decode($response->getBody());
-
-			foreach ($pinboard->posts as $link) {
-				if ($link->shared == 'yes') {
-					// Public bookmark
-					$item_date = date_human(date('j M y', strtotime($link->time)));
-					$item_date_specific = date('D M d H:i:s Y', strtotime($link->time));
-					$items[$i]['date'] = $item_date_specific;
-					$items[$i]['content'] = '<li class="pinboard"><a href="' . $link->href . '" title="Visit this link"><span class="summary">' . $link->description . '</span><span class="label"><span class="fa fa-bookmark"></span>Saved ' . $item_date . '</span></a></li>';
-
-					$i++;
-				}
-			}
-		}
 	}
 
 	// Order the items by date

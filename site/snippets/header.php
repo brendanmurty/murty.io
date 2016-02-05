@@ -130,7 +130,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm" aria-label="See my music statistics on Last.fm"><span class="fa fa-music"></span></a>
 				</li>
 				<li>
-					<a href="https://pinboard.in/u:brendanmurty" title="View my favourite bookmarks on Pinboard" aria-label="View my favourite bookmarks on Pinboard"><span class="fa fa-bookmark"></span></a>
+					<a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
 				</li>
 			</ul>
 			<?php } ?>
