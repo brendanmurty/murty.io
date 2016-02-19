@@ -118,7 +118,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<a href="mailto:brendan@murty.id.au" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
 				</li>
 				<li>
-					<a href="https://bitbucket.org/brendanmurty/" title="View some of my code" aria-label="View some of my code"><span class="fa fa-bitbucket"></span></a>
+					<a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>
 				</li>
 				<li>
 					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile" aria-label="View my Twitter profile"><span class="fa fa-twitter"></span></a>
