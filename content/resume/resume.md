@@ -42,4 +42,4 @@ I'm a Web Developer with over five years of commercial experience in many areas 
 
 - __[brendan@murty.id.au](mailto:brendan@murty.id.au)__ Email me to see how I can help your business improve their development processes to produce better outcomes for your clients.
 - __[twitter.com/brendanmurty](https://twitter.com/brendanmurty)__ I share my favourite articles and thoughts about web development on Twitter.
-- __[bitbucket.org/brendanmurty](https://bitbucket.org/brendanmurty)__ I share my code, websites, editor configuration files on Bitbucket.
+- __[github.com/brendanmurty](https://github.com/brendanmurty)__ I share my code, websites, web-apps and editor configuration files on GitHub.
