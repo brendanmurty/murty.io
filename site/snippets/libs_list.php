@@ -71,15 +71,17 @@ function list_items($pages_object,$type='all',$mode='all'){
 
 		// GitHub
 		$github = new Github\Client();
-		if($github){
+		if ($github) {
 			try{
 				$events = $github->api('user')->publicEvents('brendanmurty');
-			}catch(Exception $e){
+			} catch (Exception $e) {
 				$events = '';
 			}
-			if($events){
-				foreach($events as $event){
-					if($event['type'] == 'PushEvent' && isset($event['payload']['commits'])){
+
+			if ($events) {
+				foreach ($events as $event) {
+					if ($event['type'] == 'PushEvent' && isset($event['payload']['commits'])) {
+						// Commit
 						$event_date = date_human(date('j M y', strtotime($event['created_at'])));
 						$event_date_specific = date('D M d H:i:s Y', strtotime($event['created_at']));
 						$event_message = $event['payload']['commits']['0']['message'];
@@ -87,18 +89,21 @@ function list_items($pages_object,$type='all',$mode='all'){
 						$event_url = str_replace('api.github.com/repos', 'github.com', $event_url);
 						$event_url = str_replace('/commits', '/commit', $event_url);
 
-						$item_content = '<li class="github github-commit"><a href="'.$event_url.'" title="View this commit on GitHub">';
-						$item_content .= '<span class="summary">'.$event['repo']['name'];
-						if($event_message){
-							$item_content .= ': '.excerpt($event_message, 120);
-						}
-						$item_content .= '</span><span class="label"><span class="fa fa-github"></span>Authored '.$event_date.'</span></a></li>';
+						if ($event_url != '') {
+							$item_content = '<li class="github github-commit"><a href="'.$event_url.'" title="View this commit on GitHub">';
+							$item_content .= '<span class="summary">'.$event['repo']['name'];
+							if($event_message){
+								$item_content .= ': '.excerpt($event_message, 120);
+							}
+							$item_content .= '</span><span class="label"><span class="fa fa-github"></span>Authored '.$event_date.'</span></a></li>';
 
-						$items[$i]['date'] = $event_date_specific;
-						$items[$i]['content'] = $item_content;
-						$item_content = '';
-						$i++;
-					}elseif($event['type'] == 'WatchEvent'){
+							$items[$i]['date'] = $event_date_specific;
+							$items[$i]['content'] = $item_content;
+							$item_content = '';
+							$i++;
+						}
+					} elseif($event['type'] == 'WatchEvent') {
+						// Star
 						$event_date = date_human(date('j M y', strtotime($event['created_at'])));
 						$event_date_specific = date('D M d H:i:s Y', strtotime($event['created_at']));
 						$event_url = $event['repo']['url'];
