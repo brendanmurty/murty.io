@@ -110,7 +110,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 				<img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" alt="Profile picture of Brendan" />
 			</a>
 
-			<h2>Brendan is a Web Developer with over five years of varied development <a href="/about" title="Learn more about me" aria-label="Learn more about me">experience</a>.</h2>
+			<h2>Brendan is an experienced full-stack Web Developer.</h2>
 
 			<?php if ($page_name != 'resume') { ?>
 			<ul class="social">
