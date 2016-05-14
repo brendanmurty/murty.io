@@ -31,7 +31,7 @@ function list_items($pages_object,$type='all',$mode='all'){
 		$item_type=$item_type['0'];
 		$item_date=date_human($item->date('j M y'));
 		$item_date_specific=$item->date('D M d H:i:s Y');
-		$link=str_replace('http://brendan.murty.id.au', '', $item->url());
+		$link=str_replace('http://b.murty.io', '', $item->url());
 		$link_description='Read the full length post';
 		$icon='file-text';
 		if($item_type=='link'){

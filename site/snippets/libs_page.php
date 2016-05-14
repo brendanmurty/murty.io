@@ -9,7 +9,7 @@ function page_description($page_object) {
 	} elseif ($item_type == 'search') {
 		$description = 'Search posts and pages';
 	} elseif ($item_type == 'home' || $item_type == '') {
-		$description = 'Brendan is a Web Developer with over five years of varied development experience.';
+		$description = 'Brendan is a Web Developer with varied development experience.';
 	} else {
 		// Extract and remove links and image embeds from the page content
 		$description = preg_replace('/\[(.*)\]/', '$1', $page_object->content()->text());
@@ -43,7 +43,7 @@ function page_first_image($default,$page_object){
 			$o=preg_match_all('/\(\/assets\/images\/(.*)\)/i',$page_object->content()->text(),$matches);
 			if($matches[0]){
 				if($matches[0][0]!=''){
-					$p='http://brendan.murty.id.au'.preg_replace('/\((.*)\)/','$1',$matches[0][0]);
+					$p='http://b.murty.io'.preg_replace('/\((.*)\)/','$1',$matches[0][0]);
 				}
 			}
 		}

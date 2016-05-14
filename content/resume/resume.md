@@ -40,6 +40,6 @@ I'm an experienced full-stack Web Developer with commercial experience in many a
 
 ### Contact
 
-- __[brendan@murty.id.au](mailto:brendan@murty.id.au)__ Email me to see how I can help your business improve their development processes to produce better outcomes for your clients.
+- __[b@murty.io](mailto:b@murty.io)__ Email me to see how I can help your business improve their development processes to produce better outcomes for your clients.
 - __[twitter.com/brendanmurty](https://twitter.com/brendanmurty)__ I share my favourite articles and thoughts about web development on Twitter.
 - __[github.com/brendanmurty](https://github.com/brendanmurty)__ I share my code, websites, web-apps and editor configuration files on GitHub.

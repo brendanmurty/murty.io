@@ -4,13 +4,13 @@ Text:
 
 For the purposes of this document, Brendan Murty will herein be referred to as *Brendan*. *Client* refers to any person who is undertaking work with Brendan Murty. *Deposit* refers to the one off 40% payment of the agreed quote amount.
 
-Brendan reserves the right to change these Terms without notice; it is the clients responsibility to check for updates (the most recent version of this document is available online at [brendan.murty.id.au/terms](http://brendan.murty.id.au/terms)).
+Brendan reserves the right to change these Terms without notice; it is the clients responsibility to check for updates (the most recent version of this document is available online at [b.murty.io/terms](http://b.murty.io/terms)).
 
 ### Contact
 
 Contact with Brendan must be made in one of the following ways:
 
-- Email: [brendan@murty.id.au](mailto:brendan@murty.id.au)
+- Email: [b@murty.io](mailto:b@murty.io)
 - Twitter: [brendanmurty](https://twitter.com/brendanmurty)
 - Phone: *(Available upon request)*
 - Australian Post: *(Street address available upon request)*
@@ -21,7 +21,7 @@ All payment amounts mentioned in this document or in any correspondence with Bre
 
 Payments can be made to Brendan in the following ways:
 
-- PayPal (www.paypal.com): brendan@murty.id.au
+- PayPal (www.paypal.com): b@murty.io
 - Direct Deposit: *(Brendan’s account details are available upon request)*
 
 Upon acceptance of quote, the client must:

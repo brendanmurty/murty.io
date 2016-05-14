@@ -12,7 +12,7 @@ snippet('libs_twitter');
 
 $page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description = page_description($page);
-$page_image = page_first_image('http://brendan.murty.id.au/assets/images/common/brendan_murty.jpg', $page);
+$page_image = page_first_image('http://b.murty.io/assets/images/common/brendan_murty.jpg', $page);
 $page_type = page_type($page);
 $page_name = page_name($page);
 
@@ -115,7 +115,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			<?php if ($page_name != 'resume') { ?>
 			<ul class="social">
 				<li>
-					<a href="mailto:brendan@murty.id.au" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
+					<a href="mailto:b@murty.io" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
 				</li>
 				<li>
 					<a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>

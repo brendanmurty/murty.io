@@ -1,9 +1,9 @@
-brendan.murty.id.au
+b.murty.io
 =======
 
 ## About
 
-Here's my entire [personal website](http://brendan.murty.id.au) built on [Kirby CMS](http://getkirby.com/), coded in [Sublime Text](http://www.sublimetext.com/) and hosted by [Digital Ocean](http://digitalocean.com).
+Here's my entire [personal website](http://b.murty.io) built on [Kirby CMS](http://getkirby.com/), coded in [Sublime Text](http://www.sublimetext.com/) and hosted by [Digital Ocean](http://digitalocean.com).
 
 I've built a customised [pulse feed](https://github.com/brendanmurty/website/blob/master/site/snippets/libs_list.php) on the [home page](https://github.com/brendanmurty/website/blob/master/site/templates/home.php) to show my recent public activity on [Twitter](https://twitter.com/brendanmurty) and [GitHub](https://github.com/brendanmurty).
 
