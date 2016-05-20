@@ -198,7 +198,7 @@ class F {
       'flv',
       'swf',
       'mp4',
-      'mv4',
+      'm4v',
       'mpg',
       'mpe'
     ),
@@ -213,6 +213,8 @@ class F {
     ),
 
   );
+
+  public static $units = array('B','kB','MB','GB','TB','PB', 'EB', 'ZB', 'YB');
 
   /**
    * Checks if a file exists
@@ -499,11 +501,8 @@ class F {
     // avoid errors for invalid sizes
     if($size <= 0) return '0 kB';
 
-    // available units
-    $unit = array('B','kB','MB','GB','TB','PB', 'EB', 'ZB', 'YB');
-
     // the math magic
-    return round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
+    return round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . static::$units[$i];
 
   }
 
@@ -516,7 +515,11 @@ class F {
    * @return int
    */
   public static function modified($file, $format = null, $handler = 'date') {
-    return !is_null($format) ? $handler($format, filemtime($file)) : filemtime($file);
+    if(file_exists($file)) {
+      return !is_null($format) ? $handler($format, filemtime($file)) : filemtime($file);      
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -543,12 +546,26 @@ class F {
       return $mime;
     }
 
-    // guess the matching mime type by extension
-    $ext  = pathinfo($file, PATHINFO_EXTENSION);
-    $info = isset(static::$mimes[$ext]) ? static::$mimes[$ext] : null;
+    // shell check
+    try {
+      $mime = system::execute('file', [$file, '-z', '-b', '--mime'], 'output');  
+      $mime = trim(str::split($mime, ';')[0]);
+      if(f::mimeToExtension($mime)) return $mime;
+    } catch(Exception $e) {
+      // no mime type detectable with shell  
+      $mime = null;
+    }
 
-    // if there are more than one applicable mimes for the extension, return the first
-    return is_array($info) ? array_shift($info) : $info;
+    // Mime Sniffing
+    $reader = new MimeReader($file);
+    $mime   = $reader->get_type();
+
+    if(!empty($mime) && f::mimeToExtension($mime)) {
+      return $mime;
+    }
+
+    // guess the matching mime type by extension
+    return f::extensionToMime(f::extension($file));
 
   }
 
@@ -757,6 +774,21 @@ class F {
 
     die(f::read($file));
 
+  }
+
+  /**
+   * Tries to find a file by various extensions
+   * 
+   * @param string $base
+   * @param array $extensions
+   * @return string|false
+   */
+  public static function resolve($base, $extensions) {
+    foreach($extensions as $ext) {
+      $file = $base . '.' . $ext;
+      if(file_exists($file)) return $file;
+    }
+    return false;
   }
 
 }
