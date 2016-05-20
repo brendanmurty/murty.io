@@ -32,7 +32,7 @@ function page_thumbnail($page){
 		if($page->thumbnail()){
 	    	return '<span class="image"><img src="/assets/images/thumbnails/'.$page->thumbnail().'" height="100" width="100" /></span>';
 	    }else{
-	   		return '<span class="image default"><img src="/assets/images/common/brendan_murty.jpg" height="100" width="100" /></span>';
+	   		return '<span class="image default"><img src="/assets/images/common/brendan-murty.jpg" height="100" width="100" /></span>';
 	   	}
 	}
 }
