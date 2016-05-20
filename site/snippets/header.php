@@ -12,7 +12,7 @@ snippet('libs_twitter');
 
 $page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
 $page_description = page_description($page);
-$page_image = page_first_image('http://b.murty.io/assets/images/common/brendan_murty.jpg', $page);
+$page_image = page_first_image('http://b.murty.io/assets/images/common/brendan-murty.jpg', $page);
 $page_type = page_type($page);
 $page_name = page_name($page);
 
