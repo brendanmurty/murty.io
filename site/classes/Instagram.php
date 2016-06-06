@@ -2,13 +2,14 @@
 
 /**
  * Instagram API class
+ *
  * API Documentation: http://instagram.com/developer/
- * Class Documentation: https://github.com/cosenary/Instagram-PHP-API/tree/dev
- * 
+ * Class Documentation: https://github.com/cosenary/Instagram-PHP-API
+ *
  * @author Christian Metz
  * @since 30.10.2011
  * @copyright Christian Metz - MetzWeb Networks 2011-2014
- * @version 2.1
+ * @version 2.2
  * @license BSD http://www.opensource.org/licenses/bsd-license.php
  */
 class Instagram {
@@ -30,42 +31,49 @@ class Instagram {
 
   /**
    * The Instagram API Key
-   * 
+   *
    * @var string
    */
   private $_apikey;
 
   /**
    * The Instagram OAuth API secret
-   * 
+   *
    * @var string
    */
   private $_apisecret;
 
   /**
    * The callback URL
-   * 
+   *
    * @var string
    */
   private $_callbackurl;
 
   /**
    * The user access token
-   * 
+   *
    * @var string
    */
   private $_accesstoken;
 
   /**
+   * Whether a signed header should be used
+   *
+   * @var boolean
+   */
+  private $_signedheader = false;
+
+  /**
    * Available scopes
-   * 
+   *
    * @var array
    */
   private $_scopes = array('basic', 'likes', 'comments', 'relationships');
 
   /**
    * Available actions
-   * 
+   *
    * @var array
    */
   private $_actions = array('follow', 'unfollow', 'block', 'unblock', 'approve', 'deny');
@@ -86,7 +94,7 @@ class Instagram {
       // if you only want to access public data
       $this->setApiKey($config);
     } else {
-      throw new Exception("Error: __construct() - Configuration data is missing.");
+      throw new \Exception("Error: __construct() - Configuration data is missing.");
     }
   }
 
@@ -100,7 +108,7 @@ class Instagram {
     if (is_array($scope) && count(array_intersect($scope, $this->_scopes)) === count($scope)) {
       return self::API_OAUTH_URL . '?client_id=' . $this->getApiKey() . '&redirect_uri=' . urlencode($this->getApiCallback()) . '&scope=' . implode('+', $scope) . '&response_type=code';
     } else {
-      throw new Exception("Error: getLoginUrl() - The parameter isn't an array or invalid scope permissions used.");
+      throw new \Exception("Error: getLoginUrl() - The parameter isn't an array or invalid scope permissions used.");
     }
   }
 
@@ -201,7 +209,7 @@ class Instagram {
     if (true === in_array($action, $this->_actions) && isset($user)) {
       return $this->_makeCall('users/' . $user . '/relationship', true, array('action' => $action), 'POST');
     }
-    throw new Exception("Error: modifyRelationship() | This method requires an action command and the target user id.");
+    throw new \Exception("Error: modifyRelationship() | This method requires an action command and the target user id.");
   }
 
   /**
@@ -280,7 +288,7 @@ class Instagram {
 
   /**
    * Get a list of comments for this media
-   * 
+   *
    * @param integer $id                   Instagram media ID
    * @return mixed
    */
@@ -290,7 +298,7 @@ class Instagram {
 
   /**
    * Add a comment on a media
-   * 
+   *
    * @param integer $id                   Instagram media ID
    * @param string $text                  Comment content
    * @return mixed
@@ -301,7 +309,7 @@ class Instagram {
 
   /**
    * Remove user comment on a media
-   * 
+   *
    * @param integer $id                   Instagram media ID
    * @param string $commentID             User comment ID
    * @return mixed
@@ -364,7 +372,7 @@ class Instagram {
 
   /**
    * Pagination feature
-   * 
+   *
    * @param object  $obj                  Instagram object returned by a method
    * @param integer $limit                Limit of returned results
    * @return mixed
@@ -386,7 +394,7 @@ class Instagram {
         return $this->_makeCall($function, $auth, array('cursor' => $obj->pagination->next_cursor, 'count' => $limit));
       }
     } else {
-      throw new Exception("Error: pagination() | This method doesn't support pagination.");
+      throw new \Exception("Error: pagination() | This method doesn't support pagination.");
     }
   }
 
@@ -405,7 +413,7 @@ class Instagram {
       'redirect_uri'    => $this->getApiCallback(),
       'code'            => $code
     );
-    
+
     $result = $this->_makeOAuthCall($apiData);
     return (false === $token) ? $result : $result->access_token;
   }
@@ -428,38 +436,44 @@ class Instagram {
       if (true === isset($this->_accesstoken)) {
         $authMethod = '?access_token=' . $this->getAccessToken();
       } else {
-        throw new Exception("Error: _makeCall() | $function - This method requires an authenticated users access token.");
+        throw new \Exception("Error: _makeCall() | $function - This method requires an authenticated users access token.");
       }
     }
-    
+
     if (isset($params) && is_array($params)) {
       $paramString = '&' . http_build_query($params);
     } else {
       $paramString = null;
     }
-    
+
     $apiCall = self::API_URL . $function . $authMethod . (('GET' === $method) ? $paramString : null);
-    
+
+    // signed header of POST/DELETE requests
+    $headerData = array('Accept: application/json');
+    if (true === $this->_signedheader && 'GET' !== $method) {
+      $headerData[] = 'X-Insta-Forwarded-For: ' . $this->_signHeader();
+    }
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $apiCall);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headerData);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 20);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    
+
     if ('POST' === $method) {
       curl_setopt($ch, CURLOPT_POST, count($params));
       curl_setopt($ch, CURLOPT_POSTFIELDS, ltrim($paramString, '&'));
     } else if ('DELETE' === $method) {
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
     }
-    
+
     $jsonData = curl_exec($ch);
     if (false === $jsonData) {
-      throw new Exception("Error: _makeCall() - cURL error: " . curl_error($ch));
+      throw new \Exception("Error: _makeCall() - cURL error: " . curl_error($ch));
     }
     curl_close($ch);
-    
+
     return json_decode($jsonData);
   }
 
@@ -471,7 +485,7 @@ class Instagram {
    */
   private function _makeOAuthCall($apiData) {
     $apiHost = self::API_OAUTH_TOKEN_URL;
-    
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $apiHost);
     curl_setopt($ch, CURLOPT_POST, count($apiData));
@@ -479,19 +493,30 @@ class Instagram {
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept: application/json'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    
+
     $jsonData = curl_exec($ch);
     if (false === $jsonData) {
-      throw new Exception("Error: _makeOAuthCall() - cURL error: " . curl_error($ch));
+      throw new \Exception("Error: _makeOAuthCall() - cURL error: " . curl_error($ch));
     }
     curl_close($ch);
-    
+
     return json_decode($jsonData);
   }
 
   /**
+   * Sign header by using the app's IP and its API secret
+   *
+   * @return string                       The signed header
+   */
+  private function _signHeader() {
+    $ipAddress = $_SERVER['SERVER_ADDR'];
+    $signature = hash_hmac('sha256', $ipAddress, $this->_apisecret, false);
+    return join('|', array($ipAddress, $signature));
+  }
+
+  /**
    * Access Token Setter
-   * 
+   *
    * @param object|string $data
    * @return void
    */
@@ -502,7 +527,7 @@ class Instagram {
 
   /**
    * Access Token Getter
-   * 
+   *
    * @return string
    */
   public function getAccessToken() {
@@ -511,7 +536,7 @@ class Instagram {
 
   /**
    * API-key Setter
-   * 
+   *
    * @param string $apiKey
    * @return void
    */
@@ -521,7 +546,7 @@ class Instagram {
 
   /**
    * API Key Getter
-   * 
+   *
    * @return string
    */
   public function getApiKey() {
@@ -530,7 +555,7 @@ class Instagram {
 
   /**
    * API Secret Setter
-   * 
+   *
    * @param string $apiSecret 
    * @return void
    */
@@ -540,7 +565,7 @@ class Instagram {
 
   /**
    * API Secret Getter
-   * 
+   *
    * @return string
    */
   public function getApiSecret() {
@@ -549,7 +574,7 @@ class Instagram {
   
   /**
    * API Callback URL Setter
-   * 
+   *
    * @param string $apiCallback
    * @return void
    */
@@ -559,11 +584,21 @@ class Instagram {
 
   /**
    * API Callback URL Getter
-   * 
+   *
    * @return string
    */
   public function getApiCallback() {
     return $this->_callbackurl;
+  }
+
+  /**
+   * Enforce Signed Header
+   *
+   * @param boolean $signedHeader
+   * @return void
+   */
+  public function setSignedHeader($signedHeader) {
+    $this->_signedheader = $signedHeader;
   }
 
 }
