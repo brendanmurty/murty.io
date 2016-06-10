@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20160610";
+$css_update_date = "20160610b";
 
 snippet('libs_general');
 snippet('libs_tags');
@@ -16,36 +16,36 @@ $page_name = page_name($page);
 
 $body_extra = '';
 if($page->title() == 'Find' && !isset($_GET['term'])){
-	// Focus the search field on the search page
-	$body_extra.=' onload="document.forms.searchform.term.focus();"';
+    // Focus the search field on the search page
+    $body_extra.=' onload="document.forms.searchform.term.focus();"';
 }
 $body_extra .= ' class="type_' . $page_type . ' name_' . $page_name . '"';
 
 // Redirect "/post" to "/posts" when a certain post isn't requested
 if ($page_name == "post" && $page->title() == "Post") {
-	go("posts");
+    go("posts");
 }
 
 // Setup about text for the header and customise page titles
 $header_about_content = '<h2>'.html($page->title()).'</h2>';
 if ($page_type == 'home' || $page_name == 'resume') {
-	$header_about_content = '';
+    $header_about_content = '';
 } elseif ($page->uri() == 'tag' && get('name')) {
-	$header_about_content='<h2 class="lighter">Tagged <em>' . tag_title(get('name')) . '</em></h2>';
+    $header_about_content='<h2 class="lighter">Tagged <em>' . tag_title(get('name')) . '</em></h2>';
 } elseif ($page_name == 'about' || $page_name == 'contact') {
-	$header_about_content = '<h2>' . ucfirst($page_name) . ' Brendan</h2>';
+    $header_about_content = '<h2>' . ucfirst($page_name) . ' Brendan</h2>';
 } elseif ($page_name == 'link') {
-	$header_about_content = '<h2 class="lighter">Link: <em>' . html($page->title()) . '</em></h2>';
+    $header_about_content = '<h2 class="lighter">Link: <em>' . html($page->title()) . '</em></h2>';
 } elseif ($page_type == 'post' && $page_name != 'posts') {
-	$header_about_content='<h2 class="lighter">Post: <em>' . html($page->title()) . '</em></h2>';
+    $header_about_content='<h2 class="lighter">Post: <em>' . html($page->title()) . '</em></h2>';
 } elseif (isset ($_GET['term']) && $_GET['term'] != '') {
-	$header_about_content = '<h2 class="lighter">Search for <em>' . $_GET['term'] . '</em></h2>';
+    $header_about_content = '<h2 class="lighter">Search for <em>' . $_GET['term'] . '</em></h2>';
 }
 
 // Only index page content for visible and main pages
 $page_meta_robots = "noindex,follow";
 if($page->isVisible() || $page_name == "home"){
-	$page_meta_robots = "index,follow";
+    $page_meta_robots = "index,follow";
 }
 ?><!DOCTYPE html>
 <html lang="en">
@@ -96,44 +96,48 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 </head>
 <body<?php echo $body_extra ?>>
-	<section id="container">
-		<nav class="pages">
-			<?php echo list_pages($pages, $site, $page) ?>
-		</nav>
+    <section id="container">
+        <nav class="pages">
+            <?php echo list_pages($pages, $site, $page) ?>
+        </nav>
 
-		<?php if ($page_type == 'home' || $page_name == 'resume') { ?>
-		<header>
-			<a class="profile" href="/about" title="Learn more about me">
-				<img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" alt="Profile picture of Brendan" />
-			</a>
+        <?php if ($page_type == 'home' || $page_name == 'resume') { ?>
+        <header>
+            <a class="profile" href="/about" title="Learn more about me">
+                <img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" alt="Profile picture of Brendan" />
+            </a>
 
-			<h2>Brendan is an experienced full-stack Web Developer.</h2>
+            <?php if ($page_type == 'home') { ?>
+            <h2>
+                Father of <a href="http://i.murty.io/">Isla</a>, partner of <a href="http://ellacondon.com/">Ella</a>, Web Developer at <a href="http://sentral.com.au/">Sentral</a>, creator of <a href="https://upcomingtasks.com/">UpcomingTasks</a> and <a href="http://schnitmydadsays.com/">SchnitMyDadSays</a> reviewer.
+            </h2>
+            <?php } ?>
 
-			<?php if ($page_name != 'resume') { ?>
-			<ul class="social">
-				<li>
-					<a href="mailto:b@murty.io" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
-				</li>
-				<li>
-					<a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/brendanmurty" title="View my Twitter profile" aria-label="View my Twitter profile"><span class="fa fa-twitter"></span></a>
-				</li>
-				<li>
-					<a href="https://instagram.com/brendan.murty" title="View my Instagram posts" aria-label="View my Instagram posts"><span class="fa fa-instagram"></span></a>
-				</li>
-				<li>
-					<a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm" aria-label="See my music statistics on Last.fm"><span class="fa fa-music"></span></a>
-				</li>
-				<li>
-					<a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
-				</li>
-			</ul>
-			<?php } ?>
-		</header>
-		<? } ?>
+            <?php if ($page_name != 'resume') { ?>
+            <ul class="social">
+                <li>
+                    <a href="mailto:b@murty.io" title="Send me an email" aria-label="Send me an email"><span class="fa fa-envelope"></span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile" aria-label="View my Twitter profile"><span class="fa fa-twitter"></span></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/brendan.murty" title="View my Instagram posts" aria-label="View my Instagram posts"><span class="fa fa-instagram"></span></a>
+                </li>
+                <li>
+                    <a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm" aria-label="See my music statistics on Last.fm"><span class="fa fa-music"></span></a>
+                </li>
+                <li>
+                    <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
+                </li>
+            </ul>
+            <?php } ?>
+        </header>
+        <? } ?>
 
-		<?php if($header_about_content != '') { echo '<section id="about">' . $header_about_content . '</section>'; } ?>
+        <?php if($header_about_content != '') { echo '<section id="about">' . $header_about_content . '</section>'; } ?>
 
-		<section id="content">
+        <section id="content">
