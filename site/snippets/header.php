@@ -1,9 +1,7 @@
 <?php
 
 $css_update_date = "20160610";
-$js_update_date = "20140906";
 
-snippet('auth');
 snippet('libs_general');
 snippet('libs_tags');
 snippet('libs_page');
