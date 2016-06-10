@@ -68,7 +68,7 @@ if($page->isVisible() || $page_name == "home"){
 <meta property="og:url" content="<?= html($page->url()) ?>">
 <meta property="og:image" content="<?= $page_image ?>">
 <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/assets/styles/brendanmurty.css?v=<?= $css_update_date ?>">
+<link rel="stylesheet" href="/assets/styles/brendanmurty.min.css?v=<?= $css_update_date ?>">
 <link rel="stylesheet" href="/assets/styles/font-awesome.min.css">
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
