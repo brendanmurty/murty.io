@@ -1,3 +1,6 @@
-<? snippet('header'); ?>
-<script>doAjax("items", "featured", "content");</script>
-<? snippet('footer'); ?>
+<?php
+
+snippet('header');
+snippet('footer');
+
+?>

@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20160116g";
+$css_update_date = "20160610";
 $js_update_date = "20140906";
 
 snippet('auth');
@@ -96,7 +96,6 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
-<? echo js('assets/scripts/brendanmurty.js?v='.$js_update_date); ?>
 </head>
 <body<?php echo $body_extra ?>>
 	<section id="container">

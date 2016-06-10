@@ -17,15 +17,7 @@
 		if ($nav_actions != '') {
 			echo '<nav class="actions">' . $nav_actions . '</nav>';
 		}
-
-		if ($page_name != 'resume' && $page_name != 'about') {
-		?>
-		<footer>
-			<div class="credits">
-				<?php echo kirbytext($site->copyright()) ?>
-			</div>
-		</footer>
-		<?php } ?>
+        ?>
 	</section>
 </body>
 </html>
