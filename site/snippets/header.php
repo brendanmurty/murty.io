@@ -104,7 +104,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         <?php if ($page_type == 'home' || $page_name == 'resume') { ?>
         <header>
             <a class="profile" href="/about" title="Learn more about me">
-                <img src="/assets/images/common/brendan-murty.jpg" height="200" width="200" alt="Profile picture of Brendan" />
+                <img src="/assets/images/common/brendan_murty.jpg" height="200" width="200" alt="Profile picture of Brendan" />
             </a>
 
             <?php if ($page_type == 'home') { ?>
