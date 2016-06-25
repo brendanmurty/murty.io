@@ -1,4 +1,4 @@
-<?
+<?php
 
 function date_human($item_date){
     // Create a human friendly date

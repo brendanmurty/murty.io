@@ -1,4 +1,4 @@
-<?
+<?php
 
 function page_description($page_object) {
 	// Extract the page type from the URL

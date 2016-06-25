@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 <article>
-<?
+<?php
 echo markdown($page->text());
 if ($page->uri() == 'tag' && get('name')) {
     // Tag detail page
