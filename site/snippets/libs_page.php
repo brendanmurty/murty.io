@@ -18,7 +18,7 @@ function page_description($page_object) {
 		$description = preg_replace('/\*(.*)\*/i', '', $description);
 
 		// Trim the content to 100 characters
-		$description = mb_substr($description, 0, 97) . '...';
+		$description = substr($description, 0, 97) . '...';
 	}
 
 	// Only include alphanumeric and some symbols

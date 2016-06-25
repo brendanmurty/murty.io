@@ -50,12 +50,12 @@ if($page->isVisible() || $page_name == "home"){
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<title><?= $page_title ?></title>
+<title><?php echo $page_title ?></title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="author" content="<?= $site->author() ?>">
-<meta name="description" property="og:description" content="<?= $page_description ?>">
-<meta name="robots" content="<?= $page_meta_robots ?>">
+<meta name="author" content="<?php echo $site->author() ?>">
+<meta name="description" property="og:description" content="<?php echo $page_description ?>">
+<meta name="robots" content="<?php echo $page_meta_robots ?>">
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="480">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -64,15 +64,15 @@ if($page->isVisible() || $page_name == "home"){
 <meta name="p:domain_verify" content="bc7a37f5bb3bd7ed682192fab9cecd32">
 <meta property="og:locale" content="en_gb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="<?= $page_title ?>">
-<meta property="og:url" content="<?= html($page->url()) ?>">
-<meta property="og:image" content="<?= $page_image ?>">
+<meta property="og:title" content="<?php echo $page_title ?>">
+<meta property="og:url" content="<?php echo html($page->url()) ?>">
+<meta property="og:image" content="<?php echo $page_image ?>">
 <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/assets/styles/brendanmurty.min.css?v=<?= $css_update_date ?>">
+<link rel="stylesheet" href="/assets/styles/brendanmurty.min.css?v=<?php echo $css_update_date ?>">
 <link rel="stylesheet" href="/assets/styles/font-awesome.min.css">
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
-<link rel="alternate" type="application/rss+xml" href="<?= url('/feed.xml') ?>" title="Brendan Murty">
+<link rel="alternate" type="application/rss+xml" href="<?php echo url('/feed.xml') ?>" title="Brendan Murty">
 <!--[if lt IE 9]>
 <script>
 document.createElement('header');
