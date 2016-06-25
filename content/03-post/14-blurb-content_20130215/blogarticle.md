@@ -10,7 +10,7 @@ Need to shorten some content so it fits in a small area? My *blurb* function wil
 
 	<?php
 	function blurb($content,$length){
-		$content_length=mb_strlen($content);
+		$content_length=strlen($content);
 		if($content_length>=$length){// Too long, return the shortened string
 			return mb_substr($content,0,$length-3).'...';
 		}else{// All good, return the string unchanged

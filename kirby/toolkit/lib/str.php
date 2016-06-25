@@ -93,12 +93,12 @@ class Str {
 
   /**
    * Default options for string methods
-   * 
+   *
    * @var array
    */
   public static $defaults = array(
     'slug' => array(
-      'separator' => '-', 
+      'separator' => '-',
       'allowed'   => 'a-z0-9'
     )
   );
@@ -242,11 +242,11 @@ class Str {
     for($i = 0; $i < static::length($string); $i++) {
       $char = static::substr($string, $i, 1);
       if(MB) {
-        list(, $code) = unpack('N', mb_convert_encoding($char, 'UCS-4BE', 'UTF-8'));        
+        list(, $code) = unpack('N', mb_convert_encoding($char, 'UCS-4BE', 'UTF-8'));
       } else {
         $code = ord($char);
       }
-      
+
       $encoded .= rand(1, 2) == 1 ? '&#' . $code . ';' : '&#x' . dechex($code) . ';';
     }
     return $encoded;
@@ -315,7 +315,7 @@ class Str {
 
   /**
    * Checks if the given string is a URL
-   * 
+   *
    * @param string $string
    * @return boolean
    */
@@ -393,7 +393,7 @@ class Str {
    */
   public static function substr($str, $start, $length = null) {
     $length = $length === null ? static::length($str) : $length;
-    return MB ? mb_substr($str, $start, $length, 'UTF-8') : substr($str, $start, $length);
+    return MB ? substr($str, $start, $length, 'UTF-8') : substr($str, $start, $length);
   }
 
   /**
@@ -403,7 +403,7 @@ class Str {
    * @return string
    */
   public static function lower($str) {
-    return MB ? mb_strtolower($str, 'UTF-8') : strtolower($str);
+    return MB ? strtolower($str, 'UTF-8') : strtolower($str);
   }
 
   /**
@@ -413,7 +413,7 @@ class Str {
    * @return string
    */
   public static function upper($str) {
-    return MB ? mb_strtoupper($str, 'UTF-8') : strtoupper($str);
+    return MB ? strtoupper($str, 'UTF-8') : strtoupper($str);
   }
 
   /**
@@ -423,7 +423,7 @@ class Str {
    * @return string
    */
   public static function length($str) {
-    return MB ? mb_strlen($str, 'UTF-8') : strlen($str);
+    return MB ? strlen($str, 'UTF-8') : strlen($str);
   }
 
   /**
