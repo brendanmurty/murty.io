@@ -14,7 +14,7 @@ One of the most basic requirements of the web client was that it needed to query
 	// bc_results
 	// Purpose: Query the Basecamp API and return the result as an array
 	// Notes: More information about the Basecamp API can be found at https://github.com/37signals/bcx-api/
-	// Example: <? print_r(bc_results('/people/me.json','99999999','dhjfksdhfjksdhfij32')); ?>
+	// Example: <?php print_r(bc_results('/people/me.json','99999999','dhjfksdhfjksdhfij32')); ?>
 	function bc_results($api_url,$bc_account_id,$bc_user_token){
 		if($api_url){
 			$api_url='https://basecamp.com/'.$bc_account_id.'/api/v1'.$api_url;

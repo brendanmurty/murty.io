@@ -136,7 +136,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
             </ul>
             <?php } ?>
         </header>
-        <? } ?>
+        <?php } ?>
 
         <?php if($header_about_content != '') { echo '<section id="about">' . $header_about_content . '</section>'; } ?>
 
