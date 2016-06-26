@@ -6,10 +6,10 @@ Tags: upcomingtasks, ui
 ----
 Text:
 
-It’s the holiday season and I’ve had more time to work on [UpcomingTasks](https://upcomingtasks.com/), so some improvements have been made over the last few weeks. These updates are applied automatically and all users receive them free of any charge.
+It’s the holiday season and I’ve had more time to work on [UpcomingTasks](http://upcomingtasks.com/), so some improvements have been made over the last few weeks. These updates are applied automatically and all users receive them free of any charge.
 ### Improved security
 
-All UpcomingTasks pages are now protected by an [SSL](http://en.wikipedia.org/wiki/Secure_Sockets_Layer) Certificate which ensures your private information is safe. 
+All UpcomingTasks pages are now protected by an [SSL](http://en.wikipedia.org/wiki/Secure_Sockets_Layer) Certificate which ensures your private information is safe.
 
 ![SSL](/assets/images/ssl.png)
 *Secure page display in Chrome*

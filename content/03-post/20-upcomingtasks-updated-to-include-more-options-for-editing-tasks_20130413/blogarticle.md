@@ -14,4 +14,4 @@ You’ll now be able to change the location of the task and remove the due date.
 
 ![Task options](/assets/images/interface-task-options.png)
 
-Got any ideas for new [UpcomingTasks](https://upcomingtasks.com/) features or found a bug? Let [@upcomingtasks](http://twitter.com/upcomingtasks) know!
+Got any ideas for new [UpcomingTasks](http://upcomingtasks.com/) features or found a bug? Let [@upcomingtasks](http://twitter.com/upcomingtasks) know!

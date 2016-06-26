@@ -6,9 +6,9 @@ Tags: upcomingtasks
 ----
 Thumbnail: user-box.png
 ----
-Text: 
+Text:
 
-I've been a little light on [UpcomingTasks](https://upcomingtasks.com/) updates over the last few months. I hope these recent updates are worth the wait!
+I've been a little light on [UpcomingTasks](http://upcomingtasks.com/) updates over the last few months. I hope these recent updates are worth the wait!
 
 #### User box
 

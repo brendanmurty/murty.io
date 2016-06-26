@@ -6,7 +6,7 @@ Tags: upcomingtasks
 ----
 Text:
 
-I’m very proud of my humble little web app, [UpcomingTasks](https://upcomingtasks.com/), as it’s just reached 100 active users!
+I’m very proud of my humble little web app, [UpcomingTasks](http://upcomingtasks.com/), as it’s just reached 100 active users!
 
 Born out of my own frustrations with the lack of a suitable Basecamp client for [Windows Phone](http://www.windowsphone.com/), UpcomingTasks is and always will earn it’s place high on [my homescreen](/assets/images/homescreen.png), no matter what device I’m currently using.
 

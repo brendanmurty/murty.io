@@ -4,9 +4,9 @@ Date: 20141019
 ----
 Tags: upcomingtasks, ui, windowsphone
 ----
-Text: 
+Text:
 
-I've made a few updates to [UpcomingTasks](https://upcomingtasks.com/) over the last month, here's a quick rundown on what's changed.
+I've made a few updates to [UpcomingTasks](http://upcomingtasks.com/) over the last month, here's a quick rundown on what's changed.
 
 #### Improved support for small accounts
 
@@ -22,7 +22,7 @@ The page that is shown to users before they login has been updated to describe s
 
 #### Add to Home Screen updates
 
-The [Add to Home Screen](https://upcomingtasks.com/pages/addtohome.php) page has also been simplified following updates to the Windows Phone pin method.
+The [Add to Home Screen](http://upcomingtasks.com/pages/addtohome.php) page has also been simplified following updates to the Windows Phone pin method.
 
 ![My Home Screen](/assets/images/upcomingtasks-oct2014-wphome.png)
 

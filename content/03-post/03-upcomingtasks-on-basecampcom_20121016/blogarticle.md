@@ -6,4 +6,4 @@ Tags: upcomingtasks
 ----
 Text:
 
-Check out [UpcomingTasks](https://upcomingtasks.com) on the 37signals [Basecamp extras](http://basecamp.com/extras) page!</p>
+Check out [UpcomingTasks](http://upcomingtasks.com) on the 37signals [Basecamp extras](http://basecamp.com/extras) page!</p>
