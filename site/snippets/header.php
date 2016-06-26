@@ -69,10 +69,10 @@ if($page->isVisible() || $page_name == "home"){
 <meta property="og:image" content="<?php echo $page_image ?>">
 <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/assets/styles/brendanmurty.min.css?v=<?php echo $css_update_date ?>">
-<link rel="stylesheet" href="/assets/styles/font-awesome.min.css">
 <link rel="shortcut icon" href="/assets/images/common/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon-precomposed.png">
 <link rel="alternate" type="application/rss+xml" href="<?php echo url('/feed.xml') ?>" title="Brendan Murty">
+<script src="https://use.fontawesome.com/c4caff9ff7.js"></script>
 <!--[if lt IE 9]>
 <script>
 document.createElement('header');
