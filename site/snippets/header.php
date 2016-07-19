@@ -128,9 +128,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                     <a href="https://instagram.com/brendan.murty" title="View my Instagram posts" aria-label="View my Instagram posts"><span class="fa fa-instagram"></span></a>
                 </li>
                 <li>
-                    <a href="http://www.last.fm/user/brendanmurty" title="See my music statistics on Last.fm" aria-label="See my music statistics on Last.fm"><span class="fa fa-music"></span></a>
-                </li>
-                <li>
                     <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
                 </li>
             </ul>
