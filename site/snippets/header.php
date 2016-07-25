@@ -125,10 +125,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                     <a href="https://twitter.com/brendanmurty" title="View my Twitter profile" aria-label="View my Twitter profile"><span class="fa fa-twitter"></span></a>
                 </li>
                 <li>
+                    <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
+                </li>
+                <li>
                     <a href="https://instagram.com/brendan.murty" title="View my Instagram posts" aria-label="View my Instagram posts"><span class="fa fa-instagram"></span></a>
                 </li>
                 <li>
-                    <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
+                    <a href="https://getpocket.com/@brendanmurty" title="Read my recommended links on Pocket" aria-label="Read my recommended links on Pocket"><span class="fa fa-get-pocket"></span></a>
                 </li>
             </ul>
             <?php } ?>
