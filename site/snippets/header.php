@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20160610b";
+$css_update_date = "20160726";
 
 snippet('libs_general');
 snippet('libs_tags');
