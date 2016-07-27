@@ -167,6 +167,8 @@ ul.item-listing-tags .summary, ul.item-listing-search .summary{height:130px}
 ul.item-listing .instagram .summary{height:90px;font-size:16px;line-height:22px}
 ul.item-listing .label{color:#fff;font-size:18px;line-height:48px;width:92%;display:block;background-color:#3ec7a0;padding:0 4%}
 ul.item-listing .fa{color:#fff;float:none;margin:0 10px 1px 0;vertical-align:middle;font-size:25px}
+ul.item-listing-latest{text-align:center;margin-top:50px}
+ul.item-listing-latest li{max-width:350px;float:none;display:inline-block;text-align:left}
 
 /* Formal pages */
 
