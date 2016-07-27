@@ -1,11 +1,14 @@
 <?php snippet('header') ?>
 <article>
 <?php
+
 echo markdown($page->text());
+
 if ($page->uri() == 'tag' && get('name')) {
-    // Tag detail page
-    echo list_items($pages, 'all', get('name'));
+    // List all posts tagged with the specified tag name
+    echo list_posts($pages, get('name'));
 }
+
 ?>
 </article>
 <?php snippet('footer') ?>
