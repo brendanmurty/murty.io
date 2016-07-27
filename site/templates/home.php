@@ -2,7 +2,7 @@
 
 snippet('header');
 
-print '<article>' . list_pages($pages, 'latest') . '</article>';
+print '<article>' . list_posts($pages, 'latest') . '</article>';
 
 snippet('footer');
 
