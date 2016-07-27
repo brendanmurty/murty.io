@@ -58,11 +58,13 @@ function list_posts($pages_object, $mode = 'all'){
 	array_multisort($items_sorted, SORT_DESC, $items);
 
 	// Construct the final list output
-	$t='<ul class="item-listing item-listing-'.$type.'">';
-	for ($j=0; $j < count($items); $j++){
-		$t.=$items[$j]['content'];
+	$t = '<ul class="item-listing item-listing-' . $mode . '">';
+
+	for ($j = 0; $j < count($items); $j++){
+		$t .= $items[$j]['content'];
 	}
-	$t.='</ul>';
+
+	$t .= '</ul>';
 
 	return $t;
 }
