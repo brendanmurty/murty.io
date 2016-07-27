@@ -1,32 +1,30 @@
 <?php
 
-function list_items($pages_object,$type='all',$mode='all'){
-	$i=0;
-	$l='';
-	$t='';
-	$items=array();
+function list_posts($pages_object, $mode = 'all'){
+	$i = 0;
+	$l = '';
+	$t = '';
+	$items = array();
 
-	if($type=='posts'){
-		$f=$pages_object->find('post/');
-	}elseif($type=='links'){
-		$f=$pages_object->find('link/');
-	}else{
-		$f=$pages_object->find('link/','post/');
-	}
+	$f = $pages_object->find('post/');
 
-	if($mode=='all'){
-		$f=$f->children()->visible()->sortBy($sort='date',$dir='desc');
-	}elseif($mode=='latest'){
-		$f=$f->children()->visible()->sortBy($sort='date',$dir='desc')->slice('0','1');
-	}elseif($mode=='featured'){
-		$f=$f->children()->visible()->sortBy($sort='date',$dir='desc')->slice('0','20');
-	}else{
-		$f=$f->children()->visible()->filterBy('tags',$mode,',')->sortBy($sort='date',$dir='desc');
-		$mode='taglist';
+	if ($mode == 'all') {
+		// Extract all visible posts
+		$f = $f->children()->visible()->sortBy($sort='date',$dir='desc');
+	} elseif ($mode == 'latest') {
+		// Extract the single most recent visible post
+		$f = $f->children()->visible()->sortBy($sort='date',$dir='desc')->slice('0','1');
+	} elseif ($mode == 'featured') {
+		// Extract the last 20 visible posts
+		$f = $f->children()->visible()->sortBy($sort='date',$dir='desc')->slice('0','20');
+	} else {
+		// Extract all posts with the specified tag name
+		$f = $f->children()->visible()->filterBy('tags',$mode,',')->sortBy($sort='date',$dir='desc');
+		$mode = 'taglist';
 	}
 
 	// Extract details of the relevant content items
-	foreach($f as $item){
+	foreach ($f as $item) {
 		$item_type=explode('/',$item->uri());
 		$item_type=$item_type['0'];
 		$item_date=date_human($item->date('j M y'));
