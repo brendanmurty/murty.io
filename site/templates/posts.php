@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
 <article>
-<?php echo list_items($pages,'posts','all'); ?>
+<?php echo list_posts($pages, 'all'); ?>
 </article>
 <?php snippet('footer') ?>
