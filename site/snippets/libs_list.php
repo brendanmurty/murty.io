@@ -38,12 +38,21 @@ function list_posts($pages_object, $mode = 'all'){
 		}
 		$l='<li class="'.$item_type.'"><a href="'.$link.'" title="'.$link_description.'">';
 		$l.='<span class="summary">'.html($item->title());
-		if($item_type=='link'){
+		if ($item_type=='link') {
 			$l.=': '.excerpt(html($item->text()), 120);
-		}else{
+		} else {
 			$l.=': '.excerpt($item->text(), 120);
 		}
-		$l.='</span><span class="label"><span class="fa fa-'.$icon.'"></span>Posted '.$item_date.'</span></a></li>';
+
+		$l .= '</span><span class="label"><span class="fa fa-'.$icon.'"></span>';
+		
+		if ($mode == 'latest') {
+			$l .= 'Latest post';
+		} else {
+			$l .= 'Posted '.$item_date;
+		}
+		
+		$l .= '</span></a></li>';
 
 		// Add this item to the items array
 		$items[$i]['date'] = $item_date_specific;
