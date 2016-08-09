@@ -10,7 +10,7 @@ I've made a few updates to [UpcomingTasks](http://upcomingtasks.com/) over the l
 
 #### Improved support for small accounts
 
-If your account only has one project, such as [Basecamp Personal](https://basecamp.com/personal) accounts, UpcomingTasks will now tweak some features to improve the experience. A new *Project* link in the menu takes you directly to your project and the name of the project will no longer crowd up your task lists.
+If your account only has one project, UpcomingTasks will now tweak some features to improve the experience. A new *Project* link in the menu takes you directly to your project and the name of the project will no longer crowd up your task lists.
 
 ![Task List](/assets/images/upcomingtasks-oct2014-list.png)
 
