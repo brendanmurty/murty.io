@@ -6,7 +6,7 @@ Tags: upcomingtasks
 ----
 Text:
 
-Check out your recent Basecamp updates with the new progress view in [UpcomingTasks](http://upcomingtasks.com). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.
+Check out your recent Basecamp 2 updates with the new progress view in [UpcomingTasks](http://upcomingtasks.com). View recently edited or completed tasks and also view your comments. To begin, simply press the progress bar icon from the homepage.
 
 ![Progress icon in navigation](/assets/images/progress-nav.png)
 *The progress bar icon is your friend*
