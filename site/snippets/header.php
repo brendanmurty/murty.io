@@ -1,6 +1,6 @@
 <?php
 
-$css_update_date = "20160727b";
+$css_update_date = "20160902";
 
 snippet('libs_general');
 snippet('libs_tags');
@@ -132,12 +132,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                 </li>
                 <li>
                     <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam" aria-label="Join me in a game on Steam"><span class="fa fa-steam-square"></span></a>
-                </li>
-                <li>
-                    <a href="https://getpocket.com/@brendanmurty" title="Read my recommended links on Pocket" aria-label="Read my recommended links on Pocket"><span class="fa fa-get-pocket"></span></a>
-                </li>
-                <li>
-                    <a href="http://schnitmydadsays.com/" title="Schnitzel reviews at SchnitMyDadSays" aria-label="Schnitzel reviews at SchnitMyDadSays"><span class="fa fa-cutlery"></span></a>
                 </li>
             </ul>
             <?php } ?>
