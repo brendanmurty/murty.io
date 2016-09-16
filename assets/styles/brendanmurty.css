@@ -41,7 +41,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 
 /* General */
 
-html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#f5f5f5;color:#555;border-top:5px solid #3ec7a0;overflow-x:hidden}
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#333;color:#fff;border-top:5px solid #3ec7a0;overflow-x:hidden}
 body{font:normal 400 18px/26px 'Slabo 27px', serif;padding:0;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
 h1,h2,h3,h4{font-family:'Slabo 27px', serif;font-weight:400;margin:5px 0 15px;padding:0;clear:both}
 h1{font-size:50px;line-height:50px;font-weight:700;margin-top:0}
@@ -67,11 +67,11 @@ pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
 blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e6e6e6;color:#222}
 blockquote p:last-child{margin-bottom:0}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
-section#about{color:#000;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:'Slabo 27px', serif}
-section#about .lighter{color:#555}
-section#about em{color:#000;font-style:normal}
+section#about{color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:'Slabo 27px', serif}
+section#about .lighter{color:#999}
+section#about em{color:#fff;font-style:normal}
 section#about p, section#about h2{margin:0;font-weight:400;font-size:30px;line-height:35px}
-section#content{clear:both;width:100%;float:left;background:#f5f5f5;color:#222}
+section#content{clear:both;width:100%;float:left}
 article{padding:2% 20%;width:60%;margin:0;float:left}
 
 /* Header */
@@ -79,8 +79,8 @@ article{padding:2% 20%;width:60%;margin:0;float:left}
 header{padding:1% 20%;width:60%;max-width:800px;margin:0 auto;clear:both}
 header .profile{display:block;height:206px;width:206px;margin:0 auto}
 header .profile img, .name_resume article h4 img, .name_resume article img{width:200px;height:200px;border-radius:200px}
-header h2{text-align:center;color:#555;margin:25px 0 5px}
-header h2 strong{color:#000}
+header h2{text-align:center;color:#fff;margin:25px 0 5px}
+header h2 strong{color:#fff}
 header h1 a, header h2 a{color:#3ec7a0}
 header .social{width:420px;margin:40px auto 0}
 header .social li{list-style:none outside none;float:left;width:70px;height:70px;line-height:70px;text-align:center;margin:0;padding:0}
@@ -101,7 +101,7 @@ header .social li a:hover, nav.pages a:hover{color:#2fa382}
 #container nav .last a, #container nav li:last-child a{margin-right:0}
 #container nav .fa{font-size:22px;line-height:30px}
 #container nav.actions{padding-top:0}
-#container nav.actions a{color:#fff;background:#3ec7a0;text-transform:none;padding:10px 16px;margin:0 0 20px 20px;font-size:18px;border-radius:6px;border-bottom:2px solid #2fa382}
+#container nav.actions a{color:#000;background:#3ec7a0;text-transform:none;padding:10px 16px;margin:0 0 20px 20px;font-size:18px;border-radius:6px;border-bottom:2px solid #2fa382}
 #container nav.actions a:first-child{margin-left:0}
 #container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{background-color:#2fa382}
 
@@ -162,11 +162,11 @@ ul.item-listing-tags li, ul.item-listing-search li{height:190px}
 ul.item-listing a{width:100%;display:block}
 ul.item-listing a:active em,ul.item-listing a:hover em{background-color:#2B9CB2}
 ul.item-listing img{width:100%;height:auto;display:block;min-height:300px;max-height:300px}
-ul.item-listing .summary{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#222;background-color:#fff;word-wrap:break-word;overflow:hidden}
+ul.item-listing .summary{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#fff;background-color:#222;word-wrap:break-word;overflow:hidden}
 ul.item-listing-tags .summary, ul.item-listing-search .summary{height:130px}
 ul.item-listing .instagram .summary{height:90px;font-size:16px;line-height:22px}
-ul.item-listing .label{color:#fff;font-size:18px;line-height:48px;width:92%;display:block;background-color:#3ec7a0;padding:0 4%}
-ul.item-listing .fa{color:#fff;float:none;margin:0 10px 1px 0;vertical-align:middle;font-size:25px}
+ul.item-listing .label{color:#000;font-size:18px;line-height:48px;width:92%;display:block;background-color:#3ec7a0;padding:0 4%}
+ul.item-listing .fa{float:none;margin:0 10px 1px 0;vertical-align:middle;font-size:25px}
 ul.item-listing-latest{text-align:center}
 ul.item-listing-latest li{max-width:350px;margin:0;float:none;display:inline-block;text-align:left}
 
@@ -177,16 +177,16 @@ ul.item-listing-latest li{max-width:350px;margin:0;float:none;display:inline-blo
 
 /* Resume page */
 
-.name_resume article a,.name_resume article a:active,.name_resume article a:focus,.name_resume article a:hover{color:#000}
-.name_resume article h3{margin:30px 0 0;width:180px;float:left;display:table-cell;clear:left;text-transform:uppercase;color:#777;font-size:18px;font-weight:bold}
+.name_resume article a,.name_resume article a:active,.name_resume article a:focus,.name_resume article a:hover{color:#fff}
+.name_resume article h3{margin:30px 0 0;width:180px;float:left;display:table-cell;clear:left;text-transform:uppercase;color:#999;font-size:18px;font-weight:bold}
 .name_resume article h3:first-child{margin-top:0}
 .name_resume article h4{color:#2EA8C0;margin:0}
 .name_resume article ul{margin:0;padding:0;display:table-cell}
 .name_resume article p{clear:none;margin:0;padding:0 0 20px;display:table-cell}
 .name_resume article li{list-style:none outside none;margin:0;padding:0;display:table-row}
-.name_resume article strong{color:#000;font-style:normal;clear:right;display:block;margin:30px 0 10px}
-.name_resume article em{color:#777;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
-.name_resume article em a,.name_resume article em a:active,.name_resume article em a:focus,.name_resume article em a:hover{color:#777}
+.name_resume article strong{color:#fff;font-style:normal;clear:right;display:block;margin:30px 0 10px}
+.name_resume article em{color:#999;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
+.name_resume article em a,.name_resume article em a:active,.name_resume article em a:focus,.name_resume article em a:hover{color:#999}
 .name_resume article blockquote{padding:0;margin:0;width:auto;display:table-row;background-color:transparent;font-style:italic}
 .name_resume article blockquote p:last-child{padding-bottom:0}
 
