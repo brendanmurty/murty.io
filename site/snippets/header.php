@@ -104,34 +104,37 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         <?php if ($page_type == 'home' || $page_name == 'resume') { ?>
         <header>
             <a class="profile" href="/about" title="Learn more about me">
-                <img src="/assets/images/common/brendan-isla-rain.jpg" height="200" width="200" alt="Profile picture of Brendan" />
+                <img src="/assets/images/common/brendan-isla-rain.jpg" height="200" width="200" alt="Profile picture of Brendan">
             </a>
 
             <?php if ($page_type == 'home') { ?>
             <h2>
-                Father of <a href="http://i.murty.io/">Isla</a>, partner of <a href="http://ellacondon.com/">Ella</a>, Web Developer at <a href="http://sentral.com.au/">Sentral</a>, creator of <a href="http://upcomingtasks.com/">UpcomingTasks</a> and <a href="http://schnitmydadsays.com/">SchnitMyDadSays</a> reviewer.
+                Father of <a href="http://i.murty.io/">Isla</a>,
+                partner of <a href="http://ellacondon.com/">Ella</a>,
+                Web Developer at <a href="http://sentral.com.au/">Sentral</a>,
+                creator of <a href="http://upcomingtasks.com/">UpcomingTasks</a> and
+                <a href="http://schnitmydadsays.com/">SchnitMyDadSays</a> reviewer.
             </h2>
             <?php } ?>
-
             <?php if ($page_name != 'resume') { ?>
             <ul class="social">
                 <li>
-                    <a href="mailto:b@murty.io" title="Send me an email (b@murty.io)" aria-label="Send me an email (b@murty.io)"><span class="fa fa-envelope"></span></a>
+                    <a href="mailto:b@murty.io" title="Send me an email at b@murty.io"><span class="fa fa-envelope"></span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/brendanmurty" title="View my code on GitHub" aria-label="View my code on GitHub"><span class="fa fa-github"></span></a>
+                    <a href="https://github.com/brendanmurty" title="View my code on GitHub"><span class="fa fa-github"></span></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile" aria-label="View my Twitter profile"><span class="fa fa-twitter"></span></a>
+                    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><span class="fa fa-twitter"></span></a>
                 </li>
                 <li>
-                    <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn" aria-label="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
+                    <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
                 </li>
                 <li>
-                    <a href="https://instagram.com/brendan.murty" title="View my Instagram posts" aria-label="View my Instagram posts"><span class="fa fa-instagram"></span></a>
+                    <a href="https://instagram.com/brendan.murty" title="View my Instagram posts"><span class="fa fa-instagram"></span></a>
                 </li>
                 <li>
-                    <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam" aria-label="Join me in a game on Steam"><span class="fa fa-steam-square"></span></a>
+                    <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><span class="fa fa-steam-square"></span></a>
                 </li>
             </ul>
             <?php } ?>
