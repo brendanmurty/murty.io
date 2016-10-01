@@ -2,9 +2,9 @@ Title: About
 ----
 Text:
 
-I'm an experienced full-stack Web Developer with commercial experience in many areas of website development, training and management.
+I'm a Project Manager and Senior Web Developer with varied commercial experience in web-based development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I have a passion to continually learn improved methods and techniques.
 
-I'm currently working for [Sentral Education](https://www.sentral.com.au/) where I assist with project management and development of new features for our software products using various front-end and back-end frameworks and languages.
+I'm currently working for [Sentral Education](https://www.sentral.com.au/) where I manage a large project and develop new features for our software products using various front-end and back-end frameworks and languages.
 
 In September 2012, I created an [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp 2](https://basecamp.com/2) client called [UpcomingTasks](http://upcomingtasks.com/) to easily manage tasks on smaller devices. The service still has around 1000 active users.
 
