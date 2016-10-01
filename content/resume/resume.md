@@ -4,7 +4,7 @@ Text:
 
 ### Summary
 
-I'm an experienced full-stack Web Developer with commercial experience in many areas of website development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I strive to learn improved methods and techniques to solve complex problems for clients.
+I'm a Project Manager and Senior Web Developer with varied commercial experience in web-based development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I have a passion to continually learn improved methods and techniques.
 
 ### Skills
 
@@ -24,7 +24,8 @@ I'm an experienced full-stack Web Developer with commercial experience in many a
 
 ### Employment
 
-- __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; January 2015 - present* I'm working at Sentral Education where I assist with project management and development of new features for our software products using various front-end and back-end frameworks and languages.
+- __Project Manager and Web Devloper__ *[Sentral Education](http://sentral.com.au) &mdash; October 2016 - present* I'm managing a large development project which includes delegating tasks, managing expectations with internal and external stakeholders, scoping out requirements and organising development tasks for our team. I also handle some of the advanced development tasks within this project.
+- __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; January 2015 - September 2016* I worked in the development team assisting with development of new features for our software products using various front-end and back-end frameworks and languages.
 - __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Sep 2009 - Dec 2014* I worked in various back-end & front-end development, client support and product training roles at Solutions Outsourced related to their CMS and SMS/email marketing platform called Siteflex. This included working directly with clients on website development projects, creation of a Siteflex training system and most recently leading development on Siteflex Classic.
 - __Field Assistant__ *[PBA Surveyors](http://pbasurvey.com.au/) &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 

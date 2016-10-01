@@ -111,7 +111,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
             <h2>
                 Father of <a href="http://i.murty.io/">Isla</a>,
                 partner of <a href="http://ellacondon.com/">Ella</a>,
-                Web Developer at <a href="http://sentral.com.au/">Sentral</a>,
+                Project Manager and Web Developer at <a href="http://sentral.com.au/">Sentral</a>,
                 creator of <a href="http://upcomingtasks.com/">UpcomingTasks</a> and
                 <a href="http://schnitmydadsays.com/">SchnitMyDadSays</a> reviewer.
             </h2>
