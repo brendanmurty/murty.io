@@ -31,7 +31,7 @@ I'm a Project Manager and Senior Web Developer with varied commercial experience
 
 ### Projects
 
-- __Developer and Creator__ *[UpcomingTasks](http://upcomingtasks.com/) &mdash; Sep 2012 - Oct 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It uses the official Basecamp 2 API to interface with Basecamp 2 tasks and projects. The system still had around 1,000 loyal users.
+- __Developer and Creator__ *[UpcomingTasks](http://upcomingtasks.com/) &mdash; Sep 2012 - Oct 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official Basecamp 2 API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.
 
 ### Reference
 
