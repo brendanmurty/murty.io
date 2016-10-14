@@ -6,7 +6,7 @@ I'm a Project Manager and Senior Web Developer with varied commercial experience
 
 I'm currently working for [Sentral Education](https://www.sentral.com.au/) where I manage a large project and develop new features for our software products using various front-end and back-end frameworks and languages.
 
-In September 2012, I created an [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp 2](https://basecamp.com/2) client called [UpcomingTasks](http://upcomingtasks.com/) to easily manage tasks on smaller devices. The service still has around 1000 active users.
+In September 2012, I created an [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp 2](https://basecamp.com/2) client called [UpcomingTasks](http://upcomingtasks.com/) to easily manage tasks on smaller devices. The service still had around 1,000 active users over the years. The service ran [until 15 November 2016](http://b.murty.io/post/farewell-upcomingtasks).
 
 I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage my code on [GitHub](https://github.com/brendanmurty).
 
