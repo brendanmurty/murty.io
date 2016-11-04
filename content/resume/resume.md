@@ -24,14 +24,14 @@ I'm a Project Manager and Senior Web Developer with varied commercial experience
 
 ### Employment
 
-- __Project Manager and Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; October 2016 - present* I'm managing a large development project which includes managing expectations with internal and external stakeholders, scoping out requirements and organising development tasks for our team. I also handle some of the advanced development tasks within this project.
-- __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; January 2015 - September 2016* I worked in the development team assisting with development of new features for our software products using various front-end and back-end frameworks and languages.
+- __Project Manager and Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Oct 2016 - present* I'm managing a large development project which includes managing expectations with internal and external stakeholders, scoping out requirements and organising development tasks for our team. I also handle some of the advanced development tasks within this project.
+- __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Jan 2015 - Sep 2016* I worked in the development team assisting with development of new features for our software products using various front-end and back-end frameworks and languages.
 - __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Sep 2009 - Dec 2014* I worked in various back-end & front-end development, client support and product training roles at Solutions Outsourced related to their CMS and SMS/email marketing platform called Siteflex. This included working directly with clients on website development projects, creation of a Siteflex training system and most recently leading development on Siteflex Classic.
 - __Field Assistant__ *[PBA Surveyors](http://pbasurvey.com.au/) &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 
 ### Projects
 
-- __Developer and Creator__ *[UpcomingTasks](http://upcomingtasks.com/) &mdash; Sep 2012 - Oct 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official Basecamp 2 API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.
+- __Developer and Creator__ *[UpcomingTasks](http://upcomingtasks.com/) &mdash; Sep 2012 - Nov 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.
 
 ### Reference
 
