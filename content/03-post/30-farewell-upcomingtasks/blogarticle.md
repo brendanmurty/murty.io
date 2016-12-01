@@ -6,7 +6,7 @@ Tags: upcomingtasks
 ----
 Text:
 
-UpcomingTasks is an [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp 2](https://basecamp.com/2) client that I created back in [September 2012](http://b.murty.io/tag?name=upcomingtasks). It has a small, loyal base of about 1,000 users over the years.
+UpcomingTasks is an [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp 2](https://basecamp.com/2) client that I created back in [September 2012](http://b.murty.io/tag?name=upcomingtasks). It had a small, loyal user base of about 1,000 users.
 
 With the recent release of [Basecamp 3](https://basecamp.com/) with a [new API](https://github.com/basecamp/bc3-api), I've hesitated in developing updates to UpcomingTasks to support the newest version of Basecamp. This is mainly due to the limited amount of free time I have amongst my full-time job and spending time with friends and family.
 
