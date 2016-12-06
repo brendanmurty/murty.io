@@ -9,7 +9,7 @@ function page_description($page_object) {
 	} elseif ($item_type == 'search') {
 		$description = 'Search posts and pages';
 	} elseif ($item_type == 'home' || $item_type == '') {
-		$description = 'Brendan is a Project Manager and Senior Web Developer with varied commercial experience in web-based development, training and management.';
+		$description = 'Brendan is a Project Manager and Senior Web Developer';
 	} else {
 		// Extract and remove links and image embeds from the page content
 		$description = preg_replace('/\[(.*)\]/', '$1', $page_object->content()->text());
@@ -28,10 +28,10 @@ function page_description($page_object) {
 }
 
 function page_thumbnail($page){
-	if($page){
-		if($page->thumbnail()){
+	if ($page) {
+		if ($page->thumbnail()) {
 	    	return '<span class="image"><img src="/assets/images/thumbnails/'.$page->thumbnail().'" height="100" width="100" /></span>';
-	    }else{
+	    } else {
 	   		return '<span class="image default"><img src="/assets/images/common/brendan-murty.jpg" height="100" width="100" /></span>';
 	   	}
 	}
