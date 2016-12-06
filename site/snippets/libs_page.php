@@ -9,7 +9,7 @@ function page_description($page_object) {
 	} elseif ($item_type == 'search') {
 		$description = 'Search posts and pages';
 	} elseif ($item_type == 'home' || $item_type == '') {
-		$description = 'Brendan is a Web Developer with varied development experience.';
+		$description = 'Brendan is a Project Manager and Senior Web Developer with varied commercial experience in web-based development, training and management.';
 	} else {
 		// Extract and remove links and image embeds from the page content
 		$description = preg_replace('/\[(.*)\]/', '$1', $page_object->content()->text());
