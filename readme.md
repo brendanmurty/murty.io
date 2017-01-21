@@ -3,7 +3,7 @@ b.murty.io
 
 ## About
 
-Here's my entire [personal website](http://b.murty.io) built on [Kirby CMS](http://getkirby.com/), coded in [Sublime Text](http://www.sublimetext.com/) and hosted by [Digital Ocean](http://digitalocean.com).
+Here's my entire [personal website](http://b.murty.io) built on [Kirby CMS](http://getkirby.com/), coded with [Atom](http://atom.io) and hosted by [Digital Ocean](http://digitalocean.com).
 
 ## Why
 
