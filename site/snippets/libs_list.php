@@ -45,13 +45,13 @@ function list_posts($pages_object, $mode = 'all'){
 		}
 
 		$l .= '</span><span class="label"><span class="fa fa-'.$icon.'"></span>';
-		
+
 		if ($mode == 'latest') {
 			$l .= 'Latest post';
 		} else {
 			$l .= 'Posted '.$item_date;
 		}
-		
+
 		$l .= '</span></a></li>';
 
 		// Add this item to the items array
@@ -81,7 +81,7 @@ function list_posts($pages_object, $mode = 'all'){
 function list_pages($pages_object, $site_object, $page_object) {
 	$current = '/' . $page_object->uri();
 	$pages = $pages_object->visible();
-	$list = '<h1><a href="/" title="Go to the home page" aria-label="Go to the home page">' . $site_object->title() . '</a></h1>';
+	$list = '<h1><a href="/" title="Go to the home page" aria-label="Go to the home page">' . $site_object->author() . '</a></h1>';
 	$list .= '<ul>';
 	foreach($pages as $page) {
 		$link = '/' . $page->uri();

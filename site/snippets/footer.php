@@ -10,7 +10,7 @@
 			$nav_actions .= '<a class="facebook" href="http://www.facebook.com/sharer.php?u='.$page->url().'&amp;t='.urlencode($page->title()).'+by+Brendan+Murty">Post to Facebook</a></li>';
 		}elseif($page_name == 'about'){
 			// About page
-			$nav_actions  = '<a href="mailto:b@murty.io">Email me</a>';
+			$nav_actions  = '<a href="mailto:' . $site->email() . '">Email me</a>';
 			$nav_actions .= '<a href="/resume">View my resumé</a>';
 		}
 

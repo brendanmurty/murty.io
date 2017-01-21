@@ -8,26 +8,29 @@ snippet('libs_page');
 snippet('libs_list');
 snippet('libs_twitter');
 
-$page_title = page_title(html($page->title()).' - '.html($site->title()), $page, $site);
+// Configure the page properties
+$page_title = page_title(html($page->title()) . ' - ' . html($site->author()), $page, $site);
 $page_description = page_description($page);
 $page_image = page_first_image('http://b.murty.io/assets/images/common/brendan-isla-rain.jpg', $page);
 $page_type = page_type($page);
 $page_name = page_name($page);
 
+// Construct the body tag
 $body_extra = '';
-if($page->title() == 'Find' && !isset($_GET['term'])){
+if($page->title() == 'Find' && !isset($_GET['term'])) {
     // Focus the search field on the search page
-    $body_extra.=' onload="document.forms.searchform.term.focus();"';
+    $body_extra .= ' onload="document.forms.searchform.term.focus();"';
 }
+
 $body_extra .= ' class="type_' . $page_type . ' name_' . $page_name . '"';
 
-// Redirect "/post" to "/posts" when a certain post isn't requested
+// Redirect "/post" to "/posts" when a post identifier isn't provided
 if ($page_name == "post" && $page->title() == "Post") {
     go("posts");
 }
 
 // Setup about text for the header and customise page titles
-$header_about_content = '<h2>'.html($page->title()).'</h2>';
+$header_about_content = '<h2>' . html($page->title()) . '</h2>';
 if ($page_type == 'home' || $page_name == 'resume') {
     $header_about_content = '';
 } elseif ($page->uri() == 'tag' && get('name')) {
@@ -42,11 +45,16 @@ if ($page_type == 'home' || $page_name == 'resume') {
     $header_about_content = '<h2 class="lighter">Search for <em>' . $_GET['term'] . '</em></h2>';
 }
 
-// Only index page content for visible and main pages
+// Only allow search engine robots to index page content on visible pages
 $page_meta_robots = "noindex,follow";
-if($page->isVisible() || $page_name == "home"){
+if ($page->isVisible() || $page_name == "home") {
     $page_meta_robots = "index,follow";
 }
+
+// Extract content from "site.md"
+$introduction = markdown($site->introduction());
+$social_links = yaml($site->social());
+$avatar = yaml($site->avatar());
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,44 +111,52 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
         <?php if ($page_type == 'home' || $page_name == 'resume') { ?>
         <header>
-            <a class="profile" href="/about" title="Learn more about me">
-                <img src="/assets/images/common/brendan-isla-rain.jpg" height="200" width="200" alt="Profile picture of Brendan">
+            <?php if ($avatar) { ?>
+            <a
+                href="<?php echo $avatar['Link']['URL'] ?>"
+                title="<?php echo $avatar['Link']['Description'] ?>"
+                class="<?php echo $avatar['Link']['Class'] ?>"
+            >
+                <img
+                    src="<?php echo $avatar['Image']['URL'] ?>"
+                    height="<?php echo $avatar['Image']['Height'] ?>"
+                    width="<?php echo $avatar['Image']['Width'] ?>"
+                    alt="<?php echo $avatar['Image']['Description'] ?>"
+                >
             </a>
+            <? } ?>
 
-            <?php if ($page_type == 'home') { ?>
+            <?php if ($page_type == 'home' && $introduction) { ?>
             <h2>
-                Father of <a href="http://i.murty.io/">Isla</a>,
-                partner of <a href="http://ellacondon.com/">Ella</a>,
-                Project Manager and Web Developer at <a href="http://sentral.com.au/">Sentral</a> and
-                <a href="http://schnitmydadsays.com/">SchnitMyDadSays</a> reviewer.
+                <?php echo $introduction; ?>
             </h2>
             <?php } ?>
 
-            <?php if ($page_name != 'resume') { ?>
+            <?php if ($page_name != 'resume' && $social_links) { ?>
             <ul class="social">
+                <?php foreach($social_links as $social_link): ?>
                 <li>
-                    <a href="mailto:b@murty.io" title="Send me an email at b@murty.io"><span class="fa fa-envelope"></span></a>
+                    <a
+                        href="<?php echo $social_link['Link'] ?>"
+                        title="<?php echo $social_link['Description'] ?>"
+                    >
+                        <span
+                            class="fa <?php echo $social_link['Icon'] ?>"
+                        ></span>
+                    </a>
                 </li>
-                <li>
-                    <a href="https://github.com/brendanmurty" title="View my code on GitHub"><span class="fa fa-github"></span></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile"><span class="fa fa-twitter"></span></a>
-                </li>
-                <li>
-                    <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn"><span class="fa fa-linkedin-square"></span></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/brendan.murty" title="View my Instagram posts"><span class="fa fa-instagram"></span></a>
-                </li>
-                <li>
-                    <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam"><span class="fa fa-steam-square"></span></a>
-                </li>
+                <?php endforeach ?>
             </ul>
             <?php } ?>
         </header>
         <?php } ?>
 
-        <?php if($header_about_content != '') { echo '<section id="about">' . $header_about_content . '</section>'; } ?>
+        <?php
+
+        if ($header_about_content != '') {
+            echo '<section id="about">' . $header_about_content . '</section>';
+        }
+
+        ?>
 
         <section id="content">

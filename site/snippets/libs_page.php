@@ -54,13 +54,13 @@ function page_first_image($default,$page_object){
 
 function page_title($default_title, $page_object, $site_object) {
 	if($page_object->uri() == 'tag' && get('name')){
-		$t='Tagged '.tag_title(get('name')).' - '.html($site_object->title());
+		$t='Tagged '.tag_title(get('name')).' - '.html($site_object->author());
 	}elseif(html($page_object->title())=='Home'){
-		$t=html($site_object->title());
+		$t=html($site_object->author());
 	}elseif(get('term')){
-		$t='Search for '.$_GET['term'].' - '.html($site_object->title());
+		$t='Search for '.$_GET['term'].' - '.html($site_object->author());
 	}elseif(strpos(page_name($page_object), 'post') !== false){
-		$t='Post: '.html($page_object->title()).' - '.html($site_object->title());
+		$t='Post: '.html($page_object->title()).' - '.html($site_object->author());
 	}
 	if(!isset($t)) $t = $default_title;
 	return $t;
