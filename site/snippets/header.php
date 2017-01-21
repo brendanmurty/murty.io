@@ -17,7 +17,7 @@ $page_name = page_name($page);
 
 // Construct the body tag
 $body_extra = '';
-if($page->title() == 'Find' && !isset($_GET['term'])) {
+if ($page->title() == 'Find' && !isset($_GET['term'])) {
     // Focus the search field on the search page
     $body_extra .= ' onload="document.forms.searchform.term.focus();"';
 }
@@ -34,7 +34,7 @@ $header_about_content = '<h2>' . html($page->title()) . '</h2>';
 if ($page_type == 'home' || $page_name == 'resume') {
     $header_about_content = '';
 } elseif ($page->uri() == 'tag' && get('name')) {
-    $header_about_content='<h2 class="lighter">Tagged <em>' . tag_title(get('name')) . '</em></h2>';
+    $header_about_content = '<h2 class="lighter">Tagged <em>' . tag_title(get('name')) . '</em></h2>';
 } elseif ($page_name == 'about' || $page_name == 'contact') {
     $header_about_content = '<h2>' . ucfirst($page_name) . ' Brendan</h2>';
 } elseif ($page_name == 'link') {
@@ -124,11 +124,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
                     alt="<?php echo $avatar['Image']['Description'] ?>"
                 >
             </a>
-            <? } ?>
+            <?php } ?>
 
             <?php if ($page_type == 'home' && $introduction) { ?>
             <h2>
-                <?php echo $introduction; ?>
+                <?php echo $introduction ?>
             </h2>
             <?php } ?>
 
@@ -153,7 +153,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
         <?php
 
-        if ($header_about_content != '') {
+        if ($header_about_content) {
             echo '<section id="about">' . $header_about_content . '</section>';
         }
 
