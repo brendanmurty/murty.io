@@ -6,7 +6,7 @@ Tools
 ----
 0 to 255 - 0to255.com
 Font Awesome - github.com/fortawesome/font-awesome
-Sublime Text - sublimetext.com
+Atom - atom.io
 
 Inspiration
 ----
