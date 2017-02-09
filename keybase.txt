@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/brendanmurty
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://b.murty.io
+  * I am brendanmurty (https://keybase.io/brendanmurty) on keybase.
+  * I have a public key with fingerprint BED0 760A DDEC BF0E 00B2  E3FB EDB4 E539 33AD 1F77
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010121e4153435f58bdac93a1b52fc0a82e53257e25244ea56cc5875779c457e54110a",
+            "fingerprint": "bed0760addecbf0e00b2e3fbedb4e53933ad1f77",
+            "host": "keybase.io",
+            "key_id": "edb4e53933ad1f77",
+            "kid": "010121e4153435f58bdac93a1b52fc0a82e53257e25244ea56cc5875779c457e54110a",
+            "uid": "61d4f5e261ade5a0c7262a43139b4619",
+            "username": "brendanmurty"
+        },
+        "service": {
+            "hostname": "b.murty.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486624488,
+    "expire_in": 157680000,
+    "prev": "c6ea73c2dda8156c9f8976a897f42d4a9bfb359034628ac080e2aa7eb9797a92",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbSBRRGF5TMxXNSqQgLCctK1vmduayGBEURje7UEZq65mZM+u0OrPO
+jmurCYrZ7SEKTIQkjPAa9VCRDwVlhUK1BEJUigiilJQa5AUzqTOWbz12Hs7h/Of7
+vvN9P//LuHBHTFjO4aasnkg+N+x1V0Op40Rj0ucKQjKUIOGqILxo4UBFCvJbbq+m
+EC6CpEiKphBLAYZlgAoESYGyyEBKArQqk1CgEWBowCMa0CyLIOBkGQg84HlRZnEZ
+sBRFQiKDUDXdg0yfqekWlpWQQvIcCRUFyZJKIpKUaMSouCyxWFBkGKhQKs9jYqHh
+txnYnAT9yKkZuIYv7gV7/8D/Z9+lC3IcpbAqQDRHQQUBSMo8zdGQZShGlFiOEm2g
+H5k6LEZ2OhPpCtSLS00rSFRmEPgloMnIbq6dZhHlXAD8SeQzDcuQjSJcL7Qsn8um
+WUGfjStDkvuvglvSdAU3EhMCyPRrhk64KIyULc2WpFiB43AcQcgg0BmfZiK3ZiMA
+zwkkXvY3KIAlZQ5BnpFpRYEChaOLqiDyHMSbytIKC0VJlRggkgzL0QKUSYFENIQ8
+kkRe5KFIE3amEt0gXCy2CT1Y0q95dGiVmoiofP4sL8IRFuNYGrnEHjBHTHTC4thp
+eVHza4/eqQociIquz5vsnapL10fT2qeu9p0afrjrxXRrTvDxztCXyy3O2runrxwP
+5cP+VVWHNh+LuDgxNDbfXcmuGAvUx+/tnV3X0NPky3rVPve2eU1ueHzKwOz2G9lv
+hse6O95lRtZ3FSel3do4XbA/1NMoha9Mns18n+Aqyv9ZtztE9jdHV+stnqba/c6y
+1mR3TZlzJH3D05z7FTEf8iZW9y+7d7vde7Zrix/MxHUaJ6cuJCZNltz8OpAau2Po
+fLlQBq5V73tw/eOobuz59mgkO4o7WN2X2jkY+6SprW3m16aaucRt3pmCjiPnulO2
+zozHjY+Uf3IkDhZdYpb/iLfWh/wl338D2UNC7A==
+=zlK1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brendanmurty
+
+==================================================================
