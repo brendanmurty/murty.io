@@ -32,26 +32,26 @@ input[type="checkbox"]{vertical-align:bottom}
 label,input[type=button],input[type=submit],button{cursor:pointer}
 button,input,select,textarea{-webkit-appearance:none;border-radius:0;margin:0}
 input:invalid,textarea:invalid{border-radius:1px;-moz-box-shadow:0 0 5px red;-webkit-box-shadow:0 0 5px red;box-shadow:0 0 5px red}
-::-moz-selection{background:#3ec7a0;color:#fff;text-shadow:none}
-::selection{background:#3ec7a0;color:#fff;text-shadow:none}
-a:link{-webkit-tap-highlight-color:#3ec7a0}
+::-moz-selection{background:#00549d;color:#fff;text-shadow:none}
+::selection{background:#00549d;color:#fff;text-shadow:none}
+a:link{-webkit-tap-highlight-color:#00549d}
 button{width:auto;overflow:visible}
 input[type="submit"],input[type="text"]{line-height:normal}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 
 /* General */
 
-html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#000;color:#fff;border-top:5px solid #3ec7a0;overflow-x:hidden}
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#fff;color:#222;border-top:5px solid #00549d;overflow-x:hidden}
 body{font:normal 400 18px/26px 'Slabo 27px', serif;padding:0;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
 h1,h2,h3,h4{font-family:'Slabo 27px', serif;font-weight:400;margin:5px 0 15px;padding:0;clear:both}
 h1{font-size:50px;line-height:50px;font-weight:700;margin-top:0}
-h2{font-size:28px;line-height:32px}
+h2{font-size:28px;line-height:42px}
 h3{font-size:25px;line-height:28px}
 h4, .name_resume article li strong{font-size:20px;line-height:25px}
 h5, .name_resume article h4 strong{font-size:16px;line-height:25px}
 p{margin:0 0 20px;clear:both}
-a{color:#3ec7a0;outline:0;text-decoration:none}
-a:active,a:focus,a:hover,a:visited{color:#2fa382;text-decoration:none}
+a{color:#00549d;outline:0;text-decoration:none;border-bottom: 1px solid #aaa}
+a:active,a:focus,a:hover,a:visited{color:#00549d;text-decoration:none}
 img{height:auto;overflow-x:hidden}
 ol{list-style:decimal outside none;margin:0 0 15px 30px}
 ul{list-style:disc outside none;margin:0 0 15px 30px}
@@ -62,14 +62,14 @@ hr{border:0 none;background-color:#222;height:2px;margin:15px 0;width:100%}
 .left{float:left}
 .right{float:right}
 .noselect,nav,.post-listing li,section#about{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default}
-pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#222;color:#fff;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
+pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;color:#666;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
 pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
-blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#222;color:#fff}
+blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#222;color:#666}
 blockquote p:last-child{margin-bottom:0}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
-section#about{color:#fff;padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:'Slabo 27px', serif}
-section#about .lighter{color:#999}
-section#about em{color:#fff;font-style:normal}
+section#about{padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:'Slabo 27px', serif}
+section#about .lighter{color:#666}
+section#about em{color:#666;font-style:normal}
 section#about p, section#about h2{margin:0;font-weight:400;font-size:30px;line-height:35px}
 section#content{clear:both;width:100%;float:left}
 article{padding:2% 20%;width:60%;margin:0;float:left}
@@ -77,51 +77,48 @@ article{padding:2% 20%;width:60%;margin:0;float:left}
 /* Header */
 
 header{padding:1% 20%;width:60%;max-width:800px;margin:0 auto;clear:both}
-header .profile{display:block;height:206px;width:206px;margin:0 auto}
+header .profile{display:block;height:206px;width:206px;margin:0 auto;border-bottom:none}
 header .profile img, .name_resume article h4 img, .name_resume article img{width:200px;height:200px;border-radius:200px}
-header h2{text-align:center;color:#fff;margin:25px 0 5px}
-header h2 strong{color:#fff}
-header h1 a, header h2 a{color:#3ec7a0}
+header h2{text-align:center;margin:25px 0 5px}
+header h2 strong{color:#000}
 header .social{width:420px;margin:40px auto 0}
 header .social li{list-style:none outside none;float:left;width:70px;height:70px;line-height:70px;text-align:center;margin:0;padding:0}
-header .social li a{font-size:35px}
-header .social li a:visited, nav.pages a:visited, header h2 a:visited{color:#3ec7a0}
-header .social li a:hover, nav.pages a:hover{color:#2fa382}
+header .social li a{font-size:35px;border-bottom:none}
 
 /* Navigation */
 
 #container nav{clear:both;float:left;margin:0;width:60%;padding:2% 20%;font:normal 400 16px/30px 'Slabo 27px', serif}
 #container nav.actions{text-align:center}
 #container nav h1{font-size:30px;line-height:35px;margin:0;float:left;clear:none}
-#container nav h1 a, #container nav h1 a:active, #container nav h1 a:visited{margin:0}
+#container nav h1 a, #container nav h1 a:active, #container nav h1 a:visited{margin:0;border-bottom:none}
 #container nav ul{margin:-30px 0 0;padding:0;float:right}
 #container nav li{margin:0;padding:0;float:left;font-size:18px}
 #container nav li a{font-size:20px;line-height:35px;margin-right:35px;display:inline-block}
-#container nav .current a{color:#fff}
+#container nav .current a{color:#000;border-bottom:none}
 #container nav .last a, #container nav li:last-child a{margin-right:0}
 #container nav .fa{font-size:22px;line-height:30px}
 #container nav.actions{padding-top:0}
-#container nav.actions a{color:#000;background:#3ec7a0;text-transform:none;padding:10px 16px;margin:0 0 20px 20px;font-size:18px;border-radius:6px;border-bottom:2px solid #2fa382}
+#container nav.actions a{color:#000;background:#00549d;text-transform:none;padding:10px 16px;margin:0 0 20px 20px;font-size:18px;border-radius:6px;border-bottom:2px solid #00549d}
 #container nav.actions a:first-child{margin-left:0}
-#container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{background-color:#2fa382}
+#container nav.actions a:active,#container nav.actions a:focus,#container nav.actions a:hover{background-color:#00549d}
 
 /* Footer */
 
-footer{color:#555;text-align:left}
+footer{color:#666;text-align:left}
 footer .half{float:left;clear:none;width:50%;margin:0}
 footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center}
 footer .about{margin:0 0 20px}
 footer .about p{margin:0}
-footer .credits{margin:0;font-size:16px;color:#555}
+footer .credits{margin:0;font-size:16px;color:#666}
 footer .credits p{text-align:center;margin:0}
 footer ul{margin:0;padding:0}
 
 /* Forms and Buttons */
 
 form{clear:both;width:310px;margin:10px auto 20px;height:50px}
-form input.text{padding:11px 11px 13px;margin-right:5px;width:70%;max-width:250px;float:left;border:0 none;border-bottom:2px solid #A0A0A0;background:#e4e4e4;color:#222;border-radius:2px}
-#content a.button{display:block;float:left;height:auto;width:auto;margin-left:15px;background:#3ec7a0;color:#fff;padding:0 15px;height:42px;line-height:42px;border-radius:2px;border-bottom:2px solid #2fa382}
-#content a.button:active,#content a.button:focus,#content a.button:hover{background:#2fa382}
+form input.text{padding:11px 11px 13px;margin-right:5px;width:70%;max-width:250px;float:left;border:0 none;border-bottom:2px solid #666;background:#fff;color:#000;border-radius:2px}
+#content a.button{display:block;float:left;height:auto;width:auto;margin-left:15px;background:#00549d;color:#fff;padding:0 15px;height:42px;line-height:42px;border-radius:2px;border-bottom:2px solid #00549d}
+#content a.button:active,#content a.button:focus,#content a.button:hover{background:#00549d}
 
 /* Content lists */
 
@@ -165,7 +162,7 @@ ul.item-listing img{width:100%;height:auto;display:block;min-height:300px;max-he
 ul.item-listing .summary{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#fff;background-color:#222;word-wrap:break-word;overflow:hidden}
 ul.item-listing-tags .summary, ul.item-listing-search .summary{height:130px}
 ul.item-listing .instagram .summary{height:90px;font-size:16px;line-height:22px}
-ul.item-listing .label{color:#000;font-size:18px;line-height:48px;width:92%;display:block;background-color:#3ec7a0;padding:0 4%}
+ul.item-listing .label{color:#000;font-size:18px;line-height:48px;width:92%;display:block;background-color:#00549d;padding:0 4%}
 ul.item-listing .fa{float:none;margin:0 10px 1px 0;vertical-align:middle;font-size:25px}
 ul.item-listing-latest{text-align:center}
 ul.item-listing-latest li{max-width:350px;margin:0;float:none;display:inline-block;text-align:left}
