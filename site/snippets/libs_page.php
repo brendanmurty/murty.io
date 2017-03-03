@@ -27,7 +27,7 @@ function page_description($page_object) {
 	return $description;
 }
 
-function page_thumbnail($page){
+function page_thumbnail($page) {
 	if ($page) {
 		if ($page->thumbnail()) {
 	    	return '<span class="image"><img src="/assets/images/thumbnails/'.$page->thumbnail().'" height="100" width="100" /></span>';
@@ -38,36 +38,45 @@ function page_thumbnail($page){
 }
 
 function page_first_image($default,$page_object){
-	if($page_object->parent()){
-		if($page_object->parent()->title()=='Post'){
+	if ($page_object->parent()) {
+		if ($page_object->parent()->title() == 'Post') {
 			$o=preg_match_all('/\(\/assets\/images\/(.*)\)/i',$page_object->content()->text(),$matches);
-			if($matches[0]){
-				if($matches[0][0]!=''){
-					$p='http://b.murty.io'.preg_replace('/\((.*)\)/','$1',$matches[0][0]);
+			if ($matches[0]) {
+				if ($matches[0][0] != '') {
+					$p = 'http://b.murty.io'.preg_replace('/\((.*)\)/','$1',$matches[0][0]);
 				}
 			}
 		}
 	}
-	if(!isset($p)){ $p = $default; }
+
+	if (!isset($p)) {
+        $p = $default;
+    }
+
 	return $p;
 }
 
 function page_title($default_title, $page_object, $site_object) {
-	if($page_object->uri() == 'tag' && get('name')){
-		$t='Tagged '.tag_title(get('name')).' - '.html($site_object->author());
-	}elseif(html($page_object->title())=='Home'){
-		$t=html($site_object->author());
-	}elseif(get('term')){
-		$t='Search for '.$_GET['term'].' - '.html($site_object->author());
-	}elseif(strpos(page_name($page_object), 'post') !== false){
-		$t='Post: '.html($page_object->title()).' - '.html($site_object->author());
+	if ($page_object->uri() == 'tag' && get('name')) {
+		$t = 'Tagged '.tag_title(get('name')).' - '.html($site_object->author());
+	} elseif (html($page_object->title()) == 'Home') {
+		$t = html($site_object->author());
+	} elseif (get('term')) {
+		$t = 'Search for '.$_GET['term'].' - '.html($site_object->author());
+	} elseif (strpos(page_name($page_object), 'post') !== false) {
+		$t = html($page_object->title()).' - '.html($site_object->author());
 	}
-	if(!isset($t)) $t = $default_title;
+
+	if (!isset($t)) {
+        $t = $default_title;
+    }
+
 	return $t;
 }
 
 function page_type($page_object) {
 	$type = 'default';
+
 	if ($page_object->uri() == 'home') {
 		$type = 'home';
 	} elseif (strpos(page_name($page_object), 'post') !== false) {
@@ -77,11 +86,13 @@ function page_type($page_object) {
 	} elseif ($page_object->uri() == 'tag' && get('name')) {
 		$type = 'tag';
 	}
+
 	return $type;
 }
 
 function page_name($page_object) {
 	$page_name = $page_object->uri();
+
 	if (!$page_name) {
 		$page_name = 'home';
 	} elseif (strpos($page_name, '/') !== false) {
@@ -89,16 +100,19 @@ function page_name($page_object) {
 	} elseif ($page_object->uri() == 'tag' && get('name')) {
 		$page_name = 'tag-' . get('name');
 	}
+
 	return $page_name;
 }
 
-function page_count($pages_object, $type='post'){
-	$c='';
-	if($type=='post'){
-		$c=$pages_object->find('post/')->children()->countVisible();
-	}elseif($type=='link'){
-		$c=$pages_object->find('link/')->children()->countVisible();
+function page_count($pages_object, $type='post') {
+	$c = '';
+
+	if ($type=='post') {
+		$c = $pages_object->find('post/')->children()->countVisible();
+	} elseif($type=='link') {
+		$c = $pages_object->find('link/')->children()->countVisible();
 	}
+
 	return $c;
 }
 
