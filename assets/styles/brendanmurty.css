@@ -153,13 +153,13 @@ ul.item-listing .about .separator.second-last,article.item .about .separator.sec
 ul.item-listing .about .date .separator,article.item .about .date .separator{margin:0 0 0 3px}
 p.item-listing-search-empty{text-align:center}
 ul.item-listing{width:100%;margin:0 auto}
-ul.item-listing li{width:23.5%;height:450px;margin:0 2% 2% 0;box-shadow:0 1px 4px 0 rgba(0,0,0,0.37)}
+ul.item-listing li{width:23.5%;height:450px;margin:0 2% 2% 0}
 ul.item-listing li:nth-child(4n+4){margin-right:0}
 ul.item-listing-tags li, ul.item-listing-search li{height:190px}
-ul.item-listing a{width:100%;display:block}
+ul.item-listing a{width:100%;display:block;border-bottom:0}
 ul.item-listing a:active em,ul.item-listing a:hover em{background-color:#2B9CB2}
 ul.item-listing img{width:100%;height:auto;display:block;min-height:300px;max-height:300px}
-ul.item-listing .summary{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#000;background-color:#ccc;word-wrap:break-word;overflow:hidden}
+ul.item-listing .summary{height:390px;font-size:20px;line-height:30px;padding:12px 5% 0;width:90%;display:block;color:#000;background-color:#e0e0e0;word-wrap:break-word;overflow:hidden}
 ul.item-listing-tags .summary, ul.item-listing-search .summary{height:130px}
 ul.item-listing .instagram .summary{height:90px;font-size:16px;line-height:22px}
 ul.item-listing .label{color:#fff;font-size:18px;line-height:48px;width:92%;display:block;background-color:#00549d;padding:0 4%}
