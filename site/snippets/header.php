@@ -32,16 +32,19 @@ if ($page_name == "post" && $page->title() == "Post") {
 // Setup about text for the header and customise page titles
 $header_about_content = '<h2>' . html($page->title()) . '</h2>';
 if ($page_type == 'home' || $page_name == 'resume') {
+    // Home and Resume pages
     $header_about_content = '';
 } elseif ($page->uri() == 'tag' && get('name')) {
+    // Tag list pages
     $header_about_content = '<h2 class="lighter">Tagged <em>' . tag_title(get('name')) . '</em></h2>';
 } elseif ($page_name == 'about' || $page_name == 'contact') {
+    // About and Contact pages
     $header_about_content = '<h2>' . ucfirst($page_name) . ' Brendan</h2>';
-} elseif ($page_name == 'link') {
-    $header_about_content = '<h2 class="lighter">Link: <em>' . html($page->title()) . '</em></h2>';
-} elseif ($page_type == 'post' && $page_name != 'posts') {
-    $header_about_content='<h2 class="lighter">Post: <em>' . html($page->title()) . '</em></h2>';
+} elseif (($page_type == 'post' && $page_name != 'posts') || $page_name == 'link') {
+    // Post and Link item pages
+    $header_about_content = '<h2>' . html($page->title()) . '</h2>';
 } elseif (isset ($_GET['term']) && $_GET['term'] != '') {
+    // Search result pages
     $header_about_content = '<h2 class="lighter">Search for <em>' . $_GET['term'] . '</em></h2>';
 }
 
