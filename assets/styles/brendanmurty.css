@@ -56,7 +56,7 @@ img{height:auto;overflow-x:hidden}
 ol{list-style:decimal outside none;margin:0 0 15px 30px}
 ul{list-style:disc outside none;margin:0 0 15px 30px}
 li{margin:0 0 6px}
-hr{border:0 none;background-color:#222;height:2px;margin:15px 0;width:100%}
+hr{border:0 none;background-color:#333;height:2px;margin:15px 0;width:100%}
 .feed li,nav li{list-style:none outside none;margin:0;padding:0}
 .first{margin-top:0;padding-top:0}
 .left{float:left}
@@ -64,7 +64,7 @@ hr{border:0 none;background-color:#222;height:2px;margin:15px 0;width:100%}
 .noselect,nav,.post-listing li,section#about{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default}
 pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;color:#666;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
 pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
-blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#222;color:#666}
+blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e0e0e0;color:#333}
 blockquote p:last-child{margin-bottom:0}
 #container{width:100%;height:100%;padding:0;overflow-x:hidden;margin:0 auto;-webkit-overflow-scrolling:touch}
 section#about{padding:2% 20%;width:60%;margin:0;clear:both;float:left;text-align:center;font-family:'Slabo 27px', serif}
