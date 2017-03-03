@@ -174,7 +174,6 @@ ul.item-listing-latest li{max-width:350px;margin:0;float:none;display:inline-blo
 
 /* Resume page */
 
-.name_resume article a,.name_resume article a:active,.name_resume article a:focus,.name_resume article a:hover{color:#fff}
 .name_resume article h3{margin:30px 0 0;width:180px;float:left;display:table-cell;clear:left;text-transform:uppercase;font-size:18px;font-weight:bold}
 .name_resume article h3:first-child{margin-top:0}
 .name_resume article h4{margin:0}
