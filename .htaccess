@@ -1,6 +1,7 @@
 # Clean URLs, redirects and defaults
 
 AddDefaultCharset UTF-8
+
 <IfModule mod_rewrite.c>
 Options +FollowSymLinks
 RewriteEngine on
@@ -27,18 +28,22 @@ RewriteRule ^(.*) index.php [L]
 order allow,deny
 allow from all
 </Files>
+
 <Files ~ "robots.txt">
 order allow,deny
 allow from all
 </Files>
+
 <Files ~ "^\.htaccess">
 order allow,deny
 deny from all
 </Files>
+
 <Files ~ "^\.bak">
 order allow,deny
 deny from all
 </Files>
+
 <Files "sitemap.xml">
 order allow,deny
 allow from all
@@ -49,3 +54,12 @@ allow from all
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
 </ifmodule>
+
+# Customise caching rules
+
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+</IfModule>
