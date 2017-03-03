@@ -59,7 +59,5 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 
 <IfModule mod_expires.c>
 ExpiresActive on
-ExpiresDefault "access plus 1 month"
-ExpiresByType application/javascript "access plus 1 year"
-ExpiresByType text/css "access plus 1 year"
+ExpiresDefault "access plus 1 year"
 </IfModule>
