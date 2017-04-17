@@ -1,0 +1,18 @@
+/* Colours */
+
+.isla a,
+.isla a:active,
+.isla a:focus,
+.isla a:hover,
+.isla a:visited {
+  color: #14b3fb;
+}
+
+.isla {
+  background-color: #dcf4fe;
+}
+
+/* Layout */
+
+.isla_index { text-align: center; }
+.isla_index header h1 { text-align: center; float: none; clear: both; }

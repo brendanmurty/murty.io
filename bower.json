@@ -1,0 +1,15 @@
+{
+  "name": "murty",
+  "version": "0.0.1",
+  "author": "Brendan Murty <b@murty.io> (http://b.murty.io)",
+  "homepage": "http://murty.io",
+  "description": "The Murty website built with Angular, coded with Atom and hosted by Digital Ocean.",
+  "private": true,
+  "license": "SEE LICENSE IN license.md",
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-route": "1.6.x",
+    "showdown": "1.x",
+    "ng-showdown": "1.x"
+  }
+}

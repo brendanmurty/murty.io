@@ -1,0 +1,21 @@
+<header>
+  <h1>
+    <a href="{{ site_index_link }}">
+      {{ site_title }}
+    </a>
+  </h1>
+
+  <nav
+    class="pages"
+    ng-if="list_navigation"
+  >
+    <ul>
+      <li
+        ng-repeat="nav in list_navigation"
+        ng-class="{ 'current': nav.link == current_location }"
+      >
+        <a href="{{ nav.link }}">{{ nav.title }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,131 @@
+/* Layout */
+
+.brendan_index {
+  text-align: center;
+}
+
+.brendan_index img {
+  width: 200px;
+  border-radius: 200px;
+  clear: both;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Header */
+
+header h1{font-size:30px;line-height:50px;margin:0;float:left;clear:none}
+header h1 a{border-bottom:none}
+header nav{float:right;margin:0;font-size:16px;line-height:50px}
+header nav.actions{text-align:center}
+header nav h1 a, header nav h1 a:active, header nav h1 a:visited{margin:0;border-bottom:none}
+header nav ul{margin:0;padding:0;float:right}
+header nav li{margin:0;padding:0;float:left;font-size:18px}
+header nav li a{font-size:20px;line-height:35px;margin-right:35px;display:inline-block}
+header nav .current a{color:#000;border-bottom:none}
+header nav .last a, header nav li:last-child a{margin-right:0}
+header nav .fa{font-size:22px;line-height:30px}
+header nav.actions{padding-top:0}
+header nav.actions a{color:#fff;background:#00549d;text-transform:none;padding:10px 16px;margin:0 0 20px 20px;font-size:18px;border-radius:6px;border-bottom:2px solid #00549d}
+header nav.actions a:first-child{margin-left:0}
+header nav.actions a:active,header nav.actions a:focus,header nav.actions a:hover{background-color:#00549d}
+
+/* Content */
+
+.brendan_index p {
+  font-size: 28px;
+  line-height: 42px;
+  min-width: 300px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+footer{color:#666;text-align:left}
+footer .half{float:left;clear:none;width:50%;margin:0}
+footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center}
+footer .about{margin:0 0 20px}
+footer .about p{margin:0}
+footer .credits{margin:0;font-size:16px;color:#666}
+footer .credits p{text-align:center;margin:0}
+footer ul{margin:0;padding:0}
+
+/* Forms and Buttons */
+
+form{clear:both;width:310px;margin:10px auto 20px;height:50px}
+form input.text{padding:11px 11px 13px;margin-right:5px;width:70%;max-width:250px;float:left;border:0 none;border-bottom:2px solid #666;background:#fff;color:#000;border-radius:2px}
+a.button{display:block;float:left;height:auto;width:auto;margin-left:15px;background:#00549d;color:#fff;padding:0 15px;height:42px;line-height:42px;border-radius:2px;border-bottom:2px solid #00549d}
+a.button:active,a.button:focus,a.button:hover{background:#00549d}
+
+/* Content lists */
+
+ul.social{width:420px;margin:40px auto 0}
+ul.social li{list-style:none outside none;float:left;width:70px;height:70px;line-height:70px;text-align:center;margin:0;padding:0}
+ul.social li a{font-size:35px;border-bottom:none}
+
+/* Post page */
+
+.brendan_post article p:first-of-type em{text-align:center;display:block}
+
+/* Resume page */
+
+.brendan_resume article h3{margin:30px 0 0;width:180px;float:left;display:table-cell;clear:left;text-transform:uppercase;font-size:18px;font-weight:bold}
+.brendan_resume article h3.nomargin{margin:0}
+.brendan_resume article h4{margin:0}
+.brendan_resume article ul{margin:0;padding:0;display:table-cell}
+.brendan_resume article p{clear:none;margin:0;padding:0 0 20px;display:table-cell}
+.brendan_resume article li{list-style:none outside none;margin:0;padding:0;display:table-row}
+.brendan_resume article strong{color:#333;font-style:normal;clear:right;display:block;margin:30px 0 10px}
+.brendan_resume article em{color:#333;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
+.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:#333}
+.brendan_resume article blockquote{padding:0;margin:0;width:auto;display:table-row;background-color:transparent;font-style:italic}
+.brendan_resume article blockquote p:last-child{padding-bottom:0}
+
+/* Alterations for certain screen sizes */
+
+@media only screen and (max-width:1000px) {
+	header,footer,article{width:96%;padding:2%}
+	.brendan_index header{width:96%}
+	.brendan_index article{padding-top:6%;padding-bottom:6%}
+	.spinner{margin-top:6%}
+	footer div.half{width:100%;margin:0;float:none;clear:both;text-align:center}
+	footer div.half.statistics{margin:0;text-align:center}
+	footer ul.stats li{margin-top:4%}
+}
+
+@media only screen and (max-width:760px) {
+	form{max-width:100%}
+	ul.post-listing{margin:0}
+	ul.post-listing li.featured .image{display:none}
+	ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
+	.name_about img.profile,.name_contact img.profile{margin:0 auto 2%;float:none;clear:none;display:block}
+	.name_about p,.name_contact p{clear:both}
+	header nav.pages{padding:4% 0;width:100%}
+	header h1, header nav.pages ul{float:none;clear:both;width:100%;margin:0;position:relative;text-align:center}
+	header nav.pages ul{margin-top:8px}
+	header nav.pages h1{margin-bottom:10px}
+	header nav.pages li{float:none;display:inline-block}
+	.brendan_resume article h3,.brendan_resume article p,.brendan_resume article ul{display:block;width:auto;clear:both}
+	.brendan_resume article p{margin-top:30px;padding:0;float:left}
+	.brendan_resume article blockquote p{margin-top:0}
+}
+
+@media only screen and (max-width:600px) {
+	header h1{line-height:100px;font-size:32px}
+	ul.social{width:100%;margin:20px auto;float:left}
+	ul.social li{width:33%}
+	header nav li a{margin-right:20px}
+	#container{width:100%;padding:0 0 4%}
+	ul.post-listing li.featured .image{display:none}
+	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
+	article img{max-width:100%}
+	form input.text{width:65%;max-width:none}
+	footer .about{margin:0 0 5%}
+}
+
+@media only screen and (max-width:380px) {
+	header nav a{margin-right:25px}
+	header h1{line-height:50px;width:100%;max-width:100%}
+	footer ul.stats li{margin:4% 0 0;width:100%}
+}

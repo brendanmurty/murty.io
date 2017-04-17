@@ -1,33 +1,27 @@
-# Clean URLs, redirects and defaults
+# General settings
 
+DirectoryIndex index.php
 AddDefaultCharset UTF-8
+Options -Indexes
 
 <IfModule mod_rewrite.c>
-Options +FollowSymLinks
 RewriteEngine on
-RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
-RewriteRule ^site/(.*) error [R=301,L]
-RewriteRule ^kirby/(.*) error [R=301,L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^blog/rss.php /feed.xml [R=301,L]
-RewriteRule ^blog/(.*) /post/$1 [R=301,L]
-RewriteRule ^find /search [R=301,L]
-RewriteRule ^blog /posts [R=301,L]
-RewriteRule ^work /resume [R=301,L]
-RewriteRule ^cv /resume [R=301,L]
-RewriteRule ^sitemap.xml /sitemap [R=301,L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*) index.php [L]
+
+# Allow for Angular 1.6 HTML5 state links
+# - Markdown and API requests aren't affected
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule .*[^\.md]$ index.php [L]
 </IfModule>
 
-# Customise access to files
+# Customise error pages
 
-<Files ~ "humans.txt">
-order allow,deny
-allow from all
-</Files>
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php
+
+# Customise access to files
 
 <Files ~ "robots.txt">
 order allow,deny
@@ -39,11 +33,6 @@ order allow,deny
 deny from all
 </Files>
 
-<Files ~ "^\.bak">
-order allow,deny
-deny from all
-</Files>
-
 <Files "sitemap.xml">
 order allow,deny
 allow from all
@@ -51,9 +40,10 @@ allow from all
 
 # Setup gzip compression
 
-<ifmodule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-</ifmodule>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/css application/x-javascript application/javascript
+AddOutputFilter DEFLATE md
+</IfModule>
 
 # Customise caching rules
 
