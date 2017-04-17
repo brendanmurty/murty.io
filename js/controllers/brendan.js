@@ -39,7 +39,7 @@ murtyApp.controller('brendanCtrl', ['$scope', '$rootScope', '$routeParams', 'pag
     // Extract the Markdown content and send it to the template
     if (page_content_url) {
         pageSvc.getPageContent(page_content_url).then(function(content) {
-            $scope.page_content = content.data;
+            $rootScope.page_content = content.data;
         });
     }
 

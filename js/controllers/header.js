@@ -3,6 +3,10 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
     // Get the domain of the request
     $rootScope.domain = $location.host();
 
+    // Set suitable defaults to minimise content loading effect on usability
+    $rootScope.site_title = 'Murty';
+    $rootScope.page_content = '';
+
     // Handle initial page tasks
     $rootScope.init = function() {
         // Ensure all scope variables reflect their current assignments

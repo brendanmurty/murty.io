@@ -9,7 +9,7 @@ murtyApp.controller('islaCtrl', ['$scope', '$rootScope', 'pageSvc', function ($s
     $rootScope.icon_touch = '';
 
     pageSvc.getPageContent('isla/index.md').then(function(content) {
-        $scope.page_content = content.data;
+        $rootScope.page_content = content.data;
     });
 
     $rootScope.class_page = 'isla isla_index';
