@@ -23,6 +23,8 @@ murtyApp.controller('brendanCtrl', ['$scope', '$rootScope', '$routeParams', 'pag
                 $scope.list_posts = content.data;
             });
 
+            // No page content required here
+            $rootScope.page_content = '';
             page_content_url = false;
         } else {
             // Other page request
