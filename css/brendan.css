@@ -40,8 +40,8 @@ header nav.actions a:active,header nav.actions a:focus,header nav.actions a:hove
   margin: 0 auto;
 }
 
-.brendan_posts {
-	max-width: 600px;
+ul.brendan_posts {
+  max-width: 600px;
   margin: 0 auto 20px;
 }
 
