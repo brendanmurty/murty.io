@@ -17,18 +17,20 @@ I hope a budding web developer can learn something new from what I've done here 
 
 ## Setup
 
-Install development tools:
+Requires [Node.js and NPM](https://nodejs.org/en/download/).
+
+To install development tools:
 
 ```
 npm install --global bower
 npm install --global gulp-cli
 ```
 
-Install required packages by running this commands from the repository folder:
+To install required packages, run this command from the repository folder:
 
 `npm install`
 
-Update JavaScript and CSS build files:
+To update JavaScript and CSS build files, run this command from the repository folder:
 
 `gulp`
 
@@ -36,7 +38,7 @@ Depending on your server setup, you may need to run this command in the website 
 
 `chown -R www-data:www-data content`
 
-File paths in the *api* folder may also need to be updated.
+File paths in the *api* folder may also need to be updated in other server configurations.
 
 ## Contribute
 
