@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/brendanmurty
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://murty.io
+  * I am brendanmurty (https://keybase.io/brendanmurty) on keybase.
+  * I have a public key with fingerprint BED0 760A DDEC BF0E 00B2  E3FB EDB4 E539 33AD 1F77
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010121e4153435f58bdac93a1b52fc0a82e53257e25244ea56cc5875779c457e54110a",
+            "fingerprint": "bed0760addecbf0e00b2e3fbedb4e53933ad1f77",
+            "host": "keybase.io",
+            "key_id": "edb4e53933ad1f77",
+            "kid": "010121e4153435f58bdac93a1b52fc0a82e53257e25244ea56cc5875779c457e54110a",
+            "uid": "61d4f5e261ade5a0c7262a43139b4619",
+            "username": "brendanmurty"
+        },
+        "revoke": {
+            "sig_ids": [
+                "e2c4feb7511488ae037abe421483b78a3382e01beb1f223c485d58bcab85d7380f"
+            ]
+        },
+        "service": {
+            "hostname": "murty.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1492477724,
+    "expire_in": 157680000,
+    "prev": "04c9c04004818d27a8f4b3c01e31a852e5441753449ac6a955b37f2af330253a",
+    "seqno": 30,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.68
+Comment: https://keybase.io/crypto
+
+yMJoAnicrVJdiFVVFL6jaTY5IeWMCgq1u0aMN9m/Z59zQcpimphiSjKSZobL3vus
+c+c0M+dczzn36jSMIQgDPRQVhAjaiEKQPxQoEvngjFKQkSLVPITCPIx/Dw6iUTCJ
+7XOztx7bL3uvxbe+9a1v7XNtiwutLW9vmez+fonsazk/dade2PZ7de0Y0rE/ispj
+aAiaFwz7kGaVodBHZYQJJpQAJ4JxJgLhal8ZjymiBQ0MVi4FwaiQQAXlHJRwjBGu
+FFJ6htu04IRghUooCKMqJLUkjDJLq8HH0sHK98HoAAPGmgILbFpzS+gxpnwSSGkL
+B+M0r7DitEphYxjbnA0qTXn/gf+fddebdA7xeSCAOkT5IBQ2kjpUcUaYp7lDvByY
+QhKpEcinSyDyVTRST7JRNF5CCTTiIci9TcOqFZ6ich8CangAWgpCuOsqwEwqDZza
+iGnpKsasRkw0aBJQygx3hW/HMErbh2QuDtCA5bZdG6FpkudOPVDQbP2PV7UkzmIT
+D9vsYJbVyrmgbLSWo3aArjyor+gw8u2KbEEDkjSMI1QmFmmyMCck3KNcSkl5CcHO
+WphAJcwRQjoutidvA43cd248gznG3CWuT6VyA66ZwQQYUa6wrnNOpF0K95RxlCeE
+ZjKgKmAMU8Fyx1PYHsWozCxppqqW05oWqayeABqfPtP/UKGltbB0yaL87xZaH1nx
+749ed3VZ4ZOfBuba8fP7Zt+5dvDr/ce2Pjes9z7dv/Pdhy/4x3+en5zePjFupt8s
+nrrdsWvHo1t/KazasunIyHTWdvKv7/DnHxSXpx/t6+l5Zd3ZkT29P567VS+eLu1O
+dt14aTbY09ndfffQ0QPy4reo9f61Y4NtC+29J+a6i6/enJ/o2tA5+7gYW73q5Jrz
+7eELh+599WeX/m3ttgsDxQMLm9965siNex9eru0/3Pfp66QDuZNdF5fhO/2d31yd
+WfO+Xtrf8caps5eC9cunDq84vnLu5qJNv7ZX+frP5unqNvSYGnpq5u7Us6XrTu/E
+kz27r7/83tGZJ17c+8eX5Y8blfHbG364dGLz/dHXvigPHlyIr/wNhy5TGQ==
+=TIKe
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brendanmurty
+
+==================================================================
