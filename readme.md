@@ -17,6 +17,13 @@ I hope a budding web developer can learn something new from what I've done here 
 
 ## Setup
 
+Install development tools:
+
+```
+npm install -g bower
+npm install --global gulp-cli
+```
+
 Depending on your server setup, you may need to run this command in the website folder:
 
 `chown -R www-data:www-data content`
