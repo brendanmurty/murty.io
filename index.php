@@ -11,6 +11,7 @@
     <base href="/">
     <link rel="icon" href="{{ icon_shortcut }}">
     <link rel="apple-touch-icon-precomposed" href="{{ icon_touch }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px"> 
     <link rel="stylesheet" href="/css/build/murty.min.css">
     <script src="/js/build/murty.min.js"></script>
     <script>

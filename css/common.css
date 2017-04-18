@@ -39,10 +39,6 @@ button{width:auto;overflow:visible}
 input[type="submit"],input[type="text"]{line-height:normal}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-
 /* General */
 
 html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#fff;color:#222;height:100%;overflow-x:hidden}
