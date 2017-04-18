@@ -2,13 +2,13 @@
   <ng-include src="'html/sections/header.html'"></ng-include>
 
   <ng-include
-    ng-if="list_posts"
-    src="'html/sections/list_posts.html'"
-  ></ng-include>
-
-  <ng-include
     ng-if="page_content"
     src="'html/sections/content_markdown.html'"
+  ></ng-include>
+  
+  <ng-include
+    ng-if="list_posts"
+    src="'html/sections/list_posts.html'"
   ></ng-include>
 
   <ng-include src="'html/sections/footer.html'"></ng-include>
