@@ -22,15 +22,9 @@ murtyApp.controller('brendanCtrl', ['$scope', '$rootScope', '$routeParams', 'pag
             pageSvc.getPostsByBrendan().then(function(content) {
                 $scope.list_posts = content.data;
             });
-
-            // No page content required here
-            $rootScope.page_content = '';
-            page_content_url = false;
-        } else {
-            // Other page request
-            page_content_url = 'brendan/' + $routeParams.page_name + '.md';
         }
 
+        page_content_url = 'brendan/' + $routeParams.page_name + '.md';
         $rootScope.class_page = 'brendan brendan_' + $routeParams.page_name;
     } else if ($routeParams.post_name) {
         // Post request
