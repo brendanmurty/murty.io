@@ -19,6 +19,18 @@ RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 </IfModule>
 
+<IfModule mod_ssl.c>
+    <VirtualHost murty.io:443>
+        ServerAdmin b@murty.io
+        ServerName murty.io
+
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/ssl/murty_io.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/murty_io.key
+        SSLCertificateChainFile /etc/apache2/ssl/murty_io.ca-bundle
+    </VirtualHost>
+</IfModule>
+
 # Customise error pages
 
 ErrorDocument 403 /index.php
