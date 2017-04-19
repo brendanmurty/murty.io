@@ -2,7 +2,7 @@
 <html lang="en" ng-app="murtyApp" ng-controller="headerCtrl">
   <head>
     <meta charset="utf-8">
-    <title>{{ site_title }}</title>
+    <title ng-bind="site_title"></title>
     <meta name="author" content="{{ site_author }}">
     <meta name="description" content="{{ site_description }}">
     <meta name="handheldfriendly" content="true">
