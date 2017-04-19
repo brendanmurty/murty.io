@@ -13,10 +13,6 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 RewriteRule .*[^\.md]$ index.php [L]
-
-# Redirect all HTTP requests to HTTPS
-#RewriteCond %{HTTPS} !on
-#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 </IfModule>
 
 # Customise error pages
