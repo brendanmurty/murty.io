@@ -1,8 +1,8 @@
 // Page service
-murtyApp.factory('pageSvc', ['$rootScope', '$http', '$q', function ($rootScope, $http, $q) {
+murtyApp.factory('pageSvc', ['$http', '$q', function ($http, $q) {
     var pageSvc = {};
 
-    // Extract content from a Markdown file and return this as HTML
+    // Extract content from a Markdown file
     pageSvc.getPageContent = function(markdown_file_path) {
         var deferred = $q.defer();
 
