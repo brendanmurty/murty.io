@@ -6,6 +6,7 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
     // Set suitable defaults to minimise content loading effect on usability
     $rootScope.site_title = 'Murty';
     $rootScope.page_content = '';
+    $rootScope.page_loading = true;
 
     // Handle initial page tasks
     $rootScope.init = function() {

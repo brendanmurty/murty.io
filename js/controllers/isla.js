@@ -10,6 +10,7 @@ murtyApp.controller('islaCtrl', ['$scope', '$rootScope', 'pageSvc', function ($s
 
     pageSvc.getPageContent('isla/index.md').then(function(content) {
         $rootScope.page_content = content.data;
+        $rootScope.page_loading = false;
     });
 
     $rootScope.class_page = 'isla isla_index';

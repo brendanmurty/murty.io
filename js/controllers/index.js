@@ -10,6 +10,7 @@ murtyApp.controller('indexCtrl', ['$scope', '$rootScope', 'pageSvc', function ($
 
     pageSvc.getPageContent('murty/index.md').then(function(content) {
         $rootScope.page_content = content.data;
+        $rootScope.page_loading = false;
     });
 
     $rootScope.class_page = 'murty murty_index';
