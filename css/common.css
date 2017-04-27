@@ -44,7 +44,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#fff;color:#222;height:100%;overflow-x:hidden}
 body{font:normal 400 18px/26px 'Slabo 27px', serif;padding:0;height:100%;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
 .loading article{opacity:0}
-.loaded article{animation:fadein 1s}
+.loaded article{animation:fadein 2s}
 @keyframes fadein { from { opacity:0 } to { opacity:1 } }
 h1,h2,h3,h4{font-family:'Slabo 27px', serif;color:#000;font-weight:400;margin:5px 0 15px;padding:0;clear:both}
 h1{font-size:50px;line-height:50px;font-weight:700;margin-top:0}
