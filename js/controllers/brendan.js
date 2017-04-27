@@ -17,22 +17,9 @@ murtyApp.controller('brendanCtrl', ['$scope', '$rootScope', '$routeParams', 'pag
     var page_content_url = 'brendan/index.md';
 
     if ($routeParams.page_name) {
+        // Page request
         page_content_url = 'brendan/' + $routeParams.page_name + '.md';
         $rootScope.class_page = 'brendan brendan_' + $routeParams.page_name;
-
-        if ($routeParams.page_name == 'posts') {
-            // Posts page
-            page_content_url = false;
-
-            pageSvc.getPostsByBrendan().then(function(content) {
-                $scope.list_posts = content.data;
-
-                pageSvc.getPageContent('brendan/posts.md').then(function(content) {
-                    $rootScope.page_content = content.data;
-                    $rootScope.page_loading = false;
-                });
-            });
-        }
     } else if ($routeParams.post_name) {
         // Post request
         page_content_url = 'brendan/posts/' + $routeParams.post_name + '.md';

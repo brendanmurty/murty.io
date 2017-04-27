@@ -21,6 +21,7 @@ var js_files = [
     'js/router.js',
     'js/services/page.js',
     'js/controllers/brendan.js',
+    'js/controllers/brendan_posts.js',
     'js/controllers/header.js',
     'js/controllers/index.js',
     'js/controllers/isla.js',

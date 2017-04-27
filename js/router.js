@@ -16,6 +16,13 @@ murtyApp.config(['$routeProvider', function ($routeProvider, $location) {
             }
         )
         .when(
+            "/brendan/posts",
+            {
+                templateUrl: "html/brendan/posts.html",
+                controller: "brendanPostsCtrl"
+            }
+        )
+        .when(
             "/brendan/:page_name",
             {
                 templateUrl: "html/brendan/index.html",

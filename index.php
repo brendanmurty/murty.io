@@ -28,8 +28,8 @@ if ($_SERVER['HTTP_HOST'] == 'b.murty.io') {
     <link rel="icon" href="{{ icon_shortcut }}">
     <link rel="apple-touch-icon-precomposed" href="{{ icon_touch }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
-    <link rel="stylesheet" href="/css/build/murty.min.css?v1.1.0">
-    <script src="/js/build/murty.min.js?v1.1.0"></script>
+    <link rel="stylesheet" href="/css/build/murty.min.css?v1.1.1">
+    <script src="/js/build/murty.min.js?v1.1.1"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

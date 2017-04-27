@@ -1,0 +1,14 @@
+<section id="container">
+  <ng-include src="'html/sections/header.html'"></ng-include>
+
+  <article>
+    <h1>Posts</h1>
+
+    <ng-include
+      ng-if="list_posts"
+      src="'html/sections/list_posts.html'"
+    ></ng-include>
+  </article>
+
+  <ng-include src="'html/sections/footer.html'"></ng-include>
+</section>
