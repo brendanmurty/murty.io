@@ -67,7 +67,7 @@ hr{border:0 none;background-color:#333;height:2px;margin:15px 0;width:100%}
 .right{float:right}
 .noselect,nav,.post-listing li,section#about{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default}
 pre{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;color:#666;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}
-pre code{width:100%;font:normal 18px/23px "Source Code Pro",sans-serif}
+pre code{width:100%;font:normal 18px/23px Georgia,Times,Times New Roman,serif}
 blockquote{width:95%;padding:1.5% 2.5%;margin:10px 0 20px;background:#e0e0e0;color:#333}
 blockquote p:last-child{margin-bottom:0}
 #container{width:100%;padding:0;margin:0 auto;max-width:1500px;overflow-x:hidden;-webkit-overflow-scrolling:touch}
@@ -95,12 +95,12 @@ ul.listing li, .listing ul li { margin: 0 0 20px; padding: 0; }
 /* Alterations for printed pages */
 
 @media print {
-  html{height:auto}
-  header h1{text-align:center;margin:50px 0 0}
+	html{height:auto}
+	header h1{text-align:center;margin:50px 0 0}
 	article,header,nav{padding-left:0;padding-right:0;width:100%}
 	article{padding-left:2%;padding-right:2%;width:96%}
 	header ul,footer,form .button,.listing.social{display:none}
-  body.brendan,body.isla,body.murty{background-color:transparent}
+	body.brendan,body.isla,body.murty{background-color:transparent}
 	h1,h2,h3,h4,.post-listing .info{width:100%;max-width:100%;color:#000}
 	p,h2,h3{orphans:3;widows:3}
 	a,a:visited{color:#00549d;text-decoration:none}
