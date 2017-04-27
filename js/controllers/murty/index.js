@@ -1,5 +1,5 @@
-// Index controller
-murtyApp.controller('indexCtrl', ['$scope', '$rootScope', 'pageSvc', function ($scope, $rootScope, pageSvc) {
+// Murty Index controller
+murtyApp.controller('murtyIndexCtrl', ['$scope', '$rootScope', 'pageSvc', function ($scope, $rootScope, pageSvc) {
     $rootScope.site_title = 'Murty';
     $rootScope.site_description = 'Murty websites';
     $rootScope.site_author = 'Brendan Murty';

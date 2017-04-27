@@ -20,11 +20,13 @@ var js_files = [
     'js/app.js',
     'js/router.js',
     'js/services/page.js',
-    'js/controllers/brendan.js',
-    'js/controllers/brendan_posts.js',
     'js/controllers/header.js',
-    'js/controllers/index.js',
-    'js/controllers/isla.js',
+    'js/controllers/murty/index.js',
+    'js/controllers/isla/index.js',
+    'js/controllers/brendan/index.js',
+    'js/controllers/brendan/posts.js',
+    'js/controllers/brendan/post.js',
+    'js/controllers/brendan/page.js',
 ];
 
 gulp.task('js', function() {

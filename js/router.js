@@ -5,14 +5,14 @@ murtyApp.config(['$routeProvider', function ($routeProvider, $location) {
             "/",
             {
                 templateUrl: "html/murty/index.html",
-                controller: "indexCtrl"
+                controller: "murtyIndexCtrl"
             }
         )
         .when(
             "/brendan",
             {
                 templateUrl: "html/brendan/index.html",
-                controller: "brendanCtrl"
+                controller: "brendanIndexCtrl"
             }
         )
         .when(
@@ -25,22 +25,22 @@ murtyApp.config(['$routeProvider', function ($routeProvider, $location) {
         .when(
             "/brendan/:page_name",
             {
-                templateUrl: "html/brendan/index.html",
-                controller: "brendanCtrl"
+                templateUrl: "html/brendan/page.html",
+                controller: "brendanPageCtrl"
             }
         )
         .when(
             "/brendan/post/:post_name",
             {
                 templateUrl: "html/brendan/post.html",
-                controller: "brendanCtrl"
+                controller: "brendanPostCtrl"
             }
         )
         .when(
             "/isla",
             {
                 templateUrl: "html/isla/index.html",
-                controller: "islaCtrl"
+                controller: "islaIndexCtrl"
             }
         ).otherwise({
 			redirectTo: '/'

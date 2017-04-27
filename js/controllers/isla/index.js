@@ -1,5 +1,5 @@
-// Isla controller
-murtyApp.controller('islaCtrl', ['$scope', '$rootScope', 'pageSvc', function ($scope, $rootScope, pageSvc) {
+// Isla Index controller
+murtyApp.controller('islaIndexCtrl', ['$scope', '$rootScope', 'pageSvc', function ($scope, $rootScope, pageSvc) {
     $rootScope.site_title = 'Isla Murty';
     $rootScope.site_description = 'Chip connoisseur. Cheeky.';
     $rootScope.site_author = 'Brendan Murty';

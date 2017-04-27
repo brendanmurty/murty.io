@@ -1,5 +1,5 @@
-// Brendan controller
-murtyApp.controller('brendanCtrl', ['$scope', '$rootScope', '$routeParams', 'pageSvc', function ($scope, $rootScope, $routeParams, pageSvc) {
+// Brendan Index controller
+murtyApp.controller('brendanIndexCtrl', ['$scope', '$rootScope', '$routeParams', 'pageSvc', function ($scope, $rootScope, $routeParams, pageSvc) {
     $rootScope.site_title = 'Brendan Murty';
     $rootScope.site_description = 'Brendan is a Project Manager and Senior Web Developer';
     $rootScope.site_author = 'Brendan Murty';
