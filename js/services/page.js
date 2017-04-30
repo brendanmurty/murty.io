@@ -8,7 +8,7 @@ murtyApp.factory('pageSvc', ['$http', '$q', function ($http, $q) {
 
         $http({
             method: 'GET',
-            url: '/api/page_content.php?path=' + markdown_file_path
+            url: '/api/content?location=' + markdown_file_path
         }).then(function (markdown_file_content) {
             deferred.resolve(markdown_file_content);
         });
@@ -22,7 +22,7 @@ murtyApp.factory('pageSvc', ['$http', '$q', function ($http, $q) {
 
         $http({
             method: 'GET',
-            url: '/api/post_list.php'
+            url: '/api/posts'
         }).then(function (posts) {
             deferred.resolve(posts);
         });
