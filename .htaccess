@@ -7,6 +7,10 @@ Options -Indexes
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
+RewriteRule ^readme.md https://github.com/brendanmurty/website/blob/master/readme.md [R=301,L]
+RewriteRule ^license.md https://github.com/brendanmurty/website/blob/master/license.md [R=301,L]
+RewriteRule ^code https://github.com/brendanmurty/website [R=301,L]
+
 # Allow for Angular 1.6 HTML5 state links
 # - Requests to Markdown files aren't affected
 RewriteCond %{REQUEST_FILENAME} -f [OR]
