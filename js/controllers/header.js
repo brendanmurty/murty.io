@@ -10,6 +10,9 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
 
     // Handle initial page tasks
     $rootScope.init = function() {
+        // Empty the page content to avoid showing content from the previous page
+        $rootScope.page_content = '';
+        
         // Ensure all scope variables reflect their current assignments
         setTimeout(function () {
             $rootScope.$apply();
