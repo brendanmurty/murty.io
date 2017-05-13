@@ -47,14 +47,7 @@ ul.brendan_posts {
 
 /* Footer */
 
-footer{color:#666;text-align:left}
-footer .half{float:left;clear:none;width:50%;margin:0}
-footer .credits,footer .about{width:100%;clear:both;float:left;text-align:center}
-footer .about{margin:0 0 20px}
-footer .about p{margin:0}
-footer .credits{margin:0;font-size:16px;color:#666}
-footer .credits p{text-align:center;margin:0}
-footer ul{margin:0;padding:0}
+footer {color:#666;text-align:center}
 
 /* Forms and Buttons */
 

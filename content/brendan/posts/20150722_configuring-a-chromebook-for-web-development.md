@@ -1,7 +1,5 @@
 # Configuring a Chromebook for web development
 
-*Posted 20150722*
-
 To fill the time commuting to work, I recently bought a [Chromebook](http://www.acer.co.uk/ac/en/GB/content/professional-series/chromebook11c730) which is basically a cheap laptop designed to use [Chrome Apps](https://chrome.google.com/webstore/category/apps) instead of traditional, installable desktop applications.
 
 Chromebook devices run [Chrome OS](https://en.wikipedia.org/wiki/Chrome_OS) created by Google and based on the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel). Access to the operating system and Linux shell is hidden by default but you can access it with a bit of effort to unlock it's full potential.

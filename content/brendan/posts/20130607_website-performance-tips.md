@@ -1,7 +1,5 @@
 # Website performance tips
 
-*Posted 20130607*
-
 [Colt McAnlis](https://twitter.com/duhroach) gave an insightful talk recently named *Performance Checklist for the Mobile Web* ([Video](http://www.youtube.com/watch?v=0UNWi7FA36M), [Slides](http://mainroach.appspot.com/docs/PCMW.pdf)), where he explains:
 
 > One in four users will abandon a site if it's not loaded in three seconds

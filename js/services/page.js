@@ -1,5 +1,5 @@
 // Page service
-murtyApp.factory('pageSvc', ['$http', '$q', function ($http, $q) {
+murtyApp.factory('pageSvc', ['$http', '$q', '$filter', function ($http, $q, $filter) {
     var pageSvc = {};
 
     // Extract content from a Markdown file
@@ -28,6 +28,14 @@ murtyApp.factory('pageSvc', ['$http', '$q', function ($http, $q) {
         });
 
         return deferred.promise;
+    };
+
+    // Extract the post date from a post name
+    // and return it in a more suitable format
+    pageSvc.getPostDate = function(post_name) {
+        post_date = post_name.substring(0, 8);
+
+        return $filter('date')(post_date + 'T00:00:00.000Z', 'd MMM yyyy', 'en_AU');
     };
 
     return pageSvc;

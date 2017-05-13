@@ -1,7 +1,5 @@
 # UpcomingTasks reaches 100 active users!
 
-*Posted 20130307*
-
 I’m very proud of my humble little web app, [UpcomingTasks](http://upcomingtasks.com/), as it’s just reached 100 active users!
 
 Born out of my own frustrations with the lack of a suitable Basecamp 2 client for [Windows Phone](http://www.windowsphone.com/), UpcomingTasks is and always will earn it’s place high on [my homescreen](/images/brendan/homescreen.png), no matter what device I’m currently using.

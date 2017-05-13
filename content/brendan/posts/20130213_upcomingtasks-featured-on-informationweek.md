@@ -1,7 +1,5 @@
 # UpcomingTasks featured on InformationWeek
 
-*Posted 20130213*
-
 InformationWeek, a blog about small and midsize business technology, has featured [UpcomingTasks](http://upcomingtasks.com) in a recent article about Basecamp add-ons.
 
 > UpcomingTasks is a super-simple way to check Basecamp tasks from any mobile device.

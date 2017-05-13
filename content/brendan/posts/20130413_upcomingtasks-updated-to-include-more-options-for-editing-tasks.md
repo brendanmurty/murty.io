@@ -1,7 +1,5 @@
 # UpcomingTasks updated to include more options for editing tasks
 
-*Posted 20130413*
-
 Along with some general bug fixes and performance improvements, I’ve also improved the edit task interface today.
 
 You’ll now be able to change the location of the task and remove the due date.

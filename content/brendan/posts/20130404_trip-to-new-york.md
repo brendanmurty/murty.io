@@ -1,7 +1,5 @@
 # Trip to New York
 
-*Posted 20130404*
-
 I recently visited New York to see how [Ella](https://twitter.com/ellacondon) was going with her studies there. I had some vague plans *(who wants to overplan a holiday anyway)* of what to see and do when I was there. This was the first time I’d visited New York and also the USA, so I had a few challenges along the way. However, these certainly weren’t to do the people I met over there, who were all kind and helpful but somewhat louder than I expected.
 
 I was welcomed in to the country by a very friendly airport employee at [LAX](http://en.wikipedia.org/wiki/Los_Angeles_International_Airport) and experienced some snow on the way in to [JFK](http://en.wikipedia.org/wiki/John_F._Kennedy_International_Airport) which was pretty magical. Getting to the city via the shuttle late at night in decent levels of snow was also beautiful.

@@ -1,7 +1,5 @@
 # Blurb content
 
-*Posted 20130215*
-
 Need to shorten some content so it fits in a small area? My *blurb* function will shorten any content to the given number of characters.
 
 	<?php

@@ -1,7 +1,5 @@
 # UpcomingTasks Updates: October 2014
 
-*Posted 20141019*
-
 I've made a few updates to [UpcomingTasks](http://upcomingtasks.com/) over the last month, here's a quick rundown on what's changed.
 
 #### Improved support for small accounts
