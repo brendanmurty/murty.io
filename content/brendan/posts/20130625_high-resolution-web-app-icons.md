@@ -67,7 +67,7 @@ This will produce a screen similar to the image below:
 
 And after following the directions on the page, it's now on the user's home screen:
 
-![Home screen](/images/brendan/addtohome-home.jpg)
+![Home screen](/images/brendan/homescreen.png)
 
 Looks great!
 
