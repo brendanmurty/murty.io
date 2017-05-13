@@ -45,6 +45,11 @@ ul.brendan_posts {
   margin: 0 auto 20px;
 }
 
+.brendan_post article img {
+  clear: both;
+  display: block;
+}
+
 /* Footer */
 
 footer {color:#666;text-align:center}
