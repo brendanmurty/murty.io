@@ -18,7 +18,7 @@ if ($_SERVER['HTTP_HOST'] == 'b.murty.io') {
 <html lang="en" ng-app="murtyApp" ng-controller="headerCtrl">
   <head>
     <meta charset="utf-8">
-    <title ng-bind="site_title"></title>
+    <title ng-bind="page_title || site_title"></title>
     <meta name="author" content="{{ site_author }}">
     <meta name="description" content="{{ site_description }}">
     <meta name="handheldfriendly" content="true">

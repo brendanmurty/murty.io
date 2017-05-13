@@ -13,6 +13,8 @@ murtyApp.controller('brendanIndexCtrl', ['$scope', '$rootScope', '$routeParams',
 
     $rootScope.init();
 
+    $rootScope.page_title = $rootScope.site_title;
+
     // Default to Brendan's index content
     var page_content_url = 'brendan/index.md';
 

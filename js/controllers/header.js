@@ -5,6 +5,7 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
 
     // Set suitable defaults to minimise content loading effect on usability
     $rootScope.site_title = 'Murty';
+    $rootScope.page_title = '';
     $rootScope.page_content = '';
     $rootScope.page_loading = true;
 
@@ -12,7 +13,7 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
     $rootScope.init = function() {
         // Empty the page content to avoid showing content from the previous page
         $rootScope.page_content = '';
-        
+
         // Ensure all scope variables reflect their current assignments
         setTimeout(function () {
             $rootScope.$apply();

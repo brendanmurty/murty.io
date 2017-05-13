@@ -15,9 +15,12 @@ murtyApp.controller('brendanPostCtrl', ['$scope', '$rootScope', '$routeParams', 
 
     // Extract the Markdown content and send it to the template
     pageSvc.getPageContent('brendan/posts/' + $routeParams.post_name + '.md').then(function(content) {
-        post_date = pageSvc.getPostDate($routeParams.post_name);
+        $rootScope.page_title = pageSvc.getPageTitle($routeParams.post_name) + ' - ' + $rootScope.site_title;
 
-        $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan/about">Brendan</a></footer>';
+        $rootScope.page_content = content.data +
+                '<footer>Posted ' +
+                pageSvc.getPostDate($routeParams.post_name) +
+                ' by <a href="/brendan/about">Brendan</a></footer>';
 
         $rootScope.page_loading = false;
     });

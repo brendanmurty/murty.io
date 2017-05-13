@@ -13,6 +13,8 @@ murtyApp.controller('brendanPostsCtrl', ['$scope', '$rootScope', '$routeParams',
 
     $rootScope.init();
 
+    $rootScope.page_title = 'Posts - ' + $rootScope.site_title;
+
     // Load the posts list
     pageSvc.getPostsByBrendan().then(function(content) {
         $scope.list_posts = content.data;
