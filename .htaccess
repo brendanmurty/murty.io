@@ -5,11 +5,17 @@ AddDefaultCharset UTF-8
 Options -Indexes
 
 <IfModule mod_rewrite.c>
-RewriteEngine on
+RewriteEngine On
 
 RewriteRule ^readme.md https://github.com/brendanmurty/website/blob/master/readme.md [R=301,L]
 RewriteRule ^license.md https://github.com/brendanmurty/website/blob/master/license.md [R=301,L]
 RewriteRule ^code https://github.com/brendanmurty/website [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^b\.murty\.io$ [NC]
+RewriteRule ^(.*) http://murty.io/brendan/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^i\.murty\.io$ [NC]
+RewriteRule ^(.*) http://murty.io/isla/$1 [R=301,L]
 
 # Allow for Angular 1.6 HTML5 state links
 # - Requests to Markdown files aren't affected
