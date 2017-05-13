@@ -25,7 +25,7 @@ murtyApp.factory('pageSvc', ['$http', '$q', '$filter', function ($http, $q, $fil
         }
 
         // Make each word start with a capitalised letter
-        page_title = page_name.toLowerCase();
+        var page_title = page_name.toLowerCase();
         page_title = page_title.replace(
             /(^([a-zA-Z\p{M}]))|([ -][a-zA-Z\p{M}])/g,
           	function(s){
@@ -64,7 +64,11 @@ murtyApp.factory('pageSvc', ['$http', '$q', '$filter', function ($http, $q, $fil
     pageSvc.getPostDate = function(post_name) {
         post_date = post_name.substring(0, 8);
 
-        return $filter('date')(post_date + 'T00:00:00.000Z', 'd MMM yyyy', 'en_AU');
+        if (!isNaN(post_date)) {
+            return $filter('date')(post_date + 'T00:00:00.000Z', 'd MMM yyyy', 'en_AU');
+        } else {
+            return '';
+        }
     };
 
     return pageSvc;
