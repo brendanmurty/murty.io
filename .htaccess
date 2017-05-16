@@ -22,14 +22,14 @@ RewriteRule ^(.*) http://murty.io/isla/$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
-RewriteRule .*[^\.md]$ index.php [L]
+RewriteRule .*[^\.md]$ index.html [L]
 </IfModule>
 
 # Customise error pages
 
-ErrorDocument 403 /index.php
-ErrorDocument 404 /index.php
-ErrorDocument 500 /index.php
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
 
 # Customise access to files
 
