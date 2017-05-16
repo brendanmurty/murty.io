@@ -1,6 +1,6 @@
 # General settings
 
-DirectoryIndex index.php
+DirectoryIndex index.html
 AddDefaultCharset UTF-8
 Options -Indexes
 
