@@ -5,7 +5,7 @@
 
 ## About
 
-Here's the contents of the [Murty website](http://murty.io) built with [AngularJS](https://angularjs.org/), served with [Apache 2](https://httpd.apache.org/), coded with [Atom](http://atom.io) and hosted by [Digital Ocean](http://digitalocean.com).
+Here's the contents of the [Murty website](http://murty.io) built with [Angular](https://angularjs.org/) and [Express](https://expressjs.com/), coded with [Atom](http://atom.io) and hosted by [Digital Ocean](http://digitalocean.com).
 
 ## Why
 
@@ -17,28 +17,24 @@ I hope a budding web developer can learn something new from what I've done here 
 
 ## Setup
 
-Requires [Node.js and NPM](https://nodejs.org/en/download/).
+First you'll need to install [Node.js and NPM](https://nodejs.org/en/download/).
 
-To install development tools:
+Then Git Clone the repo in to a suitable directory.
+
+To install the required packages and configure the environment, run these commands from the cloned directory:
 
 ```
-npm install --global bower
-npm install --global gulp-cli
+npm install -g bower gulp-cli nodemon forever && npm install
+touch ~/.forever/murty-forever.log && touch ~/.forever/murty-output.log && touch ~/.forever/murty-error.log
 ```
 
-To install required packages, run this command from the repository folder:
+To update JavaScript and CSS build files run: `gulp`
 
-`npm install`
+To run a development server run: `npm run startdev`
 
-To update JavaScript and CSS build files, run this command from the repository folder:
+To run a production server run: `npm run start`
 
-`gulp`
-
-Depending on your server setup, you may need to run this command in the website folder:
-
-`chown -R www-data:www-data content`
-
-File paths in the *api* folder may also need to be updated in other server configurations.
+To stop a production server run: `npm run stop`
 
 ## Contribute
 

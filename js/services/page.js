@@ -4,11 +4,12 @@ murtyApp.factory('pageSvc', ['$http', '$q', '$filter', function ($http, $q, $fil
 
     // Extract content from a Markdown file
     pageSvc.getPageContent = function(markdown_file_path) {
-        var deferred = $q.defer();
+        var deferred = $q.defer(),
+            markdown_id = markdown_file_path.replace(/.md/, '').replace(/\//g, '--');
 
         $http({
             method: 'GET',
-            url: '/api/page_content.php?path=' + markdown_file_path
+            url: '/api/content/of/' + markdown_id
         }).then(function (markdown_file_content) {
             deferred.resolve(markdown_file_content);
         });
@@ -51,7 +52,7 @@ murtyApp.factory('pageSvc', ['$http', '$q', '$filter', function ($http, $q, $fil
 
         $http({
             method: 'GET',
-            url: '/api/post_list.php'
+            url: '/api/posts/by/brendan'
         }).then(function (posts) {
             deferred.resolve(posts);
         });
