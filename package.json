@@ -27,7 +27,7 @@
   "scripts": {
     "postinstall": "bower install --allow-root",
     "startdev": "export APP_DOMAIN=localhost && export APP_PORT=80 && nodemon server.js",
-    "start": "export APP_DOMAIN=murty.io && export APP_PORT=80 && forever start -o murty-output.log -e murty-error.log -l murty-forever.log server.js",
+    "start": "export APP_DOMAIN=murty.io && export APP_PORT=80 && forever start -o murty-output.log -e murty-error.log -l murty-forever.log -a server.js",
     "stop": "forever stopall"
   }
 }
