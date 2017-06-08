@@ -1,4 +1,4 @@
-![](/images/brendan/brendan_murty.jpg)
+![Image of Brendan](/images/brendan/brendan_murty.jpg)
 
 Father of [Isla](http://i.murty.io/), partner of [Ella](http://ellacondon.com/),
 Project Manager and Web Developer at [Sentral](http://sentral.com.au/) and
