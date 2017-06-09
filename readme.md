@@ -19,7 +19,7 @@ I hope a budding web developer can learn something new from what I've done here 
 
 First you'll need to install [Node.js and NPM](https://nodejs.org/en/download/).
 
-Then Git Clone the repo in to a suitable directory.
+Then Git Clone the repo in to a suitable directory, such as `/var/www/murty.io`.
 
 To install the required packages and configure the environment, run these commands from the cloned directory:
 
@@ -28,9 +28,9 @@ npm install -g bower gulp-cli nodemon forever && npm install
 touch ~/.forever/murty-forever.log && touch ~/.forever/murty-output.log && touch ~/.forever/murty-error.log
 ```
 
-### Logging
+### Logs
 
-To view a live history of logs, run one of these commands:
+To view a live history of the logs, run one of these commands:
 
 ```
 npm run logerror
