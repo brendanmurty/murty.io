@@ -5,7 +5,7 @@
 
 ## About
 
-Here's the contents of the [Murty website](http://murty.io) built with [Angular](https://angularjs.org/) and [Express](https://expressjs.com/), coded with [Atom](http://atom.io) and hosted by [Digital Ocean](http://digitalocean.com).
+Here's the [Murty website](http://murty.io) built with [Angular](https://angularjs.org/), [Express](https://expressjs.com/) and [Feather](http://feathericons.com) icons.
 
 ## Why
 
