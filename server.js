@@ -3,7 +3,8 @@ var express = require('express'),
     app = express(),
     app_domain = process.env.APP_DOMAIN || 'localhost',
     app_port = process.env.APP_PORT || 80,
-    router = express.Router();
+    router = express.Router(),
+    compression = require('compression');
 
 // Configure API controllers
 var content_controller = require('./js/api/content.js'),
@@ -23,6 +24,9 @@ router.get('/code',         function(request, response) { response.redirect('htt
 // Allow static content requests
 app.use('/', router);
 app.use(express.static(__dirname));
+
+// Use Gzip compression
+app.use(compression());
 
 // Send all other requests to Angular
 app.get('*', function (request, response) {
