@@ -1,7 +1,7 @@
 // Initialise app
 var express = require('express'),
     app = express(),
-    app_domain = process.env.APP_DOMAIN || 'murty.io',
+    app_domain = process.env.APP_DOMAIN || 'localhost',
     app_port = process.env.APP_PORT || 80,
     router = express.Router();
 
