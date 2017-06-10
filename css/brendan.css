@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.brendan_index img {
+.brendan_index .avatar {
   width: 200px;
   border-radius: 200px;
   clear: both;
@@ -66,6 +66,7 @@ a.button:active,a.button:focus,a.button:hover{background:#00549d}
 ul.social{width:420px;margin:40px auto 0}
 ul.social li{list-style:none outside none;float:left;width:70px;height:70px;line-height:70px;text-align:center;margin:0;padding:0}
 ul.social li a{font-size:35px;border-bottom:none}
+ul.social img{width:32px;height:32px}
 
 /* Resume page */
 

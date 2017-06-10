@@ -4,7 +4,6 @@ var uglify = require('gulp-uglify');
 var minify = require('gulp-minify-css');
 
 var css_files = [
-    'css/vendor/font-awesome.min.css',
     'css/common.css',
     'css/brendan.css',
     'css/isla.css',

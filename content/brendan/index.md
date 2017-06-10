@@ -1,4 +1,4 @@
-![Image of Brendan](/images/brendan/brendan_murty.jpg)
+<img src="/images/brendan/brendan_murty.jpg" alt="Image of Brendan" class="avatar">
 
 Father of [Isla](http://i.murty.io/), partner of [Ella](http://ellacondon.com/),
 Project Manager and Web Developer at [Sentral](http://sentral.com.au/) and
@@ -7,32 +7,32 @@ Project Manager and Web Developer at [Sentral](http://sentral.com.au/) and
 <ul class="listing social">
   <li>
     <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
-      <span class="fa fa-envelope" aria-hidden="true"></span>
+      <img src="/images/common/mail.svg" alt="Email" width="32" height="32">
     </a>
   </li>
   <li>
     <a href="https://github.com/brendanmurty" title="View my code on GitHub">
-      <span class="fa fa-github" aria-hidden="true"></span>
+      <img src="/images/common/github.svg" alt="GitHub" width="32" height="32">
     </a>
   </li>
   <li>
     <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
-      <span class="fa fa-twitter" aria-hidden="true"></span>
+      <img src="/images/common/twitter.svg" alt="Twitter" width="32" height="32">
     </a>
   </li>
   <li>
     <a href="https://au.linkedin.com/in/brendanmurty" title="Connect with me on LinkedIn">
-      <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+      <img src="/images/common/briefcase.svg" alt="LinkedIn" width="32" height="32">
     </a>
   </li>
   <li>
     <a href="https://instagram.com/brendan.murty" title="View my Instagram posts">
-      <span class="fa fa-instagram" aria-hidden="true"></span>
+      <img src="/images/common/instagram.svg" alt="Instagram" width="32" height="32">
     </a>
   </li>
   <li>
     <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
-      <span class="fa fa-steam-square" aria-hidden="true"></span>
+      <img src="/images/common/monitor.svg" alt="Steam" width="32" height="32">
     </a>
   </li>
 </ul>
