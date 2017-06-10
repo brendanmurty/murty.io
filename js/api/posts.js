@@ -10,7 +10,7 @@ exports.get = function (request, response) {
             posts_json_file = post_folder + '/posts.json';
 
         if (!fs.existsSync(posts_json_file)) {
-            // Posts JSON cache file not found
+            // Couldn't find the JSON cache file
             fs.readdir(post_folder, function(error, files) {
                 if (!error) {
                     var post_list = [];
@@ -55,7 +55,7 @@ exports.get = function (request, response) {
                 }
             });
         } else {
-            // Posts JSON cache file found, us this content instead
+            // The cached JSON was found, use this content instead
             fs.readFile(posts_json_file, function(error, posts_content) {
                 response.writeHead(200, { 'Content-Type': 'application/json' });
                 response.write(posts_content);
