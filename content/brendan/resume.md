@@ -14,22 +14,22 @@ I'm a Project Manager and Senior Web Developer with varied commercial experience
 
 ### Personality
 
-- __Passionate__ I'm passionate about productive development practices and using suitable, well established solutions to meet development goals.
-- __Honest__ Honesty is one trait I value in all areas of my life. I won't hesitate to initiate tough discussions with clients and management.
+- __Passionate__ I'm passionate about productive development practices and using suitable, well established solutions to meet business goals.
+- __Honest__ Honesty is one trait I value in all areas of my life. I won't hesitate to initiate tough discussions when required with clients and management.
 - __Reliable__ When I say I'll get something done within a certain timeframe, you can rely on me to get it completed.
 - __Dedicated__ I'm self-taught and my thirst for knowledge drives my career forward. I'm always keen to discuss my thoughts on new techniques and development platforms.
 - __Flexible__ I've had many varied roles in the web development industry and love to both plan the bigger picture and dive in to the intricate details.
 
 ### Employment
 
-- __Project Manager and Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Oct 2016 - present* I'm managing a large development project which includes managing expectations with internal and external stakeholders, scoping out requirements and organising development tasks for our team. I also handle some of the advanced development tasks within this project.
-- __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Jan 2015 - Sep 2016* I worked in the development team assisting with development of new features for our software products using various front-end and back-end frameworks and languages.
+- __ACT Project Manager and Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Oct 2016 - present* I'm managing a large development project which includes managing expectations with internal and external stakeholders, scoping out requirements and organising development tasks for our team. I also work on some of the development tasks within this project.
+- __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Jan 2015 - Sep 2016* I worked in the development team assisting with maintenance and development of new features for our software products using various front-end and back-end frameworks and languages.
 - __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Sep 2009 - Dec 2014* I worked in various back-end & front-end development, client support and product training roles at Solutions Outsourced related to their CMS and SMS/email marketing platform called Siteflex. This included working directly with clients on website development projects, creation of a Siteflex training system and most recently leading development on Siteflex Classic.
-- __Field Assistant__ *[PBA Surveyors](http://pbasurvey.com.au/) &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
+- __Field Assistant__ *PBA Surveyors &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 
 ### Projects
 
-- __Developer and Creator__ *[UpcomingTasks](http://upcomingtasks.com/) &mdash; Sep 2012 - Nov 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.
+- __Developer and Creator__ *UpcomingTasks &mdash; Sep 2012 - Nov 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.
 
 ### Reference
 
