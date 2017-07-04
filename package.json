@@ -28,7 +28,7 @@
   "scripts": {
     "postinstall": "bower install --allow-root",
     "startdev": "nodemon server.js",
-    "start": "set NODE_ENV=production && export APP_DOMAIN=murty.io && forever start -o murty-output.log -e murty-error.log -l murty-forever.log -a server.js",
+    "start": "set NODE_ENV=production && export APP_DOMAIN=murty.io && export APP_PORT=80 && forever start -o murty-output.log -e murty-error.log -l murty-forever.log -a server.js",
     "stop": "forever stopall",
     "logserver": "tail -f ~/.forever/murty-forever.log",
     "logoutput": "tail -f ~/.forever/murty-output.log",

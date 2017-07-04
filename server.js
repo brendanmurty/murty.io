@@ -2,9 +2,8 @@
 var express = require('express'),
     app = express(),
     app_domain = process.env.APP_DOMAIN || 'localhost',
+    app_port = process.env.APP_PORT || 80,
     router = express.Router(),
-    http = require('http'),
-    https = require('https'),
     compression = require('compression');
 
 // Configure API controllers
@@ -35,11 +34,6 @@ app.get('*', function (request, response) {
 });
 
 // Start the web server
-http.createServer(app).listen(80, app_domain);
+app.listen(app_port, app_domain);
 
-https.createServer({
-    key: fs.readFileSync('ssl-key.pem'),
-    cert: fs.readFileSync('ssl-cert.pem')
-}, app).listen(443, app_domain);
-
-console.log('server started for ' + app_domain);
+console.log('server started at http://' + app_domain + ':' + app_port);
