@@ -7,3 +7,5 @@ Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
 npm-debug.log
+murty-error.log
+murty-output.log
