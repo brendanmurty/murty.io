@@ -1,30 +1,25 @@
 ==================================================================
-https://keybase.io/brendanmurty
+https://keybase.io/bmurty
 --------------------------------------------------------------------
 
 I hereby claim:
 
   * I am an admin of http://murty.io
-  * I am brendanmurty (https://keybase.io/brendanmurty) on keybase.
-  * I have a public key with fingerprint BED0 760A DDEC BF0E 00B2  E3FB EDB4 E539 33AD 1F77
+  * I am bmurty (https://keybase.io/bmurty) on keybase.
+  * I have a public key with fingerprint BFE2 7CE5 41D4 B96E 05CA  F657 FEA3 11A4 FFA6 C907
 
 To do so, I am signing this object:
 
 {
     "body": {
         "key": {
-            "eldest_kid": "010121e4153435f58bdac93a1b52fc0a82e53257e25244ea56cc5875779c457e54110a",
-            "fingerprint": "bed0760addecbf0e00b2e3fbedb4e53933ad1f77",
+            "eldest_kid": "01206365a8d1b8da075836174987e58063a50f03a8aa8bc39110afb6c48241c8ef630a",
+            "fingerprint": "bfe27ce541d4b96e05caf657fea311a4ffa6c907",
             "host": "keybase.io",
-            "key_id": "edb4e53933ad1f77",
-            "kid": "010121e4153435f58bdac93a1b52fc0a82e53257e25244ea56cc5875779c457e54110a",
-            "uid": "61d4f5e261ade5a0c7262a43139b4619",
-            "username": "brendanmurty"
-        },
-        "revoke": {
-            "sig_ids": [
-                "e2c4feb7511488ae037abe421483b78a3382e01beb1f223c485d58bcab85d7380f"
-            ]
+            "key_id": "fea311a4ffa6c907",
+            "kid": "0101c0b57a55b66cedcae5e86b12ee4852bd8bc8237c527650563bddaf7f6708bd4d0a",
+            "uid": "55e5881e9d50fcf4d7f702f031cdfe19",
+            "username": "bmurty"
         },
         "service": {
             "hostname": "murty.io",
@@ -33,42 +28,49 @@ To do so, I am signing this object:
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1492477724,
+    "ctime": 1499140229,
     "expire_in": 157680000,
-    "prev": "04c9c04004818d27a8f4b3c01e31a852e5441753449ac6a955b37f2af330253a",
-    "seqno": 30,
+    "prev": "2550ffc1f04c2e272b4b4423b04d5d05814a0a5b1867e6d902c84fc1a7f875fc",
+    "seqno": 7,
     "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.68
+Version: Keybase OpenPGP v2.0.72
 Comment: https://keybase.io/crypto
 
-yMJoAnicrVJdiFVVFL6jaTY5IeWMCgq1u0aMN9m/Z59zQcpimphiSjKSZobL3vus
-c+c0M+dczzn36jSMIQgDPRQVhAjaiEKQPxQoEvngjFKQkSLVPITCPIx/Dw6iUTCJ
-7XOztx7bL3uvxbe+9a1v7XNtiwutLW9vmez+fonsazk/dade2PZ7de0Y0rE/ispj
-aAiaFwz7kGaVodBHZYQJJpQAJ4JxJgLhal8ZjymiBQ0MVi4FwaiQQAXlHJRwjBGu
-FFJ6htu04IRghUooCKMqJLUkjDJLq8HH0sHK98HoAAPGmgILbFpzS+gxpnwSSGkL
-B+M0r7DitEphYxjbnA0qTXn/gf+fddebdA7xeSCAOkT5IBQ2kjpUcUaYp7lDvByY
-QhKpEcinSyDyVTRST7JRNF5CCTTiIci9TcOqFZ6ich8CangAWgpCuOsqwEwqDZza
-iGnpKsasRkw0aBJQygx3hW/HMErbh2QuDtCA5bZdG6FpkudOPVDQbP2PV7UkzmIT
-D9vsYJbVyrmgbLSWo3aArjyor+gw8u2KbEEDkjSMI1QmFmmyMCck3KNcSkl5CcHO
-WphAJcwRQjoutidvA43cd248gznG3CWuT6VyA66ZwQQYUa6wrnNOpF0K95RxlCeE
-ZjKgKmAMU8Fyx1PYHsWozCxppqqW05oWqayeABqfPtP/UKGltbB0yaL87xZaH1nx
-749ed3VZ4ZOfBuba8fP7Zt+5dvDr/ce2Pjes9z7dv/Pdhy/4x3+en5zePjFupt8s
-nrrdsWvHo1t/KazasunIyHTWdvKv7/DnHxSXpx/t6+l5Zd3ZkT29P567VS+eLu1O
-dt14aTbY09ndfffQ0QPy4reo9f61Y4NtC+29J+a6i6/enJ/o2tA5+7gYW73q5Jrz
-7eELh+599WeX/m3ttgsDxQMLm9965siNex9eru0/3Pfp66QDuZNdF5fhO/2d31yd
-WfO+Xtrf8caps5eC9cunDq84vnLu5qJNv7ZX+frP5unqNvSYGnpq5u7Us6XrTu/E
-kz27r7/83tGZJ17c+8eX5Y8blfHbG364dGLz/dHXvigPHlyIr/wNhy5TGQ==
-=TIKe
+yMNtAnicbVJrTBRXGF1gKZVAFCq6sdbKYH3QjZ2ZnTuPDbW2vJrFoGmk9kG6vTNz
+B4bH7rIPukAppRb2T9WSkFJ5SN1aoUYXiELARXmIaU2NxYqtGiMVjAShGB4toAid
+ofqv98/N/b5zzj3nu7cvPEgTGrD4fcSxpeOXQgJ+6fnapXn/w1VlRRhvFQswYxGW
+jZY3lCMih9OcLYuYEcMJEqcNNICsSPCsCHEGsAaaYCiOZRBglR4EuIQbIAshywsG
+jiBwKPG0QLEkRQgskmgDDjE9JsmWDGS32WWLU5HlJUQyAgIUIVI8RyMcCFCiASMh
+aCAISEkSpAUOZxRiptWhMhRzPHSg7bJVqSkH87K9/8E/840TAs4DBgLA07SARAEi
+gFiaJ0iEKBaQvKj4ZUkDIwCSoQEOaAMvilBiJJrBWV6kxGXfrmU5AJSwLIE4UUkr
+SJTISAxOKrkJQZQQwalAB7JbYC5S0+W67M4CrFiPKbV8WUDqWNUcT/vL7f+S2OxW
+p1Ww5ijVTKfTZlRJzgKbivoE8eanfDMvW0RlgAohH9kdstWCGQkFKThlVZCgOI6g
+cJLk9Bhy22Q7MssqAjA0iytLvQblK5IkUOxLAiHhlEAqL0DyFE9RpIHHKRGIOGAJ
+CuIQ8ARLM4gWOZwUWErBQ0ZiGSAJmJooz2LFjIxiE2Yokg45wwKdLjvCint70rWa
+gFDNc8GB6sfShK5Y9ey7bTu48knkK31d6dd92q5PLx4eieyPej7mnYw511z/fTko
+3x/f1BPsuhI3fnFhx6Pryeeune47VVJTFxk2RF8I+ybBH81Mx7p3P/Te2jU+4Q9E
+SXvbe7xxZwJmojIE/xGu4Y+29PA8Te1v2pOH3wpwXS36brJycdP6s941g5fLOt99
++45rYLSj5K/JwG3FI+6204WXJutSTvmayxofrZ2qS+rQdt8ufCGrX4uKq6v2fCFV
+o75ZnacrtvSOd6qjM3ImtrMGVm5P/Xj1DX2lb19DW6px583BN0pqX27trEusrBK+
+ytp0/virWxvX1Bd+tI/Y745Yqt/qHz47a0JvvtQevMtzIY6A07URnop7x9q/zc+N
+tW5IHWh5PL/FkaxfGGqoQHd/nE1kWlNm8nyehlJRN9+SM+OpKgAxL5bsPrpeZ5yO
+zw4UDc299tUDSYU//BOdRGxME0eCqss+S7jXtGfOc/vMyiLbn1TSkCNrQutL8I0n
+mkK6H6zbWFFwf+CnYu+ViteehCRuqRj9/VxN/eJe+w37/s6pkB0xng1sY/ytz3sO
+MKMLkw+CzSOvhzX3ppQu3ny4dmZ6Xrd4CIjlOw/cHXInmjYvLum8w49NwcNNJ7rn
+B78MGitfcc1iOvre5YmWMZP7fPg6/djJQ45oXjde/vcHv/7sSWuLSm0/EnY1jmtL
+S45t3UxOR2T6T/wLACrMIA==
+=eUKW
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
-View my publicly-auditable identity here: https://keybase.io/brendanmurty
+View my publicly-auditable identity here: https://keybase.io/bmurty
 
 ==================================================================
+
