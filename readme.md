@@ -28,6 +28,8 @@ npm install -g bower gulp-cli nodemon forever && npm install
 touch ~/.forever/murty-forever.log && touch ~/.forever/murty-output.log && touch ~/.forever/murty-error.log
 ```
 
+Note that if you're running Ubuntu, you may have to put `sudo ` in front of the first command above.
+
 ### Logs
 
 To view a live history of the logs, run one of these commands:
@@ -41,13 +43,13 @@ npm run logserver
 ### Development
 
 To update JavaScript and CSS build files run: `gulp`
-
 To start a development web server run: `npm run startdev`
+
+Note that if you're running Ubuntu, you may have to put `sudo ` in front of the second command above.
 
 ### Production
 
 To start a production web server run: `npm run start`
-
 To stop a production web server run: `npm run stop`
 
 ## Contribute
