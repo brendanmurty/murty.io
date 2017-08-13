@@ -28,11 +28,10 @@ body {
 
 .brendan header {
   float: left;
-  background-image: url('/images/brendan/header-large.jpg');
+  background-image: url('/images/brendan/header-1500.jpg');
   background-position: center center;
   background-size: cover;
   height: 500px;
-  vertical-align: baseline;
   position: relative;
 }
 
@@ -124,11 +123,16 @@ ul.social img{width:40px;height:40px}
 
 /* Alterations for certain screen sizes */
 
-@media only screen and (max-width:1000px) {
-	.spinner{margin-top:6%}
-
+@media only screen and (max-width:1200px) {
   .brendan header {
-    background-image: url('/images/brendan/header-medium.jpg');
+    background-image: url('/images/brendan/header-1200.jpg');
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .brendan header {
+    background-image: url('/images/brendan/header-1000.jpg');
     height: 333px;
   }
 }
@@ -142,15 +146,24 @@ ul.social img{width:40px;height:40px}
 	.brendan_resume article blockquote p{margin-top:0}
 }
 
+@media only screen and (max-width:650px) {
+  .brendan header {
+    background-image: url('/images/brendan/header-650.jpg');
+    height: 217px;
+  }
+}
+
 @media only screen and (max-width:600px) {
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
 	article img{max-width:100%}
 	form input.text{width:65%;max-width:none}
 	footer .about{margin:0 0 5%}
+}
 
+@media only screen and (max-width:450px) {
   .brendan header {
-    background-image: url('/images/brendan/header-small.jpg');
-    height: 200px;
+    background-image: url('/images/brendan/header-450.jpg');
+    height: 150px;
   }
 }
