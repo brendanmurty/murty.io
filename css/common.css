@@ -42,14 +42,14 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 /* General */
 
 html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;background:#fff;color:#222;height:100%;overflow-x:hidden}
-body{font:normal 400 20px/28px 'Slabo 27px', serif;padding:0;height:100%;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
+body{font:normal 400 20px/32px 'Slabo 27px', serif;padding:0;height:100%;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-overflow-scrolling:touch}
 .loading article{opacity:0}
 .loaded article{animation:fadein 2s}
 @keyframes fadein { from { opacity:0 } to { opacity:1 } }
 h1,h2,h3,h4{font-family:'Slabo 27px', serif;color:#000;font-weight:400;margin:5px 0 15px;padding:0;clear:both}
-h1{font-size:50px;line-height:50px;font-weight:700;margin-top:0}
-h2{font-size:28px;line-height:42px}
-h3{font-size:25px;line-height:28px}
+h1{font-size:30px;line-height:50px;font-weight:700;margin-top:0}
+h2{font-size:25px;line-height:40px}
+h3{font-size:20px;line-height:30px}
 h4, .brendan_resume article li strong{font-size:20px;line-height:25px}
 h5, .brendan_resume article h4 strong{font-size:16px;line-height:25px}
 article h1{font-size:28px;line-height:42px}

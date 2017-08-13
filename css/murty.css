@@ -1,7 +1,17 @@
 /* Header */
 
-.murty_index header h1 { text-align: center; float: none; margin: 30px 0 10px; }
-.murty_index header h1 a { color: #000; border: none; }
+.murty_index header h1 {
+  text-align: center;
+  float: none;
+  margin: 30px 0 10px;
+}
+
+.murty_index header h1 a {
+  border: none;
+  color: #fff;
+  background-color: #00549d;
+  padding: 10px 20px;
+}
 
 /* Listings */
 
