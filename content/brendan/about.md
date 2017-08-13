@@ -1,11 +1,43 @@
-# About
+Father of [Isla](http://i.murty.io/), partner of [Ella](http://ellacondon.com/),
+Project Manager and Web Developer at [Sentral](http://sentral.com.au/) and
+[SchnitMyDadSays](http://schnitmydadsays.com/) reviewer.
 
-I'm a Project Manager and Senior Web Developer with varied commercial experience in web-based development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I have a passion to continually learn improved methods and techniques.
+I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage my code on [GitHub](https://github.com/brendanmurty). I enjoy spending time with [family](http://islamurty.com/) and friends, reviewing [schnitzels](http://schnitmydadsays.com/), playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
-I'm currently working for [Sentral Education](https://www.sentral.com.au/) where I manage a large project and develop new features for our software products using various front-end and back-end frameworks and languages.
-
-In September 2012, I created an [open-source](https://github.com/brendanmurty/upcomingtasks) responsive [Basecamp 2](https://basecamp.com/2) client called [UpcomingTasks](http://upcomingtasks.com/) to easily manage tasks on smaller devices. The service still had around 1,000 active users over the years. The service ran [until 15 November 2016](/brendan/post/20161014_farewell-upcomingtasks).
-
-I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage my code on [GitHub](https://github.com/brendanmurty).
-
-I enjoy spending time with [family](http://islamurty.com/) and friends, reviewing [schnitzels](http://schnitmydadsays.com/), playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
+<ul class="listing social">
+  <li>
+    <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
+      <img src="/images/common/mail.svg" alt="Email" width="32" height="32">
+    </a>
+  </li>
+  <li>
+    <a href="/brendan/posts" title="View my Posts">
+      <img src="/images/common/file.svg" alt="Posts" width="32" height="32">
+    </a>
+  </li>
+  <li>
+    <a href="/brendan/resume" title="View my Resumé">
+      <img src="/images/common/briefcase.svg" alt="Resumé" width="32" height="32">
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/brendanmurty" title="View my code on GitHub">
+      <img src="/images/common/github.svg" alt="GitHub" width="32" height="32">
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
+      <img src="/images/common/twitter.svg" alt="Twitter" width="32" height="32">
+    </a>
+  </li>
+  <li>
+    <a href="https://instagram.com/brendan.murty" title="View my Instagram posts">
+      <img src="/images/common/instagram.svg" alt="Instagram" width="32" height="32">
+    </a>
+  </li>
+  <li>
+    <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
+      <img src="/images/common/monitor.svg" alt="Steam" width="32" height="32">
+    </a>
+  </li>
+</ul>

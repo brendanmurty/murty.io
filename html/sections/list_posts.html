@@ -1,5 +1,5 @@
 <ul class="brendan_posts">
   <li ng-repeat="post in list_posts">
-    <a href="{{ post.link }}"><span class="post-date">{{ post.date + 'T00:00:00.000Z' | date: 'd MMM yyyy' }}</span>: {{ post.title }}</a>
+    <span class="post-date">{{ post.date + 'T00:00:00.000Z' | date: 'd MMM yyyy' }}</span><a class="post-link" href="{{ post.link }}"> {{ post.title }}</a>
   </li>
 </ul>

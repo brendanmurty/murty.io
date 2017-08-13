@@ -23,11 +23,4 @@ murtyApp.controller('brendanPageCtrl', ['$scope', '$rootScope', '$routeParams', 
 
         $rootScope.page_loading = false;
     });
-
-    $scope.list_navigation = [
-        { title: 'Home', link: '/brendan' },
-        { title: 'About', link: '/brendan/about' },
-        { title: 'Resumé', link: '/brendan/resume' },
-        { title: 'Posts', link: '/brendan/posts' }
-    ];
 }]);

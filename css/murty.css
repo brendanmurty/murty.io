@@ -1,6 +1,7 @@
 /* Header */
 
-.murty_index header h1 { text-align: center; float: none; }
+.murty_index header h1 { text-align: center; float: none; margin: 30px 0 10px; }
+.murty_index header h1 a { color: #000; border: none; }
 
 /* Listings */
 

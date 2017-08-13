@@ -29,16 +29,9 @@ murtyApp.controller('brendanPostCtrl', ['$scope', '$rootScope', '$routeParams', 
         // Show the posted date in a footer element
         post_date = pageSvc.getPostDate(post_name);
         if (post_date) {
-            $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan/about">Brendan</a></footer>';
+            $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan">Brendan</a></footer>';
         }
 
         $rootScope.page_loading = false;
     });
-
-    $scope.list_navigation = [
-        { title: 'Home', link: '/brendan' },
-        { title: 'About', link: '/brendan/about' },
-        { title: 'Resumé', link: '/brendan/resume' },
-        { title: 'Posts', link: '/brendan/posts' }
-    ];
 }]);
