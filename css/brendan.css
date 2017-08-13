@@ -72,6 +72,10 @@ ul.brendan_posts {
   margin-left: 0;
 }
 
+ul.brendan_posts li {
+  margin: 0 0 10px;
+}
+
 ul.brendan_posts .post-date {
   width: 105px;
   color: #666;
@@ -81,15 +85,6 @@ ul.brendan_posts .post-date {
 .brendan_post article img {
   clear: both;
   display: block;
-}
-
-.brendan a,
-.brendan a:active,
-.brendan a:focus,
-.brendan a:hover,
-.brendan a:visited {
-  color: #16bac5;
-  border: none;
 }
 
 /* Footer */
@@ -103,7 +98,7 @@ ul.brendan_posts .post-date {
 
 ul.social{margin:40px 0 0}
 ul.social li{list-style:none outside none;float:left;text-align:center;margin-right:20px;padding:0;width:40px;height:40px}
-ul.social a{width:40px;height:40px;padding:10px}
+ul.social a{width:40px;height:40px;padding:10px;border:none}
 ul.social img{width:40px;height:40px}
 
 /* Resume page */
@@ -138,9 +133,11 @@ ul.social img{width:40px;height:40px}
 }
 
 @media only screen and (max-width:760px) {
-	ul.post-listing{margin:0}
-	ul.post-listing li.featured .image{display:none}
-	ul.post-listing li.featured .info{max-width:100%;width:100%;margin:0}
+	ul.brendan_posts .post-date {
+    display: block;
+    
+  }
+
 	.brendan_resume article h3,.brendan_resume article p,.brendan_resume article ul{display:block;width:auto;clear:both}
 	.brendan_resume article p{margin-top:30px;padding:0;float:left}
 	.brendan_resume article blockquote p{margin-top:0}
