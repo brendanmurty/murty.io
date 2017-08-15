@@ -1,8 +1,9 @@
 Father of [Isla](http://i.murty.io/), partner of [Ella](http://ellacondon.com/),
-Project Manager and Web Developer at [Sentral](http://sentral.com.au/) and
-[SchnitMyDadSays](http://schnitmydadsays.com/) reviewer.
+Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
+Project Manager at [Sentral](http://sentral.com.au/).
 
-I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage my code on [GitHub](https://github.com/brendanmurty). I enjoy spending time with [family](http://islamurty.com/) and friends, reviewing [schnitzels](http://schnitmydadsays.com/), playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
+I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage code on [GitHub](https://github.com/brendanmurty).
+I enjoy spending time with [family](http://islamurty.com/) and friends, playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing social">
   <li>
