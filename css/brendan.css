@@ -87,6 +87,10 @@ ul.brendan_posts .post-date {
   display: block;
 }
 
+.noscript {
+  text-align: center;
+}
+
 /* Footer */
 
 .brendan footer {
@@ -97,6 +101,7 @@ ul.brendan_posts .post-date {
 /* Content lists */
 
 ul.social{margin:40px 0 0}
+.noscript ul.social{margin-left:auto;margin-right:auto;width:420px}
 ul.social li{list-style:none outside none;float:left;text-align:center;margin-right:20px;padding:0;width:40px;height:40px}
 ul.social a{width:40px;height:40px;padding:10px;border:none}
 ul.social img{width:40px;height:40px}
@@ -161,6 +166,10 @@ ul.social img{width:40px;height:40px}
   .brendan header {
     background-image: url('/images/brendan/header-450.jpg');
     height: 150px;
+  }
+
+  .noscript ul.social{
+    width: 100%;
   }
 }
 

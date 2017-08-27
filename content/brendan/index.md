@@ -1,4 +1,4 @@
-Father of [Isla](http://i.murty.io/), partner of [Ella](http://ellacondon.com/),
+Father of [Isla](http://i.murty.io/), Partner of [Ella](http://ellacondon.com/),
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
 Project Manager at [Sentral](http://sentral.com.au/).
 
