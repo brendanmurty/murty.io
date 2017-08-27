@@ -9,11 +9,26 @@
   border: none;
 }
 
-.isla {
-  background-color: #dcf4fe;
-}
-
 /* Layout */
 
-.isla_index { text-align: center; }
-.isla_index header h1 { text-align: center; float: none; clear: both; margin: 30px 0 10px; }
+.isla_index {
+  text-align: center;
+}
+
+.isla_index header h1 {
+  text-align: center;
+  float: none;
+  clear: both;
+  margin: 30px 0 10px;
+}
+
+.isla_index header h1 a,
+.isla_index header h1 a:active,
+.isla_index header h1 a:focus,
+.isla_index header h1 a:hover,
+.isla_index header h1 a:visited {
+    border: none;
+    color: #fff;
+    background-color: #14b3fb;
+    padding: 10px 20px;
+}
