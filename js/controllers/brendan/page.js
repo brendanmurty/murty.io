@@ -8,15 +8,20 @@ murtyApp.controller('brendanPageCtrl', ['$scope', '$rootScope', '$routeParams', 
     $rootScope.icon_shortcut = 'images/brendan/favicon.png';
     $rootScope.icon_touch = 'images/brendan/apple-touch-icon-precomposed.png';
 
-    $rootScope.class_page = 'brendan brendan_index';
+    $rootScope.class_page = 'brendan brendan_' + $routeParams.page_name;
     $rootScope.class_container = '';
 
     $rootScope.init();
 
-    $rootScope.class_page = 'brendan brendan_' + $routeParams.page_name;
+    var page_name = $routeParams.page_name;
+
+    if (page_name == 'about') {
+        // Use "index.md" for content when the "about" page is requested
+        page_name = 'index';
+    }
 
     // Extract the Markdown content and send it to the template
-    pageSvc.getPageContent('brendan/' + $routeParams.page_name + '.md').then(function(content) {
+    pageSvc.getPageContent('brendan/' + page_name + '.md').then(function(content) {
         $rootScope.page_title = pageSvc.getPageTitle($routeParams.page_name) + ' - ' + $rootScope.site_title;
 
         $rootScope.page_content = content.data;
