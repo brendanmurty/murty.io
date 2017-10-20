@@ -7,6 +7,7 @@ I'm a Project Manager and Senior Web Developer with varied commercial experience
 ### Skills
 
 - __Project Management__ I've managed development on web-based platforms, including feature scoping, task delegation, code reviews and client consultations. I believe that constant communication, honesty and transparency is important at all stages of the software development process.
+- __Git__ I have solid knowledge of the fundamentals of managing software with Git, including branch management, creating releases and resolving conflicts.
 - __PHP__ I've been creating and maintaining commercial web services and websites using PHP for over ten years. I'm continually improving my skills including learning new OOP methods and participating in discussions on Twitter and contributing to open-source projects on GitHub.
 - __JavaScript__ I've built many web systems that utilise JavaScript. This began with jQuery and now includes varied experience using more modern frameworks such as Angular and Node.
 - __HTML5 & CSS3__ My HTML and CSS skills have evolved since I first started building websites in 2007. I use my website to try out new techniques as they become supported by major modern browsers.
