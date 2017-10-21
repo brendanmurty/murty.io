@@ -9,8 +9,8 @@
   border: none;
 }
 
-::-moz-selection{background:#14b3fb;color:#fff;text-shadow:none}
-::selection{background:#14b3fb;color:#fff;text-shadow:none}
+.isla ::-moz-selection{background:#14b3fb;color:#fff;text-shadow:none}
+.isla ::selection{background:#14b3fb;color:#fff;text-shadow:none}
 
 /* Layout */
 
