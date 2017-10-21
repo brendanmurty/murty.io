@@ -14,7 +14,7 @@ murtyApp.controller('islaIndexCtrl', ['$scope', '$rootScope', 'pageSvc', functio
     });
 
     $rootScope.class_page = 'isla isla_index';
-    $rootScope.class_container = 'listing avatars';
+    $rootScope.class_container = 'listing';
 
     $rootScope.init();
 }]);

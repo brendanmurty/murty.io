@@ -1,4 +1,4 @@
-/* Colours */
+/* Links and text selection */
 
 .isla a,
 .isla a:active,
@@ -8,6 +8,9 @@
   color: #14b3fb;
   border: none;
 }
+
+::-moz-selection{background:#14b3fb;color:#fff;text-shadow:none}
+::selection{background:#14b3fb;color:#fff;text-shadow:none}
 
 /* Layout */
 
