@@ -1,6 +1,6 @@
 {
   "name": "murty",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "author": "Brendan Murty <b@murty.io> (http://b.murty.io)",
   "homepage": "http://murty.io",
   "description": "The Murty website built with Angular and Express, coded with Atom and hosted by Digital Ocean.",
