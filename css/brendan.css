@@ -1,8 +1,9 @@
 /* Layout */
 
-body {
+.brendan {
   background-color: #fff;
   color: #171d1c;
+  min-width: 300px;
 }
 
 .brendan #container {
@@ -100,11 +101,45 @@ ul.brendan_posts .post-date {
 
 /* Content lists */
 
-ul.social{margin:40px 0 0}
-.noscript ul.social{margin-left:auto;margin-right:auto;width:420px}
-ul.social li{list-style:none outside none;float:left;text-align:center;margin-right:20px;padding:0;width:40px;height:40px}
-ul.social a{width:40px;height:40px;padding:10px;border:none}
-ul.social img{width:40px;height:40px}
+.brendan ul.social{
+  margin: 40px 0 0;
+}
+
+.brendan .noscript ul.social {
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
+}
+
+.brendan ul.social li {
+  list-style: none outside none;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  padding: 0;
+  width: 22%;
+  min-width: 140px;
+  height: 100px;
+}
+
+.brendan ul.social a {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  border: none;
+}
+
+.brendan ul.social img {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.brendan ul.social span {
+  float: left;
+  margin-left: 12px;
+  border-bottom: 1px solid #aaa;
+}
 
 /* Resume page */
 
