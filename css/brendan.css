@@ -23,6 +23,9 @@
   padding: 20px;
   max-width: 850px;
   box-sizing: border-box;
+  margin: 0 auto;
+  float: none;
+  clear: both;
 }
 
 /* Header */
@@ -40,11 +43,14 @@
   font-size: 30px;
   line-height: 50px;
   margin: 0;
-  float: left;
+  float: none;
   clear: none;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 50%;
+  text-align: center;
+  margin-left: -110px;
+  width: 220px;
 }
 
 .brendan header h1 a {
