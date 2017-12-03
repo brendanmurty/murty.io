@@ -45,12 +45,13 @@
   margin: 0;
   float: none;
   clear: none;
+  display: block;
   position: absolute;
   bottom: 30px;
   left: 50%;
   text-align: center;
-  margin-left: -110px;
-  width: 220px;
+  margin-left: -113px;
+  width: 226px;
 }
 
 .brendan header h1 a {
