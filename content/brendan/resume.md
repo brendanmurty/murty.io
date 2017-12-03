@@ -2,11 +2,12 @@
 
 <h3 class="nomargin">Summary</h3>
 
-I'm a Project Manager and Senior Web Developer with varied commercial experience in web-based development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I have a passion to continually learn improved methods and techniques.
+I'm a Web Developer with varied commercial experience in web-based development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I have a passion to continually learn improved methods and techniques.
 
 ### Work Experience
 
-- __ACT Project Manager__ *[Sentral Education](http://sentral.com.au) &mdash; Sep 2016 - present* I'm managing a large development project which includes scoping out requirements, organising development tasks for our team and managing expectations internally and externally. Another important part of this role is to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
+- __Web Developer__ *[4mation](http://4mation.com.au) &mdash; Dec 2017 - present* I work with a team of developers on varied web projects using modern techniques and frameworks.
+- __ACT Project Manager__ *[Sentral Education](http://sentral.com.au) &mdash; Sep 2016 - Nov 2017* I managed a large development project which included scoping out requirements, organising development tasks for the team and managing expectations internally and externally. Another important part of this role was to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
 - __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Jan 2015 - Sep 2016* I worked in the development team assisting with maintenance and development of new features for various software products using various front-end and back-end frameworks and languages.
 - __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Jul 2014 - Dec 2014* I lead a team of developers who built websites using Siteflex Clasic. This role also included scoping out and developing new features.
 - __Developer and Creator__ *[UpcomingTasks](http://upcomingtasks.com) &mdash; Sep 2012 - Nov 2016* I created an open-source responsive Basecamp 2 client called UpcomingTasks to easily manage tasks on smaller devices. It used the official API to interact with Basecamp 2 tasks, projects and user data. The system had around 1,000 loyal users.

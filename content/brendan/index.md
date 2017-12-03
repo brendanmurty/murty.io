@@ -1,6 +1,6 @@
 Father of [Isla](http://i.murty.io/), Partner of [Ella](http://ellacondon.com/),
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
-Project Manager at [Sentral](http://sentral.com.au/).
+Web Developer at [4mation](http://4mation.com.au).
 
 I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage code on [GitHub](https://github.com/brendanmurty).
 I enjoy spending time with [family](http://islamurty.com/) and friends, playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
