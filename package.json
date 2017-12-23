@@ -6,11 +6,11 @@
   "description": "The Murty website built with Angular and Express, coded with Atom and hosted by Digital Ocean.",
   "private": true,
   "bugs": {
-    "url": "https://github.com/brendanmurty/website/issues/new?assignee=brendanmurty"
+    "url": "https://github.com/brendanmurty/murty.io/issues/new?assignee=brendanmurty"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brendanmurty/website"
+    "url": "https://github.com/brendanmurty/murty.io"
   },
   "license": "SEE LICENSE IN license.md",
   "dependencies": {

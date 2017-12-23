@@ -17,9 +17,9 @@ router.get('/api/posts/by/:author', posts_controller.get);
 router.get('/api/content/of/:content_path', content_controller.get);
 
 // Custom redirects
-router.get('/readme.md',    function(request, response) { response.redirect('https://github.com/brendanmurty/website/blob/master/readme.md'); });
-router.get('/license.md',   function(request, response) { response.redirect('https://github.com/brendanmurty/website/blob/master/license.md'); });
-router.get('/code',         function(request, response) { response.redirect('https://github.com/brendanmurty/website'); });
+router.get('/readme.md',    function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/readme.md'); });
+router.get('/license.md',   function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/license.md'); });
+router.get('/code',         function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io'); });
 
 // Allow static content requests
 app.use('/', router);
