@@ -25,6 +25,12 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, playing 
     </a>
   </li>
   <li>
+    <a href="https://www.linkedin.com/in/brendanmurty/" title="View my LinkedIn profile">
+      <img src="/images/common/linkedin.svg" alt="LinkedIn" width="40" height="40">
+      <span>LinkedIn</span>
+    </a>
+  </li>
+  <li>
     <a href="https://github.com/brendanmurty" title="View my code on GitHub">
       <img src="/images/common/github.svg" alt="GitHub" width="40" height="40">
       <span>GitHub</span>
