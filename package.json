@@ -15,7 +15,12 @@
   "license": "SEE LICENSE IN license.md",
   "dependencies": {
     "express": "^4.15.3",
-    "helmet": "^3.9.0"
+    "helmet": "^3.9.0",
+    "@bower_components/angular": "angular/bower-angular#1.6.x",
+    "@bower_components/angular-route": "angular/bower-angular-route#1.6.x",
+    "@bower_components/angular-sanitize": "angular/bower-angular-sanitize#>=1.3.0 <2.0.0",
+    "@bower_components/ng-showdown": "showdownjs/ng-showdown#1.x",
+    "@bower_components/showdown": "showdownjs/showdown#1.x"
   },
   "devDependencies": {
     "bower": "^1.7.7",
@@ -27,12 +32,15 @@
     "nodemon": "^1.11.0"
   },
   "scripts": {
-    "postinstall": "bower install --allow-root",
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\"",
     "startdev": "nodemon server.js",
     "start": "set NODE_ENV=production && export APP_DOMAIN=murty.io && export APP_PORT=80 && forever start -o murty-output.log -e murty-error.log -l murty-forever.log -a server.js",
     "stop": "forever stopall",
     "logserver": "tail -f ~/.forever/murty-forever.log",
     "logoutput": "tail -f ~/.forever/murty-output.log",
     "logerror": "tail -f ~/.forever/murty-error.log"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
   }
 }
