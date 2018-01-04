@@ -1,5 +1,6 @@
 // Initialise app
-var https = require('https'),
+var http = require('http'),
+    https = require('https'),
     fs = require('fs'),
     express = require('express'),
     app = express(),
@@ -39,11 +40,15 @@ app.get('*', function (request, response) {
     response.sendFile('index.html', { 'root': __dirname });
 });
 
-// Start the HTTP server
-app.listen(app_port, app_domain);
-console.log('http server started at http://' + app_domain + ':' + app_port);
+if (app_domain == 'localhost') {
+    // Start the HTTP server
+    app.listen(app_port, app_domain);
 
-if (app_domain != 'localhost') {
+    console.log('http server started at http://' + app_domain + ':' + app_port);
+} else {
+    // Start the HTTP server
+    http.createServer();
+
     // Start the HTTPS server
     https.createServer(
         {
