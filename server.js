@@ -39,11 +39,12 @@ app.get('*', function (request, response) {
     response.sendFile('index.html', { 'root': __dirname });
 });
 
-// Start the web server
+// Start the HTTP server
 app.listen(app_port, app_domain);
 console.log('http server started at http://' + app_domain + ':' + app_port);
 
 if (app_domain != 'localhost') {
+    // Start the HTTPS server
     https.createServer(
         {
             cert: fs.readFileSync('./ssl/fullchain.pem'),
@@ -53,4 +54,11 @@ if (app_domain != 'localhost') {
     ).listen(443);
 
     console.log('https server started at https://' + app_domain + ':443');
+
+    // Redirect all HTTP requests to HTTPS
+    http.get('*', function (request, response) {
+        response.redirect('https://' + request.headers.host + request.url);
+    });
+
+    console.log('http requests redirected to https');
 }
