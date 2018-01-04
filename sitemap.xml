@@ -1,31 +1,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://murty.io/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-   
-  <url>
-    <loc>http://murty.io/brendan</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>http://murty.io/brendan/about</loc>
+    <loc>https://murty.io/</loc>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>http://murty.io/brendan/resume</loc>
+    <loc>https://murty.io/brendan</loc>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>http://murty.io/brendan/posts</loc>
+    <loc>https://murty.io/brendan/resume</loc>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>http://murty.io/isla</loc>
+    <loc>https://murty.io/brendan/posts</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://murty.io/isla</loc>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

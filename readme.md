@@ -1,11 +1,11 @@
-[murty.io](http://murty.io)
+[murty.io](https://murty.io)
 =======
 
 [![](/images/brendan/brendan_murty.jpg)](http://b.murty.io) [![](/images/isla/isla_murty.jpg)](http://i.murty.io)
 
 ## About
 
-Here's the [Murty website](http://murty.io) built with [Angular](https://angularjs.org/), [Express](https://expressjs.com/) and [Feather](http://feathericons.com) icons.
+Here's the [Murty website](https://murty.io) built with [Angular](https://angularjs.org/), [Express](https://expressjs.com/) and [Feather](http://feathericons.com) icons.
 
 ## Why
 
@@ -28,7 +28,16 @@ npm install -g bower gulp-cli nodemon forever && npm install
 touch ~/.forever/murty-forever.log && touch ~/.forever/murty-output.log && touch ~/.forever/murty-error.log
 ```
 
-When using Ubuntu, you need to put `sudo ` in front of the first command above.
+When using Ubuntu, you'll need to put `sudo ` in front of the first command above.
+
+To setup SSL using [Let's Encrypt](https://letsencrypt.org/):
+
+```
+sudo apt-get install letsencrypt
+letsencrypt certonly --webroot -w ./ -d your-domain.com
+```
+
+Then copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
 
 ### Logs
 
