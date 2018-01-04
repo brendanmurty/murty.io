@@ -1,6 +1,5 @@
 // Initialise app
-var http = require('http'),
-    https = require('https'),
+var https = require('https'),
     fs = require('fs'),
     express = require('express'),
     app = express(),
@@ -40,15 +39,11 @@ app.get('*', function (request, response) {
     response.sendFile('index.html', { 'root': __dirname });
 });
 
-if (app_domain == 'localhost') {
-    // Start the HTTP server
-    app.listen(app_port, app_domain);
+// Start the HTTP server
+app.listen(app_port, app_domain);
+console.log('http server started at http://' + app_domain + ':' + app_port);
 
-    console.log('http server started at http://' + app_domain + ':' + app_port);
-} else {
-    // Start the HTTP server
-    http.createServer();
-
+if (app_domain != 'localhost') {
     // Start the HTTPS server
     https.createServer(
         {
@@ -59,11 +54,4 @@ if (app_domain == 'localhost') {
     ).listen(443);
 
     console.log('https server started at https://' + app_domain + ':443');
-
-    // Redirect all HTTP requests to HTTPS
-    http.get('*', function (request, response) {
-        response.redirect('https://' + request.headers.host + request.url);
-    });
-
-    console.log('http requests redirected to https');
 }
