@@ -1,6 +1,7 @@
 /content/brendan/posts/posts.json
 /node_modules
 /bower_components
+/ssl/*.pem
 Thumbs.db
 ehthumbs.db
 Desktop.ini
