@@ -14,7 +14,8 @@
   },
   "license": "SEE LICENSE IN license.md",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "helmet": "^3.9.0"
   },
   "devDependencies": {
     "bower": "^1.7.7",

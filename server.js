@@ -1,5 +1,7 @@
 // Initialise app
-var express = require('express'),
+var https = require('https'),
+    fs = require('fs'),
+    express = require('express'),
     app = express(),
     app_domain = process.env.APP_DOMAIN || 'localhost',
     app_port = process.env.APP_PORT || 80,
@@ -20,6 +22,7 @@ router.get('/api/content/of/:content_path', content_controller.get);
 router.get('/readme.md',    function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/readme.md'); });
 router.get('/license.md',   function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/license.md'); });
 router.get('/code',         function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io'); });
+router.get('/health-check', function(request, response) { response.sendStatus(200); });
 
 // Allow static content requests
 app.use('/', router);
@@ -28,6 +31,9 @@ app.use(express.static(__dirname));
 // Use Gzip compression
 app.use(compression());
 
+// Use Helmet to send correct HTTP headers for HTTPS connections
+app.use(require('helmet')());
+
 // Send all other requests to Angular
 app.get('*', function (request, response) {
     response.sendFile('index.html', { 'root': __dirname });
@@ -35,5 +41,16 @@ app.get('*', function (request, response) {
 
 // Start the web server
 app.listen(app_port, app_domain);
+console.log('http server started at http://' + app_domain + ':' + app_port);
 
-console.log('server started at http://' + app_domain + ':' + app_port);
+if (app_domain != 'localhost') {
+    https.createServer(
+        {
+            cert: fs.readFileSync('./ssl/fullchain.pem'),
+            key: fs.readFileSync('./ssl/privkey.pem')
+        },
+        app
+    ).listen(443);
+
+    console.log('https server started at https://' + app_domain + ':443');
+}
