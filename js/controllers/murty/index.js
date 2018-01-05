@@ -4,9 +4,8 @@ murtyApp.controller('murtyIndexCtrl', ['$scope', '$rootScope', 'pageSvc', functi
     $rootScope.site_description = 'Murty websites';
     $rootScope.site_author = 'Brendan Murty';
     $rootScope.site_index_link = '/';
-
-    $rootScope.icon_shortcut = 'images/common/server.png';
-    $rootScope.icon_touch = '';
+    $rootScope.page_theme = '#00549d';
+    $rootScope.page_icon = '/images/common/murty-192.png';
 
     pageSvc.getPageContent('murty/index.md').then(function(content) {
         $rootScope.page_content = content.data;

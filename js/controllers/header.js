@@ -8,6 +8,8 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
     $rootScope.page_title = '';
     $rootScope.page_content = '';
     $rootScope.page_loading = true;
+    $rootScope.page_theme = '#00549d';
+    $rootScope.page_icon = '/images/common/murty-192.png';
 
     // Handle initial page tasks
     $rootScope.init = function() {
