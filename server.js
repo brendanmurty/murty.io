@@ -10,10 +10,14 @@ var https = require('https'),
 
 // Configure API controllers
 var content_controller = require('./js/api/content.js'),
-    posts_controller = require('./js/api/posts.js');
+    posts_controller = require('./js/api/posts.js'),
+    feed_controller = require('./js/api/feed.js');
 
 // Configure API Posts Route
 router.get('/api/posts/by/:author', posts_controller.get);
+
+// Configure API Feed Route
+router.get('/api/feed/by/:author', feed_controller.get);
 
 // Configure API Page Content Route
 router.get('/api/content/of/:content_path', content_controller.get);
