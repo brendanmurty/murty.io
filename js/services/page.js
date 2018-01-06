@@ -66,7 +66,7 @@ murtyApp.factory('pageSvc', ['$http', '$q', '$filter', function ($http, $q, $fil
         post_date = post_name.substring(0, 8);
 
         if (!isNaN(post_date)) {
-            return $filter('date')(post_date + 'T00:00:00.000Z', 'd MMM yyyy', 'en_AU');
+            return $filter('date_short')(post_date + 'T00:00:00.000Z', 'd MMM yyyy', 'en_AU');
         } else {
             return '';
         }

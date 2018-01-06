@@ -18,6 +18,10 @@ exports.get = function (request, response) {
                     for (var i = 0; i < files.length; i++) {
                         if (file != 'posts.json') {
                             var file = files[i],
+                                date_short = file.substr(0, 8),
+                                date = new Date(date_short.substr(0, 4), date_short.substr(4, 2) - 1, date_short.substr(6, 2), 9, 0, 0, 0),
+                                date_published = date.toISOString(),
+                                post_url = 'https://murty.io/' + author + '/post/' + file.replace(/\.md/, ''),
                                 title = file
                                     .substr(9)
                                     .replace(/\.md/, '')
@@ -28,19 +32,21 @@ exports.get = function (request, response) {
                                     .replace(/php/gi, 'PHP');
 
                             post_list.push({
-                                'title': title,
-                                'date': file.substr(0, 8),
-                                'link': '/' + author + '/post/' + file.replace(/\.md/, '')
+                                'id': post_url,
+                                'url': post_url,
+                                'date_short': date_short,
+                                'date_published': date_published,
+                                'title': title
                             });
                         }
                     }
 
                     // Sort posts by reverse chronological order
                     post_list.sort(function(a, b) {
-                        if (a['date'] == b['date']) {
+                        if (a['date_short'] == b['date_short']) {
                             return 0;
                         } else {
-                            return a['date'] > b['date'] ? -1 : 1;
+                            return a['date_short'] > b['date_short'] ? -1 : 1;
                         }
                     });
 
