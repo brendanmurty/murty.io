@@ -11,11 +11,11 @@ var css_files = [
 ];
 
 var js_files = [
-    'bower_components/angular/angular.min.js',
-    'bower_components/angular-route/angular-route.min.js',
-    'bower_components/angular-sanitize/angular-sanitize.min.js',
-    'bower_components/showdown/dist/showdown.min.js',
-    'bower_components/ng-showdown/dist/ng-showdown.min.js',
+    'node_modules/angular/angular.min.js',
+    'node_modules/angular-route/angular-route.min.js',
+    'node_modules/angular-sanitize/angular-sanitize.min.js',
+    'node_modules/showdown/dist/showdown.min.js',
+    'node_modules/ng-showdown/dist/ng-showdown.min.js',
     'js/app.js',
     'js/router.js',
     'js/services/page.js',
