@@ -19,8 +19,8 @@ exports.get = function (request, response) {
                         if (file != 'posts.json') {
                             var file = files[i],
                                 date_short = file.substr(0, 8),
-                                date = new Date(date_short.substr(0, 4), date_short.substr(4, 2) - 1, date_short.substr(6, 2), 9, 0, 0, 0),
-                                date_published = date.toISOString(),
+                                date_object = new Date(date_short.substr(0, 4), date_short.substr(4, 2) - 1, date_short.substr(6, 2), 9, 0, 0, 0),
+                                date_published = date_object.toISOString(),
                                 post_url = 'https://murty.io/' + author + '/post/' + file.replace(/\.md/, ''),
                                 title = file
                                     .substr(9)
@@ -34,8 +34,10 @@ exports.get = function (request, response) {
                             post_list.push({
                                 'id': post_url,
                                 'url': post_url,
-                                'date_short': date_short,
+                                '_date_short': date_short,
                                 'date_published': date_published,
+                                'content_text': 'Read this post on murty.io',
+                                'content_html': '<p>Read this post on <a href="' + post_url + '">murty.io</a></p>',
                                 'title': title
                             });
                         }
@@ -43,10 +45,10 @@ exports.get = function (request, response) {
 
                     // Sort posts by reverse chronological order
                     post_list.sort(function(a, b) {
-                        if (a['date_short'] == b['date_short']) {
+                        if (a['_date_short'] == b['_date_short']) {
                             return 0;
                         } else {
-                            return a['date_short'] > b['date_short'] ? -1 : 1;
+                            return a['_date_short'] > b['_date_short'] ? -1 : 1;
                         }
                     });
 
