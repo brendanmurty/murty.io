@@ -16,7 +16,7 @@ exports.get = function (request, response) {
                     var post_list = [];
 
                     for (var i = 0; i < files.length; i++) {
-                        if (file != 'posts.json') {
+                        if (files[i] != 'posts.json' && files[i] != 'feed.json') {
                             var file = files[i],
                                 date_short = file.substr(0, 8),
                                 date_object = new Date(date_short.substr(0, 4), date_short.substr(4, 2) - 1, date_short.substr(6, 2), 9, 0, 0, 0),
