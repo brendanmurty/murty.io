@@ -23,10 +23,13 @@ router.get('/api/feed/by/:author', feed_controller.get);
 router.get('/api/content/of/:content_path', content_controller.get);
 
 // Custom redirects
-router.get('/readme.md',    function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/readme.md'); });
-router.get('/license.md',   function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/license.md'); });
-router.get('/code',         function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io'); });
-router.get('/health-check', function(request, response) { response.sendStatus(200); });
+router.get('/readme.md',            function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/readme.md'); });
+router.get('/license.md',           function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io/blob/master/license.md'); });
+router.get('/code',                 function(request, response) { response.redirect('https://github.com/brendanmurty/murty.io'); });
+router.get('/brendan/posts.json',   function(request, response) { response.sendFile(__dirname + '/content/brendan/posts/feed.json'); });
+
+// System health check
+router.get('/health-check',         function(request, response) { response.sendStatus(200); });
 
 // Allow static content requests
 app.use('/', router);
