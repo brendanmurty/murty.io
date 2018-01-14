@@ -49,6 +49,26 @@ npm run logoutput
 npm run logserver
 ```
 
+### Maintenance
+
+To clear the Posts and Feed JSON cache files, run:
+
+```
+npm run clearcache
+```
+
+To regenerate the Posts and Feed JSON cache files locally, run:
+
+```
+npm run generatejsondev
+```
+
+To regenerate the Posts and Feed JSON cache files on production, run:
+
+```
+npm run generatejson
+```
+
 ### Development
 
 To update JavaScript and CSS build files run: `gulp`

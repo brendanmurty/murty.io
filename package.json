@@ -34,6 +34,9 @@
     "startdev": "nodemon server.js",
     "start": "set NODE_ENV=production && export APP_DOMAIN=murty.io && export APP_PORT=80 && forever start -o murty-output.log -e murty-error.log -l murty-forever.log -a server.js",
     "stop": "forever stopall",
+    "clearcache": "rm content/brendan/posts/feed.json && rm content/brendan/posts/posts.json",
+    "generatejson": "curl https://murty.io/api/feed/by/brendan && curl https://murty.io/api/posts/by/brendan",
+    "generatejsondev": "curl http://localhost/api/feed/by/brendan && curl http://localhost/api/posts/by/brendan",
     "logserver": "tail -f ~/.forever/murty-forever.log",
     "logoutput": "tail -f ~/.forever/murty-output.log",
     "logerror": "tail -f ~/.forever/murty-error.log"
