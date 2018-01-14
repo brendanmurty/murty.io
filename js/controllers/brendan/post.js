@@ -6,6 +6,8 @@ murtyApp.controller('brendanPostCtrl', ['$scope', '$rootScope', '$routeParams', 
     $rootScope.site_index_link = '/brendan';
     $rootScope.page_theme = '#171d1c';
     $rootScope.page_icon = '/images/brendan/icon-192.png';
+    $rootScope.feed_title = 'Posts by Brendan Murty';
+    $rootScope.feed_url = 'https://murty.io/brendan/posts.json';
 
     $rootScope.class_page = 'brendan brendan_post';
     $rootScope.class_container = '';
@@ -28,7 +30,7 @@ murtyApp.controller('brendanPostCtrl', ['$scope', '$rootScope', '$routeParams', 
         // Show the posted date in a footer element
         post_date = pageSvc.getPostDate(post_name);
         if (post_date) {
-            $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan">Brendan</a></footer>';
+            $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan">Brendan</a>. Subscribe using the <a href="' + $rootScope.feed_url + '">JSON Feed</a></footer>';
         }
 
         $rootScope.page_loading = false;

@@ -4,7 +4,7 @@
   <article>
     <h1>Posts</h1>
 
-    <!-- TODO: Add link to subscribe to JSON Feed -->
+    <p ng-if="feed_url">Subscribe using the <a ng-href="{{ feed_url }}">JSON Feed</a>.</p>
 
     <ng-include
       ng-if="list_posts"

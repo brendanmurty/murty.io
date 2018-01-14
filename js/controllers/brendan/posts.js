@@ -6,6 +6,8 @@ murtyApp.controller('brendanPostsCtrl', ['$scope', '$rootScope', '$routeParams',
     $rootScope.site_index_link = '/brendan';
     $rootScope.page_theme = '#171d1c';
     $rootScope.page_icon = '/images/brendan/icon-192.png';
+    $rootScope.feed_title = 'Posts by Brendan Murty';
+    $rootScope.feed_url = 'https://murty.io/brendan/posts.json';
 
     $rootScope.class_page = 'brendan brendan_posts';
     $rootScope.class_container = '';
