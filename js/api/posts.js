@@ -34,7 +34,7 @@ exports.get = function (request, response) {
                             post_list.push({
                                 'id': post_url,
                                 'url': post_url,
-                                '_date_short': date_short,
+                                '_murty': { 'date_short': date_short },
                                 'date_published': date_published,
                                 'content_text': 'Read this post on murty.io',
                                 'content_html': '<p>Read this post on <a href="' + post_url + '">murty.io</a></p>',
@@ -45,10 +45,10 @@ exports.get = function (request, response) {
 
                     // Sort posts by reverse chronological order
                     post_list.sort(function(a, b) {
-                        if (a['_date_short'] == b['_date_short']) {
+                        if (a['_murty']['date_short'] == b['_murty']['date_short']) {
                             return 0;
                         } else {
-                            return a['_date_short'] > b['_date_short'] ? -1 : 1;
+                            return a['_murty']['date_short'] > b['_murty']['date_short'] ? -1 : 1;
                         }
                     });
 

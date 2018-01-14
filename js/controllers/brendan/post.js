@@ -30,7 +30,7 @@ murtyApp.controller('brendanPostCtrl', ['$scope', '$rootScope', '$routeParams', 
         // Show the posted date in a footer element
         post_date = pageSvc.getPostDate(post_name);
         if (post_date) {
-            $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan">Brendan</a>. Subscribe using the <a href="' + $rootScope.feed_url + '">JSON Feed</a></footer>';
+            $rootScope.page_content = content.data + '<footer>Posted ' + post_date + ' by <a href="/brendan">Brendan</a>. Subscribe using the <a href="' + $rootScope.feed_url + '">JSON Feed</a>.</footer>';
         }
 
         $rootScope.page_loading = false;
