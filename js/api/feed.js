@@ -16,13 +16,13 @@ exports.get = function (request, response) {
         // JSON Feed properties
         var feed = {};
         feed.version = 'https://jsonfeed.org/version/1';
-        feed.title = 'Posts by ' + author_name,
-        feed.home_page_url = 'https://murty.io/' + author,
-        feed.feed_url = 'https://murty.io/' + author + '/posts.json',
+        feed.title = 'Posts by ' + author_name;
+        feed.home_page_url = 'https://murty.io/' + author;
+        feed.feed_url = 'https://murty.io/' + author + '/posts.json';
         feed.user_comment = 'This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL — ' + feed.feed_url + ' — and add it your reader.';
         feed.author = {};
-        feed.author.name = author_name,
-        feed.author.url = 'https://murty.io/' + author,
+        feed.author.name = author_name;
+        feed.author.url = 'https://murty.io/' + author;
         feed.author.avatar = 'https://murty.io/images/' + author + '/avatar.jpg';
         feed.items = {};
 
