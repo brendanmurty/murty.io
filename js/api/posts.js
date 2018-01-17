@@ -52,7 +52,12 @@ exports.get = function (request, response) {
                         }
                     });
 
-                    var post_list_json = JSON.stringify(post_list);
+                    // Generate human-readable JSON
+                    var post_list_json = JSON.stringify(
+                        post_list,
+                        null,
+                        4
+                    );
 
                     // Save the JSON content to the cache file
                     fs.writeFile(

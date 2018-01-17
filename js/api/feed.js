@@ -30,7 +30,13 @@ exports.get = function (request, response) {
             if (!fs.existsSync(feed_json_file)) {
                 fs.readFile(posts_json_file, function(error, posts_content) {
                     feed.items = JSON.parse(posts_content);
-                    var json_feed = JSON.stringify(feed);
+
+                    // Generate human-readable JSON
+                    var json_feed = JSON.stringify(
+                        feed,
+                        null,
+                        4
+                    );
 
                     // Save the JSON content to the cache file
                     fs.writeFile(
