@@ -32,7 +32,16 @@ exports.get = function (request, response) {
                     feed.items = JSON.parse(posts_content);
                     var json_feed = JSON.stringify(feed);
 
-                    fs.writeFile(feed_json_file, json_feed);
+                    // Save the JSON content to the cache file
+                    fs.writeFile(
+                        feed_json_file,
+                        json_feed,
+                        (error) => {
+                            if (error) {
+                                console.log(error);
+                            }
+                        }
+                    );
 
                     response.writeHead(200, { 'Content-Type': 'application/json' });
                     response.write(json_feed);

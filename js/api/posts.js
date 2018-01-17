@@ -55,7 +55,15 @@ exports.get = function (request, response) {
                     var post_list_json = JSON.stringify(post_list);
 
                     // Save the JSON content to the cache file
-                    fs.writeFile(posts_json_file, post_list_json);
+                    fs.writeFile(
+                        posts_json_file,
+                        post_list_json,
+                        (error) => {
+                            if (error) {
+                                console.log(error);
+                            }
+                        }
+                    );
 
                     response.writeHead(200, { 'Content-Type': 'application/json' });
                     response.write(post_list_json);
