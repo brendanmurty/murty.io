@@ -155,7 +155,13 @@ ul.brendan_posts .post-date {
 
 /* Alterations for certain screen sizes */
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1300px) {
+  .brendan article {
+    padding-right: 35%;
+  }
+}
+
+@media only screen and (max-width:1100px) {
   .brendan #sidebar {
     height: 350px;
     width: 100%;
