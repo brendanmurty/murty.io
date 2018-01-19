@@ -1,5 +1,20 @@
+<section id="sidebar"></section>
+
 <section id="container">
-  <ng-include src="'html/sections/header.html'"></ng-include>
-  <ng-include src="'html/sections/content_markdown.html'"></ng-include>
-  <ng-include src="'html/sections/footer.html'"></ng-include>
+  <header>
+    <h1>
+      <a href="{{ site_index_link }}" title="Go to the home page">
+        {{ site_title }}
+      </a>
+    </h1>
+  </header>
+
+  <ng-include
+    ng-if="page_content"
+    src="'html/sections/content_markdown.html'"
+  ></ng-include>
+
+  <ng-include
+    src="'html/sections/footer.html'"
+  ></ng-include>
 </section>

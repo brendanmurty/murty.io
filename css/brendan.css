@@ -9,56 +9,46 @@
 .brendan #container {
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   max-width: none;
-}
-
-.brendan header {
-  width: 100%;
-  padding: 0;
 }
 
 .brendan article {
   width: 100%;
-  padding: 20px;
-  max-width: 850px;
+  padding: 0 50% 1% 2%;
   box-sizing: border-box;
-  margin: 0 auto;
-  float: none;
-  clear: both;
+  float: left;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.brendan #sidebar {
+  background-image: url('/images/brendan/sidebar.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  width: 30%;
+  left: 70%;
 }
 
 /* Header */
 
 .brendan header {
-  float: left;
-  background-image: url('/images/brendan/header-1500.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 500px;
-  position: relative;
+  padding: 1% 2%;
 }
 
 .brendan header h1 {
-  font-size: 30px;
+  font-size: 45px;
   line-height: 60px;
   height: 60px;
-  float: none;
-  clear: none;
-  display: block;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  text-align: center;
-  margin: 0 0 0 -120px;
-  width: 240px;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .brendan header h1 a {
   border-bottom: none;
-  color: #fff;
-  background-color: #171d1c;
+  color: #000;
   display: block;
 }
 
@@ -66,7 +56,7 @@
 .brendan header h1 a:focus,
 .brendan header h1 a:hover,
 .brendan header h1 a:visited {
-  color: #fff;
+  color: #000;
 }
 
 /* Content */
@@ -165,17 +155,29 @@ ul.brendan_posts .post-date {
 
 /* Alterations for certain screen sizes */
 
-@media only screen and (max-width:1200px) {
-  .brendan header {
-    background-image: url('/images/brendan/header-1200.jpg');
-    height: 400px;
-  }
-}
-
 @media only screen and (max-width:1000px) {
+  .brendan #sidebar {
+    height: 350px;
+    width: 100%;
+    position: static;
+    left: 0;
+  }
+
   .brendan header {
-    background-image: url('/images/brendan/header-1000.jpg');
-    height: 333px;
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  .brendan article {
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    float: left;
+    position: static;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
   }
 }
 
@@ -191,9 +193,8 @@ ul.brendan_posts .post-date {
 }
 
 @media only screen and (max-width:650px) {
-  .brendan header {
-    background-image: url('/images/brendan/header-650.jpg');
-    height: 217px;
+  .brendan #sidebar {
+    height: 220px;
   }
 }
 
@@ -206,8 +207,7 @@ ul.brendan_posts .post-date {
 }
 
 @media only screen and (max-width:450px) {
-  .brendan header {
-    background-image: url('/images/brendan/header-450.jpg');
+  .brendan #sidebar {
     height: 150px;
   }
 
@@ -219,17 +219,14 @@ ul.brendan_posts .post-date {
 /* Print styles */
 
 @media print {
-  .brendan_resume header {
-    height: 100px;
-    background: none;
-    color: #000;
-    margin: 30px 0 0;
-    padding: 0;
+  .brendan_resume #sidebar {
+    display: none;
   }
 
   .brendan_resume article {
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0 2%;
+    width: 100%;
   }
 
   .brendan_resume article a:after {
