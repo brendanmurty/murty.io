@@ -85,10 +85,10 @@ To stop a production web server run: `npm run stop`
 
 ## Contribute
 
-If you have an idea for a website update or have found a bug, please [submit a new issue](https://github.com/brendanmurty/murty.io/issues/new?assignee=brendanmurty).
+If you have an idea for a website update or have found a bug, please [submit a new issue](https://bitbucket.org/brendanmurty/murty.io/issues/new).
 
 ## License
 
-You can view the [License](https://github.com/brendanmurty/murty.io/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
+You can view the [License](https://bitbucket.org/brendanmurty/murty.io/src/master/license.md) file for rights and limitations when using the code here in your own projects.
 
 The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
