@@ -1,18 +1,10 @@
 // Brendan Index controller
-murtyApp.controller('brendanIndexCtrl', ['$scope', '$rootScope', '$routeParams', 'pageSvc', function ($scope, $rootScope, $routeParams, pageSvc) {
-    $rootScope.site_title = 'Brendan Murty';
-    $rootScope.site_description = 'Brendan is a Senior Web Developer based in Sydney, Australia.';
-    $rootScope.site_author = 'Brendan Murty';
-    $rootScope.site_index_link = '/brendan';
-    $rootScope.page_theme = '#171d1c';
-    $rootScope.page_icon = '/images/brendan/icon-192.png';
+murtyApp.controller('brendanIndexCtrl', ['$scope', '$rootScope', '$routeParams', 'pageSvc', 'siteSvc', function ($scope, $rootScope, $routeParams, pageSvc, siteSvc) {
+    $rootScope.init('brendan');
 
+    $rootScope.page_title = siteSvc.getSiteProperty('brendan', 'site_title');
     $rootScope.class_page = 'brendan brendan_index';
     $rootScope.class_container = '';
-
-    $rootScope.init();
-
-    $rootScope.page_title = $rootScope.site_title;
 
     // Default to Brendan's index content
     var page_content_url = 'brendan/index.md';

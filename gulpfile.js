@@ -18,6 +18,7 @@ var js_files = [
     'node_modules/ng-showdown/dist/ng-showdown.min.js',
     'js/app.js',
     'js/router.js',
+    'js/services/site.js',
     'js/services/page.js',
     'js/controllers/header.js',
     'js/controllers/murty/index.js',

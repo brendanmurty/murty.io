@@ -11,20 +11,25 @@ var https = require('https'),
 // Configure API controllers
 var content_controller = require('./js/api/content.js'),
     posts_controller = require('./js/api/posts.js'),
-    feed_controller = require('./js/api/feed.js');
+    feed_controller = require('./js/api/feed.js'),
+    sites_controller = require('./js/api/sites.js');
 
-// Configure API Posts Route
+// Configure API Posts route
 router.get('/api/posts/by/:author', posts_controller.get);
 
-// Configure API Feed Route
+// Configure API Feed route
 router.get('/api/feed/by/:author', feed_controller.get);
 
-// Configure API Page Content Route
+// Configure API Page Content route
 router.get('/api/content/of/:content_path', content_controller.get);
+
+// Configure Sites JSON content route
+router.get('/api/sites', sites_controller.get);
 
 // Custom redirects
 router.get('/readme.md',            function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io/src/master/readme.md'); });
 router.get('/license.md',           function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io/src/master/license.md'); });
+router.get('/sites.json',           function(request, response) { response.sendFile('https://bitbucket.org/brendanmurty/murty.io/src/master/sites.json'); });
 router.get('/code',                 function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io'); });
 router.get('/brendan/posts.json',   function(request, response) { response.sendFile(__dirname + '/content/brendan/posts/feed.json'); });
 

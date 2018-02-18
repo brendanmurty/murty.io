@@ -1,0 +1,32 @@
+{
+  "brendan": {
+    "title": "Brendan Murty",
+    "description": "Brendan is a Senior Web Developer based in Sydney, Australia.",
+    "author": "Brendan Murty",
+    "index_link": "/brendan",
+    "theme": "#171d1c",
+    "icon": "/images/brendan/icon-192.png",
+    "feed_title": "Posts by Brendan Murty",
+    "feed_url": "https://murty.io/brendan/posts.json"
+  },
+  "isla": {
+    "title": "Isla Murty",
+    "description": "Loves salt and vinegar chips and plain crackers with Philadelphia.",
+    "author": "Brendan Murty",
+    "index_link": "/isla",
+    "theme": "#14b3fb",
+    "icon": "/images/isla/icon-192.png",
+    "feed_title": "",
+    "feed_url": ""
+  },
+  "murty": {
+    "title": "Murty",
+    "description": "Murty websites",
+    "author": "Brendan Murty",
+    "index_link": "/",
+    "theme": "#00549d",
+    "icon": "/images/common/murty-192.png",
+    "feed_title": "",
+    "feed_url": ""
+  }
+}
