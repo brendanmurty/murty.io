@@ -100,7 +100,7 @@ nav.sites .current_site img { border: 2px solid #000; padding: 2px; }
 	html{height:auto}
 	article,header,nav{padding-left:0;padding-right:0;width:100%}
 	article{padding-left:2%;padding-right:2%;width:96%}
-	.noprint,header ul,footer,form .button,.listing.social{display:none}
+	.noprint,nav.sites,header ul,footer,form .button,.listing.social{display:none}
 	body.brendan,body.isla,body.murty{background-color:transparent}
 	h1,h2,h3,h4,.post-listing .info{width:100%;max-width:100%;color:#000}
 	p,h2,h3{orphans:3;widows:3}
