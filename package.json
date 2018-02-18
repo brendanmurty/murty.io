@@ -1,6 +1,6 @@
 {
-  "name": "murty",
-  "version": "5.2.1",
+  "name": "murty.io",
+  "version": "5.3.0",
   "author": "Brendan Murty <b@murty.io> (https://murty.io/brendan)",
   "homepage": "https://murty.io",
   "description": "The Murty website built with Angular and Express, coded with Atom and hosted by Digital Ocean.",
@@ -18,7 +18,7 @@
     "angular-route": "1.6.x",
     "angular-sanitize": "1.6.x",
     "express": "^4.15.3",
-    "helmet": "^3.9.0",
+    "helmet": "^3.11.0",
     "ng-showdown": "1.x",
     "showdown": "1.x"
   },
@@ -28,7 +28,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.15.0"
   },
   "scripts": {
     "startdev": "nodemon server.js",
