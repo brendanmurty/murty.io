@@ -4,8 +4,10 @@
     "description": "Brendan is a Senior Web Developer based in Sydney, Australia.",
     "author": "Brendan Murty",
     "index_link": "/brendan",
+    "index_link_full": "https://murty.io/brendan",
     "theme": "#171d1c",
     "icon": "/images/brendan/icon-192.png",
+    "icon_large": "/images/brendan/brendan_murty.jpg",
     "feed_title": "Posts by Brendan Murty",
     "feed_url": "https://murty.io/brendan/posts.json"
   },
@@ -14,8 +16,10 @@
     "description": "Loves salt and vinegar chips and plain crackers with Philadelphia.",
     "author": "Brendan Murty",
     "index_link": "/isla",
+    "index_link_full": "https://murty.io/isla",
     "theme": "#14b3fb",
     "icon": "/images/isla/icon-192.png",
+    "icon_large": "/images/isla/isla_murty.jpg",
     "feed_title": "",
     "feed_url": ""
   },
@@ -24,8 +28,10 @@
     "description": "Murty websites",
     "author": "Brendan Murty",
     "index_link": "/",
+    "index_link_full": "https://murty.io/",
     "theme": "#00549d",
     "icon": "/images/common/murty-192.png",
+    "icon_large": "",
     "feed_title": "",
     "feed_url": ""
   }

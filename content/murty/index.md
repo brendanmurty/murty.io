@@ -1,2 +1,0 @@
-- [![](/images/brendan/brendan_murty.jpg "Visit Brendan Murty's website") Brendan Murty](https://murty.io/brendan)
-- [![](/images/isla/isla_murty.jpg "Visit Isla Murty's website") Isla Murty](https://murty.io/isla)

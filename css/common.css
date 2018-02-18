@@ -79,6 +79,7 @@ article{padding:2% 20%;width:60%;margin:0;float:left}
 
 ul.listing, .listing ul { list-style: none; margin: 0; }
 ul.listing li, .listing ul li { margin: 0 0 20px; padding: 0; }
+.listing .sites { margin-top: 10px }
 
 /* Alterations for printed pages */
 
