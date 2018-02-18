@@ -14,12 +14,24 @@
   "isla": {
     "title": "Isla Murty",
     "description": "Loves salt and vinegar chips and plain crackers with Philadelphia.",
-    "author": "Brendan Murty",
+    "author": "Isla Murty",
     "index_link": "/isla",
     "index_link_full": "https://murty.io/isla",
     "theme": "#14b3fb",
     "icon": "/images/isla/icon-192.png",
     "icon_large": "/images/isla/isla_murty.jpg",
+    "feed_title": "",
+    "feed_url": ""
+  },
+  "babyx": {
+    "title": "Baby X Murty",
+    "description": "Upcoming winter baby.",
+    "author": "Baby X Murty",
+    "index_link": "/babyx",
+    "index_link_full": "https://murty.io/babyx",
+    "theme": "#75de93",
+    "icon": "/images/brendan/icon-192.png",
+    "icon_large": "/images/babyx/babyx_murty.jpg",
     "feed_title": "",
     "feed_url": ""
   },

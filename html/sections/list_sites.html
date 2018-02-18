@@ -1,7 +1,7 @@
 <ul class="sites">
   <li ng-repeat="site in sites" ng-if="site.title != 'Murty'">
     <a href="{{ site.index_link_full }}">
-      <img src="{{ site.icon_large }}" alt="" title="Visit {{ site.title }}'s website">
+      <img src="{{ site.icon_large || site.icon }}" alt="" title="Visit {{ site.title }}'s website">
       {{ site.title }}
     </a>
   </li>

@@ -42,6 +42,13 @@ murtyApp.config(['$routeProvider', function ($routeProvider, $location) {
                 templateUrl: "html/isla/index.html",
                 controller: "islaIndexCtrl"
             }
+        )
+        .when(
+            "/babyx",
+            {
+                templateUrl: "html/babyx/index.html",
+                controller: "babyxIndexCtrl"
+            }
         ).otherwise({
 			redirectTo: '/'
 		});
