@@ -35,3 +35,6 @@
     background-color: #14b3fb;
     padding: 10px 20px;
 }
+
+.isla nav.sites { color: #14b3fb }
+.isla nav.sites .current_site img { border-color: #14b3fb }

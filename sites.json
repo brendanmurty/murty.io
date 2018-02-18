@@ -1,6 +1,7 @@
 {
   "brendan": {
     "title": "Brendan Murty",
+    "title_short": "BCM",
     "description": "Brendan is a Senior Web Developer based in Sydney, Australia.",
     "author": "Brendan Murty",
     "index_link": "/brendan",
@@ -11,8 +12,22 @@
     "feed_title": "Posts by Brendan Murty",
     "feed_url": "https://murty.io/brendan/posts.json"
   },
+  "ella": {
+    "title": "Ella Condon",
+    "title_short": "EJC",
+    "description": "Ella Condon",
+    "author": "Ella Condon",
+    "index_link": "http://ellacondon.com/",
+    "index_link_full": "http://ellacondon.com/",
+    "theme": "#000000",
+    "icon": "",
+    "icon_large": "/images/ella/ella_condon.jpg",
+    "feed_title": "",
+    "feed_url": ""
+  },
   "isla": {
     "title": "Isla Murty",
+    "title_short": "IJM",
     "description": "Loves salt and vinegar chips and plain crackers with Philadelphia.",
     "author": "Isla Murty",
     "index_link": "/isla",
@@ -25,6 +40,7 @@
   },
   "babyx": {
     "title": "Baby X Murty",
+    "title_short": "BXM",
     "description": "Upcoming winter baby.",
     "author": "Baby X Murty",
     "index_link": "/babyx",
@@ -37,6 +53,7 @@
   },
   "murty": {
     "title": "Murty",
+    "title_short": "MUR",
     "description": "Murty websites",
     "author": "Brendan Murty",
     "index_link": "/",

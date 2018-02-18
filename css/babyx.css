@@ -35,3 +35,6 @@
     background-color: #75de93;
     padding: 10px 20px;
 }
+
+.babyx nav.sites { color: #75de93 }
+.babyx nav.sites .current_site img { border-color: #75de93 }

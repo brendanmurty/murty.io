@@ -59,6 +59,9 @@
   color: #000;
 }
 
+.brendan nav.sites { color: #fff }
+.brendan nav.sites .current_site img { border-color: #fff }
+
 /* Content */
 
 .brendan_index p:first-child {
@@ -205,6 +208,7 @@ ul.brendan_posts .post-date {
 }
 
 @media only screen and (max-width:600px) {
+  .brendan nav.sites { background-color: #3c3c3c; }
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
 	article img{max-width:100%}
