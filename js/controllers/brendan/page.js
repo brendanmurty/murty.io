@@ -14,7 +14,7 @@ murtyApp.controller('brendanPageCtrl', ['$scope', '$rootScope', '$routeParams', 
 
     // Extract the Markdown content and send it to the template
     pageSvc.getPageContent('brendan/' + page_name + '.md').then(function(content) {
-        $rootScope.page_title = pageSvc.getPageTitle($routeParams.page_name) + ' - ' + $rootScope.site_title;
+        $rootScope.page_title = pageSvc.getPageTitle($routeParams.page_name) + ' - ' + siteSvc.getSiteProperty('brendan', 'title');
 
         $rootScope.page_content = content.data;
 

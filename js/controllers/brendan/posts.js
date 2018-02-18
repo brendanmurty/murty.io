@@ -5,7 +5,7 @@ murtyApp.controller('brendanPostsCtrl', ['$scope', '$rootScope', '$routeParams',
     $rootScope.class_page = 'brendan brendan_posts';
     $rootScope.class_container = '';
 
-    $rootScope.page_title = 'Posts - ' + $rootScope.site_title;
+    $rootScope.page_title = 'Posts - ' + siteSvc.getSiteProperty('brendan', 'title');
 
     // Load the posts list
     pageSvc.getPostsByBrendan().then(function(content) {

@@ -2,7 +2,7 @@
 murtyApp.controller('brendanIndexCtrl', ['$scope', '$rootScope', '$routeParams', 'pageSvc', 'siteSvc', function ($scope, $rootScope, $routeParams, pageSvc, siteSvc) {
     $rootScope.init('brendan');
 
-    $rootScope.page_title = siteSvc.getSiteProperty('brendan', 'site_title');
+    $rootScope.page_title = siteSvc.getSiteProperty('brendan', 'title');
     $rootScope.class_page = 'brendan brendan_index';
     $rootScope.class_container = '';
 

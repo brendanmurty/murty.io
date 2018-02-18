@@ -17,7 +17,16 @@ murtyApp.controller('headerCtrl', ['$scope', '$rootScope', '$location', '$http',
         setTimeout(function () {
             $rootScope.$apply();
             $scope.$apply();
-        }, 2000);
+
+            // Attempt to set the current site again if it still isn't set
+            if (typeof $rootScope.site == undefined) {
+                setTimeout(function () {
+                    siteSvc.setCurrentSite(site_name);
+                    $rootScope.$apply();
+                    $scope.$apply();
+                }, 500);
+            }
+        }, 1000);
 
         // Save the current page URL so templates can access it
         $rootScope.current_location = $location.path();
