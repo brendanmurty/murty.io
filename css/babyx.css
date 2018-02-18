@@ -1,16 +1,16 @@
 /* Links and text selection */
 
-.isla a,
-.isla a:active,
-.isla a:focus,
-.isla a:hover,
-.isla a:visited {
-  color: #75de93;
+.babyx a,
+.babyx a:active,
+.babyx a:focus,
+.babyx a:hover,
+.babyx a:visited {
+  color: #4cd473;
   border: none;
 }
 
-.isla ::-moz-selection{background:#75de93;color:#fff;text-shadow:none}
-.isla ::selection{background:#75de93;color:#fff;text-shadow:none}
+.babyx ::-moz-selection{background:#4cd473;color:#fff;text-shadow:none}
+.babyx ::selection{background:#4cd473;color:#fff;text-shadow:none}
 
 /* Layout */
 
@@ -32,9 +32,9 @@
 .babyx_index header h1 a:visited {
     border: none;
     color: #fff;
-    background-color: #75de93;
+    background-color: #4cd473;
     padding: 10px 20px;
 }
 
-.babyx nav.sites { color: #75de93 }
-.babyx nav.sites .current_site img { border-color: #75de93 }
+.babyx nav.sites { color: #4cd473 }
+.babyx nav.sites .current_site img { border-color: #4cd473 }
