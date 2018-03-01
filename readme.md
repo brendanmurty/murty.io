@@ -1,7 +1,7 @@
 [murty.io](https://murty.io)
 =======
 
-[![](/images/brendan/brendan_murty.jpg)](http://b.murty.io) [![](/images/isla/isla_murty.jpg)](http://i.murty.io)
+[![](/images/brendan/brendan_murty.jpg)](https://murty.io/brendan) [![](/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![](/images/isla/isla_murty.jpg)](https://murty.io/isla) [![](/images/babyx/babyx_murty.jpg)](https://murty.io/babyx)
 
 ## About
 
