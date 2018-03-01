@@ -85,7 +85,7 @@ To stop a production web server run: `npm run stop`
 
 ## Contribute
 
-If you have an idea for a website update or have found a bug, please [submit a new issue](https://bitbucket.org/brendanmurty/murty.io/issues/new).
+If you have an idea for a website update or have found a bug, please [add to the Trello board](https://trello.com/b/ag7rb8Hk/murtyio).
 
 ## License
 
