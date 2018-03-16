@@ -29,7 +29,7 @@ router.get('/api/sites', sites_controller.get);
 // Custom redirects
 router.get('/readme.md',            function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io/src/master/readme.md'); });
 router.get('/license.md',           function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io/src/master/license.md'); });
-router.get('/sites.json',           function(request, response) { response.sendFile('https://bitbucket.org/brendanmurty/murty.io/src/master/sites.json'); });
+router.get('/sites.json',           function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io/src/master/sites.json'); });
 router.get('/code',                 function(request, response) { response.redirect('https://bitbucket.org/brendanmurty/murty.io'); });
 router.get('/brendan/posts.json',   function(request, response) { response.sendFile(__dirname + '/content/brendan/posts/feed.json'); });
 
