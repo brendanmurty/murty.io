@@ -30,6 +30,8 @@ touch ~/.forever/murty-forever.log && touch ~/.forever/murty-output.log && touch
 
 When using Ubuntu, you'll need to put `sudo ` in front of the first command above.
 
+### SSL Configuration
+
 To setup SSL using [Let's Encrypt](https://letsencrypt.org/):
 
 ```
@@ -38,6 +40,14 @@ letsencrypt certonly --webroot -w ./ -d your-domain.com
 ```
 
 Then copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
+
+To renew the SSL certificate, run:
+
+```
+letsencrypt certonly
+```
+
+Then select the *renew* option in the prompt and copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
 
 ### Logs
 
