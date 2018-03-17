@@ -10,7 +10,8 @@
     "icon": "/images/brendan/icon-192.png",
     "icon_large": "/images/brendan/brendan_murty.jpg",
     "feed_title": "Posts by Brendan Murty",
-    "feed_url": "https://murty.io/brendan/posts.json"
+    "feed_url": "https://murty.io/brendan/posts.json",
+    "microblog_url": "https://micro.blog/brendanmurty"    
   },
   "ella": {
     "title": "Ella Condon",
@@ -23,7 +24,8 @@
     "icon": "",
     "icon_large": "/images/ella/ella_condon.jpg",
     "feed_title": "",
-    "feed_url": ""
+    "feed_url": "",
+    "microblog_url": ""
   },
   "isla": {
     "title": "Isla Murty",
@@ -36,7 +38,8 @@
     "icon": "/images/isla/icon-192.png",
     "icon_large": "/images/isla/isla_murty.jpg",
     "feed_title": "",
-    "feed_url": ""
+    "feed_url": "",
+    "microblog_url": ""
   },
   "babyx": {
     "title": "Baby X Murty",
@@ -49,7 +52,8 @@
     "icon": "/images/brendan/icon-192.png",
     "icon_large": "/images/babyx/babyx_murty.jpg",
     "feed_title": "",
-    "feed_url": ""
+    "feed_url": "",
+    "microblog_url": ""
   },
   "murty": {
     "title": "Murty",
@@ -62,6 +66,7 @@
     "icon": "/images/common/murty-192.png",
     "icon_large": "",
     "feed_title": "",
-    "feed_url": ""
+    "feed_url": "",
+    "microblog_url": ""
   }
 }
