@@ -22,4 +22,4 @@ The [Add to Home Screen](http://upcomingtasks.com/pages/addtohome.php) page has 
 
 #### View the code!
 
-Just in case you missed it, [UpcomingTasks is now open source](https://bitbucket.org/brendanmurty/upcomingtasks)! While no user data will ever be shared, everyone can now peek under the hood and see how the whole system works.
+Just in case you missed it, [UpcomingTasks is now open source](https://git.murty.io/brendan/upcomingtasks)! While no user data will ever be shared, everyone can now peek under the hood and see how the whole system works.

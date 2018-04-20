@@ -99,6 +99,6 @@ If you have an idea for a website update or have found a bug, please [add to the
 
 ## License
 
-You can view the [License](https://bitbucket.org/brendanmurty/murty.io/src/master/license.md) file for rights and limitations when using the code here in your own projects.
+You can view the [License](https://git.murty.io/brendan/murty.io/src/master/license.md) file for rights and limitations when using the code here in your own projects.
 
 The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
