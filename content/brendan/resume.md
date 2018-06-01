@@ -33,5 +33,5 @@ I'm a Web Developer with varied commercial experience in web-based development, 
 ### Contact
 
 - __[Email: brendan@murty.email](mailto:brendan@murty.email)__
-- __[Bitbucket: brendanmurty](https://bitbucket.org/brendanmurty)__
+- __[GitHub: brendanmurty](https://github.com/brendanmurty)__
 - __[Twitter: brendanmurty](https://twitter.com/brendanmurty)__
