@@ -2,9 +2,9 @@
 
 In case you didn't know, UpcomingTasks is the simplified way to manage your Basecamp 2 tasks when you're away from your computer.
 
-I created [UpcomingTasks](http://upcomingtasks.com/) in September 2012 out of frustration with the current offerings for managing [Basecamp 2](https://basecamp.com/) tasks on mobile devices.
+I created UpcomingTasks in September 2012 out of frustration with the current offerings for managing [Basecamp 2](https://basecamp.com/) tasks on mobile devices.
 
-Earlier this year, I [open-sourced](https://bitbucket.org/brendanmurty/upcomingtasks) the entire project to give back to the web development community that has taught me so much over the last few years.
+Earlier this year, I [open-sourced](https://github.com/brendanmurty/upcomingtasks) the entire project to give back to the web development community that has taught me so much over the last few years.
 
 UpcomingTasks has been running consistently over the years but with a busy full-time job and social life, I never put in a solid effort to build premium paid features. That has changed over the last few months. I've been busy in my free time building some features that I hope you'll enjoy using.
 
@@ -17,7 +17,7 @@ Current Pro features include:
 - User profile images in comments
 - Time zone localisation support
 
-Planned Pro features are also listed on the [UpcomingTasks Pro](http://upcomingtasks.com/pages/pro.php) page.
+Planned Pro features are also listed on the UpcomingTasks Pro page.
 
 ### What about the free account?
 
@@ -33,4 +33,4 @@ You're free to downgrade to a free account at any time. There is no cancellation
 
 ### How do I subscribe?
 
-Simply login to [UpcomingTasks](http://upcomingtasks.com) using your Basecamp account, press the *Upgrade* button in the menu and then press the *Subscribe to UpcomingTasks Pro* button at the bottom of the page.
+Simply login to UpcomingTasks using your Basecamp account, press the *Upgrade* button in the menu and then press the *Subscribe to UpcomingTasks Pro* button at the bottom of the page.
