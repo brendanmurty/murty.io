@@ -7,7 +7,7 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, playing 
 
 <ul class="listing social">
   <li>
-    <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
+    <a href="mailto:brendan@murty.email" title="Send me an email at brendan@murty.email">
       <img src="/images/common/mail.svg" alt="Email" width="40" height="40">
       <span>Email</span>
     </a>
@@ -31,9 +31,9 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, playing 
     </a>
   </li>
   <li>
-    <a href="https://bitbucket.org/brendanmurty" title="View my code on Bitbucket">
-      <img src="/images/common/git-branch.svg" alt="Bitbucket" width="40" height="40">
-      <span>Bitbucket</span>
+    <a href="https://github.com/brendanmurty" title="View my code on GitHub">
+      <img src="/images/common/git-branch.svg" alt="GitHub" width="40" height="40">
+      <span>GitHub</span>
     </a>
   </li>
   <li>
