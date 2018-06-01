@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/brendanmurty/murty.io"
+    "url": "https://github.com/brendanmurty/murty.io"
   },
   "license": "SEE LICENSE IN license.md",
   "dependencies": {
