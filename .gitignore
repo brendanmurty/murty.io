@@ -2,6 +2,7 @@
 /content/brendan/posts/posts.json
 /node_modules
 /ssl/*.pem
+/ssl/*.bak
 Thumbs.db
 ehthumbs.db
 Desktop.ini
