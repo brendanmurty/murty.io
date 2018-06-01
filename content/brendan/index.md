@@ -2,12 +2,12 @@ Father of [Isla](https://murty.io/isla), Partner of [Ella](http://ellacondon.com
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
 Web Developer at [4mation](http://4mation.com.au).
 
-I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage code on my own [Git server](https://git.murty.io/brendan).
+I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage code on [GitHub](https://github.com/brendanmurty).
 I enjoy spending time with [family](http://islamurty.com/) and friends, playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing social">
   <li>
-    <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
+    <a href="mailto:brendan@murty.email" title="Send me an email at brendan@murty.email">
       <img src="/images/common/mail.svg" alt="Email" width="40" height="40">
       <span>Email</span>
     </a>
@@ -31,9 +31,9 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, playing 
     </a>
   </li>
   <li>
-    <a href="https://git.murty.io/brendan" title="View my code">
-      <img src="/images/common/git-branch.svg" alt="Code" width="40" height="40">
-      <span>Code</span>
+    <a href="https://github.com/brendanmurty" title="View my code on GitHub">
+      <img src="/images/common/git-branch.svg" alt="GitHub" width="40" height="40">
+      <span>GitHub</span>
     </a>
   </li>
   <li>
