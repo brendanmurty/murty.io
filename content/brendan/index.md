@@ -32,7 +32,7 @@ I enjoy spending time with [family](http://islamurty.com/) and friends, playing 
   </li>
   <li>
     <a href="https://github.com/brendanmurty" title="View my code on GitHub">
-      <img src="/images/common/git-branch.svg" alt="GitHub" width="40" height="40">
+      <img src="/images/common/github.svg" alt="GitHub" width="40" height="40">
       <span>GitHub</span>
     </a>
   </li>
