@@ -70,13 +70,6 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Contacts",
-    "short_title": "Co",
-    "url": "https://contacts.google.com/",
-    "colour_background": "#3250bc",
-    "colour_foreground": "#ffffff"
-  },
-  {
     "title": "Maps",
     "short_title": "Ma",
     "url": "https://www.google.com.au/maps/",
@@ -88,6 +81,13 @@
     "short_title": "Mu",
     "url": "https://play.google.com/music/listen?hl=en-GB",
     "colour_background": "#e64f35",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Netflix",
+    "short_title": "Nf",
+    "url": "https://www.netflix.com/browse",
+    "colour_background": "#d41720",
     "colour_foreground": "#ffffff"
   },
   {
