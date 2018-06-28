@@ -1,9 +1,9 @@
 [
   {
-    "title": "Google",
-    "short_title": "Go",
-    "url": "https://google.com",
-    "colour_background": "#317ff4",
+    "title": "Gmail",
+    "short_title": "Gm",
+    "url": "https://mail.google.com/a/murty.io",
+    "colour_background": "#e44d47",
     "colour_foreground": "#ffffff"
   },
   {
