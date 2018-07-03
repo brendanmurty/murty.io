@@ -1,26 +1,5 @@
 [
   {
-    "title": "Gmail",
-    "short_title": "Gm",
-    "url": "https://mail.google.com/a/murty.io",
-    "colour_background": "#e44d47",
-    "colour_foreground": "#ffffff"
-  },
-  {
-    "title": "Drive",
-    "short_title": "Dr",
-    "url": "https://drive.google.com/a/murty.io",
-    "colour_background": "#35975c",
-    "colour_foreground": "#ffffff"
-  },
-  {
-    "title": "Messages",
-    "short_title": "Me",
-    "url": "https://messages.android.com/",
-    "colour_background": "#3450ab",
-    "colour_foreground": "#ffffff"
-  },
-  {
     "title": "Trello",
     "short_title": "Tr",
     "url": "https://trello.com/",
@@ -43,16 +22,51 @@
   },
   {
     "title": "Pocketbook",
-    "short_title": "Po",
+    "short_title": "Pb",
     "url": "https://getpocketbook.com/",
     "colour_background": "#c61e6e",
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Photos",
-    "short_title": "Ph",
-    "url": "https://photos.google.com/",
-    "colour_background": "#db3f36",
+    "title": "Drive",
+    "short_title": "Dr",
+    "url": "https://drive.google.com/a/murty.io",
+    "colour_background": "#35975c",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Gmail",
+    "short_title": "Gm",
+    "url": "https://mail.google.com/a/murty.io",
+    "colour_background": "#e44d47",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Messages",
+    "short_title": "Me",
+    "url": "https://messages.android.com/",
+    "colour_background": "#3450ab",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Maps",
+    "short_title": "Ma",
+    "url": "https://www.google.com.au/maps/",
+    "colour_background": "#4a7eef",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Pocket",
+    "short_title": "Po",
+    "url": "https://getpocket.com/a/queue/",
+    "colour_background": "#e03d51",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Pinboard",
+    "short_title": "Pi",
+    "url": "https://pinboard.in/u:brendanmurty",
+    "colour_background": "#4676f7",
     "colour_foreground": "#ffffff"
   },
   {
@@ -70,10 +84,10 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Maps",
-    "short_title": "Ma",
-    "url": "https://www.google.com.au/maps/",
-    "colour_background": "#4a7eef",
+    "title": "Photos",
+    "short_title": "Ph",
+    "url": "https://photos.google.com/",
+    "colour_background": "#db3f36",
     "colour_foreground": "#ffffff"
   },
   {
@@ -95,20 +109,6 @@
     "short_title": "Yt",
     "url": "https://www.youtube.com/feed/subscriptions",
     "colour_background": "#f0131a",
-    "colour_foreground": "#ffffff"
-  },
-  {
-    "title": "Pinboard",
-    "short_title": "Pi",
-    "url": "https://pinboard.in/u:brendanmurty",
-    "colour_background": "#4676f7",
-    "colour_foreground": "#ffffff"
-  },
-  {
-    "title": "Pocket",
-    "short_title": "Po",
-    "url": "https://getpocket.com/a/queue/",
-    "colour_background": "#e03d51",
     "colour_foreground": "#ffffff"
   }
 ]
