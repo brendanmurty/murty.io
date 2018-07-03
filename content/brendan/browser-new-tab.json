@@ -63,10 +63,10 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Pinboard",
-    "short_title": "Pi",
-    "url": "https://pinboard.in/u:brendanmurty",
-    "colour_background": "#4676f7",
+    "title": "Bookmarks",
+    "short_title": "Bo",
+    "url": "chrome://bookmarks/?id=1440",
+    "colour_background": "#f8ae01",
     "colour_foreground": "#ffffff"
   },
   {
