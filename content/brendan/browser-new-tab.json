@@ -1,112 +1,112 @@
 [
   {
     "title": "Trello",
-    "short_title": "Tr",
+    "short_title": "Tre",
     "url": "https://trello.com/",
     "colour_background": "#3372ae",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Calendar",
-    "short_title": "Ca",
+    "short_title": "Cal",
     "url": "https://calendar.google.com/calendar/a/murty.io/r/agenda",
     "colour_background": "#4b7dec",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Bank",
-    "short_title": "Ba",
+    "short_title": "Ing",
     "url": "https://www.ing.com.au/securebanking/",
     "colour_background": "#f25e1f",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Pocketbook",
-    "short_title": "Pb",
+    "short_title": "Pkt",
     "url": "https://getpocketbook.com/",
     "colour_background": "#c61e6e",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Drive",
-    "short_title": "Dr",
+    "short_title": "Dri",
     "url": "https://drive.google.com/a/murty.io",
     "colour_background": "#35975c",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Gmail",
-    "short_title": "Gm",
+    "short_title": "Gma",
     "url": "https://mail.google.com/a/murty.io",
     "colour_background": "#e44d47",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Messages",
-    "short_title": "Me",
+    "short_title": "Mes",
     "url": "https://messages.android.com/",
     "colour_background": "#3450ab",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Maps",
-    "short_title": "Ma",
+    "short_title": "Map",
     "url": "https://www.google.com.au/maps/",
     "colour_background": "#4a7eef",
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Pocket",
-    "short_title": "Po",
-    "url": "https://getpocket.com/a/queue/",
+    "title": "Instapaper",
+    "short_title": "Ins",
+    "url": "https://www.instapaper.com/u",
     "colour_background": "#e03d51",
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Bookmarks",
-    "short_title": "Bo",
-    "url": "chrome://bookmarks/?id=1440",
-    "colour_background": "#f8ae01",
-    "colour_foreground": "#ffffff"
-  },
-  {
     "title": "Feedly",
-    "short_title": "Fe",
+    "short_title": "Fee",
     "url": "https://feedly.com/i/latest",
     "colour_background": "#3eaa44",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "GitHub",
-    "short_title": "Gh",
+    "short_title": "Git",
     "url": "https://github.com/",
     "colour_background": "#26282a",
     "colour_foreground": "#ffffff"
   },
   {
+    "title": "Slack",
+    "short_title": "Sla",
+    "url": "https://slack.com/signin",
+    "colour_background": "#be2832",
+    "colour_foreground": "#ffffff"
+  },
+  {
     "title": "Photos",
-    "short_title": "Ph",
+    "short_title": "Pho",
     "url": "https://photos.google.com/",
     "colour_background": "#db3f36",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Music",
-    "short_title": "Mu",
+    "short_title": "Mus",
     "url": "https://play.google.com/music/listen?hl=en-GB",
     "colour_background": "#e64f35",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "Netflix",
-    "short_title": "Nf",
+    "short_title": "Nfx",
     "url": "https://www.netflix.com/browse",
     "colour_background": "#d41720",
     "colour_foreground": "#ffffff"
   },
   {
     "title": "YouTube",
-    "short_title": "Yt",
+    "short_title": "Ytb",
     "url": "https://www.youtube.com/feed/subscriptions",
     "colour_background": "#f0131a",
     "colour_foreground": "#ffffff"
