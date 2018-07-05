@@ -83,15 +83,27 @@ npm run generatejson
 
 To update JavaScript and CSS build files run: `gulp`
 
-To start a development web server run: `npm run startdev`
+To start a development web server run:
+
+```
+npm run startdev
+```
 
 When using Ubuntu, you need to put `sudo ` in front of the second command above.
 
 ### Production
 
-To start a production web server run: `npm run start`
+To start a production web server run:
 
-To stop a production web server run: `npm run stop`
+```
+npm run start
+```
+
+To stop a production web server run:
+
+```
+npm run stop
+```
 
 ## Contribute
 
@@ -99,6 +111,6 @@ If you have an idea for a website update or have found a bug, please [add to the
 
 ## License
 
-You can view the [License](https://git.murty.io/brendan/murty.io/src/master/license.md) file for rights and limitations when using the code here in your own projects.
+You can view the [License](https://github.com/brendanmurty/murty.io/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
 
 The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
