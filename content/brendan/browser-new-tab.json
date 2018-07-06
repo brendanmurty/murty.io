@@ -59,8 +59,8 @@
     "title": "Instapaper",
     "short_title": "Ins",
     "url": "https://www.instapaper.com/u",
-    "colour_background": "#0074ba",
-    "colour_foreground": "#ffffff"
+    "colour_background": "#ffffff",
+    "colour_foreground": "#000000"
   },
   {
     "title": "Feedly",
