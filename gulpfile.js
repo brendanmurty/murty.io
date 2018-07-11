@@ -40,8 +40,8 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(css_files, ['css']);
-  gulp.watch(js_files, ['js']);
+  gulp.watch(css_files, gulp.series('css'));
+  gulp.watch(js_files, gulp.series('js'));
 });
 
-gulp.task('default', ['js', 'css', 'watch'], function(){});
+gulp.task('default', gulp.parallel('js', 'css', 'watch'));

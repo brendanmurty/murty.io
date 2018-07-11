@@ -24,11 +24,11 @@
   },
   "devDependencies": {
     "compression": "^1.6.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-uglify": "^3.0.0",
-    "nodemon": "^1.15.0"
+    "nodemon": "^1.18.0"
   },
   "scripts": {
     "startdev": "nodemon server.js",
