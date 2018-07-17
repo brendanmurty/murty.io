@@ -1,4 +1,4 @@
-Father of [Isla](https://murty.io/isla), Partner of [Ella](http://ellacondon.com/),
+Father of [Isla](https://murty.io/isla) and [Freya](https://murty.io/freya), Partner of [Ella](http://ellacondon.com/),
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
 Web Developer at [4mation](http://4mation.com.au).
 
