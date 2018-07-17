@@ -7,7 +7,7 @@ var css_files = [
     'css/common.css',
     'css/brendan.css',
     'css/isla.css',
-    'css/babyx.css',
+    'css/freya.css',
     'css/murty.css'
 ];
 
@@ -24,7 +24,7 @@ var js_files = [
     'js/controllers/header.js',
     'js/controllers/murty/index.js',
     'js/controllers/isla/index.js',
-    'js/controllers/babyx/index.js',
+    'js/controllers/freya/index.js',
     'js/controllers/brendan/index.js',
     'js/controllers/brendan/posts.js',
     'js/controllers/brendan/post.js',

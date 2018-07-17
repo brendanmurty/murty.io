@@ -11,7 +11,7 @@
     "icon_large": "/images/brendan/brendan_murty.jpg",
     "feed_title": "Posts by Brendan Murty",
     "feed_url": "https://murty.io/brendan/posts.json",
-    "microblog_url": "https://micro.blog/brendanmurty"    
+    "microblog_url": "https://micro.blog/brendanmurty"
   },
   "ella": {
     "title": "Ella Condon",
@@ -41,16 +41,16 @@
     "feed_url": "",
     "microblog_url": ""
   },
-  "babyx": {
-    "title": "Baby X Murty",
-    "title_short": "BXM",
-    "description": "Upcoming winter baby.",
-    "author": "Baby X Murty",
-    "index_link": "/babyx",
-    "index_link_full": "https://murty.io/babyx",
-    "theme": "#4cd473",
-    "icon": "/images/brendan/icon-192.png",
-    "icon_large": "/images/babyx/babyx_murty.jpg",
+  "freya": {
+    "title": "Freya Murty",
+    "title_short": "FJM",
+    "description": "The latest addition to the family.",
+    "author": "Freya Murty",
+    "index_link": "/freya",
+    "index_link_full": "https://murty.io/freya",
+    "theme": "#981ceb",
+    "icon": "/images/freya/icon-192.png",
+    "icon_large": "/images/freya/freya_murty.jpg",
     "feed_title": "",
     "feed_url": "",
     "microblog_url": ""

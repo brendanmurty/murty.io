@@ -1,7 +1,7 @@
 [murty.io](https://murty.io)
 =======
 
-[![Brendan](/images/brendan/brendan_murty.jpg)](https://murty.io/brendan) [![Ella](/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/images/isla/isla_murty.jpg)](https://murty.io/isla) [![BabyX](/images/babyx/babyx_murty.jpg)](https://murty.io/babyx)
+[![Brendan](/images/brendan/brendan_murty.jpg)](https://murty.io/brendan) [![Ella](/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/images/isla/isla_murty.jpg)](https://murty.io/isla) [![Freya](/images/freya/freya_murty.jpg)](https://murty.io/freya)
 
 ## About
 

@@ -1,0 +1,40 @@
+/* Links and text selection */
+
+.freya a,
+.freya a:active,
+.freya a:focus,
+.freya a:hover,
+.freya a:visited {
+  color: #981ceb;
+  border: none;
+}
+
+.freya ::-moz-selection{background:#981ceb;color:#fff;text-shadow:none}
+.freya ::selection{background:#981ceb;color:#fff;text-shadow:none}
+
+/* Layout */
+
+.freya_index {
+  text-align: center;
+}
+
+.freya_index header h1 {
+  text-align: center;
+  float: none;
+  clear: both;
+  margin: 30px 0 10px;
+}
+
+.freya_index header h1 a,
+.freya_index header h1 a:active,
+.freya_index header h1 a:focus,
+.freya_index header h1 a:hover,
+.freya_index header h1 a:visited {
+    border: none;
+    color: #fff;
+    background-color: #981ceb;
+    padding: 10px 20px;
+}
+
+.freya nav.sites { color: #981ceb }
+.freya nav.sites .current_site img { border-color: #981ceb }
