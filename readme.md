@@ -15,6 +15,35 @@ As I'm self-taught, engaging with the [community](https://twitter.com/brendanmur
 
 I hope a budding web developer can learn something new from what I've done here and start their own career. Hopefully I can give back to the community that has taught me so much over the last few years.
 
+## Contribute
+
+If you have an idea for a website update or have found a bug, please [add to the Trello board](https://trello.com/b/ag7rb8Hk/murtyio).
+
+## License
+
+You can view the [License](https://github.com/brendanmurty/murty.io/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
+
+The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
+
+## Structure
+
+- **[app/api](app/api/)**: Express JavaScript files that interact with data on the web server itself
+- **[app/build](app/build/)**: Where Gulp saves the compiled JS and CSS files for the front-end
+- **[app/controllers](app/controllers/)**: Angular JavaScript files that contain logic related to each type of page on the website
+- **[app/services](app/services/)**: Angular JavaScript files that contain functions related to some of the website features
+- **[app/ssl](app/ssl/)**: SSL Certificate files that are used by the Express server (_server.js_) to secure HTTPS requests
+- **[app/styles](app/styles/)**: LESS files used to apply the design to the templates
+- **[app/templates](app/templates/)**: HTML template files for various types of pages
+- **[app/app.js](app/app.js)**: Angular JavaScript file that initialises the front-end
+- **[app/router.js](app/router.js)**: Angular JavaScript file that passes URL requests to the relevant controller
+- **[content](content/)**: Markdown files that contain the content of each page and post
+- **[images](images/)**: Contains icons and photos used in the layout and referenced in Markdown files
+- **[gulpfile.js](gulpfile.js)**: Gulp configuration file
+- **[index.html](index.html)**: The initial HTML page that is loaded on the front-end that initialises the Angular system
+- **[package.json](package.json)**: Contains website developer information and server command configuration
+- **[server.js](server.js)**: Express JavaScript back-end website server system
+- **[sites.json](sites.json)**: Plain-text file that allows for quick customisation of common front-end properties for each website
+
 ## Setup
 
 First you'll need to install [Node.js and NPM](https://nodejs.org/en/download/).
@@ -104,13 +133,3 @@ To stop a production web server run:
 ```
 npm run stop
 ```
-
-## Contribute
-
-If you have an idea for a website update or have found a bug, please [add to the Trello board](https://trello.com/b/ag7rb8Hk/murtyio).
-
-## License
-
-You can view the [License](https://github.com/brendanmurty/murty.io/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
-
-The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
