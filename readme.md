@@ -47,7 +47,7 @@ To renew the SSL certificate, run:
 letsencrypt certonly
 ```
 
-Then select the *renew* option in the prompt and copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
+Then select the *renew* option in the prompt and copy the resulting `fullchain.pem` and `privkey.pem` files in to the `app/ssl` folder.
 
 ### Logs
 
