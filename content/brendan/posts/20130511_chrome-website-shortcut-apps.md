@@ -1,4 +1,5 @@
 # Create website shortcut apps in Chrome
+_11 May 2013_
 
 The [Chrome Web Store](https://chrome.google.com/webstore) offers a huge library of free and paid *apps* for use in the [Chrome](https://www.google.com/intl/en/chrome/browser/) browser. However, if you're simply after a quick way to access the key websites you use day to day, creating a shortcut app doesn't require huge amounts of effort.
 

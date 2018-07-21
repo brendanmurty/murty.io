@@ -1,4 +1,5 @@
 # Custom error handler
+_4 Feb 2013_
 
 When a website or web app is viewable publically, it’s a good idea to modify how PHP errors are handled. The default is to show a, sometimes dangerously detailed, error to the visitor. A much better way of handling this is to send an email to the developer and hide the error details from the visitor.
 

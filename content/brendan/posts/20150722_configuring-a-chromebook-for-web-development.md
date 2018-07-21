@@ -1,4 +1,5 @@
 # Configuring a Chromebook for web development
+_22 Jul 2015_
 
 To fill the time commuting to work, I recently bought a [Chromebook](http://www.acer.co.uk/ac/en/GB/content/professional-series/chromebook11c730) which is basically a cheap laptop designed to use [Chrome Apps](https://chrome.google.com/webstore/category/apps) instead of traditional, installable desktop applications.
 

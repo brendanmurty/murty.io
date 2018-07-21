@@ -1,4 +1,5 @@
 # Happy Holidays from UpcomingTasks!
+_31 Dec 2012_
 
 It’s the holiday season and I’ve had more time to work on [UpcomingTasks](http://upcomingtasks.com/), so some improvements have been made over the last few weeks. These updates are applied automatically and all users receive them free of any charge.
 

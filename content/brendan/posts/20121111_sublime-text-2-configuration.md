@@ -1,4 +1,5 @@
 # Sublime Text 2 configuration
+_11 Nov 2012_
 
 [Sublime Text](http://www.sublimetext.com/2) is a heavily customisable text editor designed for programmers. It has a free trial, and can be [purchased for $59](http://www.sublimetext.com/buy). There is some competition in this area; [Coda](http://panic.com/coda), [Espresso](http://macrabbit.com/espresso/) and [Visual Studio](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) are a few that come to mind.
 

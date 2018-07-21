@@ -1,4 +1,5 @@
 # Trip to New York
+_4 Apr 2013_
 
 I recently visited New York to see how [Ella](https://twitter.com/ellacondon) was going with her studies there. I had some vague plans *(who wants to overplan a holiday anyway)* of what to see and do when I was there. This was the first time I’d visited New York and also the USA, so I had a few challenges along the way. However, these certainly weren’t to do the people I met over there, who were all kind and helpful but somewhat louder than I expected.
 

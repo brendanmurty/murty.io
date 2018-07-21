@@ -1,4 +1,5 @@
 # Announcing UpcomingTasks Pro
+_7 Oct 2015_
 
 In case you didn't know, UpcomingTasks is the simplified way to manage your Basecamp 2 tasks when you're away from your computer.
 

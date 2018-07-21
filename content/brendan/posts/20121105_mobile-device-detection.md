@@ -1,4 +1,5 @@
 # Mobile device detection
+_5 Nov 2012_
 
 If you need to customise the output of a webpage before the browser gets to it, you can use PHP to do so. Check out my minimal *is_mobile* function:
 

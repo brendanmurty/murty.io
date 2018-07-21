@@ -1,4 +1,5 @@
 # Cache an online file
+_11 Feb 2013_
 
 When connecting to a third-party web service, it’s a good idea to keep a cached version of the required files in case the third-party service is having issues. This way your website will at least show old data instead of no data at all.
 

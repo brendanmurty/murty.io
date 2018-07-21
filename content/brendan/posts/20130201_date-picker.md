@@ -1,4 +1,5 @@
 # Date picker
+_1 Feb 2013_
 
 A simple date picker designed for use on mobile devices. Creates three dropdown menus allowing for selection of dates in the last 10 years. Also allows for customising the currently selected date, which defaults to today’s date.
 
