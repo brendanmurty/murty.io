@@ -18,6 +18,7 @@
     "angular-route": "1.6.x",
     "angular-sanitize": "1.6.x",
     "express": "^4.15.3",
+    "gulp-less": "^4.0.1",
     "helmet": "^3.11.0",
     "ng-showdown": "1.x",
     "showdown": "1.x"

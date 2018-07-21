@@ -1,14 +1,11 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var minify = require('gulp-minify-css');
+var gulp = require('gulp'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    minify = require('gulp-minify-css'),
+    less = require('gulp-less');
 
-var css_files = [
-    'app/styles/common.css',
-    'app/styles/brendan.css',
-    'app/styles/isla.css',
-    'app/styles/freya.css',
-    'app/styles/murty.css'
+var less_files = [
+    'app/styles/*.less'
 ];
 
 var js_files = [
@@ -32,16 +29,27 @@ var js_files = [
 ];
 
 gulp.task('js', function() {
-    gulp.src(js_files).pipe(concat('murty.min.js')).pipe(uglify()).pipe(gulp.dest('app/build/'));
+    gulp.src(js_files)
+        .pipe(concat('murty.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('app/build/'));
 });
 
 gulp.task('css', function() {
-    gulp.src(css_files).pipe(concat('murty.min.css')).pipe(minify()).pipe(gulp.dest('app/build/'));
+    gulp.src(less_files, '!app/styles/_*.less')
+        .pipe(less())
+        .pipe(concat('murty.min.css'))
+        .pipe(minify())
+        .pipe(gulp.dest('app/build/'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch(css_files, gulp.series('css'));
-  gulp.watch(js_files, gulp.series('js'));
+    gulp.watch(less_files, gulp.series('css'));
+    gulp.watch(js_files, gulp.series('js'));
 });
 
-gulp.task('default', gulp.parallel('js', 'css', 'watch'));
+gulp.task('default', gulp.parallel(
+    'js',
+    'css',
+    'watch'
+));
