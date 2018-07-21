@@ -1,4 +1,4 @@
-<ng-include ng-if="sites" src="'html/sections/list_sites_header.html'"></ng-include>
+<ng-include ng-if="sites" src="'app/templates/sections/list_sites_header.html'"></ng-include>
 
 <section id="sidebar"></section>
 
@@ -18,11 +18,11 @@
 
     <ng-include
       ng-if="list_posts"
-      src="'html/sections/list_posts.html'"
+      src="'app/templates/sections/list_posts.html'"
     ></ng-include>
   </article>
 
   <ng-include
-    src="'html/sections/footer.html'"
+    src="'app/templates/sections/footer.html'"
   ></ng-include>
 </section>

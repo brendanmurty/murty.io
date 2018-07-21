@@ -9,10 +9,10 @@ var https = require('https'),
     compression = require('compression');
 
 // Configure API controllers
-var content_controller = require('./js/api/content.js'),
-    posts_controller = require('./js/api/posts.js'),
-    feed_controller = require('./js/api/feed.js'),
-    sites_controller = require('./js/api/sites.js');
+var content_controller = require('./app/api/content.js'),
+    posts_controller = require('./app/api/posts.js'),
+    feed_controller = require('./app/api/feed.js'),
+    sites_controller = require('./app/api/sites.js');
 
 // Configure API Posts route
 router.get('/api/posts/by/:author', posts_controller.get);
@@ -59,8 +59,8 @@ if (app_domain != 'localhost') {
     // Start the HTTPS server
     https.createServer(
         {
-            cert: fs.readFileSync('./ssl/fullchain.pem'),
-            key: fs.readFileSync('./ssl/privkey.pem')
+            cert: fs.readFileSync('./app/ssl/fullchain.pem'),
+            key: fs.readFileSync('./app/ssl/privkey.pem')
         },
         app
     ).listen(443);

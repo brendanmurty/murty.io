@@ -39,7 +39,7 @@ sudo apt-get install letsencrypt
 letsencrypt certonly --webroot -w ./ -d your-domain.com
 ```
 
-Then copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
+Then copy the resulting `fullchain.pem` and `privkey.pem` files in to the `app/ssl` folder.
 
 To renew the SSL certificate, run:
 

@@ -3,37 +3,37 @@ murtyApp.config(['$routeProvider', function ($routeProvider, $location) {
     $routeProvider.when(
         '/',
         {
-            templateUrl: 'html/murty/index.html',
+            templateUrl: 'app/templates/murty/index.html',
             controller: 'murtyIndexCtrl'
         }
     ).when(
         '/brendan',
         {
-            templateUrl: 'html/brendan/index.html',
+            templateUrl: 'app/templates/brendan/index.html',
             controller: 'brendanIndexCtrl'
         }
     ).when(
         '/brendan/posts',
         {
-            templateUrl: 'html/brendan/posts.html',
+            templateUrl: 'app/templates/brendan/posts.html',
             controller: 'brendanPostsCtrl'
         }
     ).when(
         '/brendan/:page_name',
         {
-            templateUrl: 'html/brendan/page.html',
+            templateUrl: 'app/templates/brendan/page.html',
             controller: 'brendanPageCtrl'
         }
     ).when(
         '/brendan/post/:post_name',
         {
-            templateUrl: 'html/brendan/post.html',
+            templateUrl: 'app/templates/brendan/post.html',
             controller: 'brendanPostCtrl'
         }
     ).when(
         '/isla',
         {
-            templateUrl: 'html/isla/index.html',
+            templateUrl: 'app/templates/isla/index.html',
             controller: 'islaIndexCtrl'
         }
     ).when(
@@ -44,7 +44,7 @@ murtyApp.config(['$routeProvider', function ($routeProvider, $location) {
     ).when(
         '/freya',
         {
-            templateUrl: 'html/freya/index.html',
+            templateUrl: 'app/templates/freya/index.html',
             controller: 'freyaIndexCtrl'
         }
     ).otherwise(
