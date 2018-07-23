@@ -87,7 +87,7 @@
     "title": "Photos",
     "short_title": "Pho",
     "url": "https://photos.google.com/",
-    "colour_background": "#db3f36",
+    "colour_background": "#f39528",
     "colour_foreground": "#ffffff"
   },
   {
@@ -98,6 +98,13 @@
     "colour_foreground": "#ffffff"
   },
   {
+    "title": "YouTube",
+    "short_title": "Ytb",
+    "url": "https://www.youtube.com/feed/subscriptions",
+    "colour_background": "#f0131a",
+    "colour_foreground": "#ffffff"
+  },
+  {
     "title": "Netflix",
     "short_title": "Nfx",
     "url": "https://www.netflix.com/browse",
@@ -105,10 +112,10 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "YouTube",
-    "short_title": "Ytb",
-    "url": "https://www.youtube.com/feed/subscriptions",
-    "colour_background": "#f0131a",
+    "title": "Stan",
+    "short_title": "Stn",
+    "url": "https://play.stan.com.au/",
+    "colour_background": "#327dfb",
     "colour_foreground": "#ffffff"
   }
 ]
