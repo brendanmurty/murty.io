@@ -14,24 +14,17 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Bank",
-    "short_title": "Ing",
-    "url": "https://www.ing.com.au/securebanking/",
-    "colour_background": "#f25e1f",
-    "colour_foreground": "#ffffff"
-  },
-  {
-    "title": "Pocketbook",
-    "short_title": "Pkt",
-    "url": "https://getpocketbook.com/",
-    "colour_background": "#c61e6e",
-    "colour_foreground": "#ffffff"
-  },
-  {
     "title": "Drive",
     "short_title": "Dri",
     "url": "https://drive.google.com/a/murty.io",
     "colour_background": "#35975c",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Bank",
+    "short_title": "Ing",
+    "url": "https://www.ing.com.au/securebanking/",
+    "colour_background": "#f25e1f",
     "colour_foreground": "#ffffff"
   },
   {
@@ -46,6 +39,13 @@
     "short_title": "Mes",
     "url": "https://messages.android.com/",
     "colour_background": "#3450ab",
+    "colour_foreground": "#ffffff"
+  },
+  {
+    "title": "Slack",
+    "short_title": "Sla",
+    "url": "https://slack.com/signin",
+    "colour_background": "#be2832",
     "colour_foreground": "#ffffff"
   },
   {
@@ -74,13 +74,6 @@
     "short_title": "Git",
     "url": "https://github.com/",
     "colour_background": "#26282a",
-    "colour_foreground": "#ffffff"
-  },
-  {
-    "title": "Slack",
-    "short_title": "Sla",
-    "url": "https://slack.com/signin",
-    "colour_background": "#be2832",
     "colour_foreground": "#ffffff"
   },
   {
