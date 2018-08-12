@@ -63,11 +63,11 @@
     "colour_foreground": "#000000"
   },
   {
-    "title": "Feedly",
-    "short_title": "Fee",
-    "url": "https://feedly.com/i/latest",
-    "colour_background": "#3eaa44",
-    "colour_foreground": "#ffffff"
+    "title": "News",
+    "short_title": "Rss",
+    "url": "https://data.murty.io/index.php/apps/news/",
+    "colour_background": "#3ec7a0",
+    "colour_foreground": "#000000"
   },
   {
     "title": "GitHub",
