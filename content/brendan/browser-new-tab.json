@@ -14,11 +14,11 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Drive",
-    "short_title": "Dri",
-    "url": "https://drive.google.com/a/murty.io",
-    "colour_background": "#35975c",
-    "colour_foreground": "#ffffff"
+    "title": "Files",
+    "short_title": "Fil",
+    "url": "https://data.murty.io/index.php/apps/files/?dir=/Files/Brendan",
+    "colour_background": "#3ec7a0",
+    "colour_foreground": "#000000"
   },
   {
     "title": "Bank",
@@ -79,9 +79,9 @@
   {
     "title": "Photos",
     "short_title": "Pho",
-    "url": "https://photos.google.com/",
-    "colour_background": "#f39528",
-    "colour_foreground": "#ffffff"
+    "url": "https://data.murty.io/index.php/apps/gallery/#Files%2FBrendan%2FPhotos",
+    "colour_background": "#3ec7a0",
+    "colour_foreground": "#000000"
   },
   {
     "title": "Music",
