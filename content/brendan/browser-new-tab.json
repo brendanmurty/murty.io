@@ -14,11 +14,11 @@
     "colour_foreground": "#ffffff"
   },
   {
-    "title": "Files",
-    "short_title": "Fil",
-    "url": "https://data.murty.io/index.php/apps/files/?dir=/Files/Brendan",
-    "colour_background": "#3ec7a0",
-    "colour_foreground": "#000000"
+    "title": "Dropbox",
+    "short_title": "Dpb",
+    "url": "https://www.dropbox.com/home",
+    "colour_background": "#0070e0",
+    "colour_foreground": "#ffffff"
   },
   {
     "title": "Bank",
@@ -63,11 +63,11 @@
     "colour_foreground": "#000000"
   },
   {
-    "title": "News",
+    "title": "Feedbin",
     "short_title": "Rss",
-    "url": "https://data.murty.io/index.php/apps/news/",
-    "colour_background": "#3ec7a0",
-    "colour_foreground": "#000000"
+    "url": "https://feedbin.com/",
+    "colour_background": "#353739",
+    "colour_foreground": "#ffffff"
   },
   {
     "title": "GitHub",
@@ -79,9 +79,9 @@
   {
     "title": "Photos",
     "short_title": "Pho",
-    "url": "https://data.murty.io/index.php/apps/gallery/#Files%2FBrendan%2FPhotos",
-    "colour_background": "#3ec7a0",
-    "colour_foreground": "#000000"
+    "url": "https://www.dropbox.com/photos?role=personal",
+    "colour_background": "#0070e0",
+    "colour_foreground": "#ffffff"
   },
   {
     "title": "Music",
