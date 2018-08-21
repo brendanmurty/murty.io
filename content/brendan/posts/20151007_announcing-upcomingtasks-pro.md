@@ -9,7 +9,7 @@ Earlier this year, I [open-sourced](https://github.com/brendanmurty/upcomingtask
 
 UpcomingTasks has been running consistently over the years but with a busy full-time job and social life, I never put in a solid effort to build premium paid features. That has changed over the last few months. I've been busy in my free time building some features that I hope you'll enjoy using.
 
-### Pro features
+## Pro features
 
 Current Pro features include:
 
@@ -20,18 +20,18 @@ Current Pro features include:
 
 Planned Pro features are also listed on the UpcomingTasks Pro page.
 
-### What about the free account?
+## What about the free account?
 
 All current UpcomingTasks features will continue to work as they are for the life of the product. Your data will never be shared with any third-party and there will never be advertisements to get in the way.
 
-### Why should I subscribe?
+## Why should I subscribe?
 
 Along with access to additional features, paying for an UpcomingTasks Pro account helps to support future development and cover ongoing maintenance costs.
 
-### What if I want to cancel or pause my subscription?
+## What if I want to cancel or pause my subscription?
 
 You're free to downgrade to a free account at any time. There is no cancellation fee. You can re-subscribe again whenever you like.
 
-### How do I subscribe?
+## How do I subscribe?
 
 Simply login to UpcomingTasks using your Basecamp account, press the *Upgrade* button in the menu and then press the *Subscribe to UpcomingTasks Pro* button at the bottom of the page.
