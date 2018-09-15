@@ -1,0 +1,54 @@
+/* Freya */
+
+$highlight-colour: #981ceb;
+$secondary-colour: #fff;
+
+/* Links and text selection */
+
+.freya a,
+.freya a:active,
+.freya a:focus,
+.freya a:hover,
+.freya a:visited {
+  color: $highlight-colour;
+  border: none;
+}
+
+.freya ::-moz-selection {
+    background: $highlight-colour;
+    color: $secondary-colour;
+    text-shadow: none
+}
+
+.freya ::selection {
+    background: $highlight-colour;
+    color: $secondary-colour;
+    text-shadow: none
+}
+
+/* Layout */
+
+.freya_index {
+  text-align: center;
+}
+
+.freya_index header h1 {
+  text-align: center;
+  float: none;
+  clear: both;
+  margin: 30px 0 10px;
+}
+
+.freya_index header h1 a,
+.freya_index header h1 a:active,
+.freya_index header h1 a:focus,
+.freya_index header h1 a:hover,
+.freya_index header h1 a:visited {
+    border: none;
+    color: $secondary-colour;
+    background-color: $highlight-colour;
+    padding: 10px 20px;
+}
+
+.freya nav.sites { color: $highlight-colour }
+.freya nav.sites .current_site img { border-color: $highlight-colour }

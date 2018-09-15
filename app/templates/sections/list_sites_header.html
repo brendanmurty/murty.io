@@ -1,9 +1,0 @@
-<nav class="sites" ng-if="sites">
-  <ul>
-    <li ng-repeat="s in sites" ng-if="s.title_short != 'MUR'" ng-class="{ 'current_site': s.title_short == site.title_short }">
-      <a href="{{ s.index_link_full }}">
-        <img height="16px" width="16px" src="{{ s.icon_large }}" alt="{{ s.title_short }}" title="Visit {{ s.title }}'s website">
-      </a>
-    </li>
-  </ul>
-</nav>

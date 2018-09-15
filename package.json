@@ -1,45 +1,35 @@
 {
-  "name": "murty.io",
-  "version": "7.3.0",
-  "author": "Brendan Murty <brendan@murty.email> (https://murty.io/brendan)",
-  "homepage": "https://murty.io",
-  "description": "The Murty website built with Angular and Express, coded with Atom and hosted by Digital Ocean.",
-  "private": true,
-  "bugs": {
-    "url": "https://trello.com/b/ag7rb8Hk/murtyio"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brendanmurty/murty.io"
-  },
-  "license": "SEE LICENSE IN license.md",
-  "dependencies": {
-    "angular": "1.6.x",
-    "angular-route": "1.6.x",
-    "angular-sanitize": "1.6.x",
-    "express": "^4.15.3",
-    "gulp-less": "^4.0.1",
-    "helmet": "^3.11.0",
-    "ng-showdown": "1.x",
-    "showdown": "1.x"
-  },
-  "devDependencies": {
-    "compression": "^1.6.2",
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-uglify": "^3.0.0",
-    "nodemon": "^1.18.0"
-  },
-  "scripts": {
-    "startdev": "nodemon server.js",
-    "start": "set NODE_ENV=production && export APP_DOMAIN=murty.io && export APP_PORT=80 && forever start -o murty-output.log -e murty-error.log -l murty-forever.log -a server.js",
-    "stop": "forever stopall",
-    "clearcache": "rm content/brendan/posts/*.json",
-    "generatejson": "curl https://murty.io/api/feed/by/brendan && curl https://murty.io/api/posts/by/brendan",
-    "generatejsondev": "curl http://localhost/api/feed/by/brendan && curl http://localhost/api/posts/by/brendan",
-    "logserver": "tail -f ~/.forever/murty-forever.log",
-    "logoutput": "tail -f ~/.forever/murty-output.log",
-    "logerror": "tail -f ~/.forever/murty-error.log"
-  }
+    "name": "murty.io",
+    "version": "8.0.0",
+    "author": "Brendan Murty <brendan@murty.email> (https://murty.io/brendan)",
+    "homepage": "https://murty.io",
+    "description": "The Murty website built with Laravel 5.7, coded with Atom and hosted by Digital Ocean.",
+    "private": true,
+    "bugs": {
+        "url": "https://trello.com/b/ag7rb8Hk/murtyio"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brendanmurty/murty.io"
+    },
+    "license": "SEE LICENSE IN license.md",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.18",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.5",
+        "popper.js": "^1.12",
+        "vue": "^2.5.7"
+    }
 }

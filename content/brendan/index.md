@@ -6,52 +6,52 @@ I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos 
 I enjoy spending time with [family](http://islamurty.com/) and friends, playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing social">
-  <li>
-    <a href="mailto:brendan@murty.email" title="Send me an email at brendan@murty.email">
-      <img src="/images/common/mail.svg" alt="Email" width="40" height="40">
-      <span>Email</span>
-    </a>
-  </li>
-  <li>
-    <a href="/brendan/posts" title="View my Posts">
-      <img src="/images/common/file.svg" alt="Posts" width="40" height="40">
-      <span>Posts</span>
-    </a>
-  </li>
-  <li>
-    <a href="/brendan/resume" title="View my Resumé">
-      <img src="/images/common/briefcase.svg" alt="Resumé" width="40" height="40">
-      <span>Resumé</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/in/brendanmurty/" title="View my LinkedIn profile">
-      <img src="/images/common/linkedin.svg" alt="LinkedIn" width="40" height="40">
-      <span>LinkedIn</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/brendanmurty" title="View my code on GitHub">
-      <img src="/images/common/github.svg" alt="GitHub" width="40" height="40">
-      <span>GitHub</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
-      <img src="/images/common/twitter.svg" alt="Twitter" width="40" height="40">
-      <span>Twitter</span>
-    </a>
-  </li>
-  <li>
-    <a href="https://instagram.com/brendan.murty" title="View my Instagram posts">
-      <img src="/images/common/instagram.svg" alt="Instagram" width="40" height="40">
-      <span>Instagram</span>
-    </a>
-  </li>
-  <li>
-    <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
-      <img src="/images/common/monitor.svg" alt="Steam" width="40" height="40">
-      <span>Steam</span>
-    </a>
-  </li>
-</ul>
+    <li>
+      <a href="mailto:brendan@murty.email" title="Send me an email at brendan@murty.email">
+        <img src="/images/common/mail.svg" alt="Email" width="40" height="40">
+        <span>Email</span>
+      </a>
+    </li>
+    <li>
+      <a href="/brendan/posts" title="View my Posts">
+        <img src="/images/common/file.svg" alt="Posts" width="40" height="40">
+        <span>Posts</span>
+      </a>
+    </li>
+    <li>
+      <a href="/brendan/resume" title="View my Resumé">
+        <img src="/images/common/briefcase.svg" alt="Resumé" width="40" height="40">
+        <span>Resumé</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/brendanmurty/" title="View my LinkedIn profile">
+        <img src="/images/common/linkedin.svg" alt="LinkedIn" width="40" height="40">
+        <span>LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/brendanmurty" title="View my code on GitHub">
+        <img src="/images/common/github.svg" alt="GitHub" width="40" height="40">
+        <span>GitHub</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
+        <img src="/images/common/twitter.svg" alt="Twitter" width="40" height="40">
+        <span>Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/brendan.murty" title="View my Instagram posts">
+        <img src="/images/common/instagram.svg" alt="Instagram" width="40" height="40">
+        <span>Instagram</span>
+      </a>
+    </li>
+    <li>
+      <a href="http://steamcommunity.com/id/brendanmurty" title="Join me in a game on Steam">
+        <img src="/images/common/monitor.svg" alt="Steam" width="40" height="40">
+        <span>Steam</span>
+      </a>
+    </li>
+  </ul>

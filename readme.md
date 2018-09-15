@@ -1,11 +1,11 @@
 [murty.io](https://murty.io)
 =======
 
-[![Brendan](/images/brendan/brendan_murty.jpg)](https://murty.io/brendan) [![Ella](/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/images/isla/isla_murty.jpg)](https://murty.io/isla) [![Freya](/images/freya/freya_murty.jpg)](https://murty.io/freya)
+[![Brendan](/public/images/brendan/brendan_murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla_murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya_murty.jpg)](https://murty.io/freya)
 
 ## About
 
-Here's the [Murty website](https://murty.io) built with [Angular](https://angularjs.org/), [Express](https://expressjs.com/) and [Feather](http://feathericons.com) icons.
+Here's the [Murty website](https://murty.io) built with [Laravel 5.7](https://laravel.com/) and [Feather](http://feathericons.com) icons.
 
 ## Why
 
@@ -21,43 +21,78 @@ If you have an idea for a website update or have found a bug, please [add to the
 
 ## License
 
-You can view the [License](https://github.com/brendanmurty/murty.io/blob/master/license.md) file for rights and limitations when using the code here in your own projects.
+You can view the [License](license.md) file for rights and limitations when using the code here in your own projects.
 
 The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
 
 ## Structure
 
-- **[app/api](app/api/)**: Express JavaScript files that interact with data on the web server itself
-- **[app/build](app/build/)**: Where Gulp saves the compiled JS and CSS files for the front-end
-- **[app/controllers](app/controllers/)**: Angular JavaScript files that contain logic related to each type of page on the website
-- **[app/services](app/services/)**: Angular JavaScript files that contain functions related to some of the website features
-- **[app/ssl](app/ssl/)**: SSL Certificate files that are used by the Express server (_server.js_) to secure HTTPS requests
-- **[app/styles](app/styles/)**: LESS files used to apply the design to the templates
-- **[app/templates](app/templates/)**: HTML template files for various types of pages
-- **[app/app.js](app/app.js)**: Angular JavaScript file that initialises the front-end
-- **[app/router.js](app/router.js)**: Angular JavaScript file that passes URL requests to the relevant controller
+- **[app](app/)**: Back-end PHP classes
+- **[config](config/)**: Site configuration
+- **[config/sites.json](config/sites.json)**: Plain-text file that allows for quick customisation of common front-end properties for each website
 - **[content](content/)**: Markdown files that contain the content of each page and post
-- **[images](images/)**: Contains icons and photos used in the layout and referenced in Markdown files
-- **[gulpfile.js](gulpfile.js)**: Gulp configuration file
-- **[index.html](index.html)**: The initial HTML page that is loaded on the front-end that initialises the Angular system
-- **[package.json](package.json)**: Contains website developer information and server command configuration
-- **[server.js](server.js)**: Express JavaScript back-end website server system
-- **[sites.json](sites.json)**: Plain-text file that allows for quick customisation of common front-end properties for each website
+- **[package.json](package.json)**: Contains website developer information and shortcut commands
+- **[public](public/)**: Compiled files which are served to public site visitors
+- **[public/images](public/images/)**: Icons, images and photos used in the layout and referenced in Markdown files
+- **[resources](resources)**: Uncompiled front-end code
+- **[resources/sass](resources/sass)**: SASS style files
 
-## Setup
+## Development
 
-First you'll need to install [Node.js and NPM](https://nodejs.org/en/download/).
+### Initial Setup
 
-Then Git Clone the repo in to a suitable directory, such as `/var/www/murty.io`.
-
-To install the required packages and configure the environment, run these commands from the cloned directory:
+These commands need to be in order once on each environment from the machine's copy of this repository.
 
 ```
-npm install -g bower gulp-cli nodemon forever && npm install
-touch ~/.forever/murty-forever.log && touch ~/.forever/murty-output.log && touch ~/.forever/murty-error.log
+cp .env.example .env
+vim .env
+
+sudo apt -y install php7.2 php7.2-mbstring php7.2-xml php7.2-zip
+
+sudo apt install npm
+npm install --global cross-env
+
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/bin/composer
+
+composer install
+
+npm install
+
+php artisan key:generate
+
+sudo service apache2 restart
+
+chown -R www-data:www-data storage
+chmod -R 755 storage
 ```
 
-When using Ubuntu, you'll need to put `sudo ` in front of the first command above.
+### Local Server
+
+```
+npm run watch
+php artisan serve
+```
+
+### Production Server
+
+First copy the ENV file and update the values to match your production details:
+
+```
+cp .env.example .env
+vim .env
+```
+
+Then configure your web server to send relevant domain requests to the `public` folder.
+
+Now you can compile the front-end assets for production use:
+
+```
+npm run production
+```
 
 ### SSL Configuration
 
@@ -76,60 +111,4 @@ To renew the SSL certificate, run:
 letsencrypt certonly
 ```
 
-Then select the *renew* option in the prompt and copy the resulting `fullchain.pem` and `privkey.pem` files in to the `app/ssl` folder.
-
-### Logs
-
-To view a live history of the logs, run one of these commands:
-
-```
-npm run logerror
-npm run logoutput
-npm run logserver
-```
-
-### Maintenance
-
-To clear the Posts and Feed JSON cache files, run:
-
-```
-npm run clearcache
-```
-
-To regenerate the Posts and Feed JSON cache files locally, run:
-
-```
-npm run generatejsondev
-```
-
-To regenerate the Posts and Feed JSON cache files on production, run:
-
-```
-npm run generatejson
-```
-
-### Development
-
-To update JavaScript and CSS build files run: `gulp`
-
-To start a development web server run:
-
-```
-npm run startdev
-```
-
-When using Ubuntu, you need to put `sudo ` in front of the second command above.
-
-### Production
-
-To start a production web server run:
-
-```
-npm run start
-```
-
-To stop a production web server run:
-
-```
-npm run stop
-```
+Then select the *renew* option in the prompt and copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
