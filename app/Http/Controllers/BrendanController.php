@@ -10,20 +10,40 @@ use Storage;
 
 class BrendanController extends Controller
 {
+    public $site = [
+        'title' => 'Brendan Murty',
+        'title_short' => 'BCM',
+        'author' => 'Brendan Murty',
+        'description' => 'Brendan is a Senior Web Developer based in Sydney, Australia.',
+        'theme' => '#00549d',
+        'icon' => '/images/brendan/icon-192.png',
+        'icon_large' => '/images/brendan/brendan_murty.jpg',
+        'feed_title' => 'Posts by Brendan Murty',
+        'feed_url' => 'https://murty.io/brendan/posts.json',
+        'microblog_url' => 'https://micro.blog/brendanmurty',
+        'body_class' => 'brendan brendan_index'
+    ];
+
     public function index() {
         return view('brendan.index')->with(
             'content_html',
             Markdown::convertToHtml(File::get('../content/brendan/index.md'))
+        )->with(
+            'site',
+            $this->site
         );
     }
     
     public function page($page_name) {
+        $this->site['title'] = ucwords(str_replace('-', ' ', $page_name)) . ' - Brendan Murty';
+        $this->site['body_class'] = 'brendan brendan_' . $page_name;
+        
         return view('brendan.page')->with(
             'content_html',
             Markdown::convertToHtml(File::get('../content/brendan/' . $page_name . '.md'))
         )->with(
-            'page_name',
-            $page_name
+            'site',
+            $this->site
         );
     }
 
@@ -93,13 +113,16 @@ class BrendanController extends Controller
         } else {
             // Return a view using a HTML string of newest to oldest posts
             $post_items = implode(array_reverse($post_items));
+
+            $this->site['title'] = $post_title . ' - Brendan Murty';
+            $this->site['body_class'] = 'brendan brendan_posts';
             
             return view('brendan.page')->with(
                 'content_html',
                 '<h1>Posts</h1><ul class="brendan_posts">' . $post_items . '</ul>'
             )->with(
-                'page_name',
-                'posts'
+                'site',
+                $this->site
             );
         }
     }
@@ -110,16 +133,16 @@ class BrendanController extends Controller
         if (!file_exists($post_file)) {
             abort(404);
         }
+
+        $this->site['title'] = ucwords(str_replace('-', ' ', substr($post_name, 9))) . ' - Brendan Murty';
+        $this->site['body_class'] = 'brendan brendan_post';
         
         return view('brendan.post')->with(
             'content_html',
             Markdown::convertToHtml(File::get($post_file))
         )->with(
-            'post_name',
-            $post_name
-        )->with(
-            'post_title',
-            ucwords(str_replace('-', ' ', substr($post_name, 9)))
+            'site',
+            $this->site
         );
     }
 }

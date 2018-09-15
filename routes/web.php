@@ -12,9 +12,7 @@ Route::domain('{subdomain}.murty.io')->group(function() {
 
 // Routes: Root
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'MurtyController@index');
 
 // Routes: Brendan
 
