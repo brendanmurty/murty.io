@@ -4,7 +4,7 @@
 @section('title_short', 'FJM')
 @section('site_author', 'Brendan Murty')
 @section('site_description', 'The latest addition to the family.')
-@section('site_theme', '981ceb')
+@section('site_theme', '#981ceb')
 @section('site_icon', '/images/freya/icon-192.png')
 @section('site_icon_large', '/images/freya/freya_murty.jpg')
 

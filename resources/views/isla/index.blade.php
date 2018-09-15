@@ -4,7 +4,7 @@
 @section('title_short', 'IJM')
 @section('site_author', 'Isla Murty')
 @section('site_description', 'Loves salt and vinegar chips and plain crackers with Philadelphia.')
-@section('site_theme', '14b3fb')
+@section('site_theme', '#14b3fb')
 @section('site_icon', '/images/isla/icon-192.png')
 @section('site_icon_large', '/images/isla/isla_murty.jpg')
 

@@ -4,7 +4,7 @@
 @section('title_short', 'BCM')
 @section('site_author', 'Brendan Murty')
 @section('site_description', 'Brendan is a Senior Web Developer based in Sydney, Australia.')
-@section('site_theme', '00549d')
+@section('site_theme', '#00549d')
 @section('site_icon', '/images/brendan/icon-192.png')
 @section('site_icon_large', '/images/brendan/brendan_murty.jpg')
 @section('site_feed_title', 'Posts by Brendan Murty')
