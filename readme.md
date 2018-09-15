@@ -13,7 +13,7 @@ I was inspired by [Brad Frost](https://github.com/bradfrost)'s [TED talk](https:
 
 As I'm self-taught, engaging with the [community](https://twitter.com/brendanmurty/lists/development/members), [listening to inspirational people](http://boagworld.com/show) and [reading about new techniques](https://signalvnoise.com/programming) helped me turn my passion in to my career.
 
-I hope a budding web developer can learn something new from what I've done here and start their own career. Hopefully I can give back to the community that has taught me so much over the last few years.
+I hope someone can learn something new from what I've done here and start their own career. Hopefully I can give back to the community that has taught me so much over the years.
 
 ## Contribute
 
@@ -40,7 +40,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 
 ### Initial Setup
 
-These commands need to be in order once on each environment from the machine's copy of this repository.
+Run the below commands from the machine's copy of this repository at the creation of each environment.
 
 ```
 cp .env.example .env
@@ -78,36 +78,10 @@ php artisan serve
 
 ### Production Server
 
-First copy the ENV file and update the values to match your production details:
-
-```
-cp .env.example .env
-vim .env
-```
-
-Then configure your web server to send relevant domain requests to the `public` folder.
+First configure your web server to send relevant domain requests to the `public` folder.
 
 Now you can compile the front-end assets for production use:
 
 ```
 npm run production
 ```
-
-### SSL Configuration
-
-To setup SSL using [Let's Encrypt](https://letsencrypt.org/):
-
-```
-sudo apt-get install letsencrypt
-letsencrypt certonly --webroot -w ./ -d your-domain.com
-```
-
-Then copy the resulting `fullchain.pem` and `privkey.pem` files in to the `app/ssl` folder.
-
-To renew the SSL certificate, run:
-
-```
-letsencrypt certonly
-```
-
-Then select the *renew* option in the prompt and copy the resulting `fullchain.pem` and `privkey.pem` files in to the `ssl` folder.
