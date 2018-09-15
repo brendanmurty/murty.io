@@ -28,8 +28,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 ## Structure
 
 - **[app](app/)**: Back-end PHP classes
-- **[config](config/)**: Site configuration
-- **[config/sites.json](config/sites.json)**: Plain-text file that allows for quick customisation of common front-end properties for each website
+- **[config](config/)**: Site configuration files
 - **[content](content/)**: Markdown files that contain the content of each page and post
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[public](public/)**: Compiled files which are served to public site visitors
