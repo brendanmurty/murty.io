@@ -17,12 +17,12 @@ I'm a Web Developer with varied commercial experience in web-based development, 
 
 ### Skills
 
-- __Project Management__ *3 years experience* I've managed development on web-based platforms, including feature scoping, task delegation, code reviews and client consultations. I believe that constant communication, honesty and transparency is important at all stages of the software development process.
-- __PHP__ *10 years experience* I've been creating and maintaining commercial web services and websites using PHP for over ten years. I'm continually improving my skills including learning new OOP methods and participating in discussions on Twitter and contributing to open-source projects on GitHub.
-- __HTML5 & CSS3__ *10 years experience* My HTML and CSS skills have evolved since I first started building websites in 2007. I use my website to try out new techniques as they become supported by major modern browsers.
+- __PHP__ *11 years experience* I've been creating and maintaining commercial web services and websites using PHP for over ten years. I'm continually improving my skills including learning new OOP methods and participating in discussions on Twitter and contributing to open-source projects on GitHub.
+- __HTML & CSS__ *11 years experience* My HTML and CSS skills have evolved since I first started building websites in 2007. I use my website to try out new techniques as they become supported by major modern browsers.
 - __JavaScript__ *8 years experience* I've built many web systems that utilise JavaScript. This began with jQuery and now includes varied experience using more modern frameworks such as Angular and Node.
 - __Linux__ *8 years experience* I've configured and maintained various web-based systems on Linux servers and can manage them comfortably via the command line.
-- __Git__ *3 years experience* I have solid knowledge of the fundamentals of managing software with Git, including branch management, creating releases and resolving conflicts.
+- __Git__ *5 years experience* I have solid knowledge of managing software with Git, including branch management, creating releases and resolving conflicts.
+- __Project Management__ *3 years experience* I've managed development on web-based platforms, including feature scoping, task delegation, code reviews and client consultations. I believe that constant communication, honesty and transparency is important at all stages of the software development process.
 
 ### Reference
 
