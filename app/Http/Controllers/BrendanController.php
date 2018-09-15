@@ -35,9 +35,9 @@ class BrendanController extends Controller
     }
     
     public function page($page_name) {
-        $this->site['title'] = ucwords(str_replace('-', ' ', $page_name)) . ' - Brendan Murty';
+        $this->site['title'] = ucwords(str_replace(['-', 'resume'], [' ', 'resumé'], $page_name)) . ' - Brendan Murty';
         $this->site['body_class'] = 'brendan brendan_' . $page_name;
-        
+
         return view('brendan.page')->with(
             'content_html',
             Markdown::convertToHtml(File::get('../content/brendan/' . $page_name . '.md'))
@@ -114,7 +114,7 @@ class BrendanController extends Controller
             // Return a view using a HTML string of newest to oldest posts
             $post_items = implode(array_reverse($post_items));
 
-            $this->site['title'] = $post_title . ' - Brendan Murty';
+            $this->site['title'] = 'Posts - Brendan Murty';
             $this->site['body_class'] = 'brendan brendan_posts';
             
             return view('brendan.page')->with(
@@ -134,7 +134,12 @@ class BrendanController extends Controller
             abort(404);
         }
 
-        $this->site['title'] = ucwords(str_replace('-', ' ', substr($post_name, 9))) . ' - Brendan Murty';
+        $this->site['title'] = ucwords(str_replace(
+            ['-', 'upcomingtasks', 'api', 'php'],
+            [' ', 'UpcomingTasks', 'API', 'PHP'],
+            substr($post_name,9)
+        )) . ' - Brendan Murty';
+
         $this->site['body_class'] = 'brendan brendan_post';
         
         return view('brendan.post')->with(
