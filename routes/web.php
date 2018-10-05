@@ -2,11 +2,11 @@
 
 // Web Routes
 
-// Handle subdomains of "murty.io"
+// Routes: Subdomains
 
 Route::domain('{subdomain}.murty.io')->group(function() {
-    Route::get('/{page}', function($subdomain) {
-        return redirect('https://murty.io/' . $subdomain . '/' . $page);
+    Route::get('{path}', function($subdomain, $path) {
+        return redirect('https://murty.io/' . $subdomain . '/' . $path);
     });
 });
 
