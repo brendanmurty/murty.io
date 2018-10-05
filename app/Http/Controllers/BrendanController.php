@@ -35,12 +35,18 @@ class BrendanController extends Controller
     }
     
     public function page($page_name) {
+        $page_file = '../content/brendan/' . $page_name . '.md';
+
+        if (!file_exists($page_file)) {
+            abort(404);
+        }
+
         $this->site['title'] = ucwords(str_replace(['-', 'resume'], [' ', 'resumé'], $page_name)) . ' - Brendan Murty';
         $this->site['body_class'] = 'brendan brendan_' . $page_name;
 
         return view('brendan.page')->with(
             'content_html',
-            Markdown::convertToHtml(File::get('../content/brendan/' . $page_name . '.md'))
+            Markdown::convertToHtml(File::get($page_file))
         )->with(
             'site',
             $this->site
