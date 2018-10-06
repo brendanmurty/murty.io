@@ -2,14 +2,6 @@
 
 // Web Routes
 
-// Routes: Subdomains
-
-Route::domain('{subdomain}.murty.io')->group(function() {
-    Route::get('{path}', function($subdomain, $path) {
-        return redirect('https://murty.io/' . $subdomain . '/' . $path);
-    });
-});
-
 // Routes: Root
 
 Route::get('/', 'MurtyController@index');
