@@ -24,11 +24,11 @@ Some thoughts on the basic needs of an effective programmer:
 > I propose we adopt a Programmer's Bill of Rights, protecting the rights of programmers by preventing companies from denying them the fundamentals they need to be successful.
 
 > 1. Every programmer shall have two monitors
-2. Every programmer shall have a fast PC
-3. Every programmer shall have their choice of mouse and keyboard
-4. Every programmer shall have a comfortable chair
-5. Every programmer shall have a fast internet connection
-6. Every programmer shall have quiet working conditions
+> 2. Every programmer shall have a fast PC
+> 3. Every programmer shall have their choice of mouse and keyboard
+> 4. Every programmer shall have a comfortable chair
+> 5. Every programmer shall have a fast internet connection
+> 6. Every programmer shall have quiet working conditions
 
 Hear, hear!
 
