@@ -41,7 +41,9 @@ class BrendanController extends Controller
             abort(404);
         }
 
-        $this->site['title'] = ucwords(str_replace(['-', 'resume'], [' ', 'resumé'], $page_name)) . ' - Brendan Murty';
+        $page_title = ucwords(str_replace(['-', 'resume'], [' ', 'resumé'], $page_name));
+
+        $this->site['title'] = $page_title . ' - Brendan Murty';
         $this->site['body_class'] = 'brendan brendan_' . $page_name;
 
         return view('brendan.page')->with(
@@ -50,6 +52,12 @@ class BrendanController extends Controller
         )->with(
             'site',
             $this->site
+        )->with(
+            'breadcrumbs',
+            [
+                'Brendan' => '/brendan',
+                $page_title => ''
+            ]
         );
     }
 
@@ -129,6 +137,12 @@ class BrendanController extends Controller
             )->with(
                 'site',
                 $this->site
+            )->with(
+                'breadcrumbs',
+                [
+                    'Brendan' => '/brendan',
+                    'Posts' => ''
+                ]
             );
         }
     }
@@ -140,11 +154,18 @@ class BrendanController extends Controller
             abort(404);
         }
 
-        $this->site['title'] = ucwords(str_replace(
-            ['-', 'upcomingtasks', 'api', 'php'],
-            [' ', 'UpcomingTasks', 'API', 'PHP'],
-            substr($post_name,9)
-        )) . ' - Brendan Murty';
+        $post_title = ucwords(
+            str_replace(
+                ['-', 'upcomingtasks', 'api', 'php'],
+                [' ', 'UpcomingTasks', 'API', 'PHP'],
+                substr(
+                    $post_name,
+                    9
+                )
+            )
+        );
+
+        $this->site['title'] = $post_title . ' - Brendan Murty';
 
         $this->site['body_class'] = 'brendan brendan_post';
         
@@ -154,6 +175,13 @@ class BrendanController extends Controller
         )->with(
             'site',
             $this->site
+        )->with(
+            'breadcrumbs',
+            [
+                'Brendan' => '/brendan',
+                'Posts' => '/brendan/posts',
+                $post_title => ''
+            ]
         );
     }
 }

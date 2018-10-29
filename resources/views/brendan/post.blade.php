@@ -6,6 +6,8 @@
     </h1>
 
     @include('sections.list_sites_header')
+    
+    @include('sections.breadcrumbs')
 @endsection
 
 @section('content')
