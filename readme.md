@@ -15,10 +15,6 @@ As I'm self-taught, engaging with the [community](https://twitter.com/brendanmur
 
 I hope someone can learn something new from what I've done here and start their own career. Hopefully I can give back to the community that has taught me so much over the years.
 
-## Contribute
-
-If you have an idea for a website update or have found a bug, please [add to the Trello board](https://trello.com/b/ag7rb8Hk/murtyio).
-
 ## License
 
 You can view the [License](license.md) file for rights and limitations when using the code here in your own projects.
