@@ -59,6 +59,7 @@ npm install
 
 php artisan key:generate
 
+a2enmod headers
 sudo service apache2 restart
 
 chown -R www-data:www-data storage
