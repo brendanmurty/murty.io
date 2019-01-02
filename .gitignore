@@ -3,6 +3,9 @@
 
 /public/hot
 /public/storage
+/public/css/*.css
+/public/mix-manifest.json
+
 /storage/*.key
 
 npm-debug.log
