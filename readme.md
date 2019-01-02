@@ -39,45 +39,58 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 Run the below commands from the machine's copy of this repository at the creation of each environment.
 
 ```
+# Setup the environment variables
 cp .env.example .env
 vim .env
 
-sudo apt -y install php7.2 php7.2-mbstring php7.2-xml php7.2-zip
+# Install the required binaries
+sudo apt -y install php7.2 php7.2-mbstring php7.2-xml php7.2-zip nodejs npm
 
-sudo apt install npm
-npm install --global cross-env
+# Install the required global NPM packages
+sudo npm install --global cross-env
 
+# Install Composer globally
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/bin/composer
 
+# Install the site's required packages
 composer install
+sudo npm install
 
-npm install
-
+# Setup the random key to use for this environment
 php artisan key:generate
 
-a2enmod headers
-sudo service apache2 restart
+# Configure the required Apache modules
+sudo a2enmod headers
+systemctl restart apache2
 
-chown -R www-data:www-data storage
-chmod -R 755 storage
+# Fix folder permissions
+sudo chown -R www-data:www-data storage
+sudo chmod -R 777 storage
 ```
 
 ### Local Server
 
+To watch front-end assets for changes:
+
 ```
 npm run watch
+```
+
+To run a local server:
+
+```
 php artisan serve
 ```
 
 ### Production Server
 
-First configure your web server to send relevant domain requests to the `public` folder.
+First configure your web server to send requests to your domain directly to the `public` in this directory.
 
-Now you can compile the front-end assets for production use:
+To minify the front-end assets for production use:
 
 ```
 npm run production
