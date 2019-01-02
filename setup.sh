@@ -7,11 +7,8 @@ sudo apt -y install php7.2 php7.2-mbstring php7.2-xml php7.2-zip nodejs npm
 # Install the required global NPM packages
 sudo npm install --global cross-env
 
-# Install Composer globally
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === '93b54496392c062774670ac18b134c3b3a95e5a5e5c8f1a9f115f203b75bf9a129d5daa8ba6a13e2cc8a1da0806388a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
+# Install Composer 1.8 globally
+wget https://raw.githubusercontent.com/composer/getcomposer.org/d3e09029468023aa4e9dcd165e9b6f43df0a9999/web/installer -O - -q | php -- --quiet
 sudo mv composer.phar /usr/bin/composer
 
 # Install the site's required packages
