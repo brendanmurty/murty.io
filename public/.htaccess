@@ -20,9 +20,9 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
-# Customise image cache settings to save them for a month
+# Customise image cache settings to save them for a year
 <IfModule mod_headers.c>
-  <FilesMatch ".(jpg|jpeg|png|gif)$">
-    Header set Cache-Control "max-age=2628000, public"
+  <FilesMatch ".(jpg|jpeg|png|gif|svg)$">
+    Header set Cache-Control "max-age=31536000, public"
   </FilesMatch>
 </IfModule>
