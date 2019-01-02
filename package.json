@@ -1,6 +1,6 @@
 {
     "name": "murty.io",
-    "version": "8.2.1",
+    "version": "8.4.0",
     "author": "Brendan Murty <brendan@murty.email> (https://murty.io/brendan)",
     "homepage": "https://murty.io",
     "description": "The Murty website built with Laravel 5.7, coded with Atom and hosted by Digital Ocean.",
