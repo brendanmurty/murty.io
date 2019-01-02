@@ -28,3 +28,6 @@ sudo service apache2 restart
 # Fix folder permissions
 sudo chown -R www-data:www-data storage
 sudo chmod -R 777 storage
+
+# Compile the front-end assets
+npm run production
