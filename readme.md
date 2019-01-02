@@ -30,20 +30,20 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and referenced in Markdown files
 - **[resources](resources)**: Uncompiled front-end code
 - **[resources/sass](resources/sass)**: SASS style files
-- **[install.sh](install.sh)**: Initial web server setup script
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
+- **[setup.sh](setup.sh)**: Initial web server setup script
 
 ## Development
 
 ### Initial Setup
 
-Run [install.sh](install.sh) a local clone of this repository on a new Ubuntu 18.x server:
+Run [setup.sh](setup.sh) a local clone of this repository on a new Ubuntu 18.x server:
 
 ```
-sh install.sh
+sh setup.sh
 ```
 
-Then customise the ENV file:
+Then set the variable values in the ENV file:
 
 ```
 vim .env
