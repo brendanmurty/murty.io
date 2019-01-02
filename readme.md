@@ -5,7 +5,7 @@
 
 ## About
 
-Here's the [Murty website](https://murty.io) built with [Laravel 5.7](https://laravel.com/) and [Feather](http://feathericons.com) icons.
+Here's the [Murty website](https://murty.io) built with [Laravel](https://laravel.com/) and [Feather](http://feathericons.com) icons.
 
 ## Why
 
@@ -37,7 +37,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 
 ### Initial Setup
 
-Run [setup.sh](setup.sh) a local clone of this repository on a new Ubuntu 18.x server:
+Run [setup.sh](setup.sh) from a local clone of this repository on a Ubuntu 18.x web server:
 
 ```
 sh setup.sh
@@ -65,7 +65,7 @@ php artisan serve
 
 ### Production Server
 
-First configure your web server to send requests to your domain directly to the `public` in this directory.
+Configure your web server to send requests to the relevant domain directly to the `public` sub-directory.
 
 To minify the front-end assets for production use:
 
