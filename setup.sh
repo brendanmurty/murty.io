@@ -2,7 +2,11 @@
 cp .env.example .env
 
 # Install the required binaries
-sudo apt -y install php7.2 php7.2-mbstring php7.2-xml php7.2-zip nodejs npm
+sudo apt -y install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt -y install php7.3 php7.3-mbstring php7.3-xml php7.3-zip nodejs npm
 
 # Install the required global NPM packages
 sudo npm install --global cross-env
