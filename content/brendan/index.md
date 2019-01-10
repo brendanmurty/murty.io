@@ -2,8 +2,7 @@ Father of [Isla](https://murty.io/isla) and [Freya](https://murty.io/freya), Par
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
 Web Developer at [4mation](http://4mation.com.au).
 
-I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty) and manage code on [GitHub](https://github.com/brendanmurty).
-I enjoy spending time with [family](http://islamurty.com/) and friends, playing [Diablo 3](https://us.battle.net/d3/en/profile/brendanmurty-1332/hero/84215723), [Starcraft 2](http://sea.battle.net/sc2/en/profile/148220/1/murty/) and other games on [Steam](http://steamcommunity.com/id/brendanmurty).
+I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty), manage code on [GitHub](https://github.com/brendanmurty) and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
 
 <ul class="listing social">
     <li>
