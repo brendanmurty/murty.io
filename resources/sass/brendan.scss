@@ -2,7 +2,7 @@
 
 $highlight-colour: #00549d;
 $secondary-colour: #fff;
-$sidebar-image: url('/images/brendan/sidebar.jpg');
+$sidebar-image: url('/images/brendan/sidebar2.jpg');
 
 /* Layout */
 
@@ -28,7 +28,7 @@ $sidebar-image: url('/images/brendan/sidebar.jpg');
 
 .brendan #sidebar {
   background-image: $sidebar-image;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   height: 100%;
   position: fixed;
@@ -63,8 +63,14 @@ $sidebar-image: url('/images/brendan/sidebar.jpg');
   color: #000;
 }
 
-.brendan nav.sites { color: $highlight-colour }
-.brendan nav.sites .current_site img { border-color: $highlight-colour }
+.brendan nav.sites {
+  color: $highlight-colour;
+  background-color: #fff;
+}
+
+.brendan nav.sites .current_site img {
+  border-color: $highlight-colour;
+}
 
 /* Content */
 
