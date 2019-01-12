@@ -234,6 +234,7 @@ ul.brendan_posts .post-date {
 @media only screen and (max-width:600px) {
 	ul.post-listing li.featured .image{display:none}
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
+  .brendan nav.sites {background-color:transparent}
 	article img{max-width:100%}
 	footer .about{margin:0 0 5%}
 }
