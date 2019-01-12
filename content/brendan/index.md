@@ -6,7 +6,7 @@ I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos 
 
 <ul class="listing social">
     <li>
-      <a href="mailto:brendan@murty.email" title="Send me an email at brendan@murty.email">
+      <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
         <img src="/images/common/mail.svg" alt="Email" width="40" height="40">
         <span>Email</span>
       </a>
