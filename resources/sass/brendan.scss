@@ -104,10 +104,6 @@ ul.brendan_posts .post-date {
   display: block;
 }
 
-.noscript {
-  text-align: center;
-}
-
 .brendan h1,
 .brendan h2,
 .brendan h3,
@@ -132,12 +128,6 @@ ul.brendan_posts .post-date {
 
 .brendan ul.social{
   margin: 40px 0 0;
-}
-
-.brendan .noscript ul.social {
-  margin-left: auto;
-  margin-right: auto;
-  width: 420px;
 }
 
 .brendan ul.social li {
@@ -170,7 +160,7 @@ ul.brendan_posts .post-date {
   border-color: $highlight-colour;
 }
 
-.brendan ul.social img {
+.brendan ul.social svg {
   width: 40px;
   height: 40px;
   float: left;
@@ -251,10 +241,6 @@ ul.brendan_posts .post-date {
 @media only screen and (max-width:450px) {
   .brendan #sidebar {
     height: 150px;
-  }
-
-  .noscript ul.social{
-    width: 100%;
   }
 }
 
