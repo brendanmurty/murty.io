@@ -1,15 +1,27 @@
 /* Brendan */
 
-$highlight-colour: #00549d;
-$secondary-colour: #fff;
+$highlight-colour: #23C5B0;
+$background-color: #191919;
+$foreground-color: #FFFFFF;
+$secondary-color:  #AAAAAA;
 $sidebar-image: url('/images/brendan/sidebar2.jpg');
 
 /* Layout */
 
 .brendan {
-  background-color: #fff;
-  color: #171d1c;
+  background-color: $background-color;
+  color: $foreground-color;
   min-width: 300px;
+}
+
+.brendan a {
+  color: $highlight-colour;
+  border-color: transparent;
+}
+
+.brendan a:focus,
+.brendan a:hover {
+  border-color: $highlight-colour;
 }
 
 .brendan #container {
@@ -52,20 +64,13 @@ $sidebar-image: url('/images/brendan/sidebar2.jpg');
 
 .brendan header h1 a {
   border-bottom: none;
-  color: #000;
+  color: $foreground-color;
   display: block;
-}
-
-.brendan header h1 a:active,
-.brendan header h1 a:focus,
-.brendan header h1 a:hover,
-.brendan header h1 a:visited {
-  color: #000;
 }
 
 .brendan nav.sites {
   color: $highlight-colour;
-  background-color: #fff;
+  background-color: $background-color;
 }
 
 .brendan nav.sites .current_site img {
@@ -89,8 +94,8 @@ ul.brendan_posts li {
 }
 
 ul.brendan_posts .post-date {
-  width: 105px;
-  color: #666;
+  width: 115px;
+  color: $secondary-color;
   display: inline-block;
 }
 
@@ -101,6 +106,19 @@ ul.brendan_posts .post-date {
 
 .noscript {
   text-align: center;
+}
+
+.brendan h1,
+.brendan h2,
+.brendan h3,
+.brendan h4,
+.brendan h5 {
+  color: $foreground-color;
+}
+
+.brendan pre,
+.brendan blockquote {
+  color: $secondary-color;
 }
 
 /* Footer */
@@ -136,20 +154,26 @@ ul.brendan_posts .post-date {
 .brendan ul.social a {
   width: 100%;
   float: left;
-  padding: 10px;
   border: none;
+  padding: 10px;
+  line-height: 40px;
+}
+
+.brendan ul.social a span {
+  float: left;
+  margin-left: 12px;
+  border-bottom: 1px solid transparent;
+}
+
+.brendan ul.social a:focus span,
+.brendan ul.social a:hover span {
+  border-color: $highlight-colour;
 }
 
 .brendan ul.social img {
   width: 40px;
   height: 40px;
   float: left;
-}
-
-.brendan ul.social span {
-  float: left;
-  margin-left: 12px;
-  border-bottom: 1px solid #aaa;
 }
 
 /* Resume page */
@@ -160,9 +184,9 @@ ul.brendan_posts .post-date {
 .brendan_resume article ul{margin:0;padding:0;display:table-cell}
 .brendan_resume article p{clear:none;margin:0;padding:0 0 20px;display:table-cell}
 .brendan_resume article li{list-style:none outside none;margin:0;padding:0;display:table-row}
-.brendan_resume article strong{color:#333;font-style:normal;clear:right;display:block;margin:30px 0 10px}
-.brendan_resume article em{color:#333;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
-.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:#333}
+.brendan_resume article strong{color:$secondary-color;font-style:normal;clear:right;display:block;margin:30px 0 10px}
+.brendan_resume article em{color:$secondary-color;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
+.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:$secondary-color}
 .brendan_resume article blockquote{padding:0;margin:0;width:auto;display:table-row;background-color:transparent;font-style:italic}
 .brendan_resume article blockquote p:last-child{padding-bottom:0}
 
@@ -237,6 +261,19 @@ ul.brendan_posts .post-date {
 /* Print styles */
 
 @media print {
+  .brendan,
+  .brendan header h1 a,
+  .brendan h1,
+  .brendan h2,
+  .brendan h3,
+  .brendan h4,
+  .brendan h5,
+  .brendan_resume article em a,
+  .brendan_resume article strong {
+    color: #000;
+    background: transparent;
+  }
+
   .brendan_resume {
     overflow-x: hidden;
   }
@@ -252,9 +289,10 @@ ul.brendan_posts .post-date {
   }
 
   .brendan_resume article a:after {
-    content: " (" attr(href) ") ";
-    font-size: 0.8em;
+    content: " " attr(href) " ";
+    font-size: 0.75em;
     font-weight: normal;
+    font-style: italic;
   }
 
   .brendan_resume article blockquote {
