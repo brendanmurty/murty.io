@@ -43,7 +43,7 @@ I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos 
       </a>
     </li>
     <li>
-      <a href="https://git.murty.io/users/brendan/projects" title="View my code">
+      <a href="https://git.murty.io/" title="View my code">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="6" y1="3" x2="6" y2="15"></line>
           <circle cx="18" cy="6" r="3"></circle>

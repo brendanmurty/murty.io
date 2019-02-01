@@ -34,5 +34,5 @@ I'm a Web Developer with varied commercial experience in web-based development, 
 
 - __[Email: b@murty.io](mailto:b@murty.io)__
 - __[Website: b.murty.io](https://b.murty.io/)__
-- __[Code: code.murty.io](https://git.murty.io/users/brendan/projects)__
+- __[Code: git.murty.io](https://git.murty.io/)__
 - __[Twitter: brendanmurty](https://twitter.com/brendanmurty)__
