@@ -7,7 +7,7 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "https://git.murty.io/brendan/murty.io"
+        "url": "https://github.com/brendanmurty/murty.io"
     },
     "license": "SEE LICENSE IN license.md",
     "scripts": {
