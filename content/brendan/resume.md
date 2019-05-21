@@ -2,11 +2,12 @@
 
 <h3 class="nomargin">Summary</h3>
 
-I'm a Web Developer with varied commercial experience in web-based development, training and management. I'm proficient with various front-end and back-end platforms and programming languages. I have a passion to continually learn improved methods and techniques.
+I'm a Lead Developer with varied commercial experience in web-based development, mentorship, training and project management. I've created complex systems using various programming languages, front-end frameworks and back-end platforms. I have a passion to continually learn improved methods and techniques.
 
 ### Work Experience
 
-- __Web Developer__ *[4mation](http://4mation.com.au) &mdash; Dec 2017 - present* I work with a team of developers on varied web projects using modern techniques and frameworks. I also lead technical decisions, mentor junior developers, update documentation and manage development tasks on some major projects.
+- __Dev Lead__ *[4mation](http://4mation.com.au) &mdash; May 2019 - present* I lead technical decisions for our team's projects, mentor other developers, produce detailed technical documentation and ensure our projects follow our technical guidelines.
+- __Web Developer__ *[4mation](http://4mation.com.au) &mdash; Dec 2017 - May 2019* I worked with a team of developers on varied web projects using modern techniques and frameworks. I helped drive technical improvements and managed development tasks on some major projects.
 - __ACT Project Manager__ *[Sentral Education](http://sentral.com.au) &mdash; Sep 2016 - Dec 2017* I managed a large development project which included scoping out requirements, organising development tasks for the team and managing expectations internally and externally. Another important part of this role was to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
 - __Web Developer__ *[Sentral Education](http://sentral.com.au) &mdash; Jan 2015 - Sep 2016* I worked in the development team assisting with maintenance and development of new features for various software products using various front-end and back-end frameworks and languages.
 - __Lead Developer: Siteflex Classic__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Jul 2014 - Dec 2014* I led a team of developers who built websites using Siteflex Classic. This role also included scoping out and developing new features.
