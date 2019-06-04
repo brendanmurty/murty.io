@@ -17,7 +17,7 @@ I hope someone can learn something new from what I've done here and start their 
 
 ## License
 
-You can view the [License](license.md) file for rights and limitations when using the code here in your own projects.
+You can view the [License](LICENSE.md) file for rights and limitations when using the code here in your own projects.
 
 The license is based on the [CSS-Tricks License](https://css-tricks.com/license/) which was created by [Chris Coyier](https://github.com/chriscoyier/).
 
