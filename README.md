@@ -35,9 +35,14 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 
 ## Development
 
+### Requirements
+
+- [Node 10.7.x](https://nodejs.org/en/download/package-manager/)
+- [PHP 7.3](https://www.php.net/manual/en/install.php)
+
 ### Initial Setup
 
-Run [setup.sh](setup.sh) from a local clone of this repository on a Ubuntu 18.x web server:
+On a Ubuntu 18.x machine, you can run [setup.sh](setup.sh) from a local clone of this repository:
 
 ```
 sh setup.sh

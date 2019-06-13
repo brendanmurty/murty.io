@@ -13,6 +13,10 @@
     "url": "https://github.com/brendanmurty/murty.io/issues"
   },
   "license": "SEE LICENSE IN license.md",
+  "engines": {
+    "npm": "6.1.x",
+    "node": "10.7.x"
+  },
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
