@@ -33,22 +33,23 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[setup.sh](setup.sh)**: Initial web server setup script
 
-## Development
-
-### Requirements
+## Requirements
 
 - [Node 10.7.x](https://nodejs.org/en/download/package-manager/)
 - [PHP 7.3](https://www.php.net/manual/en/install.php)
+- [Composer 1.8](https://getcomposer.org/download/)
+
+## Development
 
 ### Initial Setup
 
-On a Ubuntu 18.x machine, you can run [setup.sh](setup.sh) from a local clone of this repository:
+Make a local clone of this repository and then run [setup.sh](setup.sh) to complete the initial installation process:
 
 ```
 sh setup.sh
 ```
 
-Then set the variable values in the ENV file:
+Then edit the environment configuration variables to suit your requirements:
 
 ```
 vim .env
@@ -70,7 +71,7 @@ php artisan serve
 
 ### Production Server
 
-Configure your web server to send requests to the relevant domain directly to the `public` sub-directory.
+Configure your web server to send requests to the relevant domain directly to the [public](public/) sub-directory.
 
 To minify the front-end assets for production use:
 
