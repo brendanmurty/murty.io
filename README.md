@@ -46,7 +46,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 Make a local clone of this repository and then run [setup.sh](setup.sh) to complete the initial installation process:
 
 ```
-sh setup.sh
+bash setup.sh
 ```
 
 Then edit the environment configuration variables to suit your requirements:
