@@ -33,7 +33,7 @@ else
 fi
 
 # Install the required global NPM packages
-sudo npm install --global cross-env
+sudo npm install --global cross-env unzip
 
 # Install Composer 1.8 globally if required
 if [ "$(which composer)" == "" ]; then
