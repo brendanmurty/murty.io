@@ -1,7 +1,7 @@
 <ul class="sites">
     <li class="first">
         <a href="https://murty.io/brendan" @if(isset($site) && $site['title_short'] == 'BCM')class="current_site"@endif>
-            <img src="/images/brendan/brendan_murty.jpg" alt="BCM" title="Visit Brendan Murty's website">
+            <img src="/images/brendan/brendan-murty.jpg" alt="BCM" title="Visit Brendan Murty's website">
             <span>Brendan Murty</span>
         </a>
     </li>

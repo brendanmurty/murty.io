@@ -17,7 +17,7 @@ class BrendanController extends Controller
         'description' => 'Brendan is a Senior Web Developer based in Sydney, Australia.',
         'theme' => '#00549d',
         'icon' => '/images/brendan/icon-192.png',
-        'icon_large' => '/images/brendan/brendan_murty.jpg',
+        'icon_large' => '/images/brendan/brendan-murty.jpg',
         'feed_title' => 'Posts by Brendan Murty',
         'feed_url' => 'https://murty.io/brendan/posts.json',
         'microblog_url' => 'https://micro.blog/brendanmurty',
