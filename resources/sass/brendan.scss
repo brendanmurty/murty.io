@@ -1,10 +1,10 @@
 /* Brendan */
 
-$highlight-colour: #23C5B0;
+$highlight-colour: #23c5b0;
 $background-color: #191919;
-$foreground-color: #FFFFFF;
-$secondary-color:  #AAAAAA;
-$sidebar-image: url('/images/brendan/sidebar2.jpg');
+$foreground-color: #ffffff;
+$secondary-color:  #e5e5e5;
+$sidebar-image:    url('/images/brendan/sidebar2.jpg');
 
 /* Layout */
 
@@ -173,10 +173,11 @@ ul.brendan_posts .post-date {
 .brendan_resume article h4{margin:0}
 .brendan_resume article ul{margin:0;padding:0;display:table-cell}
 .brendan_resume article p{clear:none;margin:0;padding:0 0 20px;display:table-cell}
-.brendan_resume article li{list-style:none outside none;margin:0;padding:0;display:table-row}
-.brendan_resume article strong{color:$secondary-color;font-style:normal;clear:right;display:block;margin:30px 0 10px}
-.brendan_resume article em{color:$secondary-color;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
-.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:$secondary-color}
+.brendan_resume article li{color:$secondary-color;list-style:none outside none;margin:0;padding:0;display:table-row}
+.brendan_resume article strong{color:$foreground-color;font-style:normal;clear:right;display:block;margin:30px 0 10px}
+.brendan_resume article em{color:$foreground-color;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
+.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:$foreground-color}
+.brendan_resume article em a:focus,.brendan_resume article em a:hover{border-color:$foreground-color}
 .brendan_resume article blockquote{padding:0;margin:0;width:auto;display:table-row;background-color:transparent;font-style:italic}
 .brendan_resume article blockquote p:last-child{padding-bottom:0}
 
@@ -255,10 +256,9 @@ ul.brendan_posts .post-date {
   .brendan h3,
   .brendan h4,
   .brendan h5,
-  .brendan_resume article em a,
-  .brendan_resume article strong {
-    color: #000;
-    background: transparent;
+  .brendan_resume article * {
+    color: #000 !important;
+    background: transparent !important;
   }
 
   .brendan_resume {
