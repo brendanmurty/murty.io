@@ -182,6 +182,102 @@ ul.brendan_posts .post-date {
 .brendan_resume article blockquote{padding:0;margin:0;width:auto;display:table-row;background-color:transparent;font-style:italic}
 .brendan_resume article blockquote p:last-child{padding-bottom:0}
 
+/* Git page */
+
+.brendan_git #repos-list a {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+
+.brendan_git #repos-list a:hover {
+	color: #23c5b0;
+	background-color: #333;
+}
+
+.brendan_git #repos-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.brendan_git #repos-list li {
+	display: inline;
+}
+
+.brendan_git #repos-list li a {
+	position: relative;
+	display: block;
+	line-height: 20px;
+	padding: 15px 25px;
+	overflow: hidden;
+}
+
+.brendan_git #repos-list li:nth-child(odd) a {
+	background-color: #222;
+}
+
+.brendan_git #repos-list li a:hover {
+	background-color: #333;
+}
+
+.brendan_git #repos-list li a > b {
+	color: #23c5b0;
+}
+
+.brendan_git #repos-list li.fork a:before {
+	font-size: 18px;
+	color: #aaa;
+	content: '\2646';
+	position: absolute;
+	left: 5px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.brendan_git #repos-list li a .desc {
+	color: #ccc;
+	display: block;
+	line-height: 1.3em;
+	margin-top: 0.5em;
+}
+
+.brendan_git #repos-list #projects-info,
+.brendan_git #repos-list li a .info {
+	float: right;
+	clear: right;
+}
+
+.brendan_git #repos-list b.stars,
+.brendan_git #repos-list b.forks {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.brendan_git #repos-list b.stars:before,
+.brendan_git #repos-list b.forks:before {
+	display: inline-block;
+	font-size: 14px;
+	width: 20px;
+	text-align: center;
+}
+
+.brendan_git #repos-list b.stars:before {
+	content: '\2605';
+}
+
+.brendan_git #repos-list b.forks:before {
+	content: '\2646';
+}
+
 /* Alterations for certain screen sizes */
 
 @media only screen and (max-width:1300px) {
