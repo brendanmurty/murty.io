@@ -1,10 +1,9 @@
 {
-  "name": "brendanmurty-murty.io",
+  "name": "@brendanmurty/murty.io",
   "version": "10.2.1",
   "author": "Brendan Murty <b@murty.io> (https://b.murty.io/)",
   "homepage": "https://murty.io/",
   "description": "The Murty website built with Laravel, coded with Atom and hosted by Digital Ocean.",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brendanmurty/murty.io"
@@ -13,6 +12,9 @@
     "url": "https://github.com/brendanmurty/murty.io/issues"
   },
   "license": "SEE LICENSE IN license.md",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "engines": {
     "npm": "6.1.x",
     "node": "10.7.x"
