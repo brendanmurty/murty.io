@@ -8,10 +8,6 @@ Route::get('/', 'MurtyController@index');
 
 // Routes: Brendan
 
-Route::get('/content/brendan/browser-new-tab.html', function() {
-    return File::get('../content/brendan/browser-new-tab.html');
-});
-
 Route::get('/brendan', 'BrendanController@index');
 
 Route::get('/brendan/posts', function() {
