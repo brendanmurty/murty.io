@@ -78,3 +78,33 @@ To minify the front-end assets for production use:
 ```
 npm run production
 ```
+
+### Publishing
+
+#### Making a new version
+
+For a patch to fix a small issue:
+
+```
+npm version patch
+```
+
+For a minor update to the system:
+
+```
+npm version minor
+```
+
+For a major change to the system:
+
+```
+npm version major
+```
+
+#### Releasing a new package
+
+To create a new [package](https://github.com/brendanmurty/murty.io/packages) for the current version:
+
+```
+npm publish
+```
