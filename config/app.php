@@ -190,6 +190,7 @@ return [
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
+        'HTMLMin' => HTMLMin\HTMLMin\Facades\HTMLMin::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
