@@ -73,9 +73,10 @@ php artisan serve
 
 Configure your web server to send requests to the relevant domain directly to the [public](public/) sub-directory.
 
-To minify the front-end assets for production use:
+To prepare the site for production use:
 
 ```
+php artisan view:clear
 npm run production
 ```
 
