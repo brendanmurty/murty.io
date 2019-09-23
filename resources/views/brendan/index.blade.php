@@ -10,4 +10,6 @@
 
 @section('content')
     {!! $content_html !!}
+
+    @include('sections.social_brendan')
 @endsection
