@@ -1,6 +1,8 @@
-name: Deploy when a new release is generated
+name: Deploy on release
 
-on: [release]
+on:
+  release:
+    types: [published]
 
 jobs:
   build:
