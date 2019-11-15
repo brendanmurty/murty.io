@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run commands on server
-      uses: brendanmurty/github-action-ssh@master
+      uses: brendanmurty/github-action-ssh@release
       with:
         command: |
           cp -r ${{ secrets.REMOTE_DIRECTORY }} ${{ secrets.REMOTE_DIRECTORY }}_"$(date +%Y%m%d%H%M%S)"
