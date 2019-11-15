@@ -73,9 +73,17 @@ class BrendanController extends Controller
             $post_url_full = 'https://murty.io' . $post_url_relative;
 
             $post_date_short = substr($post_slug, 0, 8);
-            $post_date = DateTime::createFromFormat('Ymd', $post_date_short);
-            $post_date_human = $post_date->format('j M Y');
-            $post_date_published = $post_date->format('Y-m-d') . 'T09:00:00.000Z';
+            if ($post_date_short == '999DRAFT') {
+                // This is a draft post
+                $post_date_short = 'DRAFT';
+                $post_date_human = 'DRAFT';
+                $post_date_published = false;
+            } else {
+                // This is a published post
+                $post_date = DateTime::createFromFormat('Ymd', $post_date_short);
+                $post_date_human = $post_date->format('j M Y');
+                $post_date_published = $post_date->format('Y-m-d') . 'T09:00:00.000Z';
+            }
 
             $post_title = ucwords(
                 str_replace(
@@ -90,17 +98,19 @@ class BrendanController extends Controller
 
             if ($output_type == 'json') {
                 // Construct a JSON Feed Item for this post
-                $post_items[] = [
-                    'id' => $post_url_full,
-                    'url' => $post_url_full,
-                    '_murty' => [
-                        'date_short' => $post_date_short
-                    ],
-                    'date_published' => $post_date_published,
-                    'content_text' => 'Read this post on murty.io',
-                    'content_html' => '<p>Read this post on <a href="' . $post_url_full . '">murty.io</a></p>',
-                    'title' => $post_title
-                ];
+                if ($post_date_published) {
+                    $post_items[] = [
+                        'id' => $post_url_full,
+                        'url' => $post_url_full,
+                        '_murty' => [
+                            'date_short' => $post_date_short
+                        ],
+                        'date_published' => $post_date_published,
+                        'content_text' => 'Read this post on murty.io',
+                        'content_html' => '<p>Read this post on <a href="' . $post_url_full . '">murty.io</a></p>',
+                        'title' => $post_title
+                    ];
+                }
             } else {
                 // Construct a HTML List Item for this post
                 $post_items[] = '<li><span class="post-date">' . $post_date_human . '</span><a class="post-link" href="' . $post_url_relative . '">' . $post_title . '</a></li>';
@@ -164,6 +174,11 @@ class BrendanController extends Controller
                 )
             )
         );
+
+        if (substr($post_name, 0, 8) == '999DRAFT') {
+            // This is a draft post
+            $post_title = 'DRAFT - ' . $post_title;
+        }
 
         $this->site['title'] = $post_title . ' - Brendan Murty';
 
