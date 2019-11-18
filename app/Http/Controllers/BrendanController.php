@@ -71,15 +71,22 @@ class BrendanController extends Controller
             $post_slug = str_replace(array($post_folder, '.md'), '', $post_file);
             $post_url_relative = '/brendan/post/' . $post_slug;
             $post_url_full = 'https://murty.io' . $post_url_relative;
-
             $post_date_short = substr($post_slug, 0, 8);
+
             if ($post_date_short == '999DRAFT') {
                 // This is a draft post
+
+                // Draft posts should only be visible on local environments
+                if (env('APP_ENV', 'production') != 'local') {
+                    continue;
+                }
+
                 $post_date_short = 'DRAFT';
                 $post_date_human = 'DRAFT';
                 $post_date_published = false;
             } else {
                 // This is a published post
+
                 $post_date = DateTime::createFromFormat('Ymd', $post_date_short);
                 $post_date_human = $post_date->format('j M Y');
                 $post_date_published = $post_date->format('Y-m-d') . 'T09:00:00.000Z';
@@ -178,6 +185,11 @@ class BrendanController extends Controller
         if (substr($post_name, 0, 8) == '999DRAFT') {
             // This is a draft post
             $post_title = 'DRAFT - ' . $post_title;
+            
+            // Draft posts should only be visible on local environments
+            if (env('APP_ENV', 'production') != 'local') {
+                return response(view('errors.404'), 404);
+            }
         }
 
         $this->site['title'] = $post_title . ' - Brendan Murty';
