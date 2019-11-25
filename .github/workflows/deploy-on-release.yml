@@ -19,7 +19,7 @@ jobs:
           npm install --silent
           php artisan view:clear
           npm run production
-          cd ${{ secrets.REMOTE_DIRECTORY }}/.. && sudo ./certbot-auto renew --force-renewal
+          cd ${{ secrets.REMOTE_DIRECTORY }}/.. && sudo ./certbot-auto renew --force-renewal --no-random-sleep-on-renew
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
