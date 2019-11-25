@@ -13,13 +13,13 @@ jobs:
       uses: brendanmurty/github-action-ssh@release
       with:
         command: |
-          cp -r ${{ secrets.REMOTE_DIRECTORY }} ${{ secrets.REMOTE_DIRECTORY }}_"$(date +%Y%m%d%H%M%S)"
           cd ${{ secrets.REMOTE_DIRECTORY }}
           git pull origin master --quiet
           composer install --no-interaction
           npm install --silent
           php artisan view:clear
           npm run production
+          cd ${{ secrets.REMOTE_DIRECTORY }}/.. && sudo ./certbot-auto renew --force-renewal
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
