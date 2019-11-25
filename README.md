@@ -29,7 +29,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 - **[public](public/)**: Compiled files which are served to public site visitors
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and referenced in Markdown files
 - **[resources](resources)**: Uncompiled front-end code
-- **[resources/sass](resources/sass)**: SASS style files
+- **[resources/css](resources/css)**: CSS style files
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[setup.sh](setup.sh)**: Initial web server setup script
 

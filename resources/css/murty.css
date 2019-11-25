@@ -1,8 +1,5 @@
 /* Murty */
 
-$highlight-colour: #00549d;
-$secondary-colour: #fff;
-
 /* Header */
 
 .murty_index header h1 {
@@ -13,16 +10,16 @@ $secondary-colour: #fff;
 
 .murty_index header h1 a {
   border: none;
-  color: $secondary-colour;
-  background-color: $highlight-colour;
+  color: var(--secondary-colour);
+  background-color: var(--highlight-colour);
   padding: 10px 20px;
 }
 
 /* Layout */
 
 .murty_index {
-  background: #fff;
-  color: #171d1c;
+  background: var(--background-colour);
+  color: var(--foreground-colour);
 }
 
 /* Listings */

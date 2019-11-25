@@ -1,27 +1,28 @@
 /* Brendan */
 
-$highlight-colour: #23c5b0;
-$background-color: #191919;
-$foreground-color: #ffffff;
-$secondary-color:  #e5e5e5;
-$sidebar-image:    url('/images/brendan/sidebar2.jpg');
-
 /* Layout */
 
 .brendan {
-  background-color: $background-color;
-  color: $foreground-color;
+  background-color: var(--background-colour);
+  color: var(--foreground-colour);
   min-width: 300px;
 }
 
 .brendan a {
-  color: $highlight-colour;
+  color: var(--highlight-colour);
   border-color: transparent;
 }
 
 .brendan a:focus,
 .brendan a:hover {
-  border-color: $highlight-colour;
+  border-color: var(--highlight-colour);
+}
+
+.brendan ::-moz-selection,
+.brendan ::selection {
+  background: var(--highlight-colour);
+  color: var(--secondary-colour);
+  text-shadow: none
 }
 
 .brendan #container {
@@ -39,7 +40,7 @@ $sidebar-image:    url('/images/brendan/sidebar2.jpg');
 }
 
 .brendan #sidebar {
-  background-image: $sidebar-image;
+  background-image: var(--sidebar-image);
   background-position: center top;
   background-size: cover;
   height: 100%;
@@ -64,17 +65,17 @@ $sidebar-image:    url('/images/brendan/sidebar2.jpg');
 
 .brendan header h1 a {
   border-bottom: none;
-  color: $foreground-color;
+  color: var(--foreground-colour);
   display: block;
 }
 
 .brendan nav.sites {
-  color: $highlight-colour;
-  background-color: $background-color;
+  color: var(--highlight-colour);
+  background-color: var(--background-colour);;
 }
 
 .brendan nav.sites .current_site img {
-  border-color: $highlight-colour;
+  border-color: var(--highlight-colour);
 }
 
 /* Content */
@@ -95,7 +96,7 @@ ul.brendan_posts li {
 
 ul.brendan_posts .post-date {
   width: 115px;
-  color: $secondary-color;
+  color: var(--secondary-colour);
   display: inline-block;
 }
 
@@ -109,12 +110,12 @@ ul.brendan_posts .post-date {
 .brendan h3,
 .brendan h4,
 .brendan h5 {
-  color: $foreground-color;
+  color: var(--foreground-colour);
 }
 
 .brendan pre,
 .brendan blockquote {
-  color: $secondary-color;
+  color: var(--secondary-colour);
   background-color: #000;
 }
 
@@ -158,7 +159,7 @@ ul.brendan_posts .post-date {
 
 .brendan ul.social a:focus span,
 .brendan ul.social a:hover span {
-  border-color: $highlight-colour;
+  border-color: var(--highlight-colour);
 }
 
 .brendan ul.social svg {
@@ -174,11 +175,11 @@ ul.brendan_posts .post-date {
 .brendan_resume article h4{margin:0}
 .brendan_resume article ul{margin:0;padding:0;display:table-cell}
 .brendan_resume article p{clear:none;margin:0;padding:0 0 20px;display:table-cell}
-.brendan_resume article li{color:$secondary-color;list-style:none outside none;margin:0;padding:0;display:table-row}
-.brendan_resume article strong{color:$foreground-color;font-style:normal;clear:right;display:block;margin:30px 0 10px}
-.brendan_resume article em{color:$foreground-color;clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
-.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:$foreground-color}
-.brendan_resume article em a:focus,.brendan_resume article em a:hover{border-color:$foreground-color}
+.brendan_resume article li{color:var(--secondary-colour);list-style:none outside none;margin:0;padding:0;display:table-row}
+.brendan_resume article strong{color:var(--foreground-colour);font-style:normal;clear:right;display:block;margin:30px 0 10px}
+.brendan_resume article em{color:var(--foreground-colour);clear:right;display:block;font-size:16px;font-style:normal;margin:-5px 0 10px}
+.brendan_resume article em a,.brendan_resume article em a:active,.brendan_resume article em a:focus,.brendan_resume article em a:hover{color:var(--foreground-colour)}
+.brendan_resume article em a:focus,.brendan_resume article em a:hover{border-color:var(--foreground-colour)}
 .brendan_resume article blockquote{padding:0;margin:0;width:auto;display:table-row;background-color:transparent;font-style:italic}
 .brendan_resume article blockquote p:last-child{padding-bottom:0}
 
