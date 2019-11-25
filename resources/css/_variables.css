@@ -1,0 +1,26 @@
+/* ---- Variables ---- */
+
+.murty {
+  --highlight-colour: #00549d;
+  --background-colour: #f7f7f7;
+  --foreground-colour: #171d1c;
+  --secondary-colour: #fff;
+}
+
+.brendan {
+  --highlight-colour: #23c5b0;
+  --background-colour: #191919;
+  --foreground-colour: #fff;
+  --secondary-colour: #e5e5e5;
+  --sidebar-image: url('/images/brendan/sidebar2.jpg');
+}
+
+.freya {
+  --highlight-colour: #981ceb;
+  --secondary-colour: #fff;
+}
+
+.isla {
+  --highlight-colour: #14b3fb;
+  --secondary-colour: #fff;
+}

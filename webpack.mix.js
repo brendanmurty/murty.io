@@ -4,6 +4,7 @@ mix.disableNotifications();
 
 mix.styles(
     [
+        'resources/css/_variables.css',
         'resources/css/common.css',
         'resources/css/murty.css',
         'resources/css/brendan.css',
