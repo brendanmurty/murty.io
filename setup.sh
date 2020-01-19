@@ -4,8 +4,8 @@ cp .env.example .env
 # Fix folder permissions
 if [ "$(uname -s)" == "Linux" ]; then
   sudo chown -R www-data:www-data storage
+  sudo chmod -R 777 storage
 fi
-sudo chmod -R 777 storage
 
 # Install PHP 7.3 if required
 if [ "$(uname -s)" == "Linux" ]; then
@@ -16,7 +16,8 @@ if [ "$(uname -s)" == "Linux" ]; then
   sudo apt -y install php7.3 php7.3-mbstring php7.3-xml php7.3-zip
 else
   if [ "$(which php)" == "" ]; then
-    echo "Please install PHP 7.3 manually: https://www.php.net/manual/en/install.php"
+    echo "Please install PHP 7.3 manually first: https://www.php.net/manual/en/install.php"
+    exit 0;
   fi
 fi
 
@@ -26,8 +27,7 @@ if [ "$(uname -s)" == "Linux" ]; then
   sudo apt-get install -y nodejs
 else
   if [ "$(which node)" == "" ]; then
-    echo "Please install Node 10 manually: https://nodejs.org/en/download/package-manager/"
-    echo "Exiting."
+    echo "Please install Node 10 manually first: https://nodejs.org/en/download/package-manager/"
     exit 0;
   fi
 fi
