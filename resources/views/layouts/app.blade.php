@@ -54,6 +54,9 @@
         })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
         fathom('set', 'siteId', 'KUJKWGJX');
         fathom('trackPageview');
+        @if($site['body_class'] == 'brendan brendan_resume')
+        fathom('trackGoal', 'HMOBEN26', 0);
+        @endif
         </script>
         <!-- / Fathom -->
     </body>
