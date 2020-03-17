@@ -33,12 +33,17 @@ else
 fi
 
 # Install the required global NPM packages
-sudo npm install --global cross-env unzip
+npm install --global cross-env unzip
 
 # Install Composer 1.8 globally if required
 if [ "$(which composer)" == "" ]; then
-  wget https://raw.githubusercontent.com/composer/getcomposer.org/d3e09029468023aa4e9dcd165e9b6f43df0a9999/web/installer -O - -q | php -- --quiet
-  sudo mv composer.phar /usr/bin/composer
+  if [ "$(uname -s)" == "Linux" ]; then
+    wget https://raw.githubusercontent.com/composer/getcomposer.org/d3e09029468023aa4e9dcd165e9b6f43df0a9999/web/installer -O - -q | php -- --quiet
+    sudo mv composer.phar /usr/bin/composer
+  else
+    echo "Please install Composer 1.8 manually first: https://getcomposer.org/download/"
+    exit 0;
+  fi
 fi
 
 # Install the site's dependencies
