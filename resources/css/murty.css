@@ -22,6 +22,11 @@
   color: var(--foreground-colour);
 }
 
+.murty a {
+  color: var(--highlight-colour);
+  border-color: transparent;
+}
+
 /* Listings */
 
 .listing.avatars ul, .murty_index header { text-align: center; }

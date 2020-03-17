@@ -1,10 +1,10 @@
 /* ---- Variables ---- */
 
 .murty {
-  --highlight-colour: #00549d;
-  --background-colour: #f7f7f7;
-  --foreground-colour: #171d1c;
-  --secondary-colour: #fff;
+  --highlight-colour: #23c5b0;
+  --background-colour: #191919;
+  --foreground-colour: #fff;
+  --secondary-colour: #111;
 }
 
 .brendan {
@@ -18,9 +18,13 @@
 .freya {
   --highlight-colour: #981ceb;
   --secondary-colour: #fff;
+  --background-colour: #f7f7f7;
+  --foreground-colour: #171d1c;
 }
 
 .isla {
   --highlight-colour: #14b3fb;
   --secondary-colour: #fff;
+  --background-colour: #f7f7f7;
+  --foreground-colour: #171d1c;
 }
