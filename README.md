@@ -32,6 +32,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 - **[resources/css](resources/css)**: CSS style files
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[setup.sh](setup.sh)**: Initial web server setup script
+- **[version.sh](version.sh)**: A helper script to generate a new version
 
 ## Requirements
 
