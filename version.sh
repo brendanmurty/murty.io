@@ -13,4 +13,5 @@ git commit -am "Version $1"
 git tag $1
 
 # Push the commit and tag up to the remote repository
-git push --follow-tags
+git push
+git push --tags
