@@ -1,5 +1,8 @@
 # Change Log
 
+- 41b1bea (2020-03-24 21:16:57 +1100) Core: Rename the deployment action workflow file
+- c8435f6 (2020-03-24 21:16:40 +1100) Core: Improve the way tags are pushed by the Version Script
+- eae70b1 (2020-03-24 21:13:37 +1100) Version 2020.2
 - 8b1e0bd (2020-03-24 20:47:16 +1100) Docs: Add note about verson.sh
 - ba40550 (2020-03-24 20:44:41 +1100) Core: Trigger deployments when a tag is pushed to the origin repository
 - 84c825f (2020-03-24 20:31:57 +1100) Version 2020.1
