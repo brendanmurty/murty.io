@@ -1,5 +1,8 @@
 # Change Log
 
+- 8b1e0bd (2020-03-24 20:47:16 +1100) Docs: Add note about verson.sh
+- ba40550 (2020-03-24 20:44:41 +1100) Core: Trigger deployments when a tag is pushed to the origin repository
+- 84c825f (2020-03-24 20:31:57 +1100) Version 2020.1
 - a519f5e (2020-03-24 20:31:09 +1100) Core: Change to a yearly revision versioning system
 - 10b2bf8 (2020-03-22 12:03:24 +1100) 14.3.0
 - 002da60 (2020-03-22 11:46:12 +1100) Core: Preload fonts and images
