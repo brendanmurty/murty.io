@@ -102,30 +102,10 @@ npm run production
 
 ### Publishing
 
-#### Making a new version
-
-For a patch to fix a small issue:
+To make a new version:
 
 ```
-npm version patch
+bash version.sh "YYYY.xxx"
 ```
 
-For a minor update to the system:
-
-```
-npm version minor
-```
-
-For a major change to the system:
-
-```
-npm version major
-```
-
-#### Releasing a new package
-
-To create a new [package](https://github.com/brendanmurty/murty.io/packages) for the current version:
-
-```
-npm publish
-```
+Where `YYYY` is the current year, and `xxx` is the revision number for that year.
