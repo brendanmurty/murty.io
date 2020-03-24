@@ -1,5 +1,6 @@
 # Change Log
 
+- a519f5e (2020-03-24 20:31:09 +1100) Core: Change to a yearly revision versioning system
 - 10b2bf8 (2020-03-22 12:03:24 +1100) 14.3.0
 - 002da60 (2020-03-22 11:46:12 +1100) Core: Preload fonts and images
 - d4689d4 (2020-03-17 20:20:21 +1100) Core: Remove obsolete JS file reference
