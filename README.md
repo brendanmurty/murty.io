@@ -103,10 +103,14 @@ npm run production
 
 ### Publishing
 
-To make a new version:
+Run [deploy.sh](deploy.sh) to make a new version and deploy it:
 
 ```
-bash version.sh "YYYY.xxx"
+bash deploy.sh "YYYY.xxx"
 ```
 
 Where `YYYY` is the current year, and `xxx` is the revision number for that year.
+
+This script will update [CHANGELOG.md](CHANGELOG.md), create a new Git Tag and push changes up to the origin repository.
+
+**Note that the [deployment workflow](.github/workflows/deployment.yml) will automatically trigger when new Git Tags are pushed to the origin repository.**

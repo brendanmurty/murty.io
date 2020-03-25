@@ -4,6 +4,20 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
+# Ask for confirmation from the user before continuing
+read -p "Are you sure you want to create a new version ($1) and trigger a deployment? (y/n) " ANSWER
+if [ "$ANSWER" != "y" ]; then
+  echo "Cancelled."
+  exit 1
+fi
+
+echo 
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    # do dangerous stuff
+
+fi
+
 # Create or update the changelog content
 printf "# Change Log\n\n" > CHANGELOG.md
 git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
