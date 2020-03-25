@@ -1,5 +1,8 @@
 # Change Log
 
+- f305508 (2020-03-25 19:12:31 +1100) Core: Remove obsolete confirmation block from deploy script
+- 271dc42 (2020-03-25 19:11:31 +1100) Core: Update the deployment process and documentation
+- b11b6e4 (2020-03-24 21:17:14 +1100) Version 2020.3
 - 41b1bea (2020-03-24 21:16:57 +1100) Core: Rename the deployment action workflow file
 - c8435f6 (2020-03-24 21:16:40 +1100) Core: Improve the way tags are pushed by the Version Script
 - eae70b1 (2020-03-24 21:13:37 +1100) Version 2020.2
