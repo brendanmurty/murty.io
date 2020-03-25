@@ -11,13 +11,6 @@ if [ "$ANSWER" != "y" ]; then
   exit 1
 fi
 
-echo 
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    # do dangerous stuff
-
-fi
-
 # Create or update the changelog content
 printf "# Change Log\n\n" > CHANGELOG.md
 git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
