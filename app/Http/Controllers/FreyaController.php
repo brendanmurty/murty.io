@@ -21,7 +21,7 @@ class FreyaController extends Controller
     public function index() {
         return view('freya.index')->with(
             'content_html',
-            Markdown::convertToHtml(File::get('../content/freya/index.md'))
+            Markdown::convertToHtml(File::get(asset('storage/content/freya/index.md')))
         )->with(
             'site',
             $this->site

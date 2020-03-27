@@ -25,11 +25,11 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 
 - **[app](app/)**: Back-end PHP classes
 - **[config](config/)**: Site configuration files
-- **[content](content/)**: Markdown files that contain the content of each page and post
 - **[public](public/)**: Compiled files which are served to public site visitors
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and referenced in Markdown files
 - **[resources](resources)**: Uncompiled front-end code
 - **[resources/css](resources/css)**: CSS style files
+- **[storage/app/content](storage/app/content/)**: Markdown files that contain the content of each page and post
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[setup.sh](setup.sh)**: Initial web server setup script
 - **[version.sh](version.sh)**: A helper script to generate a new version

@@ -2,7 +2,7 @@
   "name": "brendanmurty/murty.io",
   "author": "Brendan Murty <b@murty.io> (https://b.murty.io/)",
   "homepage": "https://murty.io/",
-  "description": "The Murty website built with Laravel, coded with Atom and hosted by Digital Ocean.",
+  "description": "The Murty website built with Laravel.",
   "license": "SEE LICENSE IN license.md",
   "type": "project",
   "require": {
@@ -13,7 +13,8 @@
     "illuminate/view": "^7.0",
     "laravel/framework": "^7.0",
     "laravel/helpers": "^1.1",
-    "laravel/tinker": "^2.0"
+    "laravel/tinker": "^2.0",
+    "laravel/vapor-core": "^2.5"
   },
   "require-dev": {
     "beyondcode/laravel-dump-server": "^1.0",
