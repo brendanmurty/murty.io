@@ -14,7 +14,7 @@ class IslaController extends Controller
         'description' => 'Loves salt and vinegar chips and plain crackers with Philadelphia.',
         'theme' => '#14b3fb',
         'icon' => '/images/isla/icon-192.png',
-        'icon_large' => '/images/isla/isla_murty.jpg',
+        'icon_large' => '/images/isla/isla-murty.jpg',
         'body_class' => 'isla isla_index'
     ];
 

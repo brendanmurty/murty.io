@@ -1,5 +1,3 @@
-<img alt="Image of Isla" src="/images/isla/isla_murty.jpg" class="avatar-image">
-
-Loves salt and vinegar chips and plain crackers with [Philadelphia](https://www.philly.com.au/).
+<img alt="Image of Isla" src="/images/isla/isla-murty.jpg" class="avatar-image">
 
 [Follow me on Twitter](https://twitter.com/islamurty)

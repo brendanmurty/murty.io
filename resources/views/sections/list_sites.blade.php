@@ -13,13 +13,13 @@
     </li>
     <li>
         <a href="/isla" @if(isset($site) && $site['title_short'] == 'IJM')class="current_site"@endif>
-            <img src="/images/isla/isla_murty.jpg" alt="IJM" title="Visit Isla Murty's website">
+            <img src="/images/isla/isla-murty.jpg" alt="IJM" title="Visit Isla Murty's website">
             <span>Isla Murty</span>
         </a>
     </li>
     <li class="last">
         <a href="/freya" @if(isset($site) && $site['title_short'] == 'FJM')class="current_site"@endif>
-            <img src="/images/freya/freya_murty.jpg" alt="FJM" title="Visit Freya Murty's website">
+            <img src="/images/freya/freya-murty.jpg" alt="FJM" title="Visit Freya Murty's website">
             <span>Freya Murty</span>
         </a>
     </li>

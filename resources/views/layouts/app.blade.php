@@ -17,8 +17,8 @@
         <link rel="preload" href="/images/brendan/sidebar2.jpg" as="image">
         <link rel="preload" href="/images/brendan/brendan-murty.jpg" as="image">
         <link rel="preload" href="/images/ella/ella_condon.jpg" as="image">
-        <link rel="preload" href="/images/isla/isla_murty.jpg" as="image">
-        <link rel="preload" href="/images/freya/freya_murty.jpg" as="image">
+        <link rel="preload" href="/images/isla/isla-murty.jpg" as="image">
+        <link rel="preload" href="/images/freya/freya-murty.jpg" as="image">
         <link rel="preconnect" href="https://cdn.usefathom.com/">
 
         <link rel="icon" sizes="192x192" href="{{ $site['icon'] }}">

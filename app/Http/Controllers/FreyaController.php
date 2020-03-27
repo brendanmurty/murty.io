@@ -14,7 +14,7 @@ class FreyaController extends Controller
         'description' => 'The latest addition to the family.',
         'theme' => '#981ceb',
         'icon' => '/images/freya/icon-192.png',
-        'icon_large' => '/images/freya/freya_murty.jpg',
+        'icon_large' => '/images/freya/freya-murty.jpg',
         'body_class' => 'freya freya_index'
     ];
 
