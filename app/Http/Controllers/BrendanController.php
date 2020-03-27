@@ -27,7 +27,7 @@ class BrendanController extends Controller
     public function index() {
         return view('brendan.index')->with(
             'content_html',
-            Markdown::convertToHtml(File::get(asset('storage/content/brendan/index.md')))
+            Markdown::convertToHtml(File::get(storage_path('content/brendan/index.md')))
         )->with(
             'site',
             $this->site
@@ -35,7 +35,7 @@ class BrendanController extends Controller
     }
     
     public function page($page_name) {
-        $page_file = asset('storage/content/brendan/' . $page_name . '.md');
+        $page_file = storage_path('content/brendan/' . $page_name . '.md');
 
         if (!file_exists($page_file)) {
             abort(404);
@@ -63,7 +63,7 @@ class BrendanController extends Controller
 
     public function posts($output_type) {
         // Construct a list of Brendan's Posts
-        $post_folder = '../content/brendan/posts/';
+        $post_folder = storage_path('content/brendan/posts/');
         $post_files = glob($post_folder . '*.md');
 
         $post_items = [];
@@ -165,7 +165,7 @@ class BrendanController extends Controller
     }
 
     public function post($post_name) {
-        $post_file = asset('storage/content/brendan/posts/' . $post_name . '.md');
+        $post_file = storage_path('content/brendan/posts/' . $post_name . '.md');
 
         if (!file_exists($post_file)) {
             abort(404);

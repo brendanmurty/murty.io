@@ -21,7 +21,7 @@ class IslaController extends Controller
     public function index() {
         return view('isla.index')->with(
             'content_html',
-            Markdown::convertToHtml(File::get(asset('storage/content/isla/index.md')))
+            Markdown::convertToHtml(File::get(storage_path('content/isla/index.md')))
         )->with(
             'site',
             $this->site
