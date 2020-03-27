@@ -13,8 +13,8 @@ class FreyaController extends Controller
         'author' => 'Freya Murty',
         'description' => 'The latest addition to the family.',
         'theme' => '#981ceb',
-        'icon' => asset('images/freya/icon-192.png'),
-        'icon_large' => asset('images/freya/freya-murty.jpg'),
+        'icon' => 'images/freya/icon-192.png',
+        'icon_large' => 'images/freya/freya-murty.jpg',
         'body_class' => 'freya freya_index'
     ];
 

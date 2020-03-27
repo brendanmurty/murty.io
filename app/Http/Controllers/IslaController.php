@@ -13,8 +13,8 @@ class IslaController extends Controller
         'author' => 'Isla Murty',
         'description' => 'Loves salt and vinegar chips and plain crackers with Philadelphia.',
         'theme' => '#14b3fb',
-        'icon' => asset('images/isla/icon-192.png'),
-        'icon_large' => asset('images/isla/isla-murty.jpg'),
+        'icon' => 'images/isla/icon-192.png',
+        'icon_large' => 'images/isla/isla-murty.jpg',
         'body_class' => 'isla isla_index'
     ];
 
