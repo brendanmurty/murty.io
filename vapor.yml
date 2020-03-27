@@ -1,24 +1,21 @@
 id: 8491
 name: murtyio
-separate-vendor: true
 environments:
     production:
         memory: 1024
         cli-memory: 512
         runtime: php-7.4
         build:
-            - 'composer install --no-dev'
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
             - 'php artisan key:generate'
             - 'npm ci && npm run prod && rm -rf node_modules'
-            - 'npm run production'
     staging:
         memory: 1024
         cli-memory: 512
         runtime: php-7.4
         build:
-            - 'composer install'
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install'
             - 'php artisan event:cache'
             - 'php artisan key:generate'
             - 'npm ci && npm run dev && rm -rf node_modules'
-            - 'npm run production'
