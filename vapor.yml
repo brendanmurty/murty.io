@@ -8,7 +8,6 @@ environments:
         build:
             - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
-            - 'php artisan key:generate'
             - 'npm ci && npm run prod && rm -rf node_modules'
     staging:
         memory: 1024
@@ -17,5 +16,4 @@ environments:
         build:
             - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install'
             - 'php artisan event:cache'
-            - 'php artisan key:generate'
             - 'npm ci && npm run dev && rm -rf node_modules'
