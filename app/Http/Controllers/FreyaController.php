@@ -23,7 +23,7 @@ class FreyaController extends Controller
 
         // Correct the image URLs in the content
         $page_content = File::get($page_file);
-        $page_content = str_replace('\/images\/', asset('\/images\/'), $page_content);
+        $page_content = str_replace('/images/', asset('images') . '/', $page_content);
         
         return view('freya.index')->with(
             'content_html',
