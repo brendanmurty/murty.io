@@ -10,8 +10,8 @@ class MurtyController extends Controller
         'author' => 'Brendan Murty',
         'description' => 'Murty websites',
         'theme' => '#00549d',
-        'icon' => asset('images/common/murty-192.png'),
-        'icon_large' => asset('images/common/murty-192.png'),
+        'icon' => 'images/common/murty-192.png',
+        'icon_large' => 'images/common/murty-192.png',
         'body_class' => 'murty murty_index',
         'container_class' => 'listing avatars'
     ];
