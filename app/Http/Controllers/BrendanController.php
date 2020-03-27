@@ -25,7 +25,7 @@ class BrendanController extends Controller
     ];
 
     public function index() {
-        $page_file = File::get(storage_path('content/brendan/index.md'));
+        $page_file = storage_path('content/brendan/index.md');
 
         // Correct the image URLs in the content
         $page_content = File::get($page_file);

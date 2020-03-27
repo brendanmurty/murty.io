@@ -19,7 +19,7 @@ class IslaController extends Controller
     ];
 
     public function index() {
-        $page_file = File::get(storage_path('content/isla/index.md'));
+        $page_file = storage_path('content/isla/index.md');
 
         // Correct the image URLs in the content
         $page_content = File::get($page_file);
