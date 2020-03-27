@@ -30,9 +30,9 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and referenced in Markdown files
 - **[resources](resources)**: Uncompiled front-end code
 - **[resources/css](resources/css)**: CSS style files
+- **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[setup.sh](setup.sh)**: Initial web server setup script
-- **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
 
 ## Requirements
 
@@ -101,9 +101,19 @@ php artisan view:clear
 npm run production
 ```
 
-### Publishing
+### Deployment
 
-Run [deploy.sh](deploy.sh) to make a new version and deploy it:
+#### Staging
+
+After commiting and pushing changes up to the remote repository, run:
+
+```
+vapor deploy staging
+```
+
+#### Production
+
+Run [deploy.sh](deploy.sh) to make a new version and deploy it to production:
 
 ```
 bash deploy.sh "YYYY.xxx"
@@ -111,6 +121,9 @@ bash deploy.sh "YYYY.xxx"
 
 Where `YYYY` is the current year, and `xxx` is the revision number for that year.
 
-This script will update [CHANGELOG.md](CHANGELOG.md), create a new Git Tag and push changes up to the origin repository.
+This script will:
 
-**Note that the [deployment workflow](.github/workflows/deployment.yml) will automatically trigger when new Git Tags are pushed to the origin repository.**
+- Update the content in [CHANGELOG.md](CHANGELOG.md)
+- Create a new Git Tag
+- Push changes up to the origin repository
+- Start a Vapor deployment to the `production` environment defined in [vapor.yml](vapor.yml)

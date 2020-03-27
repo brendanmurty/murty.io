@@ -22,3 +22,6 @@ git tag $1
 # Push the commit and tag up to the remote repository
 git push
 git push --tags
+
+# Prompt a deployment to production
+vapor deploy production
