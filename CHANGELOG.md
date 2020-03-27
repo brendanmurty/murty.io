@@ -1,5 +1,7 @@
 # Change Log
 
+- 785b50c (2020-03-27 13:01:10 +1100) Docs: Fix avatar image paths
+- cddbccb (2020-03-27 12:48:58 +1100) Version 2020.5
 - acace4d (2020-03-27 12:48:09 +1100) Freya, Isla: Update avatar images and simplify page content
 - 403e8e3 (2020-03-25 19:12:42 +1100) Version 2020.4
 - f305508 (2020-03-25 19:12:31 +1100) Core: Remove obsolete confirmation block from deploy script
