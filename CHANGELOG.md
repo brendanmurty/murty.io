@@ -1,5 +1,7 @@
 # Change Log
 
+- acace4d (2020-03-27 12:48:09 +1100) Freya, Isla: Update avatar images and simplify page content
+- 403e8e3 (2020-03-25 19:12:42 +1100) Version 2020.4
 - f305508 (2020-03-25 19:12:31 +1100) Core: Remove obsolete confirmation block from deploy script
 - 271dc42 (2020-03-25 19:11:31 +1100) Core: Update the deployment process and documentation
 - b11b6e4 (2020-03-24 21:17:14 +1100) Version 2020.3
