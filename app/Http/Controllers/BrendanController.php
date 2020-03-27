@@ -25,9 +25,15 @@ class BrendanController extends Controller
     ];
 
     public function index() {
+        $page_file = File::get(storage_path('content/brendan/index.md'));
+
+        // Correct the image URLs in the content
+        $page_content = File::get($page_file);
+        $page_content = str_replace('\/images\/', asset('\/images\/'), $page_content);
+        
         return view('brendan.index')->with(
             'content_html',
-            Markdown::convertToHtml(File::get(storage_path('content/brendan/index.md')))
+            Markdown::convertToHtml($page_content)
         )->with(
             'site',
             $this->site
@@ -45,10 +51,14 @@ class BrendanController extends Controller
 
         $this->site['title'] = $page_title . ' - Brendan Murty';
         $this->site['body_class'] = 'brendan brendan_' . $page_name;
+        
+        // Correct the image URLs in the content
+        $page_content = File::get($page_file);
+        $page_content = str_replace('\/images\/', asset('\/images\/'), $page_content);
 
         return view('brendan.page')->with(
             'content_html',
-            Markdown::convertToHtml(File::get($page_file))
+            Markdown::convertToHtml($page_content)
         )->with(
             'site',
             $this->site
@@ -193,12 +203,15 @@ class BrendanController extends Controller
         }
 
         $this->site['title'] = $post_title . ' - Brendan Murty';
-
         $this->site['body_class'] = 'brendan brendan_post';
+
+        // Correct the image URLs in the content
+        $page_content = File::get($post_file);
+        $page_content = str_replace('\/images\/', asset('\/images\/'), $page_content);
         
         return view('brendan.post')->with(
             'content_html',
-            Markdown::convertToHtml(File::get($post_file))
+            Markdown::convertToHtml($page_content)
         )->with(
             'site',
             $this->site
