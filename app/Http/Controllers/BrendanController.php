@@ -25,7 +25,7 @@ class BrendanController extends Controller
     ];
 
     public function index() {
-        $page_file = storage_path('content/brendan/index.md');
+        $page_file = public_path('content/brendan/index.md');
 
         // Correct the image URLs in the content
         $page_content = File::get($page_file);
@@ -41,7 +41,7 @@ class BrendanController extends Controller
     }
     
     public function page($page_name) {
-        $page_file = storage_path('content/brendan/' . $page_name . '.md');
+        $page_file = public_path('content/brendan/' . $page_name . '.md');
 
         if (!file_exists($page_file)) {
             abort(404);
@@ -73,7 +73,7 @@ class BrendanController extends Controller
 
     public function posts($output_type) {
         // Construct a list of Brendan's Posts
-        $post_folder = storage_path('content/brendan/posts/');
+        $post_folder = public_path('content/brendan/posts/');
         $post_files = glob($post_folder . '*.md');
 
         $post_items = [];
@@ -175,7 +175,7 @@ class BrendanController extends Controller
     }
 
     public function post($post_name) {
-        $post_file = storage_path('content/brendan/posts/' . $post_name . '.md');
+        $post_file = public_path('content/brendan/posts/' . $post_name . '.md');
 
         if (!file_exists($post_file)) {
             abort(404);
