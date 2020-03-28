@@ -6,16 +6,16 @@ environments:
         cli-memory: 512
         runtime: php-7.4
         domain:
-            - murty.io
-            - www.murty.io
-            - brendan.murty.io
-            - b.murty.io
-            - freya.murty.io
-            - f.murty.io
-            - isla.murty.io
-            - i.murty.io
-            - git.murty.io
-            - bmurty.dev
+            # - murty.io
+            # - www.murty.io
+            # - brendan.murty.io
+            # - b.murty.io
+            # - freya.murty.io
+            # - f.murty.io
+            # - isla.murty.io
+            # - i.murty.io
+            # - git.murty.io
+            # - bmurty.dev
             - bmurty.blog
         build:
             - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
