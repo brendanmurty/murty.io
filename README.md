@@ -33,6 +33,7 @@ The license is based on the [CSS-Tricks License](https://css-tricks.com/license/
 - **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
 - **[setup.sh](setup.sh)**: Initial web server setup script
+- **[vapor.yml](vapor.yml)**: [Laravel Vapor](https://vapor.laravel.com/) environment configuration file
 
 ## Requirements
 
@@ -105,7 +106,9 @@ npm run production
 
 #### Staging
 
-After commiting and pushing changes up to the remote repository, run:
+After testing locally, commit and push your changes up to the remote repository.
+
+Then run:
 
 ```
 vapor deploy staging
@@ -113,7 +116,9 @@ vapor deploy staging
 
 #### Production
 
-Run [deploy.sh](deploy.sh) to make a new version and deploy it to production:
+After testing locally, commit and push your changes up to the remote repository.
+
+Then run [deploy.sh](deploy.sh) to make a new version and deploy it to production:
 
 ```
 bash deploy.sh "YYYY.xxx"
