@@ -1,11 +1,8 @@
-[murty.io](https://murty.io)
-=======
+# murty.io
+
+This repository contains the [Murty website](https://murty.io/) which is built with [Laravel](https://laravel.com/), hosted via [Laravel Vapor](https://vapor.laravel.com/) and uses some icons from the [Feather](http://feathericons.com/) icon pack.
 
 [![Brendan](/public/images/brendan/brendan-murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla-murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya-murty.jpg)](https://murty.io/freya)
-
-## About
-
-This repository contains the [Murty website](https://murty.io) which is built with [Laravel](https://laravel.com/), hosted via [Laravel Vapor](https://vapor.laravel.com/) and uses some icons from the [Feather](http://feathericons.com) icon pack.
 
 ## Structure
 
