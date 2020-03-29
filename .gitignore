@@ -22,6 +22,7 @@ $RECYCLE.BIN/
 .tags
 .tags_swap
 *.pdnBak
+
 .vapor/
 .env.production
 .env.staging
