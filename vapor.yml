@@ -15,7 +15,7 @@ environments:
             # - isla.murty.io
             # - i.murty.io
             # - git.murty.io
-            # - bmurty.dev
+            - bmurty.dev
             - bmurty.blog
         build:
             - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
