@@ -15,6 +15,7 @@ environments:
             # - isla.murty.io
             # - i.murty.io
             # - git.murty.io
+            - murty.email
             - bmurty.dev
             - bmurty.blog
         build:
