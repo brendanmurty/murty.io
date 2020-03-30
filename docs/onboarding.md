@@ -8,7 +8,7 @@
 
 ## Initial Setup
 
-Make a local clone of this repository and then run [setup.sh](setup.sh) to complete the initial installation process:
+Make a local clone of this repository and then run [setup.sh](../setup.sh) to complete the initial installation process:
 
 ```
 bash setup.sh
