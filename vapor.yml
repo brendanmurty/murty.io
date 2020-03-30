@@ -9,9 +9,9 @@ environments:
         domain:
             # - murty.io
             # - '*.murty.io'
-            # - brendanmurty.com
-            # - freyamurty.com
-            # - islamurty.com
+            - brendanmurty.com
+            - freyamurty.com
+            - islamurty.com
             - bmurty.dev
             - bmurty.blog
         build:
