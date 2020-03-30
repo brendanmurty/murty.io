@@ -2,7 +2,7 @@
 
 ## Configuration
 
-### Setup a new domain
+### Add a new domain
 
 1. Export a `DNS Zone File` from the current registrar
 2. Add a new domain via the [Vapor web interface](https://vapor.laravel.com/app/)
@@ -16,7 +16,7 @@
 10. Run a deployment for this environment
 11. Test
 
-## Staging
+## Deploy to staging
 
 After testing locally, commit and push your changes up to the remote repository.
 
@@ -26,7 +26,7 @@ Then run:
 vapor deploy staging
 ```
 
-## Production
+## Deploy to production
 
 After testing locally, commit and push your changes up to the remote repository.
 
