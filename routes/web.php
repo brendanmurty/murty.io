@@ -10,14 +10,17 @@ Route::get('/', function() {
         case 'brendan.murty.io':
         case 'b.murty.io':
         case 'bmurty.dev':
+        case 'brendanmurty.com':
             return Redirect::away('https://murty.io/brendan');
             break;
         case 'freya.murty.io':
         case 'f.murty.io':
+        case 'freyamurty.com':
             return Redirect::away('https://murty.io/freya');
             break;
         case 'isla.murty.io':
         case 'i.murty.io':
+        case 'islamurty.com':
             return Redirect::away('https://murty.io/isla');
             break;
         case 'git.murty.io':
