@@ -6,13 +6,14 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 
 ## Structure
 
-- **[app](app/)**: Back-end PHP classes
+- **[app/Http/Controllers](app/Http/Controllers/)**: Page controller files
 - **[config](config/)**: Site configuration files
-- **[content](content/)**: Files that contain the content of each page and post on the site
-- **[docs](docs/)**: Site documentation files
-- **[public](public/)**: Compiled files which are served to public site visitors
+- **[content](content/)**: Content files in Markdown format
+- **[docs](docs/)**: Documentation files in Markdown format
+- **[public](public/)**: Front-end assets that are served to visitors
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and content files
 - **[resources/css](resources/css/)**: CSS style files
+- **[resources/views](resources/views/)**: Page template files
 - **[routes/web.php](routes/web.php)**: Web routes logic including domain level redirects
 - **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
 - **[package.json](package.json)**: Contains website developer information and shortcut commands
