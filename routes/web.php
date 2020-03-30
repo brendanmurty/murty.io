@@ -29,6 +29,9 @@ Route::get('/', function() {
         case 'bmurty.blog':
             return Redirect::away('https://murty.io/brendan/posts');
             break;
+        case 'upcomingtasks.com':
+            return Redirect::away('https://murty.io/brendan/post/20161014_farewell-upcomingtasks');
+            break;
         default:
             // Show the site listing page
             $murty = new App\Http\Controllers\MurtyController;
