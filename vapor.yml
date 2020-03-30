@@ -5,16 +5,22 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: php-7.4
-        balancer: murty-production
         domain:
             # - murty.io
-            # - '*.murty.io'
+            # - www.murty.io
+            # - brendan.murty.io
+            # - b.murty.io
+            # - freya.murty.io
+            # - f.murty.io
+            # - isla.murty.io
+            # - i.murty.io
+            # - git.murty.io
+            - bmurty.dev
+            - bmurty.blog
             - brendanmurty.com
             - freyamurty.com
             - islamurty.com
-            - bmurty.dev
-            - bmurty.blog
-            # - upcomingtasks.com
+            - upcomingtasks.com
         build:
             - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
