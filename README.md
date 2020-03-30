@@ -16,8 +16,8 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[resources/views](resources/views/)**: Page template files
 - **[routes/web.php](routes/web.php)**: Web routes logic including domain level redirects
 - **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
-- **[package.json](package.json)**: Contains website developer information and shortcut commands
-- **[setup.sh](setup.sh)**: Initial web server setup script
+- **[package.json](package.json)**: Dependency configuration and shortcut commands
+- **[setup.sh](setup.sh)**: A helper script to initialise a new local environment
 - **[vapor.yml](vapor.yml)**: [Laravel Vapor](https://vapor.laravel.com/) environment configuration file
 
 ## License
