@@ -33,7 +33,7 @@ Route::get('/', function() {
             return Redirect::away('https://murty.io/brendan/post/20161014_farewell-upcomingtasks');
             break;
         default:
-            // Show the site listing page
+            // Default to showing the site listing page
             $murty = new App\Http\Controllers\MurtyController;
             return $murty->index();
             break;
