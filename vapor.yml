@@ -18,9 +18,9 @@ environments:
             - bmurty.dev
             - bmurty.blog
             - brendanmurty.com
-            - freyamurty.com
-            - islamurty.com
-            - upcomingtasks.com
+            # - freyamurty.com
+            # - islamurty.com
+            # - upcomingtasks.com
         build:
             - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
