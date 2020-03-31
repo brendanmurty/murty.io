@@ -11,18 +11,26 @@ if [ "$ANSWER" != "y" ]; then
   exit 1
 fi
 
-# Create or update the changelog content
+echo "Starting deployment..."
+
+echo "Updating changelog..."
+
 printf "# Change Log\n\n" > CHANGELOG.md
 git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
 
-# Commit this change and save the revision as a tag
-git commit -am "Version $1"
+echo "Committing the changes..."
+
+git commit -am "Version $1" --quiet
 git tag $1
 
-# Push the commit and tag up to the remote repository
-git push
-git push --tags
+echo "Pushing the changes up..."
 
-# Prompt a deployment to production
+git push --quiet
+git push --tags --quiet
+
+echo "Deploying to production..."
+
 vapor deploy production --quiet --no-interaction
 vapor deploy production-redirects --quiet --no-interaction
+
+echo "Deployment completed."
