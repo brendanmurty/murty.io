@@ -13,7 +13,7 @@ environments:
             - 'npm ci && npm run prod && rm -rf node_modules'
     production-redirects:
         memory: 128
-        cli-memory: 256
+        cli-memory: 128
         runtime: php-7.4
         domain:
             # - brendan.murty.io
