@@ -1,5 +1,7 @@
 # Change Log
 
+- 25c84bb (2020-03-31 20:22:37 +1100) Core: Update redirect domain list
+- 5b8a72a (2020-03-31 19:50:00 +1100) Version 2020.8
 - 80f11ee (2020-03-31 19:49:36 +1100) Docs: Update deployment link wording
 - 610cfb7 (2020-03-31 19:47:39 +1100) Core: Update deployment script
 - 3b17457 (2020-03-31 19:46:32 +1100) Version 2020.7
