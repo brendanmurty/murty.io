@@ -10,26 +10,32 @@ Route::get('/', function() {
         case 'brendan.murty.io':
         case 'b.murty.io':
         case 'bmurty.dev':
+        case 'www.bmurty.dev':
         case 'brendanmurty.com':
+        case 'www.brendanmurty.com':
             return Redirect::away('https://murty.io/brendan');
             break;
         case 'freya.murty.io':
         case 'f.murty.io':
         case 'freyamurty.com':
+        case 'www.freyamurty.com':
             return Redirect::away('https://murty.io/freya');
             break;
         case 'isla.murty.io':
         case 'i.murty.io':
         case 'islamurty.com':
+        case 'www.islamurty.com':
             return Redirect::away('https://murty.io/isla');
             break;
         case 'git.murty.io':
             return Redirect::away('https://murty.io/brendan/git');
             break;
         case 'bmurty.blog':
+        case 'www.bmurty.blog':
             return Redirect::away('https://murty.io/brendan/posts');
             break;
         case 'upcomingtasks.com':
+        case 'www.upcomingtasks.com':
             return Redirect::away('https://murty.io/brendan/post/20161014_farewell-upcomingtasks');
             break;
         default:
