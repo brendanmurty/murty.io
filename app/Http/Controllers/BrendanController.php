@@ -16,8 +16,8 @@ class BrendanController extends Controller
         'author' => 'Brendan Murty',
         'description' => 'Brendan is Lead Developer with varied commercial experience in web-based development, mentorship, training and project management',
         'theme' => '#00549d',
-        'icon' => '/images/brendan/icon-192.png',
-        'icon_large' => '/images/brendan/brendan-murty.jpg',
+        'icon' => 'images/brendan/icon-192.png',
+        'icon_large' => 'images/brendan/brendan-murty.jpg',
         'feed_title' => 'Posts by Brendan Murty',
         'feed_url' => 'https://murty.io/brendan/posts.json',
         'microblog_url' => 'https://micro.blog/brendanmurty',
@@ -25,9 +25,15 @@ class BrendanController extends Controller
     ];
 
     public function index() {
+        $page_file = base_path('content/brendan/index.md');
+
+        // Correct the image URLs in the content
+        $page_content = File::get($page_file);
+        $page_content = str_replace('/images/', asset('images') . '/', $page_content);
+        
         return view('brendan.index')->with(
             'content_html',
-            Markdown::convertToHtml(File::get('../content/brendan/index.md'))
+            Markdown::convertToHtml($page_content)
         )->with(
             'site',
             $this->site
@@ -35,7 +41,7 @@ class BrendanController extends Controller
     }
     
     public function page($page_name) {
-        $page_file = '../content/brendan/' . $page_name . '.md';
+        $page_file = base_path('content/brendan/' . $page_name . '.md');
 
         if (!file_exists($page_file)) {
             abort(404);
@@ -45,10 +51,14 @@ class BrendanController extends Controller
 
         $this->site['title'] = $page_title . ' - Brendan Murty';
         $this->site['body_class'] = 'brendan brendan_' . $page_name;
+        
+        // Correct the image URLs in the content
+        $page_content = File::get($page_file);
+        $page_content = str_replace('/images/', asset('images') . '/', $page_content);
 
         return view('brendan.page')->with(
             'content_html',
-            Markdown::convertToHtml(File::get($page_file))
+            Markdown::convertToHtml($page_content)
         )->with(
             'site',
             $this->site
@@ -63,7 +73,7 @@ class BrendanController extends Controller
 
     public function posts($output_type) {
         // Construct a list of Brendan's Posts
-        $post_folder = '../content/brendan/posts/';
+        $post_folder = base_path('content/brendan/posts/');
         $post_files = glob($post_folder . '*.md');
 
         $post_items = [];
@@ -165,7 +175,7 @@ class BrendanController extends Controller
     }
 
     public function post($post_name) {
-        $post_file = '../content/brendan/posts/' . $post_name . '.md';
+        $post_file = base_path('content/brendan/posts/' . $post_name . '.md');
 
         if (!file_exists($post_file)) {
             abort(404);
@@ -193,12 +203,15 @@ class BrendanController extends Controller
         }
 
         $this->site['title'] = $post_title . ' - Brendan Murty';
-
         $this->site['body_class'] = 'brendan brendan_post';
+
+        // Correct the image URLs in the content
+        $page_content = File::get($post_file);
+        $page_content = str_replace('/images/', asset('images') . '/', $page_content);
         
         return view('brendan.post')->with(
             'content_html',
-            Markdown::convertToHtml(File::get($post_file))
+            Markdown::convertToHtml($page_content)
         )->with(
             'site',
             $this->site

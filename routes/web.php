@@ -4,7 +4,41 @@
 
 // Routes: Root
 
-Route::get('/', 'MurtyController@index');
+Route::get('/', function() {
+    // Domain level redirects
+    switch (Request::getHost()) {
+        case 'brendan.murty.io':
+        case 'b.murty.io':
+        case 'bmurty.dev':
+        case 'brendanmurty.com':
+            return Redirect::away('https://murty.io/brendan');
+            break;
+        case 'freya.murty.io':
+        case 'f.murty.io':
+        case 'freyamurty.com':
+            return Redirect::away('https://murty.io/freya');
+            break;
+        case 'isla.murty.io':
+        case 'i.murty.io':
+        case 'islamurty.com':
+            return Redirect::away('https://murty.io/isla');
+            break;
+        case 'git.murty.io':
+            return Redirect::away('https://murty.io/brendan/git');
+            break;
+        case 'bmurty.blog':
+            return Redirect::away('https://murty.io/brendan/posts');
+            break;
+        case 'upcomingtasks.com':
+            return Redirect::away('https://murty.io/brendan/post/20161014_farewell-upcomingtasks');
+            break;
+        default:
+            // Default to showing the site listing page
+            $murty = new App\Http\Controllers\MurtyController;
+            return $murty->index();
+            break;
+    }
+});
 
 // Routes: Brendan
 
@@ -23,9 +57,7 @@ Route::get('/brendan/posts.json', function() {
 Route::get('/brendan/post', 'BrendanController@posts');
 Route::get('/brendan/{page_name}', 'BrendanController@page');
 
-Route::get('/brendan/post/farewell-upcomingtasks', function() {
-    return redirect('/brendan/post/20161014_farewell-upcomingtasks');
-});
+Route::redirect('/brendan/post/farewell-upcomingtasks', '/brendan/post/20161014_farewell-upcomingtasks');
 
 Route::get('/brendan/post/{post_name}', 'BrendanController@post');
 

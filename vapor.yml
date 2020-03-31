@@ -1,0 +1,73 @@
+id: 8544
+name: murty
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        runtime: php-7.4
+        domain:
+            # - murty.io
+            # - www.murty.io
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    production-redirects-brendan:
+        memory: 128
+        cli-memory: 128
+        runtime: php-7.4
+        domain:
+            # - brendan.murty.io
+            # - b.murty.io
+            - bmurty.dev
+            - bmurty.blog
+            - brendanmurty.com
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    production-redirects-freya:
+        memory: 128
+        cli-memory: 128
+        runtime: php-7.4
+        domain:
+            # - f.murty.io
+            # - freya.murty.io
+            - freyamurty.com
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    production-redirects-isla:
+        memory: 128
+        cli-memory: 128
+        runtime: php-7.4
+        domain:
+            # - i.murty.io
+            # - isla.murty.io
+            - islamurty.com
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    production-redirects-others:
+        memory: 128
+        cli-memory: 128
+        runtime: php-7.4
+        domain:
+            # - git.murty.io
+            - upcomingtasks.com
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    staging:
+        memory: 1024
+        cli-memory: 512
+        runtime: php-7.4
+        domain:
+            # - staging.murty.io
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run dev && rm -rf node_modules'

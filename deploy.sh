@@ -5,20 +5,35 @@ if [ $# -eq 0 ]; then
 fi
 
 # Ask for confirmation from the user before continuing
-read -p "Are you sure you want to create a new version ($1) and trigger a deployment? (y/n) " ANSWER
+read -p "Are you sure you want to create a new version ($1) and deploy this to the production environment? (y/n) " ANSWER
 if [ "$ANSWER" != "y" ]; then
   echo "Cancelled."
   exit 1
 fi
 
-# Create or update the changelog content
+echo "Starting deployment..."
+
+echo "Updating changelog..."
+
 printf "# Change Log\n\n" > CHANGELOG.md
 git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
 
-# Commit this change and save the revision as a tag
-git commit -am "Version $1"
+echo "Committing the changes..."
+
+git commit -am "Version $1" --quiet
 git tag $1
 
-# Push the commit and tag up to the remote repository
-git push
-git push --tags
+echo "Pushing the changes up..."
+
+git push --quiet
+git push --tags --quiet
+
+echo "Deploying to production..."
+
+vapor deploy production --quiet --no-interaction
+vapor deploy production-redirects-brendan --quiet --no-interaction
+vapor deploy production-redirects-freya --quiet --no-interaction
+vapor deploy production-redirects-isla --quiet --no-interaction
+vapor deploy production-redirects-others --quiet --no-interaction
+
+echo "Deployment completed."
