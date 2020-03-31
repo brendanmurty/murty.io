@@ -31,6 +31,9 @@ git push --tags --quiet
 echo "Deploying to production..."
 
 vapor deploy production --quiet --no-interaction
-vapor deploy production-redirects --quiet --no-interaction
+vapor deploy production-redirects-brendan --quiet --no-interaction
+vapor deploy production-redirects-freya --quiet --no-interaction
+vapor deploy production-redirects-isla --quiet --no-interaction
+vapor deploy production-redirects-others --quiet --no-interaction
 
 echo "Deployment completed."
