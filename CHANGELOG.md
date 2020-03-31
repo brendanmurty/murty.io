@@ -1,5 +1,73 @@
 # Change Log
 
+- e1ef301 (2020-03-31 19:45:02 +1100) Core: Revert to previous deployment and hosting methods
+- 46e27cb (2020-03-31 19:35:47 +1100) Merge branch 'serverless-laravel-vapor'
+- 300c6c3 (2020-03-31 14:04:35 +1100) Core: Split out redirect sites in to new environments
+- 34fdeec (2020-03-31 13:16:37 +1100) Core: Improve output of deploy script
+- b3802fd (2020-03-31 13:09:51 +1100) Core: Lower memory for the redirects environment
+- 8a8af91 (2020-03-31 13:04:43 +1100) Core: Move redirect domains to their own environment
+- 82cbd11 (2020-03-31 12:58:14 +1100) Core: Upgrade to Laravel 7.3
+- 292a597 (2020-03-31 12:54:47 +1100) Core: Upgrade to Laravel 7.3
+- 214523d (2020-03-30 21:40:11 +1100) Core: Enable more domains
+- 575ceb5 (2020-03-30 21:29:32 +1100) Core: Enable another domain
+- 2d4b7fe (2020-03-30 21:16:43 +1100) Docs: Add to file structure list
+- 3969bce (2020-03-30 21:15:13 +1100) Core: Temporarily disable some domains
+- a64a618 (2020-03-30 21:13:39 +1100) Docs: Update file structure list
+- 33f2189 (2020-03-30 21:06:48 +1100) Core: Remove irrelevant user authentication system
+- f94fc87 (2020-03-30 21:05:30 +1100) Core: Update file structure list
+- 1a178db (2020-03-30 20:52:04 +1100) Core: Update file structure list
+- 552a8e0 (2020-03-30 20:16:55 +1100) Core: Update domain configuration
+- 4f2c0e6 (2020-03-30 20:12:19 +1100) Core: Improve comments in web routes file
+- 3a08129 (2020-03-30 20:05:54 +1100) Core: Add more domains
+- fc7d5fe (2020-03-30 19:57:05 +1100) Core: Enable new production domains
+- f60a2c8 (2020-03-30 19:52:53 +1100) Docs: Update add domain process
+- e9c8a81 (2020-03-30 19:48:32 +1100) Core: Add more domains
+- 43201f8 (2020-03-30 19:41:47 +1100) Core: Update production domains and configure load balancer
+- 7146809 (2020-03-30 14:02:40 +1100) Docs: Improve process to add a new domain
+- 1b7bf41 (2020-03-30 13:49:08 +1100) Docs: Fix links to other files
+- 92dc614 (2020-03-30 13:44:33 +1100) Docs: Improve deployment section headings
+- fd3d453 (2020-03-30 13:42:44 +1100) Core: Add another domain to production environment list
+- 31a9a74 (2020-03-30 13:42:18 +1100) Docs: Improve process to add a new domain
+- 5cc10eb (2020-03-29 22:44:14 +1100) Docs: Improve content structure
+- 291f419 (2020-03-29 22:41:14 +1100) Docs: Simplify content in main readme file
+- 2e89b86 (2020-03-29 22:20:44 +1100) Docs: Improved structure of documentation
+- 94754b4 (2020-03-29 22:07:40 +1100) Docs: Add environment configuration section
+- 4c3507c (2020-03-29 21:31:55 +1100) Core: Remove Fathom analytics
+- ad5b1ba (2020-03-29 21:10:13 +1100) Docs: Update deployment process and file structure list
+- 7a6085e (2020-03-29 21:00:59 +1100) Core: Plan a staging custom URL
+- 0d3c0c6 (2020-03-29 20:59:53 +1100) Core: Add another domain to production environment list
+- 8cfb2ce (2020-03-29 20:30:19 +1100) Core: Update Deploy Script warning message
+- 94f855b (2020-03-29 20:23:18 +1100) Core: Update Vapor project configuration
+- 92ffa82 (2020-03-29 20:13:37 +1100) Core: Add domain level redirects
+- 1ae8276 (2020-03-28 13:35:39 +1100) Core: Limit domains to one for now
+- fa52447 (2020-03-27 21:50:22 +1100) Core: Update deployment process
+- e79f612 (2020-03-27 21:45:21 +1100) Core: Setup domains for Vapor production instance
+- dec41af (2020-03-27 21:21:57 +1100) Core: Remove obsolete build step
+- 8948607 (2020-03-27 20:52:39 +1100) Core: Fix image asset path correction method for content files
+- 5e244a1 (2020-03-27 20:36:13 +1100) Docs: Update structure list
+- fb54423 (2020-03-27 20:35:19 +1100) Core: Move content directory back to original location
+- e23a75c (2020-03-27 20:15:03 +1100) Core: Move content directory and references to it
+- d6bbab7 (2020-03-27 19:55:39 +1100) Core: Remove obsolete file
+- 081b653 (2020-03-27 19:51:14 +1100) Core: Fix file loading method on / page
+- 05c1597 (2020-03-27 19:37:31 +1100) Core: Fix index page file loading methods
+- b07c9f0 (2020-03-27 19:36:12 +1100) Core: Update image paths for site details
+- 1c4416b (2020-03-27 19:30:26 +1100) Core: Correct the asset URLs in controllers and templates
+- befa556 (2020-03-27 19:24:07 +1100) Core: Correct the image URLs in the content
+- 524e0f0 (2020-03-27 19:12:39 +1100) Core: Update content folder path and the methods used to read these files
+- fe3fe0f (2020-03-27 19:00:12 +1100) Core: Initial work on migration to Laravel Vapor
+- 87b9af6 (2020-03-27 18:57:59 +1100) Revert "Core: Initial work to setup Laravel Vapor"
+- f87e1a8 (2020-03-27 18:57:55 +1100) Revert "Core: Use a global Laravel Vapor command instead"
+- 9613ae8 (2020-03-27 18:57:52 +1100) Revert "Core: Initialise the Vapor project"
+- 03a9127 (2020-03-27 18:57:48 +1100) Revert "Core: Update Vapor build steps with current commands from setup.sh"
+- 37dedad (2020-03-27 18:57:45 +1100) Revert "Core: Fix Vapor install process"
+- df47f98 (2020-03-27 18:57:41 +1100) Revert "Core: Fix Vapor project settings and remove duplicated commands"
+- 4117714 (2020-03-27 14:28:52 +1100) Core: Fix Vapor project settings and remove duplicated commands
+- 3d88524 (2020-03-27 14:08:45 +1100) Core: Fix Vapor install process
+- 866cea7 (2020-03-27 13:59:38 +1100) Core: Update Vapor build steps with current commands from setup.sh
+- 40668c1 (2020-03-27 13:56:34 +1100) Core: Initialise the Vapor project
+- 0b92a39 (2020-03-27 13:42:23 +1100) Core: Use a global Laravel Vapor command instead
+- 9ff7c59 (2020-03-27 13:27:05 +1100) Core: Initial work to setup Laravel Vapor
+- 483f002 (2020-03-27 13:01:33 +1100) Version 2020.6
 - 785b50c (2020-03-27 13:01:10 +1100) Docs: Fix avatar image paths
 - cddbccb (2020-03-27 12:48:58 +1100) Version 2020.5
 - acace4d (2020-03-27 12:48:09 +1100) Freya, Isla: Update avatar images and simplify page content

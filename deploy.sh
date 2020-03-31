@@ -25,7 +25,7 @@ git tag $1
 
 echo "Pushing the changes up..."
 
-git push --quiet
-git push --tags --quiet
+# git push --quiet
+# git push --tags --quiet
 
 echo "Deployment process will now continue here: https://github.com/brendanmurty/murty.io/actions"
