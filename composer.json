@@ -11,7 +11,7 @@
     "graham-campbell/markdown": "^11.1",
     "htmlmin/htmlmin": "^7.0",
     "illuminate/view": "^7.0",
-    "laravel/framework": "^7.0",
+    "laravel/framework": "^7.3",
     "laravel/helpers": "^1.1",
     "laravel/tinker": "^2.0"
   },
