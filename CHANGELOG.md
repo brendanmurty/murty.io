@@ -1,5 +1,8 @@
 # Change Log
 
+- 80f11ee (2020-03-31 19:49:36 +1100) Docs: Update deployment link wording
+- 610cfb7 (2020-03-31 19:47:39 +1100) Core: Update deployment script
+- 3b17457 (2020-03-31 19:46:32 +1100) Version 2020.7
 - e1ef301 (2020-03-31 19:45:02 +1100) Core: Revert to previous deployment and hosting methods
 - 46e27cb (2020-03-31 19:35:47 +1100) Merge branch 'serverless-laravel-vapor'
 - 300c6c3 (2020-03-31 14:04:35 +1100) Core: Split out redirect sites in to new environments
