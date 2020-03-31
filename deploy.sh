@@ -24,4 +24,5 @@ git push
 git push --tags
 
 # Prompt a deployment to production
-vapor deploy production
+vapor deploy production --quiet --no-interaction
+vapor deploy production-redirects --quiet --no-interaction

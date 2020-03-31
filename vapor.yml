@@ -7,7 +7,15 @@ environments:
         runtime: php-7.4
         domain:
             # - murty.io
-            # - www.murty.io
+        build:
+            - 'cross-env COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
+            - 'php artisan event:cache'
+            - 'npm ci && npm run prod && rm -rf node_modules'
+    production-redirects:
+        memory: 128
+        cli-memory: 256
+        runtime: php-7.4
+        domain:
             # - brendan.murty.io
             # - b.murty.io
             # - freya.murty.io
