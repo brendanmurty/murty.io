@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # Ask for confirmation from the user before continuing
-read -p "Are you sure you want to create a new version ($1) and deploy this to the production environment? (y/n) " ANSWER
+read -p "Are you sure you want to create a new version ($1) and trigger a deployment? (y/n) " ANSWER
 if [ "$ANSWER" != "y" ]; then
   echo "Cancelled."
   exit 1
@@ -28,12 +28,4 @@ echo "Pushing the changes up..."
 git push --quiet
 git push --tags --quiet
 
-echo "Deploying to production..."
-
-vapor deploy production --quiet --no-interaction
-vapor deploy production-redirects-brendan --quiet --no-interaction
-vapor deploy production-redirects-freya --quiet --no-interaction
-vapor deploy production-redirects-isla --quiet --no-interaction
-vapor deploy production-redirects-others --quiet --no-interaction
-
-echo "Deployment completed."
+echo "Deployment process will now continue here: https://github.com/brendanmurty/murty.io/actions"

@@ -1,11 +1,12 @@
 # murty.io
 
-This repository contains the [Murty website](https://murty.io/) which is built with [Laravel](https://laravel.com/), hosted via [Laravel Vapor](https://vapor.laravel.com/) and uses some icons from the [Feather](http://feathericons.com/) icon pack.
+This repository contains the [Murty website](https://murty.io/) which is built with [Laravel](https://laravel.com/) and uses some icons from the [Feather](http://feathericons.com/) icon pack.
 
 [![Brendan](/public/images/brendan/brendan-murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla-murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya-murty.jpg)](https://murty.io/freya)
 
 ## Structure
 
+- **[.github/workflows/deployment.yml](.github/workflows/deployment.yml)**: GitHub Action script to deploy to the web server
 - **[app/Http/Controllers](app/Http/Controllers/)**: Page controllers
 - **[config](config/)**: Site configuration files
 - **[content](content/)**: Content files in Markdown format
@@ -19,7 +20,6 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
 - **[setup.sh](setup.sh)**: A helper script to initialise a new local environment
-- **[vapor.yml](vapor.yml)**: [Laravel Vapor](https://vapor.laravel.com/) environment configuration file
 
 ## License
 

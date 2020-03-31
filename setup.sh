@@ -34,7 +34,6 @@ fi
 
 # Install the required global packages
 npm install --global cross-env unzip
-composer global require laravel/vapor-cli
 
 # Install Composer 1.8 globally if required
 if [ "$(which composer)" == "" ]; then
