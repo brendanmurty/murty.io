@@ -1,5 +1,7 @@
 # Change Log
 
+- 641c015 (2020-04-10 15:05:23 +1000) Core: Move common content functions to a single helper class
+- 9376e7c (2020-03-31 20:22:56 +1100) Version 2020.9
 - 25c84bb (2020-03-31 20:22:37 +1100) Core: Update redirect domain list
 - 5b8a72a (2020-03-31 19:50:00 +1100) Version 2020.8
 - 80f11ee (2020-03-31 19:49:36 +1100) Docs: Update deployment link wording
