@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use File;
-use Markdown;
+use Content;
 
 class FreyaController extends Controller
 {
@@ -19,15 +18,9 @@ class FreyaController extends Controller
     ];
 
     public function index() {
-        $page_file = base_path('content/freya/index.md');
-
-        // Correct the image URLs in the content
-        $page_content = File::get($page_file);
-        $page_content = str_replace('/images/', asset('images') . '/', $page_content);
-        
         return view('freya.index')->with(
             'content_html',
-            Markdown::convertToHtml($page_content)
+            Content::getPageContentAsHTML('freya/index.md')
         )->with(
             'site',
             $this->site
