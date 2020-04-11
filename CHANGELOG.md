@@ -1,6 +1,9 @@
 # Change Log
 
-- Version 2020.13- Deploy: Simplify changelog content
+- Version 2020.14
+- Deploy: Improve version display in changelog
+- Version 2020.13
+- Deploy: Simplify changelog content
 - Version 2020.12
 - Deploy: Be more specific about which files to commit during a version bump
 - Version 2020.11
