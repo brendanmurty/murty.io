@@ -20,7 +20,8 @@ git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
 
 echo "Committing the changes..."
 
-git commit -am "Version $1" --quiet
+git add CHANGELOG.md
+git commit -m "Version $1" --quiet
 git tag $1
 
 echo "Pushing the changes up..."
