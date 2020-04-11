@@ -15,8 +15,8 @@ echo "Starting deployment..."
 
 echo "Updating changelog..."
 
-printf "# Change Log\n\n" > CHANGELOG.md
-git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
+printf "# Change Log\n\n- Version $1" > CHANGELOG.md
+git log --oneline --format="- %s" --date=iso >> CHANGELOG.md
 
 echo "Committing the changes..."
 
