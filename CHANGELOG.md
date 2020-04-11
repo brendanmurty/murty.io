@@ -1,5 +1,7 @@
 # Change Log
 
+- 736ce07 (2020-04-11 13:45:09 +1000) Deploy: Be more specific about which files to commit during a version bump
+- c01a858 (2020-04-11 13:43:49 +1000) Version 2020.11
 - d7bf9d9 (2020-04-11 13:43:04 +1000) Core: Move a lot of common post logic from the controller to the Content class
 - 3d94577 (2020-04-11 13:18:47 +1000) Core: Rename common content functions
 - cbfc853 (2020-04-10 15:06:10 +1000) Version 2020.10
