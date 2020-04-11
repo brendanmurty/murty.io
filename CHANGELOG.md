@@ -1,5 +1,8 @@
 # Change Log
 
+- d7bf9d9 (2020-04-11 13:43:04 +1000) Core: Move a lot of common post logic from the controller to the Content class
+- 3d94577 (2020-04-11 13:18:47 +1000) Core: Rename common content functions
+- cbfc853 (2020-04-10 15:06:10 +1000) Version 2020.10
 - 641c015 (2020-04-10 15:05:23 +1000) Core: Move common content functions to a single helper class
 - 9376e7c (2020-03-31 20:22:56 +1100) Version 2020.9
 - 25c84bb (2020-03-31 20:22:37 +1100) Core: Update redirect domain list
