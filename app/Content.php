@@ -16,7 +16,7 @@ class Content
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return bool                      Whether this content file exists or not.
      */
-    public static function pageContentFileExists($content_file_path)
+    public static function contentExists($content_file_path)
     {
         $page_file = base_path('content/' . $content_file_path);
 
@@ -29,7 +29,7 @@ class Content
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return string                    Contents of this file in Markdown format.
      */
-    public static function getPageContentAsMarkdown($content_file_path)
+    public static function getContentAsMarkdown($content_file_path)
     {
         $page_file = base_path('content/' . $content_file_path);
 
@@ -46,9 +46,9 @@ class Content
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return string                    Contents of this file in HTML format.
      */
-    public static function getPageContentAsHTML($content_file_path)
+    public static function getContentAsHTML($content_file_path)
     {
-        $page_content = self::getPageContentAsMarkdown($content_file_path);
+        $page_content = self::getContentAsMarkdown($content_file_path);
         $page_content = Markdown::convertToHtml($page_content);
         
         return $page_content;
@@ -60,7 +60,7 @@ class Content
      * @param  string $content_directory_path Path to the content sub-directory.
      * @return array                          All Markdown files that are in the sub-directory.
      */
-    public static function getContentFilesInDirectory($content_directory_path)
+    public static function getContentInDirectory($content_directory_path)
     {
         $directory_path = base_path('content/' . $content_directory_path);
 

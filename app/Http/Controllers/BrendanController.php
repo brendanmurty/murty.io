@@ -26,7 +26,7 @@ class BrendanController extends Controller
     public function index() {
         return view('brendan.index')->with(
             'content_html',
-            Content::getPageContentAsHTML('brendan/index.md')
+            Content::getContentAsHTML('brendan/index.md')
         )->with(
             'site',
             $this->site
@@ -36,7 +36,7 @@ class BrendanController extends Controller
     public function page($page_name) {
         $page_file = 'brendan/' . $page_name . '.md';
 
-        if (!Content::pageContentFileExists($page_file)) {
+        if (!Content::contentExists($page_file)) {
             abort(404);
         }
 
@@ -47,7 +47,7 @@ class BrendanController extends Controller
 
         return view('brendan.page')->with(
             'content_html',
-            Content::getPageContentAsHTML($page_file)
+            Content::getContentAsHTML($page_file)
         )->with(
             'site',
             $this->site
@@ -63,7 +63,7 @@ class BrendanController extends Controller
     public function posts($output_type) {
         // Construct a list of Brendan's Posts
         $post_items = [];
-        foreach (Content::getContentFilesInDirectory('brendan/posts/') as $post_file) {
+        foreach (Content::getContentInDirectory('brendan/posts/') as $post_file) {
             $post_slug = str_replace(array(base_path('content/brendan/posts/'), '.md'), '', $post_file);
             $post_url_relative = '/brendan/post/' . $post_slug;
             $post_url_full = 'https://murty.io' . $post_url_relative;
@@ -163,7 +163,7 @@ class BrendanController extends Controller
     public function post($post_name) {
         $post_file = 'brendan/posts/' . $post_name . '.md';
 
-        if (!Content::pageContentFileExists($post_file)) {
+        if (!Content::contentExists($post_file)) {
             abort(404);
         }
 
@@ -193,7 +193,7 @@ class BrendanController extends Controller
 
         return view('brendan.post')->with(
             'content_html',
-            Content::getPageContentAsHTML($post_file)
+            Content::getContentAsHTML($post_file)
         )->with(
             'site',
             $this->site
