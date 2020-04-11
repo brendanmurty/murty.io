@@ -2,6 +2,7 @@
 
 namespace App;
 
+use \DateTime;
 use File;
 use Markdown;
 
@@ -65,6 +66,96 @@ class Content
         $directory_path = base_path('content/' . $content_directory_path);
 
         return glob($directory_path . '*.md');
+    }
+
+    /**
+     * Get the post slug using a specified content file path.
+     * 
+     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @return string                    The related post slug.
+     */
+    public static function getPostSlugFromFilename($content_file_path)
+    {
+        return basename($content_file_path, '.md');
+    }
+
+    /**
+     * Generate a title for a post using a specified content file path.
+     * 
+     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @return string                    The related generated post title.
+     */
+    public static function getPostTitleFromFilename($content_file_path)
+    {
+        $post_slug = self::getPostSlugFromFilename($content_file_path);
+
+        $post_title = ucwords(
+            str_replace(
+                ['-', 'upcomingtasks', 'api', 'php'],
+                [' ', 'UpcomingTasks', 'API', 'PHP'],
+                substr(
+                    $post_slug,
+                    9
+                )
+            )
+        );
+
+        if (self::postIsDraft($content_file_path)) {
+            $post_title = 'DRAFT - ' . $post_title;
+        }
+
+        return $post_title;
+    }
+
+    /**
+     * Extract the short date for a post (YYYYMMDD) using a specified content file path.
+     * 
+     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @return string                    The short date for the post file.
+     */
+    public static function getPostDateShortFromFilename($content_file_path)
+    {
+        $post_slug = self::getPostSlugFromFilename($content_file_path);
+
+        return substr($post_slug, 0, 8);
+    }
+
+    /**
+     * Extract the human-friendly date for a post (DD MMM YYYY) using a specified content file path.
+     * 
+     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @return string                    The human-friendly date for the post file.
+     */
+    public static function getPostDateHumanFromFilename($content_file_path)
+    {
+        $post_date = DateTime::createFromFormat('Ymd', self::getPostDateShortFromFilename($content_file_path));
+
+        return $post_date->format('j M Y');
+    }
+
+    /**
+     * Extract the RSS supported date for a post using a specified content file path.
+     * 
+     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @return string                    The RSS supported date for the post file.
+     */
+    public static function getPostDatePublishedFromFilename($content_file_path)
+    {
+        $post_date = DateTime::createFromFormat('Ymd', self::getPostDateShortFromFilename($content_file_path));
+
+        return $post_date->format('Y-m-d') . 'T09:00:00.000Z';
+    }
+
+
+    /**
+     * Determine whether a post is a draft given a specified content file path.
+     * 
+     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @return bool                    Whether the post is a draft or not.
+     */
+    public static function postIsDraft($content_file_path)
+    {
+        return self::getPostDateShortFromFilename($content_file_path) == '999DRAFT';
     }
 
 }

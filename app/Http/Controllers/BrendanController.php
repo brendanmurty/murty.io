@@ -64,10 +64,10 @@ class BrendanController extends Controller
         // Construct a list of Brendan's Posts
         $post_items = [];
         foreach (Content::getContentInDirectory('brendan/posts/') as $post_file) {
-            $post_slug = str_replace(array(base_path('content/brendan/posts/'), '.md'), '', $post_file);
+            $post_slug = Content::getPostSlugFromFilename($post_file);
             $post_url_relative = '/brendan/post/' . $post_slug;
             $post_url_full = 'https://murty.io' . $post_url_relative;
-            $post_date_short = substr($post_slug, 0, 8);
+            $post_date_short = Content::getPostDateShortFromFilename($post_file);
 
             if ($post_date_short == '999DRAFT') {
                 // This is a draft post
@@ -83,21 +83,11 @@ class BrendanController extends Controller
             } else {
                 // This is a published post
 
-                $post_date = DateTime::createFromFormat('Ymd', $post_date_short);
-                $post_date_human = $post_date->format('j M Y');
-                $post_date_published = $post_date->format('Y-m-d') . 'T09:00:00.000Z';
+                $post_date_human = Content::getPostDateHumanFromFilename($post_file);
+                $post_date_published = Content::getPostDatePublishedFromFilename($post_file);
             }
 
-            $post_title = ucwords(
-                str_replace(
-                    ['-', 'upcomingtasks', 'api', 'php'],
-                    [' ', 'UpcomingTasks', 'API', 'PHP'],
-                    substr(
-                        $post_slug,
-                        9
-                    )
-                )
-            );
+            $post_title = Content::getPostTitleFromFilename($post_file);
 
             if ($output_type == 'json') {
                 // Construct a JSON Feed Item for this post
@@ -167,25 +157,11 @@ class BrendanController extends Controller
             abort(404);
         }
 
-        $post_title = ucwords(
-            str_replace(
-                ['-', 'upcomingtasks', 'api', 'php'],
-                [' ', 'UpcomingTasks', 'API', 'PHP'],
-                substr(
-                    $post_name,
-                    9
-                )
-            )
-        );
+        $post_title = Content::getPostTitleFromFilename($post_file);
 
-        if (substr($post_name, 0, 8) == '999DRAFT') {
-            // This is a draft post
-            $post_title = 'DRAFT - ' . $post_title;
-            
+        if (Content::postIsDraft($post_file) && env('APP_ENV', 'production') != 'local') {
             // Draft posts should only be visible on local environments
-            if (env('APP_ENV', 'production') != 'local') {
-                return response(view('errors.404'), 404);
-            }
+            return response(view('errors.404'), 404);
         }
 
         $this->site['title'] = $post_title . ' - Brendan Murty';
