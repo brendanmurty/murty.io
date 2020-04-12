@@ -41,6 +41,7 @@ Route::get('/', function() {
         case 'gallery.murty.io':
         case 'photos.murty.io':
         case 'murty.photos':
+        case 'www.murty.photos':
             return Redirect::away('https://murty.io/gallery');
             break;
         default:
