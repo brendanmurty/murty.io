@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.19
+- Gallery: Update page details on item pages
 - Version 2020.18
 - Gallery: Improve display of metadata on item page when full metadata could not be extracted
 - Version 2020.17
