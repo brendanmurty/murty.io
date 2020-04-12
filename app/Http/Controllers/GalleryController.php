@@ -57,6 +57,9 @@ class GalleryController extends Controller
             abort(404);
         }
 
+        $this->site['title'] = $item_name . ' - Gallery';
+        $this->site['body_class'] = 'gallery gallery_item';
+
         $image_metadata = Content::getImageMetadata($image_path);
         $image_title = $item_name;
         if (!empty($image_metadata)) {
@@ -64,7 +67,7 @@ class GalleryController extends Controller
         }
 
         $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_title . '</span></div>';
-        
+
         return view('gallery.item')->with(
             'content_html',
             $image_detail
