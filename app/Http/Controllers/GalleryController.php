@@ -57,9 +57,13 @@ class GalleryController extends Controller
             abort(404);
         }
 
-        $image_metadata = $item_name . ' - ' . Content::getImageMetadata($image_path);
+        $image_metadata = Content::getImageMetadata($image_path);
+        $image_title = $item_name;
+        if (!empty($image_metadata)) {
+            $image_title .= ' - ' . $image_metadata;
+        }
 
-        $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_metadata . '</span></div>';
+        $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_title . '</span></div>';
         
         return view('gallery.item')->with(
             'content_html',
