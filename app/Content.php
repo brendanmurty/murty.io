@@ -96,16 +96,29 @@ class Content
     }
 
     /**
-     * Get the post slug using a specified content file path.
+     * Get a URL slug using a specified file path.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
-     * @return string                    The related post slug.
+     * @param  string $content_file_path Path to the file.
+     * @return string                    The related URL slug.
      */
-    public static function getPostSlug($content_file_path)
+    public static function getSlug($content_file_path)
     {
         $content_path_parts = pathinfo($content_file_path);
 
         return $content_path_parts['filename'];
+    }
+
+    /**
+     * Get a URL slug (including a file extension) using a specified file path.
+     * 
+     * @param  string $content_file_path Path to the file.
+     * @return string                    The related URL slug.
+     */
+    public static function getSlugWithExtension($content_file_path)
+    {
+        $content_path_parts = pathinfo($content_file_path);
+
+        return $content_path_parts['basename'];
     }
 
     /**
@@ -116,7 +129,7 @@ class Content
      */
     public static function getPostTitleFromFilename($content_file_path)
     {
-        $post_slug = self::getPostSlug($content_file_path);
+        $post_slug = self::getSlug($content_file_path);
 
         $post_title = ucwords(
             str_replace(
@@ -144,7 +157,7 @@ class Content
      */
     public static function getPostDateShortFromFilename($content_file_path)
     {
-        $post_slug = self::getPostSlug($content_file_path);
+        $post_slug = self::getSlug($content_file_path);
 
         return substr($post_slug, 0, 8);
     }
@@ -195,7 +208,14 @@ class Content
     public static function getImageMetadata($image_file_path)
     {
         try {
-            return Image::make($image_file_path)->exif();
+            $image_date = Content::getPostDateHumanFromFilename($image_file_path);
+            $image_metaline = $image_date . ', ';
+            $image_metadata = Image::make($image_file_path)->exif();
+            if (!empty($image_metadata)) {
+                $image_metaline .= $image_metadata['Make'] . ' ' . $image_metadata['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['ISOSpeedRatings'];
+            }
+
+            return $image_metaline;
         } catch (\Exception $e) {
             return array();
         }

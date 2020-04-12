@@ -51,27 +51,36 @@
 
 /* Image List */
 
-ul.gallery {
+.gallery-images {
   width: 100%;
   padding: 0;
   margin: 0;
   list-style: none outside none;
+  display: flex;
 }
 
-ul.gallery li {
+.gallery-item {
   float: left;
   margin: 5% 5% 0 0;
   width: 28%;
 }
 
-ul.gallery li img {
+.gallery-item-full {
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.gallery-item-link {
+  display: block;
+}
+
+.gallery-image {
   width: 100%;
 }
 
-ul.gallery li span {
+.gallery-meta {
   display: block;
   clear: both;
-  margin: 5px 0 0;
   width: 100%;
   color: var(--secondary-colour);
   font-size: 80%;

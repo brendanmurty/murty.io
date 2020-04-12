@@ -21,24 +21,19 @@ class GalleryController extends Controller
     public function index() {
         $image_items = array();
         foreach (Content::getImageContentInDirectory('/') as $image_file_path) {
-            // Get the public URL for this image
             $image_src = str_replace(
                 base_path('public/images/'),
                 asset('images') . '/',
                 $image_file_path
             );
 
-            // Extract image metadata and construct summary line
-            $image_date = Content::getPostDateHumanFromFilename($image_file_path);
-            $image_metaline = $image_date . ', ';
-            $image_metadata = Content::getImageMetadata($image_file_path);
-            if (!empty($image_metadata)) {
-                $image_metaline .= $image_metadata['Make'] . ' ' . $image_metadata['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['ISOSpeedRatings'];
-            }
+            $image_detail_url = '/gallery/' . Content::getSlugWithExtension($image_file_path);
 
-            $image_items[] = '<li><img src="' . $image_src . '" /><span>' . $image_metaline . '</span></li>';
+            $image_metadata = Content::getImageMetadata($image_file_path);
+
+            $image_items[] = '<li class="gallery-item"><a class="gallery-item-link" href="' . $image_detail_url . '"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_metadata . '</span></a></li>';
         }
-        $images_list = '<ul class="gallery">' . implode('', array_reverse($image_items)) . '</ul>';
+        $images_list = '<ul class="gallery-images">' . implode('', array_reverse($image_items)) . '</ul>';
         
         return view('gallery.index')->with(
             'content_html',
@@ -48,4 +43,32 @@ class GalleryController extends Controller
             $this->site
         );
     }
+
+    public function item($item_name) {
+        $image_src = asset('images') . '/gallery/' . $item_name;
+        $image_path = base_path('public/images/gallery/' . $item_name);
+
+        if (!Content::imageExists($item_name)) {
+            abort(404);
+        }
+
+        $image_metadata = Content::getImageMetadata($image_path);
+
+        $image_detail = '<div class="gallery-item-full"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_metadata . '</span></div>';
+        
+        return view('gallery.item')->with(
+            'content_html',
+            $image_detail
+        )->with(
+            'site',
+            $this->site
+        )->with(
+            'breadcrumbs',
+            [
+                'Gallery' => '/gallery',
+                $item_name => ''
+            ]
+        );
+    }
+
 }
