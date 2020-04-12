@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.20
+- Gallery: Use built-in EXIF functions instead of third-party package
+- Gallery: Update redirect URLs
 - Version 2020.19
 - Gallery: Update page details on item pages
 - Version 2020.18
