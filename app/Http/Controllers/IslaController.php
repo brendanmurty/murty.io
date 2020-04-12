@@ -20,7 +20,7 @@ class IslaController extends Controller
     public function index() {
         return view('isla.index')->with(
             'content_html',
-            Content::getContentAsHTML('isla/index.md')
+            Content::getMarkdownContentAsHTML('isla/index.md')
         )->with(
             'site',
             $this->site

@@ -30,7 +30,7 @@ class Content
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return string                    Contents of this file in Markdown format.
      */
-    public static function getContentAsMarkdown($content_file_path)
+    public static function getMarkdownContent($content_file_path)
     {
         $page_file = base_path('content/' . $content_file_path);
 
@@ -47,21 +47,21 @@ class Content
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return string                    Contents of this file in HTML format.
      */
-    public static function getContentAsHTML($content_file_path)
+    public static function getMarkdownContentAsHTML($content_file_path)
     {
-        $page_content = self::getContentAsMarkdown($content_file_path);
+        $page_content = self::getMarkdownContent($content_file_path);
         $page_content = Markdown::convertToHtml($page_content);
         
         return $page_content;
     }
 
     /**
-     * Get a list of all content files in a specific sub-directory of the top-level "content" directory.
+     * Get a list of all Markdown content files in a specific sub-directory of the top-level "content" directory.
      * 
      * @param  string $content_directory_path Path to the content sub-directory.
      * @return array                          All Markdown files that are in the sub-directory.
      */
-    public static function getContentInDirectory($content_directory_path)
+    public static function getMarkdownContentInDirectory($content_directory_path)
     {
         $directory_path = base_path('content/' . $content_directory_path);
 
@@ -69,12 +69,25 @@ class Content
     }
 
     /**
-     * Get the post slug using a specified content file path.
+     * Get a list of all image content files in a specific sub-directory of the top-level "content" directory.
+     * 
+     * @param  string $content_directory_path Path to the content sub-directory.
+     * @return array                          All Markdown files that are in the sub-directory.
+     */
+    public static function getImageContentInDirectory($content_directory_path)
+    {
+        $directory_path = base_path('content/' . $content_directory_path);
+
+        return glob($directory_path . '*.{jpg,png,gif}');
+    }
+
+    /**
+     * Get the post slug using a specified Markdown content file path.
      * 
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return string                    The related post slug.
      */
-    public static function getPostSlugFromFilename($content_file_path)
+    public static function getMarkdownPostSlug($content_file_path)
     {
         return basename($content_file_path, '.md');
     }
@@ -87,7 +100,7 @@ class Content
      */
     public static function getPostTitleFromFilename($content_file_path)
     {
-        $post_slug = self::getPostSlugFromFilename($content_file_path);
+        $post_slug = self::getMarkdownPostSlug($content_file_path);
 
         $post_title = ucwords(
             str_replace(
@@ -115,7 +128,7 @@ class Content
      */
     public static function getPostDateShortFromFilename($content_file_path)
     {
-        $post_slug = self::getPostSlugFromFilename($content_file_path);
+        $post_slug = self::getMarkdownPostSlug($content_file_path);
 
         return substr($post_slug, 0, 8);
     }

@@ -26,7 +26,7 @@ class BrendanController extends Controller
     public function index() {
         return view('brendan.index')->with(
             'content_html',
-            Content::getContentAsHTML('brendan/index.md')
+            Content::getMarkdownContentAsHTML('brendan/index.md')
         )->with(
             'site',
             $this->site
@@ -47,7 +47,7 @@ class BrendanController extends Controller
 
         return view('brendan.page')->with(
             'content_html',
-            Content::getContentAsHTML($page_file)
+            Content::getMarkdownContentAsHTML($page_file)
         )->with(
             'site',
             $this->site
@@ -63,8 +63,8 @@ class BrendanController extends Controller
     public function posts($output_type) {
         // Construct a list of Brendan's Posts
         $post_items = [];
-        foreach (Content::getContentInDirectory('brendan/posts/') as $post_file) {
-            $post_slug = Content::getPostSlugFromFilename($post_file);
+        foreach (Content::getMarkdownContentInDirectory('brendan/posts/') as $post_file) {
+            $post_slug = Content::getMarkdownPostSlug($post_file);
             $post_url_relative = '/brendan/post/' . $post_slug;
             $post_url_full = 'https://murty.io' . $post_url_relative;
             $post_date_short = Content::getPostDateShortFromFilename($post_file);
@@ -169,7 +169,7 @@ class BrendanController extends Controller
 
         return view('brendan.post')->with(
             'content_html',
-            Content::getContentAsHTML($post_file)
+            Content::getMarkdownContentAsHTML($post_file)
         )->with(
             'site',
             $this->site
