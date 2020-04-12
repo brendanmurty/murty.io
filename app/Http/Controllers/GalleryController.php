@@ -19,13 +19,26 @@ class GalleryController extends Controller
     ];
 
     public function index() {
-        $images_list = '<ul class="gallery">';
+        $image_items = array();
         foreach (Content::getImageContentInDirectory('/') as $image_file_path) {
-            $image_src = str_replace(base_path('public/images/'), asset('images') . '/', $image_file_path);
+            // Get the public URL for this image
+            $image_src = str_replace(
+                base_path('public/images/'),
+                asset('images') . '/',
+                $image_file_path
+            );
 
-            $images_list .= '<li><img src="' . $image_src . '" /></li>';
+            // Extract image metadata and construct summary line
+            $image_date = Content::getPostDateHumanFromFilename($image_file_path);
+            $image_metaline = $image_date . ', ';
+            $image_metadata = Content::getImageMetadata($image_file_path);
+            if (!empty($image_metadata)) {
+                $image_metaline .= $image_metadata['Make'] . ' ' . $image_metadata['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['ISOSpeedRatings'];
+            }
+
+            $image_items[] = '<li><img src="' . $image_src . '" /><span>' . $image_metaline . '</span></li>';
         }
-        $images_list .= '</ul>';
+        $images_list = '<ul class="gallery">' . implode('', array_reverse($image_items)) . '</ul>';
         
         return view('gallery.index')->with(
             'content_html',

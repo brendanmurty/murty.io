@@ -62,7 +62,6 @@ ul.gallery li {
   float: left;
   margin: 5% 5% 0 0;
   width: 28%;
-  max-width: 300px;
 }
 
 ul.gallery li img {
@@ -74,4 +73,6 @@ ul.gallery li span {
   clear: both;
   margin: 5px 0 0;
   width: 100%;
+  color: var(--secondary-colour);
+  font-size: 80%;
 }

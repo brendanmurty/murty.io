@@ -5,6 +5,7 @@ namespace App;
 use \DateTime;
 use File;
 use Markdown;
+use Image;
 
 /**
  * Functions related to content that are used site-wide.
@@ -30,9 +31,9 @@ class Content
      * @param  string $content_file_path Path to the file inside the "public/images/gallery/" directory.
      * @return bool                      Whether this content file exists or not.
      */
-    public static function imageExists($content_file_path)
+    public static function imageExists($image_file_path)
     {
-        $image_file = base_path('public/images/gallery/' . $content_file_path);
+        $image_file = base_path('public/images/gallery/' . $image_file_path);
 
         return file_exists($image_file);
     }
@@ -89,7 +90,7 @@ class Content
      */
     public static function getImageContentInDirectory($content_directory_path)
     {
-        $directory_path = base_path('public/images/gallery/' . $content_directory_path);
+        $directory_path = base_path('public/images/gallery' . $content_directory_path);
 
         return glob($directory_path . '*.{jpg,png,gif}', GLOB_BRACE);
     }
@@ -174,7 +175,6 @@ class Content
         return $post_date->format('Y-m-d') . 'T09:00:00.000Z';
     }
 
-
     /**
      * Determine whether a post is a draft given a specified content file path.
      * 
@@ -186,4 +186,18 @@ class Content
         return self::getPostDateShortFromFilename($content_file_path) == '999DRAFT';
     }
 
+    /**
+     * Extract image metadata from an image file.
+     * 
+     * @param  string $image_file_path Full path to the image from the project root.
+     * @return array                   Metadata from the image or an empty array.
+     */
+    public static function getImageMetadata($image_file_path)
+    {
+        try {
+            return Image::make($image_file_path)->exif();
+        } catch (\Exception $e) {
+            return array();
+        }
+    }
 }
