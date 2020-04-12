@@ -1,7 +1,8 @@
 # Change Log
 
+- Version 2020.16
+- Deploy: Update changelog to ignore merge commits
 - Version 2020.15
-- Merge branch 'master' of github.com:brendanmurty/murty.io
 - Brendan: Update contact links in resumé
 - Version 2020.14
 - Deploy: Improve version display in changelog
@@ -21,7 +22,6 @@
 - Core: Update deployment script
 - Version 2020.7
 - Core: Revert to previous deployment and hosting methods
-- Merge branch 'serverless-laravel-vapor'
 - Core: Split out redirect sites in to new environments
 - Core: Improve output of deploy script
 - Core: Lower memory for the redirects environment
@@ -202,7 +202,6 @@
 - 9.6.0
 - Core: Update bootstrap
 - Core: Updated package lock
-- Merge branch 'master' of github.com:brendanmurty/murty.io
 - Core: Update package details
 - Brendan: Update Git links
 - Core: Move to self-hosted GitLab server
@@ -309,7 +308,6 @@
 - Readme: Update image content
 - Prepare version 6.4.0
 - Brendan: Update icon for GitHub profile links
-- Merge branch 'master' of github.com:brendanmurty/murty.io
 - Ignore more files
 - Update contact links in Resumé
 - Update post content
@@ -331,7 +329,6 @@
 - General: Add Micro.blog site verification
 - General: Fix "sites.json" redirect
 - Readme: Update SSL documentation
-- Merge branch 'master' of bitbucket.org:brendanmurty/murty.io
 - General: Update issue links
 - Prepare version 6.1.4
 - General: Update website image sizes and Ella's link
@@ -445,7 +442,6 @@
 - Improved resumé content
 - Add Git section to resumé
 - Updated resumé content
-- Merge branch 'master' of https://github.com/brendanmurty/website
 - Perpare version 3.2.0
 - Perpare version 3.2.0
 - Isla: Improve colour scheme and heading styling
@@ -536,7 +532,6 @@
 - Simplify redirects (#22)
 - Simplify the Page Service
 - Prepare version 1.0.1
-- Merge branch 'master' of github.com:brendanmurty/website
 - Improved method for setting the page title
 - Remove commented out Apache config
 - Remove SSL configuration for now
@@ -555,7 +550,6 @@
 - Added further setup instructions
 - Prepare version 1.0.0
 - Updated build files
-- Merge branch 'master' of github.com:brendanmurty/website
 - Updated custom font include method
 - Add development tools setup instructions
 - Delete keybase.txt
@@ -695,7 +689,6 @@
 - Updated method for showing Instagram post usernames
 - Improved grammar on about page
 - Add "Diablo 3" and "Starcraft 2" profile links
-- Merged in brendanmurty/update-announcing-upcomingtasks-pro-post-1451962709109 (pull request #1)
 - Update "Announcing UpcomingTasks Pro" post with new repo links and "Basecamp 2" wording
 - Update UT git repo link
 - Update git links in about content
@@ -742,7 +735,6 @@
 - Fix website domain configuration
 - Use new Kirby 2 class auto-loader
 - Add new Kirby 2.1.1 core files
-- Merge branch 'master' of https://github.com/brendanmurty/website
 - Update to Kirby 2.1.1
 - Custom link underlines
 - New domain
