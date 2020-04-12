@@ -5,7 +5,6 @@ namespace App;
 use \DateTime;
 use File;
 use Markdown;
-use Image;
 
 /**
  * Functions related to content that are used site-wide.
@@ -210,9 +209,10 @@ class Content
         try {
             $image_date = Content::getPostDateHumanFromFilename($image_file_path);
             $image_metaline = $image_date . ', ';
-            $image_metadata = Image::make($image_file_path)->exif();
-            if (!empty($image_metadata)) {
-                $image_metaline .= $image_metadata['Make'] . ' ' . $image_metadata['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['ISOSpeedRatings'];
+            
+            $image_metadata = exif_read_data($image_file_path, 0, true);
+            if ($image_metadata) {
+                $image_metaline .= $image_metadata['IFD0']['Make'] . ' ' . $image_metadata['IFD0']['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['EXIF']['ISOSpeedRatings'];
             }
 
             return $image_metaline;

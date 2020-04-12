@@ -4,7 +4,7 @@
 
 - [Node 10.7.x](https://nodejs.org/en/download/package-manager/)
 - [PHP 7.3](https://www.php.net/manual/en/install.php)
-- PHP GD image library
+- [PHP Exif library](https://www.php.net/manual/en/exif.installation.php)
 - [Composer 1.8](https://getcomposer.org/download/)
 
 ## Initial Setup
