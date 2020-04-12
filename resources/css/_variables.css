@@ -28,3 +28,10 @@
   --background-colour: #f7f7f7;
   --foreground-colour: #171d1c;
 }
+
+.gallery {
+  --highlight-colour: #23c5b0;
+  --background-colour: #000000;
+  --foreground-colour: #fff;
+  --secondary-colour: #e5e5e5;
+}

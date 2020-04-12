@@ -1,0 +1,77 @@
+/* ---- Gallery ---- */
+
+/* Layout */
+
+.gallery {
+  background-color: var(--background-colour);
+  color: var(--foreground-colour);
+  min-width: 400px;
+}
+
+.gallery article {
+  width: 90% !important;
+  padding: 0 0 5% 5% !important;
+}
+
+.gallery a {
+  color: var(--highlight-colour);
+  border-color: transparent;
+}
+
+.gallery a:focus,
+.gallery a:hover {
+  border-color: var(--highlight-colour);
+}
+
+.gallery ::-moz-selection,
+.gallery ::selection {
+  background: var(--highlight-colour);
+  color: var(--secondary-colour);
+  text-shadow: none
+}
+
+.gallery header {
+  padding: 30px 0 0 5%;
+}
+
+.gallery header h1 a {
+  border-bottom: none;
+  color: var(--foreground-colour);
+  display: block;
+}
+
+.gallery nav.sites {
+  color: var(--highlight-colour);
+  background-color: var(--background-colour);;
+}
+
+.gallery nav.sites .current_site img {
+  border-color: var(--highlight-colour);
+}
+
+/* Image List */
+
+ul.gallery {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none outside none;
+}
+
+ul.gallery li {
+  float: left;
+  margin: 5% 5% 0 0;
+  width: 28%;
+  max-width: 300px;
+}
+
+ul.gallery li img {
+  width: 100%;
+}
+
+ul.gallery li span {
+  display: block;
+  clear: both;
+  margin: 5px 0 0;
+  width: 100%;
+}

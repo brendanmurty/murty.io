@@ -2,7 +2,7 @@
 
 @section('header')
     <h1>
-        <a href="/gallery">Murty Gallery</a>
+        <a href="/gallery">Gallery</a>
     </h1>
 
     @include('sections.list_sites_header')

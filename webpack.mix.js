@@ -9,7 +9,8 @@ mix.styles(
         'resources/css/murty.css',
         'resources/css/brendan.css',
         'resources/css/freya.css',
-        'resources/css/isla.css'
+        'resources/css/isla.css',
+        'resources/css/gallery.css'
     ],
     'public/css/app.css'
 ).version();
