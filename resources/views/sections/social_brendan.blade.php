@@ -1,4 +1,4 @@
-<ul class="listing social testing">
+<ul class="listing social">
     <li>
         <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
             <svg xmlns="http://www.w3.org/2000/svg" role="img" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -10,9 +10,12 @@
     </li>
     <li>
         <a href="/brendan/posts" title="View my Posts">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
-                <polyline points="13 2 13 9 20 9"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
             <span>Posts</span>
         </a>
@@ -37,15 +40,15 @@
         </a>
     </li>
     <li>
-      <a href="/brendan/git" title="View my code repositories">
-        <svg xmlns="http://www.w3.org/2000/svg" role="img" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch">
-          <line x1="6" y1="3" x2="6" y2="15"></line>
-          <circle cx="18" cy="6" r="3"></circle>
-          <circle cx="6" cy="18" r="3"></circle>
-          <path d="M18 9a9 9 0 0 1-9 9"></path>
-        </svg>
-        <span>Git</span>
-      </a>
+        <a href="/brendan/git" title="View my code repositories">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch">
+                <line x1="6" y1="3" x2="6" y2="15"></line>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M18 9a9 9 0 0 1-9 9"></path>
+            </svg>
+            <span>Git</span>
+        </a>
     </li>
     <li>
         <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
@@ -56,13 +59,13 @@
         </a>
     </li>
     <li>
-        <a href="https://instagram.com/brendan.murty" title="View my Instagram posts">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+        <a href="/gallery" title="View some of my photos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
             </svg>
-            <span>Instagram</span>
+            <span>Photos</span>
         </a>
     </li>
     <li>

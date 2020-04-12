@@ -25,7 +25,7 @@
     </li>
     <li class="last">
         <a href="/gallery" @if(isset($site) && $site['title_short'] == 'GAL')class="current_site"@endif>
-            <img src="{{ asset('images/common/murty-128.png') }}" alt="GAL" title="Visit the gallery website" style="background-color:#555;">
+            <img src="{{ asset('images/common/gallery.svg') }}" alt="GAL" title="Visit the gallery website">
             <span>Gallery</span>
         </a>
     </li>
