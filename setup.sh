@@ -13,7 +13,7 @@ if [ "$(uname -s)" == "Linux" ]; then
   sudo add-apt-repository ppa:ondrej/php
   sudo apt-get update
   sudo apt-get upgrade
-  sudo apt -y install php7.3 php7.3-mbstring php7.3-xml php7.3-zip php7.3-gd
+  sudo apt -y install php7.3 php7.3-mbstring php7.3-xml php7.3-zip
 else
   if [ "$(which php)" == "" ]; then
     echo "Please install PHP 7.3 manually first: https://www.php.net/manual/en/install.php"
