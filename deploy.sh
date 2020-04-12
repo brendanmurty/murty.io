@@ -15,12 +15,13 @@ echo "Starting deployment..."
 
 echo "Updating changelog..."
 
-printf "# Change Log\n\n" > CHANGELOG.md
-git log --oneline --format="- %h (%ad) %s" --date=iso >> CHANGELOG.md
+printf "# Change Log\n\n- Version $1\n" > CHANGELOG.md
+git log --oneline --format="- %s" --date=iso >> CHANGELOG.md
 
 echo "Committing the changes..."
 
-git commit -am "Version $1" --quiet
+git add CHANGELOG.md
+git commit -m "Version $1" --quiet
 git tag $1
 
 echo "Pushing the changes up..."

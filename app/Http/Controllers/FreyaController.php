@@ -20,7 +20,7 @@ class FreyaController extends Controller
     public function index() {
         return view('freya.index')->with(
             'content_html',
-            Content::getPageContentAsHTML('freya/index.md')
+            Content::getContentAsHTML('freya/index.md')
         )->with(
             'site',
             $this->site

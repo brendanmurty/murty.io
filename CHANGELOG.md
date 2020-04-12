@@ -1,909 +1,919 @@
 # Change Log
 
-- 641c015 (2020-04-10 15:05:23 +1000) Core: Move common content functions to a single helper class
-- 9376e7c (2020-03-31 20:22:56 +1100) Version 2020.9
-- 25c84bb (2020-03-31 20:22:37 +1100) Core: Update redirect domain list
-- 5b8a72a (2020-03-31 19:50:00 +1100) Version 2020.8
-- 80f11ee (2020-03-31 19:49:36 +1100) Docs: Update deployment link wording
-- 610cfb7 (2020-03-31 19:47:39 +1100) Core: Update deployment script
-- 3b17457 (2020-03-31 19:46:32 +1100) Version 2020.7
-- e1ef301 (2020-03-31 19:45:02 +1100) Core: Revert to previous deployment and hosting methods
-- 46e27cb (2020-03-31 19:35:47 +1100) Merge branch 'serverless-laravel-vapor'
-- 300c6c3 (2020-03-31 14:04:35 +1100) Core: Split out redirect sites in to new environments
-- 34fdeec (2020-03-31 13:16:37 +1100) Core: Improve output of deploy script
-- b3802fd (2020-03-31 13:09:51 +1100) Core: Lower memory for the redirects environment
-- 8a8af91 (2020-03-31 13:04:43 +1100) Core: Move redirect domains to their own environment
-- 82cbd11 (2020-03-31 12:58:14 +1100) Core: Upgrade to Laravel 7.3
-- 292a597 (2020-03-31 12:54:47 +1100) Core: Upgrade to Laravel 7.3
-- 214523d (2020-03-30 21:40:11 +1100) Core: Enable more domains
-- 575ceb5 (2020-03-30 21:29:32 +1100) Core: Enable another domain
-- 2d4b7fe (2020-03-30 21:16:43 +1100) Docs: Add to file structure list
-- 3969bce (2020-03-30 21:15:13 +1100) Core: Temporarily disable some domains
-- a64a618 (2020-03-30 21:13:39 +1100) Docs: Update file structure list
-- 33f2189 (2020-03-30 21:06:48 +1100) Core: Remove irrelevant user authentication system
-- f94fc87 (2020-03-30 21:05:30 +1100) Core: Update file structure list
-- 1a178db (2020-03-30 20:52:04 +1100) Core: Update file structure list
-- 552a8e0 (2020-03-30 20:16:55 +1100) Core: Update domain configuration
-- 4f2c0e6 (2020-03-30 20:12:19 +1100) Core: Improve comments in web routes file
-- 3a08129 (2020-03-30 20:05:54 +1100) Core: Add more domains
-- fc7d5fe (2020-03-30 19:57:05 +1100) Core: Enable new production domains
-- f60a2c8 (2020-03-30 19:52:53 +1100) Docs: Update add domain process
-- e9c8a81 (2020-03-30 19:48:32 +1100) Core: Add more domains
-- 43201f8 (2020-03-30 19:41:47 +1100) Core: Update production domains and configure load balancer
-- 7146809 (2020-03-30 14:02:40 +1100) Docs: Improve process to add a new domain
-- 1b7bf41 (2020-03-30 13:49:08 +1100) Docs: Fix links to other files
-- 92dc614 (2020-03-30 13:44:33 +1100) Docs: Improve deployment section headings
-- fd3d453 (2020-03-30 13:42:44 +1100) Core: Add another domain to production environment list
-- 31a9a74 (2020-03-30 13:42:18 +1100) Docs: Improve process to add a new domain
-- 5cc10eb (2020-03-29 22:44:14 +1100) Docs: Improve content structure
-- 291f419 (2020-03-29 22:41:14 +1100) Docs: Simplify content in main readme file
-- 2e89b86 (2020-03-29 22:20:44 +1100) Docs: Improved structure of documentation
-- 94754b4 (2020-03-29 22:07:40 +1100) Docs: Add environment configuration section
-- 4c3507c (2020-03-29 21:31:55 +1100) Core: Remove Fathom analytics
-- ad5b1ba (2020-03-29 21:10:13 +1100) Docs: Update deployment process and file structure list
-- 7a6085e (2020-03-29 21:00:59 +1100) Core: Plan a staging custom URL
-- 0d3c0c6 (2020-03-29 20:59:53 +1100) Core: Add another domain to production environment list
-- 8cfb2ce (2020-03-29 20:30:19 +1100) Core: Update Deploy Script warning message
-- 94f855b (2020-03-29 20:23:18 +1100) Core: Update Vapor project configuration
-- 92ffa82 (2020-03-29 20:13:37 +1100) Core: Add domain level redirects
-- 1ae8276 (2020-03-28 13:35:39 +1100) Core: Limit domains to one for now
-- fa52447 (2020-03-27 21:50:22 +1100) Core: Update deployment process
-- e79f612 (2020-03-27 21:45:21 +1100) Core: Setup domains for Vapor production instance
-- dec41af (2020-03-27 21:21:57 +1100) Core: Remove obsolete build step
-- 8948607 (2020-03-27 20:52:39 +1100) Core: Fix image asset path correction method for content files
-- 5e244a1 (2020-03-27 20:36:13 +1100) Docs: Update structure list
-- fb54423 (2020-03-27 20:35:19 +1100) Core: Move content directory back to original location
-- e23a75c (2020-03-27 20:15:03 +1100) Core: Move content directory and references to it
-- d6bbab7 (2020-03-27 19:55:39 +1100) Core: Remove obsolete file
-- 081b653 (2020-03-27 19:51:14 +1100) Core: Fix file loading method on / page
-- 05c1597 (2020-03-27 19:37:31 +1100) Core: Fix index page file loading methods
-- b07c9f0 (2020-03-27 19:36:12 +1100) Core: Update image paths for site details
-- 1c4416b (2020-03-27 19:30:26 +1100) Core: Correct the asset URLs in controllers and templates
-- befa556 (2020-03-27 19:24:07 +1100) Core: Correct the image URLs in the content
-- 524e0f0 (2020-03-27 19:12:39 +1100) Core: Update content folder path and the methods used to read these files
-- fe3fe0f (2020-03-27 19:00:12 +1100) Core: Initial work on migration to Laravel Vapor
-- 87b9af6 (2020-03-27 18:57:59 +1100) Revert "Core: Initial work to setup Laravel Vapor"
-- f87e1a8 (2020-03-27 18:57:55 +1100) Revert "Core: Use a global Laravel Vapor command instead"
-- 9613ae8 (2020-03-27 18:57:52 +1100) Revert "Core: Initialise the Vapor project"
-- 03a9127 (2020-03-27 18:57:48 +1100) Revert "Core: Update Vapor build steps with current commands from setup.sh"
-- 37dedad (2020-03-27 18:57:45 +1100) Revert "Core: Fix Vapor install process"
-- df47f98 (2020-03-27 18:57:41 +1100) Revert "Core: Fix Vapor project settings and remove duplicated commands"
-- 4117714 (2020-03-27 14:28:52 +1100) Core: Fix Vapor project settings and remove duplicated commands
-- 3d88524 (2020-03-27 14:08:45 +1100) Core: Fix Vapor install process
-- 866cea7 (2020-03-27 13:59:38 +1100) Core: Update Vapor build steps with current commands from setup.sh
-- 40668c1 (2020-03-27 13:56:34 +1100) Core: Initialise the Vapor project
-- 0b92a39 (2020-03-27 13:42:23 +1100) Core: Use a global Laravel Vapor command instead
-- 9ff7c59 (2020-03-27 13:27:05 +1100) Core: Initial work to setup Laravel Vapor
-- 483f002 (2020-03-27 13:01:33 +1100) Version 2020.6
-- 785b50c (2020-03-27 13:01:10 +1100) Docs: Fix avatar image paths
-- cddbccb (2020-03-27 12:48:58 +1100) Version 2020.5
-- acace4d (2020-03-27 12:48:09 +1100) Freya, Isla: Update avatar images and simplify page content
-- 403e8e3 (2020-03-25 19:12:42 +1100) Version 2020.4
-- f305508 (2020-03-25 19:12:31 +1100) Core: Remove obsolete confirmation block from deploy script
-- 271dc42 (2020-03-25 19:11:31 +1100) Core: Update the deployment process and documentation
-- b11b6e4 (2020-03-24 21:17:14 +1100) Version 2020.3
-- 41b1bea (2020-03-24 21:16:57 +1100) Core: Rename the deployment action workflow file
-- c8435f6 (2020-03-24 21:16:40 +1100) Core: Improve the way tags are pushed by the Version Script
-- eae70b1 (2020-03-24 21:13:37 +1100) Version 2020.2
-- 8b1e0bd (2020-03-24 20:47:16 +1100) Docs: Add note about verson.sh
-- ba40550 (2020-03-24 20:44:41 +1100) Core: Trigger deployments when a tag is pushed to the origin repository
-- 84c825f (2020-03-24 20:31:57 +1100) Version 2020.1
-- a519f5e (2020-03-24 20:31:09 +1100) Core: Change to a yearly revision versioning system
-- 10b2bf8 (2020-03-22 12:03:24 +1100) 14.3.0
-- 002da60 (2020-03-22 11:46:12 +1100) Core: Preload fonts and images
-- d4689d4 (2020-03-17 20:20:21 +1100) Core: Remove obsolete JS file reference
-- b28d2bf (2020-03-17 19:49:03 +1100) 14.2.0
-- 68658e8 (2020-03-17 19:48:48 +1100) Core: Make the site listing page colour scheme more like Brendan's
-- 01fd7e0 (2020-03-17 14:22:13 +1100) 14.1.0
-- 68ef454 (2020-03-17 14:21:23 +1100) Core: Update setup script to better support Windows environments
-- cf7b9bd (2020-03-17 13:53:45 +1100) 14.0.0
-- 60d8765 (2020-03-17 13:53:19 +1100) Core: Upgrade to Laravel 7
-- a05ac77 (2020-03-17 13:09:22 +1100) 13.8.0
-- 52a6011 (2020-03-17 13:09:04 +1100) Core: Remove un-used dependencies
-- 8a0fc82 (2020-03-16 13:39:57 +1100) 13.7.0
-- 05860e2 (2020-03-16 13:39:34 +1100) Core: Update dependencies
-- 3d43c1e (2020-03-16 13:30:01 +1100) 13.6.0
-- b5d6e56 (2020-03-16 13:29:41 +1100) Brendan: Update content to reflect new job at Jomablue
-- 03b43ea (2020-01-20 19:04:57 +1100) 13.5.0
-- 625a79f (2020-01-20 15:38:13 +1100) Brendan: Allow basic tracking of when a user views Brendan's resumé page
-- 863a714 (2020-01-20 08:24:27 +1100) Core: Improve setup script
-- 532d72c (2019-12-03 10:25:21 +1100) 13.4.0
-- 540a858 (2019-12-03 10:25:12 +1100) Core: Update Fathom analytics embed code
-- 06453d0 (2019-11-26 08:58:26 +1100) 13.3.1
-- a167225 (2019-11-26 08:58:02 +1100) Action: Deploy on Release - Improve SSL certificate renewal command
-- 52ff42c (2019-11-26 08:53:27 +1100) 13.3.0
-- d757857 (2019-11-26 08:53:07 +1100) Action: Deploy on Release - Remove folder backup step and renew SSL certificates
-- a6b7061 (2019-11-26 08:25:22 +1100) 13.2.0
-- 16dafc9 (2019-11-26 08:25:04 +1100) Core: Move CSS variables to a separate file
-- 764abd7 (2019-11-25 20:42:36 +1100) 13.1.0
-- e2f0643 (2019-11-25 20:42:22 +1100) Core: Ignore some more files when publishing to GitHub Packages
-- 27ba45b (2019-11-25 20:27:07 +1100) 13.0.0
-- 1347def (2019-11-25 20:26:28 +1100) Core: Migrate from SASS to CSS using Custom Properties
-- 246db6c (2019-11-20 17:20:43 +1100) 12.2.0
-- 238af17 (2019-11-20 17:20:08 +1100) Brendan: Update site description
-- da3f797 (2019-11-19 09:14:26 +1100) 12.1.1
-- 9f9427c (2019-11-19 09:13:54 +1100) Brendan: Limit draft posts visibility to local environments
-- 15dc2b0 (2019-11-16 22:41:06 +1100) 12.1.0
-- 753b705 (2019-11-16 22:40:18 +1100) Brendan: New Post - Fixing software bugs without losing your mind
-- a327e9f (2019-11-15 22:04:28 +1100) 12.0.0
-- b2e4102 (2019-11-15 22:02:32 +1100) Brendan: Add draft posts functionality
-- 341bd9e (2019-11-15 21:44:25 +1100) Core: Make site list links relative
-- 25b021e (2019-11-15 21:23:19 +1100) Core: Update Composer packages
-- 280cb41 (2019-11-15 21:18:37 +1100) Core: Update NPM packages
-- 4c8b0e9 (2019-11-15 15:02:06 +1100) Core: Update package versions to match current release
-- f97a84c (2019-11-15 14:29:56 +1100) Action: Deploy on Release - Use the latest release version of the SSH action instead
-- 93fa5fb (2019-11-15 14:27:10 +1100) Action: Deploy on Release - Use new forked repository for SSH action
-- da70a85 (2019-11-14 16:25:42 +1100) Action: Deploy on Release - Minimise output from commands
-- 9dcc3e7 (2019-11-14 16:24:46 +1100) Core: Ignore a Node cache directory
-- 1662f85 (2019-11-14 15:58:00 +1100) Action: Deploy on Release - Only run when release has been publised
-- f6510bd (2019-11-14 15:50:46 +1100) Action: Deploy on Release - Initial script
-- 947aea8 (2019-10-31 12:42:44 +1100) Core: Update sponsor settings
-- 115d1fd (2019-09-23 15:49:45 +1000) 11.0.0
-- e4f451e (2019-09-23 15:49:11 +1000) Core: Update production setup steps
-- 30e031c (2019-09-23 15:47:53 +1000) Brendan: Move social links to a Blade template file instead
-- 1ee48e8 (2019-09-23 15:43:18 +1000) Core: Minify HTML output
-- 7493a3b (2019-09-04 14:01:33 +1000) 10.5.0
-- 79f5211 (2019-09-04 14:01:05 +1000) Core: Add publishing section to readme
-- b0dbcbb (2019-09-04 11:44:46 +1000) Version 10.4.0
-- 5308c3a (2019-09-04 11:43:40 +1000) Core: Upgrade to Laravel 6.0
-- ab5dba9 (2019-09-04 11:36:23 +1000) Brendan: Remove unused route
-- ecc6ec0 (2019-09-02 09:11:30 +1000) Version 10.3.0
-- af48ea0 (2019-09-02 09:10:14 +1000) Core: Publish package to GitHub Packages
-- 0a73fd0 (2019-08-13 17:43:35 +1000) Brendan: Update Git link text
-- bf6bace (2019-08-13 17:40:39 +1000) Brendan: Add Git repository listing page
-- 02573cd (2019-08-08 14:22:40 +1000) Brendan: Fix display of code display and quote elements
-- 8b247a5 (2019-08-07 19:31:15 +1000) Brendan: Update resume page font colour styling
-- 7668181 (2019-08-07 19:20:37 +1000) Brendan: Update profile image
-- 0ed813a (2019-07-16 18:48:24 +1000) Bump lodash from 4.17.11 to 4.17.13 (#37)
-- 3eae913 (2019-07-08 11:51:43 +1000) Version 10.2.1
-- 5cc0992 (2019-07-08 11:50:32 +1000) Core: NPM packages update
-- 8c271b4 (2019-07-08 11:46:50 +1000) Core: Remove obsolete Yarn Lock file
-- d5e4bfa (2019-06-25 21:56:49 +1000) Core: Add unzip package installation step
-- b5520b7 (2019-06-25 21:51:02 +1000) Core: Update setup command
-- cf85047 (2019-06-25 08:45:53 +1000) Core: Add funding file
-- 5a8eb53 (2019-06-14 10:33:10 +1000) Core: Update version
-- 2b13657 (2019-06-14 10:20:25 +1000) Core: Improve initial setup script and related documentation
-- 6741b35 (2019-06-14 09:59:21 +1000) Core: Update the project's dependencies and setup process documentation
-- 807f7ff (2019-06-14 09:48:10 +1000) Core: Update package details
-- 81bfd45 (2019-06-04 10:22:15 +1000) Update link to license file
-- e40ad4d (2019-06-04 08:30:47 +1000) Update issue templates
-- 507245e (2019-06-04 08:24:45 +1000) Add contributing file
-- 5e45885 (2019-06-04 08:14:51 +1000) Update casing of some files
-- e49b2da (2019-06-04 08:13:18 +1000) Add code of conduct file
-- e506dee (2019-05-31 10:13:17 +1000) Core: Update version
-- 856e3f9 (2019-05-31 10:12:19 +1000) Core: Update version
-- 6c14006 (2019-05-31 10:11:07 +1000) Core: Update NPM packages
-- 96918c0 (2019-05-31 09:54:33 +1000) Core: Update Composer packages
-- 699a180 (2019-05-21 13:10:26 +1000) Brendan: Content updates for new role
-- a3fff4d (2019-05-03 10:16:52 +1000) Core: Update Composer Lock file
-- 1111082 (2019-04-24 13:56:15 +1000) Brendan: Add new avatar image
-- 856c270 (2019-03-27 14:49:31 +1100) Core: Update package details
-- 99717d5 (2019-03-15 11:54:26 +1100) 9.8.0
-- 1d22c31 (2019-03-15 11:54:11 +1100) Core: Add Fathom analytics
-- 04e0d35 (2019-03-13 16:05:38 +1100) 9.7.0
-- 687095d (2019-03-13 16:03:53 +1100) Core: Upgrade to Laravel 5.8
-- 4826a2c (2019-03-13 15:53:54 +1100) Core: Improve tabbing in package configuration files
-- c740151 (2019-03-13 15:42:14 +1100) Brendan: Remove unused Browser New Tab page
-- cbb4937 (2019-02-23 22:16:13 +1100) 9.6.1
-- 304a569 (2019-02-23 22:13:14 +1100) Revert "Core: Move to self-hosted GitLab server"
-- 8df84db (2019-02-23 22:10:42 +1100) 9.6.0
-- b802fbb (2019-02-23 22:08:20 +1100) Core: Update bootstrap
-- 6ceb254 (2019-02-21 21:27:42 +0000) Core: Updated package lock
-- 7f3b7a0 (2019-02-20 19:29:44 +1100) Merge branch 'master' of github.com:brendanmurty/murty.io
-- 73d7af0 (2019-02-20 15:52:31 +1100) Core: Update package details
-- ecd3c7d (2019-02-01 20:35:09 +1100) Brendan: Update Git links
-- 962b38f (2019-02-01 14:57:29 +1100) Core: Move to self-hosted GitLab server
-- cf52919 (2019-01-12 23:50:23 +1100) 9.5.1
-- bd8ff9d (2019-01-12 23:50:13 +1100) Core: Improve the display of the site switcher bar on smaller screens
-- 89f9a44 (2019-01-12 23:43:27 +1100) 9.5.0
-- 06eed02 (2019-01-12 23:43:11 +1100) Brendan: Move social SVG from files to inline on the page
-- 4e44a92 (2019-01-12 23:24:10 +1100) 9.4.0
-- be688eb (2019-01-12 23:20:33 +1100) 9.3.2
-- 2c14f49 (2019-01-12 23:20:11 +1100) Brendan: Dark theme
-- b99ff95 (2019-01-12 23:19:56 +1100) Core: Allow sites to set their own page colour schemes
-- b400ce5 (2019-01-12 23:01:08 +1100) Brendan: Update email address
-- 9a0e705 (2019-01-10 21:34:40 +1100) 9.3.1
-- 3bb6661 (2019-01-10 21:28:22 +1100) Brendan: Simplify home page content
-- b9a08df (2019-01-10 21:04:08 +1100) Version 9.3.0
-- 83cc09a (2019-01-10 21:03:15 +1100) Core: Improve the placement of the site switcher bar
-- b0e0040 (2019-01-10 21:02:44 +1100) Brendan: Update sidebar image
-- e2bdf92 (2019-01-10 20:33:44 +1100) Version 9.2.1
-- 3dc65e1 (2019-01-10 20:33:08 +1100) Core: Update packages
-- ccb7d10 (2019-01-08 09:00:32 +1100) Core: Update setup script commands
-- 6d34fae (2019-01-08 09:00:18 +1100) Core: Upgrade Laravel Mix
-- 9d545a6 (2019-01-03 10:27:22 +1100) Version 9.2.0
-- 200f24f (2019-01-03 10:24:37 +1100) Core: Improved Composer install commands
-- 233d2b0 (2019-01-03 10:15:50 +1100) Core: Compile assets as part of the setup script
-- 22e59f2 (2019-01-03 10:05:26 +1100) Core: Updated setup commands following testing
-- e60c176 (2019-01-02 22:20:08 +1100) Version 9.1.1
-- 10e96e5 (2019-01-02 22:19:37 +1100) Core: Updated documentation
-- e98e237 (2019-01-02 22:15:35 +1100) Version 9.1.0
-- 1c96dba (2019-01-02 22:14:18 +1100) Core: Rename the setup bash script
-- 21cc87f (2019-01-02 21:23:51 +1100) Version 9.0.0
-- 92ee4e7 (2019-01-02 21:22:55 +1100) Core: Move initial setup steps to a bash script
-- 18d4cba (2019-01-02 21:16:21 +1100) Version 8.8.0
-- ca66af4 (2019-01-02 21:14:29 +1100) Core: Remove compiled files that are now ignored
-- 964b8f7 (2019-01-02 21:10:04 +1100) Core: Updated Git ignore settings
-- 8b7f997 (2019-01-02 21:07:01 +1100) Core: Updated package lock file
-- 13b9b61 (2019-01-02 21:06:37 +1100) Readme: Update the initial setup steps
-- d440014 (2019-01-02 17:21:37 +1100) Version 8.7.0
-- ef6a9c7 (2019-01-02 17:16:39 +1100) Performance: Increase the amount of time images are cached for and include SVGs here too
-- 55cc920 (2019-01-02 17:13:17 +1100) Performance: Use the system font before the custom font is loaded
-- 95f3d9b (2019-01-02 17:03:35 +1100) Version 8.6.0
-- c395960 (2019-01-02 16:55:42 +1100) Performance: Improve image caching configuration
-- 6b1ffd0 (2019-01-02 16:48:31 +1100) Performance: Customise image cache settings
-- 93eed60 (2019-01-02 16:35:29 +1100) Performance: Optimise layout images for web use
-- 2cd862a (2019-01-02 14:08:47 +1100) Version 8.5.1
-- 124950c (2019-01-02 14:08:27 +1100) Update package configuration
-- 8fe5217 (2019-01-02 14:06:38 +1100) Version 8.5.0
-- 80375f8 (2019-01-02 14:04:33 +1100) Core: Move fonts to be locally hosted
-- 836f651 (2019-01-02 13:52:11 +1100) Version 8.4.0
-- 5565796 (2019-01-02 13:46:55 +1100) Core: Remove Google Analytics
-- e7fd65b (2018-12-18 16:15:08 +1100) Readme: Remove Trello link
-- 466258a (2018-10-29 21:14:06 +1100) Brendan: Fix content formatting on More Than Writing Code post
-- 513028c (2018-10-29 21:13:36 +1100) Add breadcrumb navigation framework and front-end implementation to Brendan's site
-- 64ab6fc (2018-10-09 19:02:09 +1100) Brendan: Fix spelling mistake in Resumé
-- e0ad532 (2018-10-08 19:29:06 +1100) Brendan: Fix grammar in Resumé
-- 7280762 (2018-10-06 10:36:36 +1000) Remove obsolete subdomain routes
-- 4c97df7 (2018-10-05 15:31:53 +1000) Improve subdomain routing method
-- a0c2611 (2018-10-05 15:10:24 +1000) Fix 404 error pages
-- 0d7f690 (2018-09-16 09:33:23 +1000) Version 8.2.1
-- 45fce3a (2018-09-16 09:32:42 +1000) Brendan's Resumé: Updated work experience section content
-- 3a7872d (2018-09-16 09:16:20 +1000) Version 8.2.0
-- dc965d0 (2018-09-16 09:15:51 +1000) Brendan's Resumé: Updated skills section content
-- 41b9db2 (2018-09-16 09:11:04 +1000) Readme: Remove obsolete sections, improve wording and setup instructions
-- edd501c (2018-09-16 09:04:03 +1000) Improve page titles
-- 98b4ca1 (2018-09-16 08:55:37 +1000) Version 8.1.0
-- c1db584 (2018-09-16 08:54:21 +1000) Rebuild current site highlight in header listing
-- 4eaccc1 (2018-09-16 08:52:21 +1000) Improved method for setting site properties
-- c634d8a (2018-09-15 23:35:22 +1000) Fix site theme colours
-- 017b7bc (2018-09-15 22:05:51 +1000) Update main sites listing to ensure the right domain is used
-- 2abac35 (2018-09-15 21:57:06 +1000) Remove obsolete Sites JSON file
-- 0108fd8 (2018-09-15 21:43:53 +1000) Migrate to Laravel 5.7 (#36)
-- 3025403 (2018-08-31 11:31:50 +1000) Brendan: Use a static Browser New Tab HTML page instead of a JSON file
-- 8f395fb (2018-08-21 11:38:04 +1000) Brendan: Update formatting on Announcing UpcomingTasks Pro post
-- 3075e7d (2018-08-21 11:32:19 +1000) Brendan: Update formatting on Farewell UpcomingTasks post
-- aaba072 (2018-08-16 15:53:02 +1000) Brendan: Update noscript content
-- 810350c (2018-08-16 13:10:02 +1000) Brendan: Update new tab page configuration
-- e6f15b7 (2018-08-14 16:01:13 +1000) Brendan: Update new tab page configuration
-- 9963520 (2018-08-12 22:15:34 +1000) Brendan: Update new tab page configuration
-- e5a011a (2018-08-05 10:01:04 +1000) Core: Add Freya to sitemap
-- d07f0e7 (2018-08-03 13:16:57 +1000) Brendan: Update browser new tab links configuration
-- 6520e18 (2018-07-23 22:13:32 +1000) Brendan: Update browser new tab items
-- 6d0d670 (2018-07-21 17:57:01 +1000) Readme: Add "Structure" section, re-order sections
-- d394ead (2018-07-21 17:19:33 +1000) Prepare version 7.3.0
-- eb567f2 (2018-07-21 17:18:38 +1000) Brendan: Updated location of post date display on Post pages
-- 1ed11f2 (2018-07-21 14:50:04 +1000) Prepare version 7.2.0
-- 025e579 (2018-07-21 14:49:50 +1000) Core: Use LESS files for styling
-- 74670fc (2018-07-21 14:19:07 +1000) Readme: Update path to SSL certificate directory
-- cdfc715 (2018-07-21 13:49:31 +1000) Prepare version 7.1.0
-- 150c6af (2018-07-21 13:48:18 +1000) Core: Updated file structure
-- d62c1b2 (2018-07-17 21:33:35 +1000) Brendan: Update family-related content
-- a91dea1 (2018-07-17 16:27:34 +1000) Prepare version 7.0.0
-- 77a1f54 (2018-07-17 16:24:30 +1000) Core: Welcome Freya to the family!
-- e5da6e0 (2018-07-11 11:46:58 +1000) Core: Update packages and Gulp configuration
-- e8dc437 (2018-07-06 12:38:08 +1000) Brendan: Update browser tab configuration file
-- cbb24b0 (2018-07-06 08:48:25 +1000) Prepare version 6.5.0
-- 7e9ef40 (2018-07-05 11:23:09 +1000) Readme: Improve formatting and update license link
-- 86a773c (2018-07-04 16:41:46 +1000) Brendan: Update configuration file for Chrome New Tab extension
-- ffc4bb9 (2018-07-04 10:07:45 +1000) Brendan: Update configuration file for Chrome New Tab extension
-- def28aa (2018-07-04 08:53:53 +1000) Brendan: Update configuration file for Chrome New Tab extension
-- 9be3051 (2018-07-03 15:59:19 +1000) Brendan: Update configuration file for Chrome New Tab extension
-- e018223 (2018-06-29 08:28:21 +1000) Brendan: Update configuration file for Chrome New Tab extension
-- ebb4174 (2018-06-28 21:30:21 +1000) Brendan: Update configuration file for Chrome New Tab extension
-- d9fb19c (2018-06-28 20:34:55 +1000) Brendan: Add configuration file for Chrome New Tab extension
-- 08aadc2 (2018-06-15 11:27:57 +1000) Updated link to my Development list on Twitter
-- a3d6c3c (2018-06-07 21:16:59 +1000) Readme: Update image content
-- d56e755 (2018-06-07 21:10:09 +1000) Prepare version 6.4.0
-- 054b9e3 (2018-06-05 21:26:52 +1000) Brendan: Update icon for GitHub profile links
-- 7156075 (2018-06-01 01:42:35 +0000) Merge branch 'master' of github.com:brendanmurty/murty.io
-- 555675f (2018-06-01 11:32:43 +1000) Ignore more files
-- 80f3d99 (2018-06-01 11:29:58 +1000) Update contact links in Resumé
-- b336e09 (2018-06-01 11:29:19 +1000) Update post content
-- d1dde2f (2018-06-01 11:28:34 +1000) Update another old UpcomingTasks post
-- 808f861 (2018-06-01 11:27:29 +1000) Update Git repo in package settings
-- d4501a3 (2018-06-01 11:26:45 +1000) Updated content for old UpcomingTasks post
-- 4fa3d88 (2018-06-01 11:24:31 +1000) Update custom redirects
-- 2b19a4e (2018-06-01 11:23:10 +1000) Update code link on Brendan's homepage
-- 57f1044 (2018-06-01 11:22:01 +1000) Update email address in package details
-- afbc106 (2018-06-01 11:21:22 +1000) Update offline content link paths and email address
-- ad82761 (2018-06-01 11:19:12 +1000) Update email address and icon links
-- 4c4b695 (2018-06-01 11:17:42 +1000) Update email address in "Farewell UpcomingTasks" post
-- b3ac3df (2018-06-01 11:16:48 +1000) Update email address in Resumé
-- edd5aaf (2018-06-01 11:14:43 +1000) Updated link to ST3 preferences
-- 49cd2c6 (2018-04-20 21:22:06 +1000) Prepare version 6.3.0
-- fba31cc (2018-04-20 21:21:09 +1000) Move to self-hosted Git server
-- 5ca780e (2018-03-17 11:43:58 +1100) Prepare version 6.2.0
-- 7e1f350 (2018-03-17 11:43:00 +1100) General: Group feed related tags together in header
-- 7b43363 (2018-03-17 11:40:28 +1100) General: Add Micro.blog site verification
-- 069f3e8 (2018-03-17 10:03:39 +1100) General: Fix "sites.json" redirect
-- 7fd5303 (2018-03-17 09:54:52 +1100) Readme: Update SSL documentation
-- d195729 (2018-03-01 21:01:31 +1100) Merge branch 'master' of bitbucket.org:brendanmurty/murty.io
-- 7a5e400 (2018-03-01 21:01:01 +1100) General: Update issue links
-- 64c1009 (2018-02-20 13:06:38 +1100) Prepare version 6.1.4
-- ac93c3a (2018-02-20 13:05:40 +1100) General: Update website image sizes and Ella's link
-- e2dff78 (2018-02-18 18:46:09 +1100) Prepare version 6.1.3
-- 59624ef (2018-02-18 18:45:38 +1100) General: Hide the Website Header bar when printing pages
-- 5d35938 (2018-02-18 18:30:22 +1100) Prepare version 6.1.2
-- 045c347 (2018-02-18 18:29:52 +1100) Brendan: Update theme colour
-- d4715ae (2018-02-18 18:27:11 +1100) Prepare version 6.1.1
-- d270959 (2018-02-18 18:26:22 +1100) General: Updates to Website Header bar styling and colour tweaks
-- 2ff381b (2018-02-18 18:17:57 +1100) Prepare version 6.1.0
-- 90a0a33 (2018-02-18 18:17:39 +1100) General: Design and function updates following recent changes
-- 0e7dfba (2018-02-18 17:43:50 +1100) Prepare version 6.0.0
-- 1de5297 (2018-02-18 17:39:44 +1100) General: Add websites header bar
-- 07840f4 (2018-02-18 16:26:13 +1100) Prepare version 5.4.0
-- 5f5a735 (2018-02-18 16:25:06 +1100) Add Baby X website!
-- 3cc0dbf (2018-02-18 14:03:30 +1100) Prepare version 5.3.0
-- aa86a73 (2018-02-18 14:03:05 +1100) General: Add new JS build file
-- 2185711 (2018-02-18 14:02:44 +1100) General: Update NPM Package Lock file again
-- 3c62b55 (2018-02-18 13:55:45 +1100) General: Update NPM Package Lock file
-- 2966abe (2018-02-18 13:54:42 +1100) Murty: Make the websites list dynamically load data from 'sites.json'
-- 9f1b020 (2018-02-18 13:38:55 +1100) General: Improved website properties system
-- bad385b (2018-02-14 10:57:23 +1100) Prepare version 5.2.1
-- fed951c (2018-02-14 10:57:08 +1100) Brendan: Improve print styling
-- 8d2e78b (2018-02-12 16:47:28 +1100) Prepare version 5.2.0
-- 86c1c25 (2018-02-12 16:46:38 +1100) General: Add new build file
-- e37948a (2018-02-12 16:46:14 +1100) General: Move from GitHub to Bitbucket
-- 82a20bd (2018-02-12 16:30:26 +1100) Ignore IDE related tags files
-- 4f00e99 (2018-01-20 10:28:16 +1100) Prepare version 5.1.0
-- 673d398 (2018-01-20 10:27:53 +1100) Core: Update NPM package author details
-- 36537b9 (2018-01-20 10:24:56 +1100) Core: Update NPM package lock file
-- 384e843 (2018-01-20 10:24:30 +1100) Brendan: Add new backdated blog post for Isla's birth
-- db44fb9 (2018-01-19 23:01:05 +1100) Prepare version 5.0.0
-- f953354 (2018-01-19 22:58:43 +1100) Brendan: Tweaks to new layout responsive points
-- 0f1f3ca (2018-01-19 22:52:13 +1100) Brendan: Initial work on updated layout
-- 6792613 (2018-01-17 21:42:07 +1100) Prepare version 4.1.4
-- 19bbbf9 (2018-01-17 21:40:28 +1100) Core: Update API methods to produce human readable JSON instead
-- f0b0399 (2018-01-17 19:28:50 +1100) Prepare version 4.1.3
-- 3e20916 (2018-01-17 19:27:34 +1100) Core: Compatability updates in API code to suit new Node version
-- f4198f1 (2018-01-17 19:26:48 +1100) Core: Simplify Clear Cache command
-- 48df770 (2018-01-14 15:41:48 +1100) Prepare version 4.1.2
-- 6b50fcb (2018-01-14 15:41:14 +1100) Core: Improve JSON Feed compatability (#31)
-- 54240d8 (2018-01-14 15:31:24 +1100) Prepare version 4.1.1
-- a2863b8 (2018-01-14 15:31:02 +1100) Core: Improve ordering on LINK tags in HTML
-- 849a385 (2018-01-14 15:29:47 +1100) Core: Fix syntax errors in API Feed method (#31)
-- a1d2a43 (2018-01-14 15:15:29 +1100) Prepare version 4.1.0
-- b2324f3 (2018-01-14 15:14:17 +1100) Core: Add JSON Feed links to Posts pages (#31)
-- 6769b13 (2018-01-14 14:40:58 +1100) Core: Add commands to clear and regenate JSON cache files
-- 1f0b379 (2018-01-13 12:23:43 +1100) Core: Fix checks for filenames in API Posts method (#31)
-- 7ab7333 (2018-01-13 12:17:38 +1100) Core: Updates to Posts JSON generator to better suit JSON Feed requirements (#31)
-- 2665ca4 (2018-01-13 12:04:44 +1100) Core: Add shortcut URL to Brendan's feed (#31)
-- 713370e (2018-01-13 11:16:36 +1100) Prepare version 4.0.1
-- e5363cc (2018-01-13 11:15:25 +1100) Core: Fix Page Service date filtering method
-- 1f6f122 (2018-01-13 10:45:01 +1100) Prepare version 4.0.0
-- ca57d11 (2018-01-13 10:44:05 +1100) Core: Finalise JSON Feed implementation (#31)
-- e4165ee (2018-01-12 21:26:22 +1100) Core: Add new JS build file
-- eb31263 (2018-01-12 21:26:07 +1100) Core: Update paths to front-end JS third-party packages
-- e23ae3a (2018-01-12 21:11:37 +1100) Core: Phase out bower, move remaining packages to NPM instead
-- 53711f6 (2018-01-11 18:06:28 +1100) Core: Update internal links
-- 478bb42 (2018-01-11 16:39:49 +1100) Core: Remove Keybase verification file
-- c64ea13 (2018-01-06 21:08:01 +1100) Core: Add basic structure, author details and update posts page to prepare for JSON Feed release (#31)
-- 171f043 (2018-01-06 10:44:15 +1100) Core: Add route for Feed Controller (#31)
-- 1542d11 (2018-01-06 10:41:01 +1100) Core: Initial work on JSON Feed (#31)
-- 48fdc8c (2018-01-05 15:54:50 +1100) Prepare version 3.9.0
-- e3daee5 (2018-01-05 15:53:54 +1100) Core: Update site descriptions, icons and add theme colours
-- 5a5d0cd (2018-01-04 16:27:33 +1100) Revert "Core: Migrate from Bower to Yarn"
-- 6efe989 (2018-01-04 16:18:39 +1100) Core: Migrate from Bower to Yarn
-- 0449c79 (2018-01-04 16:06:07 +1100) Core: Update Gulp Uglify package version
-- faf9716 (2018-01-04 15:33:53 +1100) Core: Update links on website listing page
-- be2d5c7 (2018-01-04 15:21:02 +1100) Prepare version 3.8.0
-- 5341251 (2018-01-04 14:56:48 +1100) Core: Remove problematic HTTP > HTTPS redirection (#25)
-- 9c398d9 (2018-01-04 14:52:06 +1100) Core: Fix bugs with HTTP > HTTPS redirection method (#25)
-- ff3e793 (2018-01-04 14:46:26 +1100) Core: Update links and add SSL setup instructions (#25)
-- e9ca67b (2018-01-04 14:46:06 +1100) Core: Redirect all HTTP requests to HTTPS (#25)
-- 7388b24 (2018-01-04 14:30:35 +1100) Core: Add HTTPS setup to server (#25)
-- 38724c3 (2018-01-04 03:12:51 +0000) Core: Initialise SSL folder (#25)
-- 0ef22b4 (2017-12-24 16:57:25 +1100) Prepare version 3.7.0
-- 76a9d7e (2017-12-24 13:17:36 +1100) Brendan: Add LinkedIn profile link and improve offline links
-- 6eb3cdf (2017-12-24 10:17:20 +1100) Update website repository links
-- 648dcf5 (2017-12-07 08:35:06 +1100) Brendan: Correct work history date
-- 8684836 (2017-12-03 22:37:26 +1100) Prepare version 3.6.5
-- 236c9b4 (2017-12-03 22:36:29 +1100) Common: Add icon labels for Noscript content
-- f9dba14 (2017-12-03 22:31:46 +1100) Prepare version 3.6.4
-- 0572377 (2017-12-03 22:30:08 +1100) Brendan: Improve Resumé print styling
-- 5284332 (2017-12-03 22:13:58 +1100) Prepare version 3.6.3
-- a1fdfa5 (2017-12-03 22:13:19 +1100) Brendan: Updated width for header text
-- 7dab0bc (2017-12-03 21:58:53 +1100) Prepare version 3.6.2
-- 292b55d (2017-12-03 21:57:37 +1100) Brendan: Fix header display on iPad
-- 4b0cf55 (2017-12-03 21:46:11 +1100) Prepare version 3.6.1
-- 13eeca7 (2017-12-03 21:45:22 +1100) Brendan: Improve display of header text
-- 03b0f5a (2017-12-03 21:07:28 +1100) Prepare version 3.6.0
-- 379a52f (2017-12-03 21:06:35 +1100) Brendan: Updates related to a new job at 4mation!
-- 3410fb3 (2017-12-03 20:56:19 +1100) Brendan: Layout updates
-- 62af495 (2017-11-01 18:05:12 +1100) Brendan: Updated resumé content
-- 61eda99 (2017-10-24 19:14:45 +1100) Prepare version 3.5.0
-- d19cf84 (2017-10-24 19:13:53 +1100) Common: Add title to homepage link
-- 58847f9 (2017-10-24 19:13:41 +1100) Brendan: Add icon labels to home page
-- e44b222 (2017-10-22 10:32:35 +1100) Brendan: Improve wording of skills section of resumé
-- d22aed4 (2017-10-22 10:29:35 +1100) Brendan: Update resumé skills section
-- 73b1889 (2017-10-22 10:24:39 +1100) Brendan: Update resumé content
-- 98649ac (2017-10-21 17:28:32 +1100) Prepare version 3.4.2
-- 69042aa (2017-10-21 17:27:07 +1100) Common: Add new CSS build file
-- 2cd7fcc (2017-10-21 17:25:00 +1100) Prepare version 3.4.1
-- f2d6e2f (2017-10-21 17:23:54 +1100) Isla: Limit change of text selection colours to Isla's pages
-- b73040f (2017-10-21 17:21:53 +1100) Prepare version 3.4.0
-- 8c7a8a5 (2017-10-21 17:21:06 +1100) Isla: Improved styling
-- d5489d0 (2017-10-21 17:20:52 +1100) Common: Update noscript content
-- 29910b7 (2017-10-21 17:20:23 +1100) Isla: Updated content
-- 06edec3 (2017-10-21 17:06:08 +1100) Prepare version 3.3.0
-- 249f25e (2017-10-21 17:05:09 +1100) Show resumé link targets when printing
-- 33f2f2f (2017-10-21 17:04:50 +1100) Updated resumé content
-- 4863de7 (2017-10-21 16:55:47 +1100) Improved resumé content
-- 563d775 (2017-10-20 13:09:12 +1100) Add Git section to resumé
-- 1ccdd1d (2017-10-20 10:59:13 +1100) Updated resumé content
-- b7d0c2a (2017-08-31 23:08:36 +1000) Merge branch 'master' of https://github.com/brendanmurty/website
-- 48a221a (2017-08-27 15:45:47 +1000) Perpare version 3.2.0
-- 971a0e5 (2017-08-27 15:45:47 +1000) Perpare version 3.2.0
-- 452bd72 (2017-08-27 15:44:53 +1000) Isla: Improve colour scheme and heading styling
-- cd56f9b (2017-08-27 15:39:19 +1000) Brendan: Improve index content and noscript display
-- 7a5074a (2017-08-27 15:30:16 +1000) Brendan: Use "index.md" for content when the "about" page is requested
-- 2e9b098 (2017-08-15 19:02:01 +1000) Improved About content for Brendan
-- 6989b9c (2017-08-13 21:15:30 +1000) Prepare version 3.1.5
-- 2ac3909 (2017-08-13 21:14:55 +1000) Increase contrast of default main background and text colours
-- 3405913 (2017-08-13 21:11:09 +1000) Prepare version 3.1.4
-- c6a122f (2017-08-13 21:06:56 +1000) Fix for mobile devices not scrolling vertically properly
-- 532cbd5 (2017-08-13 21:00:39 +1000) Prepare version 3.1.3
-- 94d6647 (2017-08-13 20:59:55 +1000) Increase the icon sizing to match new styling
-- d1e36e7 (2017-08-13 20:59:00 +1000) Styling updates
-- d693d52 (2017-08-13 20:46:11 +1000) Prepare version 3.1.2
-- c00c709 (2017-08-13 20:45:14 +1000) Improve Brendan's Resumé styling and Post Listing at smaller screen sizes
-- fd42826 (2017-08-13 20:37:41 +1000) Prepare version 3.1.1
-- b07917c (2017-08-13 20:36:40 +1000) Reverted link colour changes and improved post listing styling
-- c1916e8 (2017-08-13 16:29:51 +1000) Prepare version 3.1.0
-- c56cb6d (2017-08-13 16:28:12 +1000) Improved responsive header images (#34)
-- 44cb455 (2017-08-13 16:07:35 +1000) Prepare version 3.0.0
-- 94fb63c (2017-08-13 16:07:14 +1000) Ignore Paint.net temp files
-- 3ed6d15 (2017-08-13 16:01:32 +1000) New layout and simplification of Brendan's website (#34) (#35)
-- 768b4c9 (2017-08-05 16:41:18 +1000) Improve wording in readme
-- 2159a51 (2017-08-05 16:39:28 +1000) Update readme to assist with development on a computer running Ubuntu
-- e907b31 (2017-07-04 15:02:45 +1000) Ignore log files
-- 237db58 (2017-07-04 15:01:47 +1000) Revert "Initial setup for SSL certificate (#25)"
-- cad57b1 (2017-07-04 14:51:26 +1000) Initial setup for SSL certificate (#25)
-- 48ac514 (2017-07-04 03:51:17 +0000) Updated Keybase profile
-- 9e780d6 (2017-06-23 06:26:01 +1000) Updated resume content
-- e70bcbd (2017-06-20 14:31:51 +1000) Remove old Terms and Conditions page
-- 13ee916 (2017-06-10 23:52:24 +1000) Improve comments in API post controller
-- b8187bb (2017-06-10 11:23:19 +1000) Remove FontAwesome font files
-- b2f7ec8 (2017-06-10 11:12:38 +1000) Prepare version 2.2.0
-- 865f852 (2017-06-10 11:11:10 +1000) Improved about section in readme
-- 0a5157b (2017-06-10 11:08:12 +1000) Performance improvements
-- b04f926 (2017-06-10 11:07:57 +1000) Add new icon files
-- 656a957 (2017-06-10 10:55:17 +1000) Replace FontAwesome with Feather icons
-- f04d9e8 (2017-06-10 10:36:25 +1000) Default to a local server
-- a6561b3 (2017-06-09 14:16:53 +1000) Updated documentation
-- 8ad026c (2017-06-09 03:50:16 +0000) Add logging commands and documentation
-- 74b09c2 (2017-06-08 22:47:56 +1000) Prepare version 2.1.0
-- 04cfb5c (2017-06-08 22:46:44 +1000) Don't include Node logs in the repository
-- 26ad586 (2017-06-08 22:46:25 +1000) Add alt text for Brendan's avatar image
-- 4bb308b (2017-06-08 22:46:10 +1000) Add static content to show when JavaScript is disabled in browsers
-- 13397eb (2017-06-08 22:16:22 +1000) Prepare version 2.0.1
-- 5b60b1e (2017-06-08 22:14:44 +1000) Append to Forever log files
-- df0e3f6 (2017-06-08 22:10:57 +1000) Prepare version 2.0.0
-- 2bda410 (2017-06-08 22:08:21 +1000) Convert API features to use Node instead of PHP (#32)
-- 1519725 (2017-05-16 22:29:06 +1000) Update version in Bower file
-- f26eb44 (2017-05-16 07:57:33 -0400) Update more server file type configuration
-- f78cff2 (2017-05-16 21:46:11 +1000) Prepare version 1.3.0
-- 990a552 (2017-05-16 21:05:34 +1000) Add basic static server command (npm start)
-- cbbe1c1 (2017-05-16 07:03:00 -0400) Update index file type
-- 99d2931 (2017-05-13 13:39:42 +1000) Prepare version 1.2.6
-- 51e82b5 (2017-05-13 13:38:57 +1000) Improved post date and name logic
-- b0ec923 (2017-05-13 13:38:20 +1000) Improve display of images in Brendan's posts
-- d962eb2 (2017-05-12 23:18:54 -0400) Improved shortcut subdomain redirection
-- fe9c7ba (2017-05-13 10:46:26 +1000) Prepare version 1.2.5
-- 535251a (2017-05-13 10:45:55 +1000) Remove obsolete styling from Brendan's post pages
-- d0c00d0 (2017-05-13 10:41:00 +1000) Prepare version 1.2.4
-- 8922293 (2017-05-13 10:36:18 +1000) Show more descriptive page titles (#21)
-- 2db504c (2017-05-13 10:10:48 +1000) Update homescreen image in old Web App Icon post
-- 8e2e4d1 (2017-05-13 10:07:49 +1000) Make dates on post sub headers more human readable (#29)
-- e7c80c0 (2017-05-10 16:10:11 +1000) Remove broken link
-- 8471647 (2017-05-03 21:17:00 -0400) Prepare version 1.2.3
-- 0320dd4 (2017-05-03 21:16:04 -0400) Generate new build files
-- 8559ddd (2017-05-04 11:12:51 +1000) Updated suggested code style configuration
-- 0b65cd3 (2017-05-04 11:11:17 +1000) Empty the page content to avoid showing content from the previous page
-- 2f0eb3b (2017-05-03 11:28:32 +1000) Add redirects to matching GitHub pages where suitable (#30)
-- ce25ffe (2017-05-01 12:00:37 +1000) Revert "Improve API structure and simplify current files (#28)"
-- 8244427 (2017-04-30 21:44:50 +1000) Improve API structure and simplify current files (#28)
-- 39714a1 (2017-04-28 11:27:25 +1000) Add editor configuration file
-- 3421d1f (2017-04-27 19:39:10 -0400) Prepare version 1.2.2
-- 33a21e5 (2017-04-27 19:38:41 -0400) Updated font stack for code blocks
-- 20f1a96 (2017-04-28 06:25:20 +1000) Prepare version 1.2.1
-- f5a2fc7 (2017-04-28 06:24:51 +1000) Improved loading effect (#24)
-- e1ee1b9 (2017-04-28 06:16:23 +1000) Prepare version 1.2.0
-- d30004c (2017-04-28 06:15:51 +1000) Improve controller structure and usage (#26)
-- f152166 (2017-04-27 23:13:28 +1000) Prepare version 1.1.1
-- 1f8dff7 (2017-04-27 23:12:49 +1000) Setup a new controller for Brendan's Posts page
-- ce4a544 (2017-04-27 22:34:54 +1000) Prepare version 1.1.0
-- 2552b7a (2017-04-27 22:34:27 +1000) Add version number to build file requests and improve loading styling (#24)
-- 677cbd5 (2017-04-27 22:29:34 +1000) Improved loading effect (#24)
-- 26f75dc (2017-04-27 22:25:27 +1000) Implement a loading effect between page transitions (#24)
-- 5bc3fe0 (2017-04-27 21:40:41 +1000) Prepare version 1.0.2
-- c07a85a (2017-04-27 11:09:26 +1000) Updated rewrite description
-- 6cc062e (2017-04-27 11:07:16 +1000) Add static sitemap file containing the main pages
-- b3c93ba (2017-04-25 10:59:00 +1000) Simplify redirects (#22)
-- fb10314 (2017-04-25 10:51:00 +1000) Simplify the Page Service
-- e2a7f39 (2017-04-25 10:06:24 +1000) Prepare version 1.0.1
-- 0b3986e (2017-04-19 19:25:57 -0400) Merge branch 'master' of github.com:brendanmurty/website
-- 4aaaa4d (2017-04-19 19:25:10 -0400) Improved method for setting the page title
-- 82ac7cf (2017-04-19 17:30:00 +1000) Remove commented out Apache config
-- 11a8b35 (2017-04-19 16:48:25 +1000) Remove SSL configuration for now
-- 537e4fd (2017-04-19 16:42:27 +1000) Add SSL configuration
-- 3fc4c35 (2017-04-19 13:02:18 +1000) Redirect all HTTP requests to HTTPS
-- d4565c4 (2017-04-18 02:16:11 -0400) Add new build file
-- 39c44d0 (2017-04-18 16:14:37 +1000) Make the post listing styling more specific
-- d6a6e3a (2017-04-18 16:13:36 +1000) Add post listing styles
-- 38c6ed4 (2017-04-18 16:12:36 +1000) Add new posts list class
-- ee64a95 (2017-04-18 02:09:38 -0400) Add new build file
-- aa5c6d4 (2017-04-18 16:09:00 +1000) Remove post list element class
-- 58e83e5 (2017-04-18 16:05:48 +1000) Show the content for the Posts page above the post list
-- d2ab670 (2017-04-18 16:05:15 +1000) Simplify post listing template
-- 04d2617 (2017-04-18 16:03:22 +1000) Re-order posts list and content sections
-- 3a010e8 (2017-04-18 13:27:04 +1000) Improve setup instructions
-- de49b92 (2017-04-18 13:21:10 +1000) Added further setup instructions
-- 18c5329 (2017-04-17 21:27:37 -0400) Prepare version 1.0.0
-- 3276af6 (2017-04-17 21:26:37 -0400) Updated build files
-- 0012c31 (2017-04-17 21:25:27 -0400) Merge branch 'master' of github.com:brendanmurty/website
-- e6c4182 (2017-04-17 21:25:22 -0400) Updated custom font include method
-- 1a09f3f (2017-04-18 11:22:10 +1000) Add development tools setup instructions
-- e1e9242 (2017-04-18 11:09:47 +1000) Delete keybase.txt
-- 82ae9c1 (2017-04-18 11:09:26 +1000) Add Keybase proof file
-- 4527d81 (2017-04-18 10:22:26 +1000) Don't show page content on Brendan's Post list page
-- a1df128 (2017-04-17 17:06:21 +1000) Fix 'undefined' content when navigating between pages
-- 9e45274 (2017-04-17 16:51:03 +1000) Murty websites in Angular 1.6 (#20)
-- ef2e2e0 (2017-03-04 08:11:54 +1100) Improve caching rules
-- fe0e884 (2017-03-04 08:05:09 +1100) Customise caching rules
-- 6b6eb74 (2017-03-04 07:58:30 +1100) Fix link colours on the Resume page
-- bd70823 (2017-03-04 07:54:19 +1100) Improve Page Title method and code style
-- 9ea4d51 (2017-03-04 07:48:24 +1100) Simplify page heading logic
-- 9c47a19 (2017-03-04 07:37:41 +1100) Update Diablo 3 profile link on About page
-- d1f6715 (2017-03-03 11:14:41 +1100) Improve code block display
-- cd0c1e2 (2017-03-03 11:11:33 +1100) Tweaks to item listing styling
-- 4e75b39 (2017-03-03 11:04:32 +1100) Improve new lighter colour scheme
-- ffc7820 (2017-03-03 10:58:39 +1100) New lighter colour scheme
-- 0516a14 (2017-02-09 18:15:39 +1100) Add Keybase Proof file
-- 87c4eba (2017-02-03 19:23:40 +1100) Disable Latest Post display on the home page
-- 9c78488 (2017-02-01 12:55:52 +1100) Update tools used
-- a0bcb91 (2017-01-21 12:20:44 +1100) XML sitemap updates
-- 57d8cb7 (2017-01-21 12:13:25 +1100) Update text editor used for coding
-- 110c753 (2017-01-21 12:08:53 +1100) Improve code style in header
-- 15831fa (2017-01-21 11:51:14 +1100) Move social links, introduction avatar content to Site Content File. Code style improvements.
-- 0cf82ce (2016-12-06 16:27:40 +1100) Simplify default page description content
-- 01474b0 (2016-12-06 16:23:15 +1100) Update default page description content
-- 0aa0d92 (2016-12-01 12:55:26 +1100) Update wording on "Farewell UpcomingTasks" post
-- 0fecb9d (2016-11-04 17:40:10 +1100) Update date formats and UpcomingTasks content in resume
-- 0d80a37 (2016-10-14 12:29:24 +1100) Fix post date on "Farewell UpcomingTasks" post
-- c48e200 (2016-10-14 12:14:48 +1100) Fixed grammar in Resume content
-- 47fd7e6 (2016-10-14 12:12:58 +1100) Updated Resume wording
-- 5d0db15 (2016-10-14 11:58:30 +1100) Updated wording on About page
-- 10b32ff (2016-10-14 11:56:06 +1100) Update heading sizes in the "Farewell UpcomingTasks" blog post
-- 9eb984c (2016-10-14 11:54:26 +1100) New blog post: Farewell UpcomingTasks
-- 0558217 (2016-10-14 11:46:06 +1100) Updated page error message
-- b86a67e (2016-10-14 10:50:47 +1100) Restore the "latest post" section on the home page
-- 98c7237 (2016-10-14 10:38:58 +1100) Updated homepage summary text
-- 91bf017 (2016-10-01 11:39:33 +1000) Improved wording in Resume
-- 789ad4e (2016-10-01 11:37:47 +1000) Update About page with new wording from Resume
-- 96c94ef (2016-10-01 11:35:42 +1000) New position at Sentral!
-- 9744e92 (2016-09-16 22:16:44 +1000) Tweaks to new colour scheme
-- 5608567 (2016-09-16 22:12:15 +1000) New colour scheme
-- 1abdeef (2016-09-16 21:53:45 +1000) Improve code style and element attributes
-- 8d69b6b (2016-09-15 06:12:29 +1000) Remove "latest post" section from home page
-- 7a0d7bf (2016-09-02 01:53:07 -0400) Fix icon link container width
-- f917a34 (2016-09-02 01:49:53 -0400) Remove Pocket and SMDS icon links
-- b81a480 (2016-08-12 09:55:46 +1000) Update profile picture
-- dcfd197 (2016-08-12 09:54:35 +1000) Add files via upload
-- d7b146b (2016-08-09 14:22:33 +1000) Update "Happy Holidays from UpcomingTasks" post
-- a7346c1 (2016-08-09 14:21:13 +1000) Update "UpcomingTasks progress view" post
-- 405b5e5 (2016-08-09 14:19:00 +1000) Update "oct 2014 updates" post
-- a2e00fd (2016-08-09 14:17:29 +1000) Updated "october updates" post content
-- e0629d2 (2016-08-09 14:16:43 +1000) Update Basecamp links in "100 active users" post
-- 7e71376 (2016-08-09 14:14:56 +1000) Update Basecamp 2 API post
-- 5179468 (2016-08-09 14:13:40 +1000) Update Basecamp 2 extras page link
-- 09f0b2a (2016-07-27 11:49:49 +1000) Update CSS update date
-- dd82963 (2016-07-27 11:49:28 +1000) Update minified CSS
-- 57d77b4 (2016-07-27 11:48:27 +1000) Improve latest post styling
-- 7ac0274 (2016-07-27 11:46:07 +1000) Fix latest post call on home page
-- a502787 (2016-07-27 11:39:53 +1000) Update CSS update date
-- cce661c (2016-07-27 11:39:31 +1000) Update minified CSS
-- a0c961b (2016-07-27 11:38:23 +1000) Add latest post styling
-- 57822d2 (2016-07-27 11:36:26 +1000) Show most recent post on home page
-- f349194 (2016-07-27 11:31:30 +1000) Simplify post title for "latest" post mode
-- 28e944d (2016-07-27 11:23:51 +1000) Update list post UL classes
-- d27d0ad (2016-07-27 11:15:16 +1000) Update lists posts function call on Tag list page
-- c4cf410 (2016-07-27 11:14:33 +1000) Update list posts function call on Posts page
-- a81fdaf (2016-07-27 11:12:57 +1000) Simplify list posts function
-- 44df752 (2016-07-26 15:35:36 +1000) Update CSS update date
-- 912b541 (2016-07-26 15:35:19 +1000) Update minified CSS
-- fe6b967 (2016-07-26 15:34:48 +1000) Update profile links container width to fit new icons
-- 4e894ce (2016-07-26 15:31:28 +1000) Update CSS update date
-- 3cacf8c (2016-07-26 15:30:58 +1000) Update minified CSS
-- 2f4a529 (2016-07-26 15:28:51 +1000) Make profile links show 4 in a row on smaller screens
-- a1e6146 (2016-07-26 15:27:21 +1000) Add Steam and SchnitMyDadSays links to profile
-- bb3bcfb (2016-07-25 18:27:13 +1000) Add Pocket profile link
-- 9c83b52 (2016-07-19 19:59:12 +1000) Remove last.fm references
-- 5597e02 (2016-06-26 15:03:34 +1000) Use the FontAwesome CDN for icons instead of locally sourced icons
-- 09f58dc (2016-06-26 14:43:13 +1000) Update UpcomingTasks links
-- 1de9528 (2016-06-25 23:04:51 +1000) PHP 7 fixes
-- cce08cc (2016-06-25 23:02:09 +1000) Various updates to better support PHP 7
-- aa74bd7 (2016-06-25 22:58:22 +1000) Fix blog page
-- 2312afd (2016-06-25 22:34:46 +1000) Fix more PHP short tags
-- 815ded0 (2016-06-25 22:29:23 +1000) Avoid short PHP open tags
-- 3e2c810 (2016-06-10 22:13:40 +1000) Use a smaller profile image
-- 2614aa0 (2016-06-10 22:06:22 +1000) Simplifications
-- 09d12fc (2016-06-10 21:49:03 +1000) Minify CSS to improve load time
-- 316922b (2016-06-10 21:46:02 +1000) Remove auth include and JS update date
-- 868d102 (2016-06-10 21:43:57 +1000) Remove obsolete styling
-- 11423d8 (2016-06-10 21:39:20 +1000) Remove obsolete third-party class loader and Instagram class
-- da20be8 (2016-06-10 21:36:39 +1000) Remove pulse feed and related third-party classes
-- cf52b8e (2016-06-10 19:17:15 +1000) Revert "Update Instagram class with recent API patch"
-- 7410d43 (2016-06-10 19:12:07 +1000) Update Instagram class with recent API patch
-- 214bcc7 (2016-06-06 10:06:45 +1000) Upgrade Instagram API class
-- ef5aa6d (2016-05-21 07:40:29 +1000) Update to Kirby 2.3.0
-- bb90340 (2016-05-20 13:08:46 +1000) New icon for "murty.io"
-- f6864d5 (2016-05-20 13:08:26 +1000) Delete server.png
-- cb62886 (2016-05-20 13:05:46 +1000) Delete gitlab.png
-- f00e852 (2016-05-20 13:05:38 +1000) Delete googleinbox.png
-- 89fb2fd (2016-05-20 13:04:22 +1000) Delete bitbucket.png
-- aedc002 (2016-05-20 13:04:15 +1000) Delete basecamp.png
-- b75b3be (2016-05-20 13:03:02 +1000) Remove old profile image
-- b30d1fa (2016-05-20 13:02:27 +1000) Update default page thumbnail image
-- 1483ebd (2016-05-20 13:00:41 +1000) Update default page image
-- dffaf31 (2016-05-14 12:58:18 +1000) Update website domain and my email address
-- 08cc01f (2016-04-28 07:20:57 +1000) Update Basecamp and UpcomingTasks content
-- a324e83 (2016-04-28 07:07:53 +1000) Content updates
-- e486b54 (2016-02-20 11:44:30 +1100) Only show GitHub commits that have a link
-- 6b993b2 (2016-02-19 18:01:16 +1100) Update code repo link
-- ab276a4 (2016-02-19 18:00:31 +1100) Update code repo link
-- 6b2991e (2016-02-19 17:59:36 +1100) Update code and license links in readme
-- 0ce3f7a (2016-02-19 17:56:38 +1100) Updated code repo links in about page
-- 7c5d74f (2016-02-19 17:50:52 +1100) Update code icon link in header
-- f5dc12a (2016-02-19 17:48:36 +1100) Update repo link in resume
-- 47d342f (2016-02-19 17:46:28 +1100) Update repo link in site settings
-- c06edfb (2016-02-05 11:59:18 +1100) Remove Pinboard items from feed and links from header
-- 2274a3a (2016-01-28 01:30:37 -0500) Update page description for the home page
-- 5593ed7 (2016-01-21 17:01:01 +1100) Updated intro text content
-- bca57ac (2016-01-17 02:16:31 +0000) readme.md edited online with Bitbucket
-- 47ba599 (2016-01-17 02:09:44 +0000) readme.md edited online with Bitbucket
-- be0e727 (2016-01-17 02:07:21 +0000) readme.md edited online with Bitbucket
-- 5b232a4 (2016-01-17 13:02:19 +1100) Include Pinboard profile link in readme
-- fe47fb6 (2016-01-16 12:37:42 +1100) Add padding to bottom of page on smaller screens
-- 1f12288 (2016-01-16 12:35:43 +1100) Hide footer on About page
-- f59dfc3 (2016-01-16 12:33:18 +1100) Improve header styling at smaller screen sizes, increase footer text size
-- e928531 (2016-01-16 12:24:30 +1100) Hide resume page, remove contact page
-- 14aa529 (2016-01-16 12:16:52 +1100) Improve button styling
-- 7917491 (2016-01-16 12:13:43 +1100) Fix spacing on home page
-- e4d8344 (2016-01-16 12:13:28 +1100) Remove about text from footer
-- a15d79e (2016-01-16 12:09:31 +1100) Fix header link visited colour
-- 8157254 (2016-01-16 12:07:47 +1100) Fix post page title colour
-- 043c89c (2016-01-16 12:03:31 +1100) New colour scheme and design simplifications
-- adfc437 (2016-01-16 12:03:03 +1100) Improve Resume content
-- 3b6ca74 (2016-01-16 12:02:47 +1100) Show Home page in navigation
-- 1137421 (2016-01-16 12:02:31 +1100) Remove search page
-- 5022f17 (2016-01-07 00:27:06 +0000) Fix wording of liked Instagram posts with no captions
-- b22a850 (2016-01-07 00:24:19 +0000) Updated method for showing Instagram post usernames
-- b60c7eb (2016-01-06 23:44:09 +0000) Improved grammar on about page
-- 8000427 (2016-01-06 23:37:59 +0000) Add "Diablo 3" and "Starcraft 2" profile links
-- 8fe5e84 (2016-01-05 13:58:54 +1100) Merged in brendanmurty/update-announcing-upcomingtasks-pro-post-1451962709109 (pull request #1)
-- e47fa2c (2016-01-05 02:58:26 +0000) Update "Announcing UpcomingTasks Pro" post with new repo links and "Basecamp 2" wording
-- 0c3350b (2016-01-05 02:57:29 +0000) Update UT git repo link
-- 32140e3 (2016-01-05 02:56:06 +0000) Update git links in about content
-- df0cfbf (2016-01-05 02:54:36 +0000) Update "View Source" link in footer
-- bead1bc (2016-01-05 02:53:14 +0000) Update repo links in readme
-- c5b629d (2016-01-05 02:45:36 +0000) Update header code icon link to point to my Bitbucket profile instead
-- db525e2 (2016-01-05 11:01:26 +1100) Updated Bitbucket logo image
-- 0b78907 (2016-01-04 23:41:51 +0000) bitbucket.png created online with Bitbucket
-- bf27265 (2015-12-29 19:34:33 -0500) Updated humans.txt
-- c2797af (2015-12-16 18:03:21 -0500) Use new avatar image
-- 1a41b75 (2015-12-16 18:02:48 -0500) Add new avatar image
-- 2beeb67 (2015-12-16 17:37:07 -0500) Add Basecamp 3 icon
-- cd99163 (2015-12-08 20:01:29 +1100) Add new Server icon
-- 38ff94a (2015-12-08 18:02:40 +1100) Update Git app logos
-- 1d41662 (2015-12-08 17:56:54 +1100) Move code repositories
-- 20b8bb4 (2015-12-07 19:57:07 -0500) Change editor to Sublime Text
-- 8842d5f (2015-12-07 19:55:11 -0500) Move repository to git.murty.id.au
-- faf4a52 (2015-12-07 19:02:36 +1100) Added common GitHub and Google Inbox logos
-- d03fabd (2015-11-18 06:38:14 +1100) Update to Kirby 2.2
-- d4a565a (2015-11-10 07:56:40 +1100) More tweaks to pulse feed icons styling
-- 7440836 (2015-11-10 07:54:35 +1100) Improve position of pulse feed icons
-- b4cfb8c (2015-11-10 07:52:00 +1100) Increase pulse feed item label and icon size
-- f77814e (2015-11-10 07:40:06 +1100) Update Pinboard item icons in pulse feed
-- f37e2ba (2015-11-10 07:37:43 +1100) Replace Steam link with Pinboard link
-- 10c7d17 (2015-10-31 12:59:10 +1100) Add public Pinboard bookmarks to pulse feed
-- f683c60 (2015-10-31 11:24:55 +1100) Simplify gitignore
-- e92dc2c (2015-10-31 11:15:07 +1100) An example auth file
-- c14cd5c (2015-10-27 15:18:41 +1100) Remove iOS input field rounding
-- b06927a (2015-10-27 13:12:29 +1100) Updated license wording
-- 37d337a (2015-10-27 13:10:41 +1100) Update Kirby CMS link
-- 9eabec2 (2015-10-21 08:49:50 +1100) Enable page zooming and disable iOS 9 page shrinking
-- 9d182c6 (2015-10-19 19:13:39 +1100) Move UpcomingTasks repository to personal GitHub account
-- 73597c0 (2015-10-07 23:46:25 +1100) Move UpcomingTasks repo to new GitHub organisation
-- 78090b6 (2015-10-07 20:15:28 +1100) New post: Announcing UpcomingTasks Pro
-- 3b69160 (2015-10-07 19:40:59 +1100) Enable iOS font smoothing
-- ebc0f2a (2015-09-25 07:46:40 +1000) Updated UpcomingTasks content
-- 4b38d84 (2015-09-19 18:54:30 +1000) Update UpcomingTasks section
-- f985eef (2015-09-05 12:20:51 +1000) Update UpcomingTasks links to use HTTPS
-- a0cc71f (2015-09-03 21:47:26 +1000) Fix styling of code sections
-- f95148f (2015-09-03 21:39:10 +1000) Update features to use new Kirby 2 methods
-- af8e804 (2015-09-03 21:38:45 +1000) Updated tags features
-- cfc5559 (2015-09-03 21:38:02 +1000) Improved third-party class list
-- 4844c9d (2015-09-03 20:01:28 +1000) Remove dead link
-- 792f7be (2015-09-03 19:33:51 +1000) Fix website domain configuration
-- 2580589 (2015-09-03 19:31:28 +1000) Use new Kirby 2 class auto-loader
-- f47a733 (2015-09-03 17:42:54 +1000) Add new Kirby 2.1.1 core files
-- 7d396ca (2015-09-03 17:39:27 +1000) Merge branch 'master' of https://github.com/brendanmurty/website
-- 300cdac (2015-09-03 17:37:54 +1000) Update to Kirby 2.1.1
-- ac83060 (2015-08-13 20:37:30 +1000) Custom link underlines
-- 8b9889e (2015-08-13 19:39:43 +1000) New domain
-- 510ac6d (2015-08-13 19:36:43 +1000) New email address
-- 13d12a7 (2015-08-13 19:26:16 +1000) Remove dead link
-- 7518f37 (2015-08-09 14:27:34 +1000) Improvements to resumé and navigation styling on smaller screens
-- 5cb1183 (2015-08-07 20:33:09 +1000) Updated job descriptions
-- cab5b71 (2015-08-07 20:27:33 +1000) Updated wording
-- 6e2bca7 (2015-08-07 20:25:48 +1000) Add link in reference section
-- 71e4566 (2015-08-05 15:03:59 +1000) Updated Resumé link
-- 4322fb4 (2015-08-05 15:01:07 +1000) Remove old Resumé page
-- 1b4b3c9 (2015-08-05 14:58:35 +1000) Update About page content
-- f031b53 (2015-08-05 14:58:23 +1000) New Resumé layout and content
-- f048e5c (2015-08-05 13:32:02 +1000) Make Resumé page visible in the navigation
-- d4e4965 (2015-08-04 12:15:49 +1000) Add alt text to images
-- 9d2273c (2015-08-04 06:32:40 +1000) Remove root domain redirects
-- 567af8a (2015-08-04 06:30:03 +1000) Add index redirect
-- 05f7418 (2015-08-03 19:46:58 +1000) Styling and content updates to improve accessibility
-- 8c8c4bb (2015-08-03 18:58:14 +1000) Use more appropriate elements in the item lists
-- 945cc68 (2015-08-03 17:40:37 +1000) Add ARIA label attributes to header icon navigation
-- b39cd26 (2015-08-03 17:35:48 +1000) Improve WCAG compliance by avoiding using "i" tags for icons
-- 97cef7e (2015-08-03 13:06:34 +1000) Remove "www." from URL requests
-- 5bdd0d7 (2015-07-28 21:44:44 +1000) Improve content structure for latest post
-- 629859f (2015-07-27 22:08:16 +1000) Change Instagram username
-- c530e61 (2015-07-27 19:34:36 +1000) Remove old hidden posts
-- 457ef1f (2015-07-27 19:34:24 +1000) Update tags on recent post
-- d0ccb8d (2015-07-24 17:45:53 +1000) Minimise buttons on About and Contact pages
-- d601348 (2015-07-24 17:34:28 +1000) Updated formatting
-- 8038873 (2015-07-24 00:03:31 +1000) Remove "og:author" meta property
-- 95050d3 (2015-07-24 00:00:07 +1000) Fix locale content
-- f74369b (2015-07-23 23:58:14 +1000) Update meta author and locale tags
-- 1f3d9e5 (2015-07-23 23:44:04 +1000) Improve page description logic and code style
-- f74094f (2015-07-23 18:45:00 +1000) Update contact page content
-- 08ead5a (2015-07-23 18:43:47 +1000) Improve menu and post links, hide "Home" from menu
-- c6535a8 (2015-07-23 17:57:56 +1000) Change content file extension to "md"
-- 5bb9eae (2015-07-22 19:01:42 +1000) Fix blockquote styling
-- ebacf88 (2015-07-22 18:53:25 +1000) New post: Configuring a Chromebook for web development
-- da98f24 (2015-07-13 21:17:03 +1000) Code cleanup
-- c43a831 (2015-07-13 21:09:24 +1000) Improve print styling
-- a9132d4 (2015-07-13 20:34:07 +1000) Code style updates to the list_pages function
-- ba7e9a9 (2015-07-13 20:27:01 +1000) Cleanup header code style and obsolete logic
-- 286ad44 (2015-07-13 20:14:20 +1000) Code style improvements
-- 5d3a7b3 (2015-07-11 13:24:07 +1000) Open resume links in new tabs
-- f541532 (2015-07-11 13:14:08 +1000) Updates to formal page styling
-- f83683b (2015-07-11 13:09:24 +1000) Update default page image
-- d479a64 (2015-07-11 13:08:14 +1000) New profile image, resumé CSS and tweaks
-- 90f9023 (2015-07-11 13:07:40 +1000) Images for Resumé
-- b3e62cb (2015-07-11 13:06:50 +1000) New Resumé content
-- c66c466 (2015-07-10 22:55:34 +1000) Reinstate local resumé
-- c2d87ce (2015-06-29 18:45:19 +1000) Remove obsolete endings from meta and link tags
-- 3f5040c (2015-06-29 18:42:28 +1000) More styling improvements
-- bc9a11c (2015-06-29 07:54:12 +0000) Updated search and tags list styling
-- 7341453 (2015-05-29 23:05:07 +1000) Updated tools and inspiration notes
-- ab0dd01 (2015-05-22 16:57:06 +1000) Update CSS revision date
-- a110d54 (2015-05-22 16:56:30 +1000) Remove border from about section
-- 600f8dc (2015-05-21 11:55:14 +1000) Update CSS revision date
-- 14a4732 (2015-05-21 11:54:43 +1000) Fix action navigation background colour
-- 36222a1 (2015-05-17 13:45:40 +1000) Improve spacing in header on small screens
-- 9770481 (2015-05-16 10:45:35 +1000) Improve page titles on smaller screens
-- 47b4b17 (2015-05-16 10:39:46 +1000) Improve header layout and grid spacing
-- 9e01b09 (2015-05-16 10:26:53 +1000) Improve grid item dimensions on large screens
-- bc02953 (2015-05-16 10:14:40 +1000) Improve grid styling, tweak design and social icons
-- 50e9f34 (2015-05-05 11:48:59 +1000) Change of code editor
-- 10aee0b (2015-05-04 18:57:49 +1000) New profile image
-- be9f731 (2015-05-04 18:20:03 +1000) Remove obsolete margin on main header
-- c8de084 (2015-05-04 18:16:42 +1000) Fix page actions navigation position on mobile
-- c20d5f7 (2015-05-03 19:12:31 +1000) Improve navigation styling on smaller screens
-- 8f917f4 (2015-05-03 13:48:23 +1000) Change default page image
-- 8b1dcec (2015-05-03 13:20:36 +1000) Improve social links display
-- 165f002 (2015-05-03 13:13:23 +1000) Improve new layout on small screens
-- 1d7c3ea (2015-05-03 13:09:00 +1000) New layout and simplified header
-- d604a31 (2015-05-03 11:32:11 +1000) Remove obsolete IIS configuration file
-- 934988c (2015-04-28 21:54:15 +1000) Remove Pinterest link
-- 5861a45 (2015-04-24 06:49:22 +1000) Remove old work history content and resumé logic
-- f906529 (2015-04-21 19:12:25 +1000) Move resumé to Sumry
-- 4b5b631 (2015-04-16 18:30:03 +1000) Apply Android 5 theme colour
-- f9f1c0f (2015-02-17 20:03:59 +1100) Updated gitignore
-- 5d384d4 (2015-02-03 20:18:05 +1100) Updated profile image.
-- 167510b (2015-02-02 19:19:51 +1100) Add new job details to resumé.
-- 42aec50 (2015-01-05 18:20:28 +1100) New job!
-- a123ef4 (2014-12-16 12:41:16 +1100) Move social links to main navigation, fix search button icon, improve navigation elements and styling.
-- fb841cb (2014-12-12 12:14:36 +1100) Improved header and layout styling at various screen sizes. Removed statistics from footer and simplifies the layout and content there.
-- bf13f41 (2014-12-12 11:20:44 +1100) Simplified profession.
-- ea5a158 (2014-12-11 13:09:20 +1100) Improve redirects for old page URLs.
-- 30a9b28 (2014-12-11 08:13:18 +1100) Styling improvements for smaller screens.
-- 9bb6ce0 (2014-12-11 08:05:08 +1100) Resumé updates.
-- b868146 (2014-12-10 07:24:45 +1100) Add redirect: /blog > /posts. Resolves #1.
-- 486470f (2014-12-09 11:41:47 +1100) Improved wording!
-- 236a97c (2014-12-09 11:34:04 +1100) Content tweaks.
-- 1506da6 (2014-12-09 11:29:26 +1100) Content updates.
-- 3faaccc (2014-11-24 07:14:19 +1100) Fix license link in footer
-- 94ee332 (2014-11-23 13:02:29 +1100) Improve formal pages header display
-- 976b9a9 (2014-11-23 12:36:25 +1100) Add "/code" redirect, update source code links.
-- ab74c70 (2014-11-23 12:30:43 +1100) Return to GitHub!
-- 284affe (2014-11-15 16:04:02 +1100) Make all job employment date formatting consistent.
-- 5d1a992 (2014-11-07 11:57:35 +1100) Update footer to link to new location of website source code and license.
-- 05f5c03 (2014-11-03 17:30:50 +1100) Add Pinterest profile link to about page.
-- 2c80bed (2014-11-03 17:24:41 +1100) Add Pinboard domain verification meta tag.
-- 21356c7 (2014-11-01 09:56:09 +1100) Add a redirect: /code > https://bitbucket.org/brendanmurty
-- ef8832f (2014-11-01 07:50:23 +1100) Move from GitHub to Bitbucket. Helps with #1.
-- 69e1d1e (2014-10-23 13:01:40 +1100) Remove Pinboard links and content.
-- a21fa58 (2014-10-19 16:12:07 +1100) Update screenshot following UpcomingTasks icon tweaks.
-- d93bea6 (2014-10-19 12:28:33 +1100) Remove irrelevant snippets in AJAX method, update styling for quote sections and remove Reading Time plugin.
-- b3ce844 (2014-10-19 12:27:37 +1100) Tweaks to recent blog post.
-- 98fa80f (2014-10-19 12:21:58 +1100) New blog post!
-- 667c9dd (2014-10-13 08:26:17 +1100) Change music links back to Last.fm
-- ae7f91f (2014-10-02 09:33:11 +1000) Simplify print styling method.
-- 0a1b97a (2014-10-02 09:30:22 +1000) Change default Open Graph image.
-- 6550c7a (2014-10-02 09:22:07 +1000) Improve Windows Phone support. Resolves #15.
-- 738de66 (2014-09-24 06:18:40 +1000) Viewport updates to improve Windows Phone support.
-- 984022f (2014-09-24 06:12:38 +1000) Force latest IE version.
-- c56ad5d (2014-09-24 06:04:20 +1000) Remove older viewport methods.
-- 315dc77 (2014-09-24 06:02:33 +1000) Remove older Windows Phone viewport script.
-- 0ecdb87 (2014-09-21 15:51:00 +1000) Content updates!
-- 279ca7c (2014-09-20 12:04:42 +1000) Remove "links" from statistics in footer.
-- 4dd6aa9 (2014-09-20 11:58:43 +1000) Remove current "link" system to assist with #13. Hide "tags" page and tweak navigation spacing.
-- 0b619b9 (2014-09-20 08:22:53 +1000) Setup for local development, including IIS configuration for Kirby via the tutorial at http://www.iis.net/learn/extensions/url-rewrite-module/importing-apache-modrewrite-rules
-- be19367 (2014-09-20 07:59:52 +1000) Add Pinboard and Steam icon links to footer. Resolves #14 and contributes to #13.
-- 83a8f80 (2014-09-17 07:48:14 +1000) Improvements for footer elements layout.
-- ed67697 (2014-09-17 07:42:09 +1000) Improve Instagram item styling on medium displays.
-- d210005 (2014-09-17 07:39:01 +1000) Improve grid item display on medium screens.
-- 9057bb2 (2014-09-17 07:26:42 +1000) Improve large screen support.
-- 8fcd137 (2014-09-12 11:04:46 +1000) Tweaks to large screen support.
-- b7e607c (2014-09-12 10:52:51 +1000) Styling improvements for very large screens.
-- 9fa6658 (2014-09-10 17:42:05 +1000) Upgrade to FontAwesome 4.2.0 (resolves #10): https://github.com/FortAwesome/Font-Awesome
-- 47d0591 (2014-09-10 17:27:47 +1000) Update Last.fm links to go to my Rdio profile. Resolves #12.
-- 726e7fd (2014-09-07 13:15:23 +1000) More tweaks following CSS optimisation (#5).
-- e36c028 (2014-09-07 13:09:32 +1000) Improve tag list page with item counts and suitable styling.
-- ef58ac4 (2014-09-07 12:59:59 +1000) More styling tweaks (#5), make tags list consistent with the other "grid lists", simplify some content.
-- f874305 (2014-09-07 12:37:53 +1000) Styling tweaks to improve previous commit (#5), move "subscribe" item from navigation to "about" page.
-- 5ed5753 (2014-09-07 12:20:16 +1000) Clean and optimise CSS, use more suitable classes for some elements and remove unused "fb:app_id". Resolves #5.
-- b68deae (2014-09-07 11:57:05 +1000) Use the Kirby "excerpt" method instead of a duplicate custom method.
-- 68caf9a (2014-09-07 11:53:50 +1000) Limit length of all descriptions in pulse feed.
-- 5f23574 (2014-09-07 11:39:24 +1000) Remove service list pages. Resolves #11.
-- c939a5a (2014-09-07 11:25:16 +1000) Forgot one!
-- f8da243 (2014-09-07 11:23:12 +1000) Simplify pulse feed items and bring human date to service list pages.
-- 33e1c4c (2014-09-06 13:40:27 +1000) Updated content for "Resumé" page.
-- 058cd9b (2014-09-06 13:37:44 +1000) Improve styling for "Resumé" page
-- fe08aa9 (2014-09-06 13:33:10 +1000) Improve comments for general purpose functions.
-- 36a26d2 (2014-09-06 10:04:45 +1000) Improve loading animation styling (#8).
-- 4784be0 (2014-09-06 10:00:54 +1000) Update pulse feed loading animation using one of the examples from SpinKit: https://github.com/tobiasahlin/SpinKit (resolves #8)
-- db1deda (2014-09-06 09:47:59 +1000) Simplify human date for older items.
-- ef52e9f (2014-09-06 09:46:15 +1000) Apply human date to liked items on Instagram.
-- c24483a (2014-09-06 09:44:59 +1000) Apply human date to GitHub star items.
-- c73e4c6 (2014-09-06 09:43:14 +1000) Wrong variable name!
-- 5d026cc (2014-09-06 09:40:59 +1000) Apply human date to third party feed items. Simplify human date method. Improves #2.
-- e3b8806 (2014-09-06 09:33:34 +1000) Human friendly dates for pulse feed. Resolves #2.
-- 237225a (2014-09-06 09:19:11 +1000) Improve display of link detail page. Resolves #1.
-- 96ba868 (2014-09-05 23:22:09 +1000) Update "about" page content
-- bfb5273 (2014-09-05 23:15:09 +1000) Dark colour scheme improvements: Tag list page and search results.
-- 247eee2 (2014-09-05 23:07:22 +1000) Dark colour scheme. Resolves #6.
-- c6a94bf (2014-09-05 17:53:35 +1000) Add footer icon links. Make "credits" text less prevalent. Resolves #7.
-- 65871a6 (2014-09-04 22:29:18 +1000) Improve content padding and grid item titles.
-- 1d07faf (2014-09-03 22:32:14 +1000) Improve navigation text size and header text alignment.
-- 92bfaaf (2014-09-03 22:23:54 +1000) Remove random message for home page. Tweaks for grid pages and about content.
-- bf9cf67 (2014-09-02 19:38:05 +1000) Remove Kirby Panel. Resolves #4.
-- 8c681af (2014-08-31 19:10:26 +1000) Improve internal links and add contribute section.
-- 29b55f0 (2014-08-31 18:05:01 +1000) Remove irrelevant line in license section.
-- f1bf014 (2014-08-31 18:01:32 +1000) Updated footer copyright and further personalised the license.
-- 702ba84 (2014-08-31 13:42:24 +1000) License tweaks.
-- 87671a4 (2014-08-30 22:59:22 +1000) Improve redirects.
-- 45f927b (2014-08-30 22:50:40 +1000) Add appropriate redirects and a bit of cleanup.
-- 1774616 (2014-08-30 22:29:43 +1000) Cleanup!
-- 2b50447 (2014-08-30 22:02:13 +1000) New method for accessing API authentication details from hidden snippet.
-- 83aae2b (2014-08-30 21:15:56 +1000) Improve readme wording and add more links. Links are great.
-- a15627a (2014-08-30 21:11:27 +1000) Add links to code locations for pulse feed. Fix spelling mistakes :P
-- c593943 (2014-08-30 21:03:26 +1000) Add current website files.
-- e82ac52 (2014-08-30 20:25:00 +1000) Expand on my own story
-- 2355943 (2014-08-30 20:18:50 +1000) Markdownify
-- 42d31d0 (2014-08-30 20:18:17 +1000) Markdownify
-- 058871d (2014-08-30 20:16:47 +1000) Use the CSS-Tricks License by @chriscoyier
-- 8d5f630 (2014-08-30 20:14:56 +1000) Change licence description
-- 6b3a228 (2014-08-30 20:00:36 +1000) Update README.md
-- 488a0dd (2014-08-30 19:57:15 +1000) Update README.md
-- fe46372 (2014-08-30 19:36:02 +1000) Update README.md
-- a1d4363 (2014-08-30 19:35:39 +1000) Initialise readme
-- b886fff (2014-08-30 19:29:33 +1000) Initial commit
+- Version 2020.14
+- Deploy: Improve version display in changelog
+- Version 2020.13
+- Deploy: Simplify changelog content
+- Version 2020.12
+- Deploy: Be more specific about which files to commit during a version bump
+- Version 2020.11
+- Core: Move a lot of common post logic from the controller to the Content class
+- Core: Rename common content functions
+- Version 2020.10
+- Core: Move common content functions to a single helper class
+- Version 2020.9
+- Core: Update redirect domain list
+- Version 2020.8
+- Docs: Update deployment link wording
+- Core: Update deployment script
+- Version 2020.7
+- Core: Revert to previous deployment and hosting methods
+- Merge branch 'serverless-laravel-vapor'
+- Core: Split out redirect sites in to new environments
+- Core: Improve output of deploy script
+- Core: Lower memory for the redirects environment
+- Core: Move redirect domains to their own environment
+- Core: Upgrade to Laravel 7.3
+- Core: Upgrade to Laravel 7.3
+- Core: Enable more domains
+- Core: Enable another domain
+- Docs: Add to file structure list
+- Core: Temporarily disable some domains
+- Docs: Update file structure list
+- Core: Remove irrelevant user authentication system
+- Core: Update file structure list
+- Core: Update file structure list
+- Core: Update domain configuration
+- Core: Improve comments in web routes file
+- Core: Add more domains
+- Core: Enable new production domains
+- Docs: Update add domain process
+- Core: Add more domains
+- Core: Update production domains and configure load balancer
+- Docs: Improve process to add a new domain
+- Docs: Fix links to other files
+- Docs: Improve deployment section headings
+- Core: Add another domain to production environment list
+- Docs: Improve process to add a new domain
+- Docs: Improve content structure
+- Docs: Simplify content in main readme file
+- Docs: Improved structure of documentation
+- Docs: Add environment configuration section
+- Core: Remove Fathom analytics
+- Docs: Update deployment process and file structure list
+- Core: Plan a staging custom URL
+- Core: Add another domain to production environment list
+- Core: Update Deploy Script warning message
+- Core: Update Vapor project configuration
+- Core: Add domain level redirects
+- Core: Limit domains to one for now
+- Core: Update deployment process
+- Core: Setup domains for Vapor production instance
+- Core: Remove obsolete build step
+- Core: Fix image asset path correction method for content files
+- Docs: Update structure list
+- Core: Move content directory back to original location
+- Core: Move content directory and references to it
+- Core: Remove obsolete file
+- Core: Fix file loading method on / page
+- Core: Fix index page file loading methods
+- Core: Update image paths for site details
+- Core: Correct the asset URLs in controllers and templates
+- Core: Correct the image URLs in the content
+- Core: Update content folder path and the methods used to read these files
+- Core: Initial work on migration to Laravel Vapor
+- Revert "Core: Initial work to setup Laravel Vapor"
+- Revert "Core: Use a global Laravel Vapor command instead"
+- Revert "Core: Initialise the Vapor project"
+- Revert "Core: Update Vapor build steps with current commands from setup.sh"
+- Revert "Core: Fix Vapor install process"
+- Revert "Core: Fix Vapor project settings and remove duplicated commands"
+- Core: Fix Vapor project settings and remove duplicated commands
+- Core: Fix Vapor install process
+- Core: Update Vapor build steps with current commands from setup.sh
+- Core: Initialise the Vapor project
+- Core: Use a global Laravel Vapor command instead
+- Core: Initial work to setup Laravel Vapor
+- Version 2020.6
+- Docs: Fix avatar image paths
+- Version 2020.5
+- Freya, Isla: Update avatar images and simplify page content
+- Version 2020.4
+- Core: Remove obsolete confirmation block from deploy script
+- Core: Update the deployment process and documentation
+- Version 2020.3
+- Core: Rename the deployment action workflow file
+- Core: Improve the way tags are pushed by the Version Script
+- Version 2020.2
+- Docs: Add note about verson.sh
+- Core: Trigger deployments when a tag is pushed to the origin repository
+- Version 2020.1
+- Core: Change to a yearly revision versioning system
+- 14.3.0
+- Core: Preload fonts and images
+- Core: Remove obsolete JS file reference
+- 14.2.0
+- Core: Make the site listing page colour scheme more like Brendan's
+- 14.1.0
+- Core: Update setup script to better support Windows environments
+- 14.0.0
+- Core: Upgrade to Laravel 7
+- 13.8.0
+- Core: Remove un-used dependencies
+- 13.7.0
+- Core: Update dependencies
+- 13.6.0
+- Brendan: Update content to reflect new job at Jomablue
+- 13.5.0
+- Brendan: Allow basic tracking of when a user views Brendan's resumé page
+- Core: Improve setup script
+- 13.4.0
+- Core: Update Fathom analytics embed code
+- 13.3.1
+- Action: Deploy on Release - Improve SSL certificate renewal command
+- 13.3.0
+- Action: Deploy on Release - Remove folder backup step and renew SSL certificates
+- 13.2.0
+- Core: Move CSS variables to a separate file
+- 13.1.0
+- Core: Ignore some more files when publishing to GitHub Packages
+- 13.0.0
+- Core: Migrate from SASS to CSS using Custom Properties
+- 12.2.0
+- Brendan: Update site description
+- 12.1.1
+- Brendan: Limit draft posts visibility to local environments
+- 12.1.0
+- Brendan: New Post - Fixing software bugs without losing your mind
+- 12.0.0
+- Brendan: Add draft posts functionality
+- Core: Make site list links relative
+- Core: Update Composer packages
+- Core: Update NPM packages
+- Core: Update package versions to match current release
+- Action: Deploy on Release - Use the latest release version of the SSH action instead
+- Action: Deploy on Release - Use new forked repository for SSH action
+- Action: Deploy on Release - Minimise output from commands
+- Core: Ignore a Node cache directory
+- Action: Deploy on Release - Only run when release has been publised
+- Action: Deploy on Release - Initial script
+- Core: Update sponsor settings
+- 11.0.0
+- Core: Update production setup steps
+- Brendan: Move social links to a Blade template file instead
+- Core: Minify HTML output
+- 10.5.0
+- Core: Add publishing section to readme
+- Version 10.4.0
+- Core: Upgrade to Laravel 6.0
+- Brendan: Remove unused route
+- Version 10.3.0
+- Core: Publish package to GitHub Packages
+- Brendan: Update Git link text
+- Brendan: Add Git repository listing page
+- Brendan: Fix display of code display and quote elements
+- Brendan: Update resume page font colour styling
+- Brendan: Update profile image
+- Bump lodash from 4.17.11 to 4.17.13 (#37)
+- Version 10.2.1
+- Core: NPM packages update
+- Core: Remove obsolete Yarn Lock file
+- Core: Add unzip package installation step
+- Core: Update setup command
+- Core: Add funding file
+- Core: Update version
+- Core: Improve initial setup script and related documentation
+- Core: Update the project's dependencies and setup process documentation
+- Core: Update package details
+- Update link to license file
+- Update issue templates
+- Add contributing file
+- Update casing of some files
+- Add code of conduct file
+- Core: Update version
+- Core: Update version
+- Core: Update NPM packages
+- Core: Update Composer packages
+- Brendan: Content updates for new role
+- Core: Update Composer Lock file
+- Brendan: Add new avatar image
+- Core: Update package details
+- 9.8.0
+- Core: Add Fathom analytics
+- 9.7.0
+- Core: Upgrade to Laravel 5.8
+- Core: Improve tabbing in package configuration files
+- Brendan: Remove unused Browser New Tab page
+- 9.6.1
+- Revert "Core: Move to self-hosted GitLab server"
+- 9.6.0
+- Core: Update bootstrap
+- Core: Updated package lock
+- Merge branch 'master' of github.com:brendanmurty/murty.io
+- Core: Update package details
+- Brendan: Update Git links
+- Core: Move to self-hosted GitLab server
+- 9.5.1
+- Core: Improve the display of the site switcher bar on smaller screens
+- 9.5.0
+- Brendan: Move social SVG from files to inline on the page
+- 9.4.0
+- 9.3.2
+- Brendan: Dark theme
+- Core: Allow sites to set their own page colour schemes
+- Brendan: Update email address
+- 9.3.1
+- Brendan: Simplify home page content
+- Version 9.3.0
+- Core: Improve the placement of the site switcher bar
+- Brendan: Update sidebar image
+- Version 9.2.1
+- Core: Update packages
+- Core: Update setup script commands
+- Core: Upgrade Laravel Mix
+- Version 9.2.0
+- Core: Improved Composer install commands
+- Core: Compile assets as part of the setup script
+- Core: Updated setup commands following testing
+- Version 9.1.1
+- Core: Updated documentation
+- Version 9.1.0
+- Core: Rename the setup bash script
+- Version 9.0.0
+- Core: Move initial setup steps to a bash script
+- Version 8.8.0
+- Core: Remove compiled files that are now ignored
+- Core: Updated Git ignore settings
+- Core: Updated package lock file
+- Readme: Update the initial setup steps
+- Version 8.7.0
+- Performance: Increase the amount of time images are cached for and include SVGs here too
+- Performance: Use the system font before the custom font is loaded
+- Version 8.6.0
+- Performance: Improve image caching configuration
+- Performance: Customise image cache settings
+- Performance: Optimise layout images for web use
+- Version 8.5.1
+- Update package configuration
+- Version 8.5.0
+- Core: Move fonts to be locally hosted
+- Version 8.4.0
+- Core: Remove Google Analytics
+- Readme: Remove Trello link
+- Brendan: Fix content formatting on More Than Writing Code post
+- Add breadcrumb navigation framework and front-end implementation to Brendan's site
+- Brendan: Fix spelling mistake in Resumé
+- Brendan: Fix grammar in Resumé
+- Remove obsolete subdomain routes
+- Improve subdomain routing method
+- Fix 404 error pages
+- Version 8.2.1
+- Brendan's Resumé: Updated work experience section content
+- Version 8.2.0
+- Brendan's Resumé: Updated skills section content
+- Readme: Remove obsolete sections, improve wording and setup instructions
+- Improve page titles
+- Version 8.1.0
+- Rebuild current site highlight in header listing
+- Improved method for setting site properties
+- Fix site theme colours
+- Update main sites listing to ensure the right domain is used
+- Remove obsolete Sites JSON file
+- Migrate to Laravel 5.7 (#36)
+- Brendan: Use a static Browser New Tab HTML page instead of a JSON file
+- Brendan: Update formatting on Announcing UpcomingTasks Pro post
+- Brendan: Update formatting on Farewell UpcomingTasks post
+- Brendan: Update noscript content
+- Brendan: Update new tab page configuration
+- Brendan: Update new tab page configuration
+- Brendan: Update new tab page configuration
+- Core: Add Freya to sitemap
+- Brendan: Update browser new tab links configuration
+- Brendan: Update browser new tab items
+- Readme: Add "Structure" section, re-order sections
+- Prepare version 7.3.0
+- Brendan: Updated location of post date display on Post pages
+- Prepare version 7.2.0
+- Core: Use LESS files for styling
+- Readme: Update path to SSL certificate directory
+- Prepare version 7.1.0
+- Core: Updated file structure
+- Brendan: Update family-related content
+- Prepare version 7.0.0
+- Core: Welcome Freya to the family!
+- Core: Update packages and Gulp configuration
+- Brendan: Update browser tab configuration file
+- Prepare version 6.5.0
+- Readme: Improve formatting and update license link
+- Brendan: Update configuration file for Chrome New Tab extension
+- Brendan: Update configuration file for Chrome New Tab extension
+- Brendan: Update configuration file for Chrome New Tab extension
+- Brendan: Update configuration file for Chrome New Tab extension
+- Brendan: Update configuration file for Chrome New Tab extension
+- Brendan: Update configuration file for Chrome New Tab extension
+- Brendan: Add configuration file for Chrome New Tab extension
+- Updated link to my Development list on Twitter
+- Readme: Update image content
+- Prepare version 6.4.0
+- Brendan: Update icon for GitHub profile links
+- Merge branch 'master' of github.com:brendanmurty/murty.io
+- Ignore more files
+- Update contact links in Resumé
+- Update post content
+- Update another old UpcomingTasks post
+- Update Git repo in package settings
+- Updated content for old UpcomingTasks post
+- Update custom redirects
+- Update code link on Brendan's homepage
+- Update email address in package details
+- Update offline content link paths and email address
+- Update email address and icon links
+- Update email address in "Farewell UpcomingTasks" post
+- Update email address in Resumé
+- Updated link to ST3 preferences
+- Prepare version 6.3.0
+- Move to self-hosted Git server
+- Prepare version 6.2.0
+- General: Group feed related tags together in header
+- General: Add Micro.blog site verification
+- General: Fix "sites.json" redirect
+- Readme: Update SSL documentation
+- Merge branch 'master' of bitbucket.org:brendanmurty/murty.io
+- General: Update issue links
+- Prepare version 6.1.4
+- General: Update website image sizes and Ella's link
+- Prepare version 6.1.3
+- General: Hide the Website Header bar when printing pages
+- Prepare version 6.1.2
+- Brendan: Update theme colour
+- Prepare version 6.1.1
+- General: Updates to Website Header bar styling and colour tweaks
+- Prepare version 6.1.0
+- General: Design and function updates following recent changes
+- Prepare version 6.0.0
+- General: Add websites header bar
+- Prepare version 5.4.0
+- Add Baby X website!
+- Prepare version 5.3.0
+- General: Add new JS build file
+- General: Update NPM Package Lock file again
+- General: Update NPM Package Lock file
+- Murty: Make the websites list dynamically load data from 'sites.json'
+- General: Improved website properties system
+- Prepare version 5.2.1
+- Brendan: Improve print styling
+- Prepare version 5.2.0
+- General: Add new build file
+- General: Move from GitHub to Bitbucket
+- Ignore IDE related tags files
+- Prepare version 5.1.0
+- Core: Update NPM package author details
+- Core: Update NPM package lock file
+- Brendan: Add new backdated blog post for Isla's birth
+- Prepare version 5.0.0
+- Brendan: Tweaks to new layout responsive points
+- Brendan: Initial work on updated layout
+- Prepare version 4.1.4
+- Core: Update API methods to produce human readable JSON instead
+- Prepare version 4.1.3
+- Core: Compatability updates in API code to suit new Node version
+- Core: Simplify Clear Cache command
+- Prepare version 4.1.2
+- Core: Improve JSON Feed compatability (#31)
+- Prepare version 4.1.1
+- Core: Improve ordering on LINK tags in HTML
+- Core: Fix syntax errors in API Feed method (#31)
+- Prepare version 4.1.0
+- Core: Add JSON Feed links to Posts pages (#31)
+- Core: Add commands to clear and regenate JSON cache files
+- Core: Fix checks for filenames in API Posts method (#31)
+- Core: Updates to Posts JSON generator to better suit JSON Feed requirements (#31)
+- Core: Add shortcut URL to Brendan's feed (#31)
+- Prepare version 4.0.1
+- Core: Fix Page Service date filtering method
+- Prepare version 4.0.0
+- Core: Finalise JSON Feed implementation (#31)
+- Core: Add new JS build file
+- Core: Update paths to front-end JS third-party packages
+- Core: Phase out bower, move remaining packages to NPM instead
+- Core: Update internal links
+- Core: Remove Keybase verification file
+- Core: Add basic structure, author details and update posts page to prepare for JSON Feed release (#31)
+- Core: Add route for Feed Controller (#31)
+- Core: Initial work on JSON Feed (#31)
+- Prepare version 3.9.0
+- Core: Update site descriptions, icons and add theme colours
+- Revert "Core: Migrate from Bower to Yarn"
+- Core: Migrate from Bower to Yarn
+- Core: Update Gulp Uglify package version
+- Core: Update links on website listing page
+- Prepare version 3.8.0
+- Core: Remove problematic HTTP > HTTPS redirection (#25)
+- Core: Fix bugs with HTTP > HTTPS redirection method (#25)
+- Core: Update links and add SSL setup instructions (#25)
+- Core: Redirect all HTTP requests to HTTPS (#25)
+- Core: Add HTTPS setup to server (#25)
+- Core: Initialise SSL folder (#25)
+- Prepare version 3.7.0
+- Brendan: Add LinkedIn profile link and improve offline links
+- Update website repository links
+- Brendan: Correct work history date
+- Prepare version 3.6.5
+- Common: Add icon labels for Noscript content
+- Prepare version 3.6.4
+- Brendan: Improve Resumé print styling
+- Prepare version 3.6.3
+- Brendan: Updated width for header text
+- Prepare version 3.6.2
+- Brendan: Fix header display on iPad
+- Prepare version 3.6.1
+- Brendan: Improve display of header text
+- Prepare version 3.6.0
+- Brendan: Updates related to a new job at 4mation!
+- Brendan: Layout updates
+- Brendan: Updated resumé content
+- Prepare version 3.5.0
+- Common: Add title to homepage link
+- Brendan: Add icon labels to home page
+- Brendan: Improve wording of skills section of resumé
+- Brendan: Update resumé skills section
+- Brendan: Update resumé content
+- Prepare version 3.4.2
+- Common: Add new CSS build file
+- Prepare version 3.4.1
+- Isla: Limit change of text selection colours to Isla's pages
+- Prepare version 3.4.0
+- Isla: Improved styling
+- Common: Update noscript content
+- Isla: Updated content
+- Prepare version 3.3.0
+- Show resumé link targets when printing
+- Updated resumé content
+- Improved resumé content
+- Add Git section to resumé
+- Updated resumé content
+- Merge branch 'master' of https://github.com/brendanmurty/website
+- Perpare version 3.2.0
+- Perpare version 3.2.0
+- Isla: Improve colour scheme and heading styling
+- Brendan: Improve index content and noscript display
+- Brendan: Use "index.md" for content when the "about" page is requested
+- Improved About content for Brendan
+- Prepare version 3.1.5
+- Increase contrast of default main background and text colours
+- Prepare version 3.1.4
+- Fix for mobile devices not scrolling vertically properly
+- Prepare version 3.1.3
+- Increase the icon sizing to match new styling
+- Styling updates
+- Prepare version 3.1.2
+- Improve Brendan's Resumé styling and Post Listing at smaller screen sizes
+- Prepare version 3.1.1
+- Reverted link colour changes and improved post listing styling
+- Prepare version 3.1.0
+- Improved responsive header images (#34)
+- Prepare version 3.0.0
+- Ignore Paint.net temp files
+- New layout and simplification of Brendan's website (#34) (#35)
+- Improve wording in readme
+- Update readme to assist with development on a computer running Ubuntu
+- Ignore log files
+- Revert "Initial setup for SSL certificate (#25)"
+- Initial setup for SSL certificate (#25)
+- Updated Keybase profile
+- Updated resume content
+- Remove old Terms and Conditions page
+- Improve comments in API post controller
+- Remove FontAwesome font files
+- Prepare version 2.2.0
+- Improved about section in readme
+- Performance improvements
+- Add new icon files
+- Replace FontAwesome with Feather icons
+- Default to a local server
+- Updated documentation
+- Add logging commands and documentation
+- Prepare version 2.1.0
+- Don't include Node logs in the repository
+- Add alt text for Brendan's avatar image
+- Add static content to show when JavaScript is disabled in browsers
+- Prepare version 2.0.1
+- Append to Forever log files
+- Prepare version 2.0.0
+- Convert API features to use Node instead of PHP (#32)
+- Update version in Bower file
+- Update more server file type configuration
+- Prepare version 1.3.0
+- Add basic static server command (npm start)
+- Update index file type
+- Prepare version 1.2.6
+- Improved post date and name logic
+- Improve display of images in Brendan's posts
+- Improved shortcut subdomain redirection
+- Prepare version 1.2.5
+- Remove obsolete styling from Brendan's post pages
+- Prepare version 1.2.4
+- Show more descriptive page titles (#21)
+- Update homescreen image in old Web App Icon post
+- Make dates on post sub headers more human readable (#29)
+- Remove broken link
+- Prepare version 1.2.3
+- Generate new build files
+- Updated suggested code style configuration
+- Empty the page content to avoid showing content from the previous page
+- Add redirects to matching GitHub pages where suitable (#30)
+- Revert "Improve API structure and simplify current files (#28)"
+- Improve API structure and simplify current files (#28)
+- Add editor configuration file
+- Prepare version 1.2.2
+- Updated font stack for code blocks
+- Prepare version 1.2.1
+- Improved loading effect (#24)
+- Prepare version 1.2.0
+- Improve controller structure and usage (#26)
+- Prepare version 1.1.1
+- Setup a new controller for Brendan's Posts page
+- Prepare version 1.1.0
+- Add version number to build file requests and improve loading styling (#24)
+- Improved loading effect (#24)
+- Implement a loading effect between page transitions (#24)
+- Prepare version 1.0.2
+- Updated rewrite description
+- Add static sitemap file containing the main pages
+- Simplify redirects (#22)
+- Simplify the Page Service
+- Prepare version 1.0.1
+- Merge branch 'master' of github.com:brendanmurty/website
+- Improved method for setting the page title
+- Remove commented out Apache config
+- Remove SSL configuration for now
+- Add SSL configuration
+- Redirect all HTTP requests to HTTPS
+- Add new build file
+- Make the post listing styling more specific
+- Add post listing styles
+- Add new posts list class
+- Add new build file
+- Remove post list element class
+- Show the content for the Posts page above the post list
+- Simplify post listing template
+- Re-order posts list and content sections
+- Improve setup instructions
+- Added further setup instructions
+- Prepare version 1.0.0
+- Updated build files
+- Merge branch 'master' of github.com:brendanmurty/website
+- Updated custom font include method
+- Add development tools setup instructions
+- Delete keybase.txt
+- Add Keybase proof file
+- Don't show page content on Brendan's Post list page
+- Fix 'undefined' content when navigating between pages
+- Murty websites in Angular 1.6 (#20)
+- Improve caching rules
+- Customise caching rules
+- Fix link colours on the Resume page
+- Improve Page Title method and code style
+- Simplify page heading logic
+- Update Diablo 3 profile link on About page
+- Improve code block display
+- Tweaks to item listing styling
+- Improve new lighter colour scheme
+- New lighter colour scheme
+- Add Keybase Proof file
+- Disable Latest Post display on the home page
+- Update tools used
+- XML sitemap updates
+- Update text editor used for coding
+- Improve code style in header
+- Move social links, introduction avatar content to Site Content File. Code style improvements.
+- Simplify default page description content
+- Update default page description content
+- Update wording on "Farewell UpcomingTasks" post
+- Update date formats and UpcomingTasks content in resume
+- Fix post date on "Farewell UpcomingTasks" post
+- Fixed grammar in Resume content
+- Updated Resume wording
+- Updated wording on About page
+- Update heading sizes in the "Farewell UpcomingTasks" blog post
+- New blog post: Farewell UpcomingTasks
+- Updated page error message
+- Restore the "latest post" section on the home page
+- Updated homepage summary text
+- Improved wording in Resume
+- Update About page with new wording from Resume
+- New position at Sentral!
+- Tweaks to new colour scheme
+- New colour scheme
+- Improve code style and element attributes
+- Remove "latest post" section from home page
+- Fix icon link container width
+- Remove Pocket and SMDS icon links
+- Update profile picture
+- Add files via upload
+- Update "Happy Holidays from UpcomingTasks" post
+- Update "UpcomingTasks progress view" post
+- Update "oct 2014 updates" post
+- Updated "october updates" post content
+- Update Basecamp links in "100 active users" post
+- Update Basecamp 2 API post
+- Update Basecamp 2 extras page link
+- Update CSS update date
+- Update minified CSS
+- Improve latest post styling
+- Fix latest post call on home page
+- Update CSS update date
+- Update minified CSS
+- Add latest post styling
+- Show most recent post on home page
+- Simplify post title for "latest" post mode
+- Update list post UL classes
+- Update lists posts function call on Tag list page
+- Update list posts function call on Posts page
+- Simplify list posts function
+- Update CSS update date
+- Update minified CSS
+- Update profile links container width to fit new icons
+- Update CSS update date
+- Update minified CSS
+- Make profile links show 4 in a row on smaller screens
+- Add Steam and SchnitMyDadSays links to profile
+- Add Pocket profile link
+- Remove last.fm references
+- Use the FontAwesome CDN for icons instead of locally sourced icons
+- Update UpcomingTasks links
+- PHP 7 fixes
+- Various updates to better support PHP 7
+- Fix blog page
+- Fix more PHP short tags
+- Avoid short PHP open tags
+- Use a smaller profile image
+- Simplifications
+- Minify CSS to improve load time
+- Remove auth include and JS update date
+- Remove obsolete styling
+- Remove obsolete third-party class loader and Instagram class
+- Remove pulse feed and related third-party classes
+- Revert "Update Instagram class with recent API patch"
+- Update Instagram class with recent API patch
+- Upgrade Instagram API class
+- Update to Kirby 2.3.0
+- New icon for "murty.io"
+- Delete server.png
+- Delete gitlab.png
+- Delete googleinbox.png
+- Delete bitbucket.png
+- Delete basecamp.png
+- Remove old profile image
+- Update default page thumbnail image
+- Update default page image
+- Update website domain and my email address
+- Update Basecamp and UpcomingTasks content
+- Content updates
+- Only show GitHub commits that have a link
+- Update code repo link
+- Update code repo link
+- Update code and license links in readme
+- Updated code repo links in about page
+- Update code icon link in header
+- Update repo link in resume
+- Update repo link in site settings
+- Remove Pinboard items from feed and links from header
+- Update page description for the home page
+- Updated intro text content
+- readme.md edited online with Bitbucket
+- readme.md edited online with Bitbucket
+- readme.md edited online with Bitbucket
+- Include Pinboard profile link in readme
+- Add padding to bottom of page on smaller screens
+- Hide footer on About page
+- Improve header styling at smaller screen sizes, increase footer text size
+- Hide resume page, remove contact page
+- Improve button styling
+- Fix spacing on home page
+- Remove about text from footer
+- Fix header link visited colour
+- Fix post page title colour
+- New colour scheme and design simplifications
+- Improve Resume content
+- Show Home page in navigation
+- Remove search page
+- Fix wording of liked Instagram posts with no captions
+- Updated method for showing Instagram post usernames
+- Improved grammar on about page
+- Add "Diablo 3" and "Starcraft 2" profile links
+- Merged in brendanmurty/update-announcing-upcomingtasks-pro-post-1451962709109 (pull request #1)
+- Update "Announcing UpcomingTasks Pro" post with new repo links and "Basecamp 2" wording
+- Update UT git repo link
+- Update git links in about content
+- Update "View Source" link in footer
+- Update repo links in readme
+- Update header code icon link to point to my Bitbucket profile instead
+- Updated Bitbucket logo image
+- bitbucket.png created online with Bitbucket
+- Updated humans.txt
+- Use new avatar image
+- Add new avatar image
+- Add Basecamp 3 icon
+- Add new Server icon
+- Update Git app logos
+- Move code repositories
+- Change editor to Sublime Text
+- Move repository to git.murty.id.au
+- Added common GitHub and Google Inbox logos
+- Update to Kirby 2.2
+- More tweaks to pulse feed icons styling
+- Improve position of pulse feed icons
+- Increase pulse feed item label and icon size
+- Update Pinboard item icons in pulse feed
+- Replace Steam link with Pinboard link
+- Add public Pinboard bookmarks to pulse feed
+- Simplify gitignore
+- An example auth file
+- Remove iOS input field rounding
+- Updated license wording
+- Update Kirby CMS link
+- Enable page zooming and disable iOS 9 page shrinking
+- Move UpcomingTasks repository to personal GitHub account
+- Move UpcomingTasks repo to new GitHub organisation
+- New post: Announcing UpcomingTasks Pro
+- Enable iOS font smoothing
+- Updated UpcomingTasks content
+- Update UpcomingTasks section
+- Update UpcomingTasks links to use HTTPS
+- Fix styling of code sections
+- Update features to use new Kirby 2 methods
+- Updated tags features
+- Improved third-party class list
+- Remove dead link
+- Fix website domain configuration
+- Use new Kirby 2 class auto-loader
+- Add new Kirby 2.1.1 core files
+- Merge branch 'master' of https://github.com/brendanmurty/website
+- Update to Kirby 2.1.1
+- Custom link underlines
+- New domain
+- New email address
+- Remove dead link
+- Improvements to resumé and navigation styling on smaller screens
+- Updated job descriptions
+- Updated wording
+- Add link in reference section
+- Updated Resumé link
+- Remove old Resumé page
+- Update About page content
+- New Resumé layout and content
+- Make Resumé page visible in the navigation
+- Add alt text to images
+- Remove root domain redirects
+- Add index redirect
+- Styling and content updates to improve accessibility
+- Use more appropriate elements in the item lists
+- Add ARIA label attributes to header icon navigation
+- Improve WCAG compliance by avoiding using "i" tags for icons
+- Remove "www." from URL requests
+- Improve content structure for latest post
+- Change Instagram username
+- Remove old hidden posts
+- Update tags on recent post
+- Minimise buttons on About and Contact pages
+- Updated formatting
+- Remove "og:author" meta property
+- Fix locale content
+- Update meta author and locale tags
+- Improve page description logic and code style
+- Update contact page content
+- Improve menu and post links, hide "Home" from menu
+- Change content file extension to "md"
+- Fix blockquote styling
+- New post: Configuring a Chromebook for web development
+- Code cleanup
+- Improve print styling
+- Code style updates to the list_pages function
+- Cleanup header code style and obsolete logic
+- Code style improvements
+- Open resume links in new tabs
+- Updates to formal page styling
+- Update default page image
+- New profile image, resumé CSS and tweaks
+- Images for Resumé
+- New Resumé content
+- Reinstate local resumé
+- Remove obsolete endings from meta and link tags
+- More styling improvements
+- Updated search and tags list styling
+- Updated tools and inspiration notes
+- Update CSS revision date
+- Remove border from about section
+- Update CSS revision date
+- Fix action navigation background colour
+- Improve spacing in header on small screens
+- Improve page titles on smaller screens
+- Improve header layout and grid spacing
+- Improve grid item dimensions on large screens
+- Improve grid styling, tweak design and social icons
+- Change of code editor
+- New profile image
+- Remove obsolete margin on main header
+- Fix page actions navigation position on mobile
+- Improve navigation styling on smaller screens
+- Change default page image
+- Improve social links display
+- Improve new layout on small screens
+- New layout and simplified header
+- Remove obsolete IIS configuration file
+- Remove Pinterest link
+- Remove old work history content and resumé logic
+- Move resumé to Sumry
+- Apply Android 5 theme colour
+- Updated gitignore
+- Updated profile image.
+- Add new job details to resumé.
+- New job!
+- Move social links to main navigation, fix search button icon, improve navigation elements and styling.
+- Improved header and layout styling at various screen sizes. Removed statistics from footer and simplifies the layout and content there.
+- Simplified profession.
+- Improve redirects for old page URLs.
+- Styling improvements for smaller screens.
+- Resumé updates.
+- Add redirect: /blog > /posts. Resolves #1.
+- Improved wording!
+- Content tweaks.
+- Content updates.
+- Fix license link in footer
+- Improve formal pages header display
+- Add "/code" redirect, update source code links.
+- Return to GitHub!
+- Make all job employment date formatting consistent.
+- Update footer to link to new location of website source code and license.
+- Add Pinterest profile link to about page.
+- Add Pinboard domain verification meta tag.
+- Add a redirect: /code > https://bitbucket.org/brendanmurty
+- Move from GitHub to Bitbucket. Helps with #1.
+- Remove Pinboard links and content.
+- Update screenshot following UpcomingTasks icon tweaks.
+- Remove irrelevant snippets in AJAX method, update styling for quote sections and remove Reading Time plugin.
+- Tweaks to recent blog post.
+- New blog post!
+- Change music links back to Last.fm
+- Simplify print styling method.
+- Change default Open Graph image.
+- Improve Windows Phone support. Resolves #15.
+- Viewport updates to improve Windows Phone support.
+- Force latest IE version.
+- Remove older viewport methods.
+- Remove older Windows Phone viewport script.
+- Content updates!
+- Remove "links" from statistics in footer.
+- Remove current "link" system to assist with #13. Hide "tags" page and tweak navigation spacing.
+- Setup for local development, including IIS configuration for Kirby via the tutorial at http://www.iis.net/learn/extensions/url-rewrite-module/importing-apache-modrewrite-rules
+- Add Pinboard and Steam icon links to footer. Resolves #14 and contributes to #13.
+- Improvements for footer elements layout.
+- Improve Instagram item styling on medium displays.
+- Improve grid item display on medium screens.
+- Improve large screen support.
+- Tweaks to large screen support.
+- Styling improvements for very large screens.
+- Upgrade to FontAwesome 4.2.0 (resolves #10): https://github.com/FortAwesome/Font-Awesome
+- Update Last.fm links to go to my Rdio profile. Resolves #12.
+- More tweaks following CSS optimisation (#5).
+- Improve tag list page with item counts and suitable styling.
+- More styling tweaks (#5), make tags list consistent with the other "grid lists", simplify some content.
+- Styling tweaks to improve previous commit (#5), move "subscribe" item from navigation to "about" page.
+- Clean and optimise CSS, use more suitable classes for some elements and remove unused "fb:app_id". Resolves #5.
+- Use the Kirby "excerpt" method instead of a duplicate custom method.
+- Limit length of all descriptions in pulse feed.
+- Remove service list pages. Resolves #11.
+- Forgot one!
+- Simplify pulse feed items and bring human date to service list pages.
+- Updated content for "Resumé" page.
+- Improve styling for "Resumé" page
+- Improve comments for general purpose functions.
+- Improve loading animation styling (#8).
+- Update pulse feed loading animation using one of the examples from SpinKit: https://github.com/tobiasahlin/SpinKit (resolves #8)
+- Simplify human date for older items.
+- Apply human date to liked items on Instagram.
+- Apply human date to GitHub star items.
+- Wrong variable name!
+- Apply human date to third party feed items. Simplify human date method. Improves #2.
+- Human friendly dates for pulse feed. Resolves #2.
+- Improve display of link detail page. Resolves #1.
+- Update "about" page content
+- Dark colour scheme improvements: Tag list page and search results.
+- Dark colour scheme. Resolves #6.
+- Add footer icon links. Make "credits" text less prevalent. Resolves #7.
+- Improve content padding and grid item titles.
+- Improve navigation text size and header text alignment.
+- Remove random message for home page. Tweaks for grid pages and about content.
+- Remove Kirby Panel. Resolves #4.
+- Improve internal links and add contribute section.
+- Remove irrelevant line in license section.
+- Updated footer copyright and further personalised the license.
+- License tweaks.
+- Improve redirects.
+- Add appropriate redirects and a bit of cleanup.
+- Cleanup!
+- New method for accessing API authentication details from hidden snippet.
+- Improve readme wording and add more links. Links are great.
+- Add links to code locations for pulse feed. Fix spelling mistakes :P
+- Add current website files.
+- Expand on my own story
+- Markdownify
+- Markdownify
+- Use the CSS-Tricks License by @chriscoyier
+- Change licence description
+- Update README.md
+- Update README.md
+- Update README.md
+- Initialise readme
+- Initial commit
