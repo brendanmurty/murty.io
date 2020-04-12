@@ -116,6 +116,10 @@ nav.breadcrumbs { margin: 20px 0; padding: 0; float: left; }
 nav.breadcrumbs li, nav.breadcrumbs .current_page { float: left; }
 nav.breadcrumbs a, nav.breadcrumbs .divider { margin: 0 10px 0 0; }
 
+/* Gallery */
+
+ul.gallery {}
+
 /* Alterations for specific screen sizes */
 
 @media only screen and (max-width:600px) {

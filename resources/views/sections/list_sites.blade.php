@@ -17,10 +17,16 @@
             <span>Isla Murty</span>
         </a>
     </li>
-    <li class="last">
+    <li>
         <a href="/freya" @if(isset($site) && $site['title_short'] == 'FJM')class="current_site"@endif>
             <img src="{{ asset('images/freya/freya-murty.jpg') }}" alt="FJM" title="Visit Freya Murty's website">
             <span>Freya Murty</span>
+        </a>
+    </li>
+    <li class="last">
+        <a href="/gallery" @if(isset($site) && $site['title_short'] == 'GAL')class="current_site"@endif>
+            <img src="{{ asset('images/common/murty-128.png') }}" alt="GAL" title="Visit the gallery website" style="background-color:#555;">
+            <span>Gallery</span>
         </a>
     </li>
 </ul>

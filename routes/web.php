@@ -38,6 +38,10 @@ Route::get('/', function() {
         case 'www.upcomingtasks.com':
             return Redirect::away('https://murty.io/brendan/post/20161014_farewell-upcomingtasks');
             break;
+        case 'gallery.murty.io':
+        case 'photos.murty.io':
+            return Redirect::away('https://murty.io/gallery');
+            break;
         default:
             // Default to showing the site listing page
             $murty = new App\Http\Controllers\MurtyController;
@@ -74,3 +78,7 @@ Route::get('/freya', 'FreyaController@index');
 // Routes: Isla
 
 Route::get('/isla', 'IslaController@index');
+
+// Routes: Gallery
+
+Route::get('/gallery', 'GalleryController@index');

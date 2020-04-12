@@ -78,7 +78,7 @@ class Content
     {
         $directory_path = base_path('content/' . $content_directory_path);
 
-        return glob($directory_path . '*.{jpg,png,gif}');
+        return glob($directory_path . '*.{jpg,png,gif}', GLOB_BRACE);
     }
 
     /**
