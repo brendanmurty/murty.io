@@ -1,5 +1,19 @@
 # Change Log
 
+- Version 2020.17
+- Gallery: Update preload configuration and a related content file
+- Core: Update site header and listing images
+- Gallery: Update the way the image metadata is fetched
+- Gallery: Update styling and selected images
+- Gallery: Add item page
+- Core: Update requirements
+- Gallery: Add image EXIF data display
+- Gallery: Initial styling
+- Gallery: Move images to "public/images/gallery" instead of "content/gallery"
+- Gallery: Initial work on image paths
+- Gallery: Initial framework
+- Core: Make the content post slug function more flexible
+- Core: Initial work on building image content functions
 - Version 2020.16
 - Deploy: Update changelog to ignore merge commits
 - Version 2020.15
