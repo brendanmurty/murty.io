@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.15
+- Merge branch 'master' of github.com:brendanmurty/murty.io
+- Brendan: Update contact links in resumé
 - Version 2020.14
 - Deploy: Improve version display in changelog
 - Version 2020.13
