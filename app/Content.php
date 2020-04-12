@@ -5,6 +5,7 @@ namespace App;
 use \DateTime;
 use File;
 use Markdown;
+use Cache;
 
 /**
  * Functions related to content that are used site-wide.
@@ -76,9 +77,19 @@ class Content
      */
     public static function getMarkdownContentInDirectory($content_directory_path)
     {
-        $directory_path = base_path('content/' . $content_directory_path);
+        if (Cache::has('content-directory-markdown-' . $content_directory_path)) {
+            // A cached version of the Markdown files in this directory was found, use this instead
+            return Cache::get('content-directory-markdown-' . $content_directory_path);
+        } else {
+            // There is no cached version of the Markdown files in this directory, query the directory itself
+            $directory_path = base_path('content/' . $content_directory_path);
+            $directory_items = glob($directory_path . '*.md');
 
-        return glob($directory_path . '*.md');
+            // Store the metadata in the cache for 30 days
+            Cache::put('content-directory-markdown-' . $content_directory_path, $directory_items, 2592000);
+
+            return $directory_items;
+        }
     }
 
     /**
@@ -89,9 +100,19 @@ class Content
      */
     public static function getImageContentInDirectory($content_directory_path)
     {
-        $directory_path = base_path('public/images/gallery' . $content_directory_path);
+        if (Cache::has('content-directory-image-' . $content_directory_path)) {
+            // A cached version of the image files in this directory was found, use this instead
+            return Cache::get('content-directory-image-' . $content_directory_path);
+        } else {
+            // There is no cached version of the image files in this directory, query the directory itself
+            $directory_path = base_path('public/images/gallery' . $content_directory_path);
+            $directory_items = glob($directory_path . '*.{jpg,png,gif}', GLOB_BRACE);
 
-        return glob($directory_path . '*.{jpg,png,gif}', GLOB_BRACE);
+            // Store the metadata in the cache for 30 days
+            Cache::put('content-directory-image-' . $content_directory_path, $directory_items, 2592000);
+
+            return $directory_items;
+        }
     }
 
     /**
@@ -207,12 +228,22 @@ class Content
     public static function getImageMetadata($image_file_path)
     {
         try {
-            $image_date = Content::getPostDateHumanFromFilename($image_file_path);
+            $image_date = self::getPostDateHumanFromFilename($image_file_path);
+            $image_slug = self::getSlugWithExtension($image_file_path);
             $image_metaline = $image_date . ', ';
-            
-            $image_metadata = exif_read_data($image_file_path, 0, true);
-            if ($image_metadata) {
-                $image_metaline .= $image_metadata['IFD0']['Make'] . ' ' . $image_metadata['IFD0']['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['EXIF']['ISOSpeedRatings'];
+
+            if (Cache::has('gallery-' . $image_slug)) {
+                // A cached version of this file's metadata was found, use this instead
+                $image_metaline = Cache::get('gallery-' . $image_slug);
+            } else {
+                // There is no cached version of this file's metadata, query the image file itself
+                $image_metadata = exif_read_data($image_file_path, 0, true);
+                if ($image_metadata) {
+                    $image_metaline .= $image_metadata['IFD0']['Make'] . ' ' . $image_metadata['IFD0']['Model'] . ', ' . $image_metadata['COMPUTED']['ApertureFNumber'] . ', ISO ' . $image_metadata['EXIF']['ISOSpeedRatings'];
+                    
+                    // Store the metadata in the cache for 30 days
+                    Cache::put('gallery-' . $image_slug, $image_metaline, 2592000);
+                }
             }
 
             return $image_metaline;
