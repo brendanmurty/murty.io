@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.21
+- Core: Cache some items to avoid excessive file IO tasks
 - Version 2020.20
 - Gallery: Use built-in EXIF functions instead of third-party package
 - Gallery: Update redirect URLs
