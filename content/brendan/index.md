@@ -2,4 +2,4 @@ Father of [Isla](https://murty.io/isla) and [Freya](https://murty.io/freya), Par
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
 Technical Lead at [Jomablue](https://jomablue.com/).
 
-I share my thoughts on [Twitter](https://twitter.com/brendanmurty), post photos to [Instagram](https://instagram.com/brendan.murty), manage code on [GitHub](https://github.com/brendanmurty) and play games on [Steam](http://steamcommunity.com/id/brendanmurty).
+I share my thoughts on [Twitter](https://twitter.com/brendanmurty), manage code on [GitHub](https://github.com/brendanmurty) and play games on [Steam](http://steamcommunity.com/id/brendanmurty).

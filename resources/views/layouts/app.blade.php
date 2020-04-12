@@ -19,6 +19,7 @@
         <link rel="preload" href="{{ asset('images/ella/ella_condon.jpg') }}" as="image">
         <link rel="preload" href="{{ asset('images/isla/isla-murty.jpg') }}" as="image">
         <link rel="preload" href="{{ asset('images/freya/freya-murty.jpg') }}" as="image">
+        <link rel="preload" href="{{ asset('images/common/gallery.svg') }}" as="image">
 
         <link rel="icon" sizes="192x192" href="{{ asset($site['icon']) }}">
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
