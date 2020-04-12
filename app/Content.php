@@ -203,7 +203,7 @@ class Content
      * Extract image metadata from an image file.
      * 
      * @param  string $image_file_path Full path to the image from the project root.
-     * @return array                   Metadata from the image or an empty array.
+     * @return string                  Metadata summary text from the image or an empty string.
      */
     public static function getImageMetadata($image_file_path)
     {
@@ -217,7 +217,7 @@ class Content
 
             return $image_metaline;
         } catch (\Exception $e) {
-            return array();
+            return '';
         }
     }
 }

@@ -31,7 +31,10 @@ class GalleryController extends Controller
             $image_detail_url = '/gallery/' . $image_slug;
 
             $image_metadata = Content::getImageMetadata($image_file_path);
-            $image_title = $image_slug . ' - ' . $image_metadata;
+            $image_title = $image_slug;
+            if (!empty($image_metadata)) {
+                $image_title .= ' - ' . $image_metadata;
+            }
 
             $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" src="' . $image_src . '" /></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
         }
