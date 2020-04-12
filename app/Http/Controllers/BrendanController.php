@@ -36,7 +36,7 @@ class BrendanController extends Controller
     public function page($page_name) {
         $page_file = 'brendan/' . $page_name . '.md';
 
-        if (!Content::contentExists($page_file)) {
+        if (!Content::markdownExists($page_file)) {
             abort(404);
         }
 
@@ -153,7 +153,7 @@ class BrendanController extends Controller
     public function post($post_name) {
         $post_file = 'brendan/posts/' . $post_name . '.md';
 
-        if (!Content::contentExists($post_file)) {
+        if (!Content::markdownExists($post_file)) {
             abort(404);
         }
 

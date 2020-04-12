@@ -20,9 +20,8 @@ class GalleryController extends Controller
 
     public function index() {
         $images_list = '<ul class="gallery">';
-        foreach (Content::getImageContentInDirectory('gallery/') as $image_file_path) {
-            // TODO: Fix this image path, images may need to be stored in the "public" directory for this
-            $image_src = str_replace(base_path(), '/', $image_file_path);
+        foreach (Content::getImageContentInDirectory('/') as $image_file_path) {
+            $image_src = str_replace(base_path('public/images/'), asset('images') . '/', $image_file_path);
 
             $images_list .= '<li><img src="' . $image_src . '" /></li>';
         }

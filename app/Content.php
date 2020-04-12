@@ -12,16 +12,29 @@ use Markdown;
 class Content
 {
     /**
-     * Check if a certain content file exists in the top-level "content" directory.
+     * Check if a certain Markdown content file exists in the top-level "content" directory.
      * 
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return bool                      Whether this content file exists or not.
      */
-    public static function contentExists($content_file_path)
+    public static function markdownExists($content_file_path)
     {
         $page_file = base_path('content/' . $content_file_path);
 
         return file_exists($page_file);
+    }
+
+    /**
+     * Check if a certain image file exists in the "public/images/gallery/" directory.
+     * 
+     * @param  string $content_file_path Path to the file inside the "public/images/gallery/" directory.
+     * @return bool                      Whether this content file exists or not.
+     */
+    public static function imageExists($content_file_path)
+    {
+        $image_file = base_path('public/images/gallery/' . $content_file_path);
+
+        return file_exists($image_file);
     }
 
     /**
@@ -69,14 +82,14 @@ class Content
     }
 
     /**
-     * Get a list of all image content files in a specific sub-directory of the top-level "content" directory.
+     * Get a list of all image content files in the "public/images/gallery/" directory.
      * 
-     * @param  string $content_directory_path Path to the content sub-directory.
+     * @param  string $content_directory_path Path to the images inside the "public/images/gallery/" directory.
      * @return array                          All Markdown files that are in the sub-directory.
      */
     public static function getImageContentInDirectory($content_directory_path)
     {
-        $directory_path = base_path('content/' . $content_directory_path);
+        $directory_path = base_path('public/images/gallery/' . $content_directory_path);
 
         return glob($directory_path . '*.{jpg,png,gif}', GLOB_BRACE);
     }
