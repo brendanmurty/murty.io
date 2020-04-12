@@ -36,5 +36,5 @@ I'm a Lead Developer with varied commercial experience in web-based development,
 
 - __[Email: b@murty.io](mailto:b@murty.io)__
 - __[Website: b.murty.io](https://b.murty.io/)__
-- __[GitHub: brendanmurty](https://github.com/brendanmurty)__
-- __[Twitter: brendanmurty](https://twitter.com/brendanmurty)__
+- __[GitHub: brendanmurty](https://github.com/brendanmurty/)__
+- __[LinkedIn: brendanmurty](https://www.linkedin.com/in/brendanmurty/)__
