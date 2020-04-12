@@ -64,7 +64,7 @@ class BrendanController extends Controller
         // Construct a list of Brendan's Posts
         $post_items = [];
         foreach (Content::getMarkdownContentInDirectory('brendan/posts/') as $post_file) {
-            $post_slug = Content::getMarkdownPostSlug($post_file);
+            $post_slug = Content::getPostSlug($post_file);
             $post_url_relative = '/brendan/post/' . $post_slug;
             $post_url_full = 'https://murty.io' . $post_url_relative;
             $post_date_short = Content::getPostDateShortFromFilename($post_file);

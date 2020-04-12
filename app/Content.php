@@ -82,14 +82,16 @@ class Content
     }
 
     /**
-     * Get the post slug using a specified Markdown content file path.
+     * Get the post slug using a specified content file path.
      * 
      * @param  string $content_file_path Path to the file inside the top-level "content" directory.
      * @return string                    The related post slug.
      */
-    public static function getMarkdownPostSlug($content_file_path)
+    public static function getPostSlug($content_file_path)
     {
-        return basename($content_file_path, '.md');
+        $content_path_parts = pathinfo($content_file_path);
+
+        return $content_path_parts['filename'];
     }
 
     /**
@@ -100,7 +102,7 @@ class Content
      */
     public static function getPostTitleFromFilename($content_file_path)
     {
-        $post_slug = self::getMarkdownPostSlug($content_file_path);
+        $post_slug = self::getPostSlug($content_file_path);
 
         $post_title = ucwords(
             str_replace(
@@ -128,7 +130,7 @@ class Content
      */
     public static function getPostDateShortFromFilename($content_file_path)
     {
-        $post_slug = self::getMarkdownPostSlug($content_file_path);
+        $post_slug = self::getPostSlug($content_file_path);
 
         return substr($post_slug, 0, 8);
     }
