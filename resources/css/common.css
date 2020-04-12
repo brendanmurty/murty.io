@@ -102,7 +102,7 @@ ul.listing li, .listing ul li { margin: 0 0 20px; padding: 0; }
 
 /* Site header bar */
 
-nav.sites { z-index: 200; position: absolute; top: 30px; right: 10px; width: auto; max-width: 250px; text-align: right; background-color: transparent; color: #000; padding: 2px; border-radius: 40px; }
+nav.sites { z-index: 200; position: absolute; top: 30px; right: 30px; width: auto; max-width: 250px; text-align: right; background-color: transparent; color: #000; padding: 2px; border-radius: 40px; }
 nav.sites ul { list-style: none; margin: 0; }
 nav.sites li { float: left; margin: 0 0 0 5px; width: 40px; height: 40px; display: block; padding: 0; }
 nav.sites li.first { margin-left: 0; }

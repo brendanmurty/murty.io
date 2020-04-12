@@ -27,11 +27,13 @@ class GalleryController extends Controller
                 $image_file_path
             );
 
-            $image_detail_url = '/gallery/' . Content::getSlugWithExtension($image_file_path);
+            $image_slug = Content::getSlugWithExtension($image_file_path);
+            $image_detail_url = '/gallery/' . $image_slug;
 
             $image_metadata = Content::getImageMetadata($image_file_path);
+            $image_title = $image_slug . ' - ' . $image_metadata;
 
-            $image_items[] = '<li class="gallery-item"><a class="gallery-item-link" href="' . $image_detail_url . '"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_metadata . '</span></a></li>';
+            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" src="' . $image_src . '" /></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
         }
         $images_list = '<ul class="gallery-images">' . implode('', array_reverse($image_items)) . '</ul>';
         
@@ -52,9 +54,9 @@ class GalleryController extends Controller
             abort(404);
         }
 
-        $image_metadata = Content::getImageMetadata($image_path);
+        $image_metadata = $item_name . ' - ' . Content::getImageMetadata($image_path);
 
-        $image_detail = '<div class="gallery-item-full"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_metadata . '</span></div>';
+        $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_metadata . '</span></div>';
         
         return view('gallery.item')->with(
             'content_html',
