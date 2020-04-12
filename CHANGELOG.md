@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.18
+- Gallery: Improve display of metadata on item page when full metadata could not be extracted
 - Version 2020.17
 - Gallery: Update preload configuration and a related content file
 - Core: Update site header and listing images
