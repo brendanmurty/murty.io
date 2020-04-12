@@ -118,6 +118,7 @@ nav.breadcrumbs a, nav.breadcrumbs .divider { margin: 0 10px 0 0; }
 
 /* Gallery */
 
+body.gallery { background-color: #000; color: #fff; }
 ul.gallery {}
 
 /* Alterations for specific screen sizes */
