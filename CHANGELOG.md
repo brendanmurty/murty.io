@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.23
+- Gallery: Initial JavaScript-based image lazy loading system
 - Version 2020.22
 - Gallery: Implement basic lazy loading of images in the grid view
 - Version 2020.21
