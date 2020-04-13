@@ -79,6 +79,7 @@ a.gallery-list-link {
   border: 0;
   line-height: 0px;
   background-color: var(--secondary-colour);
+  min-height: 100px;
 }
 
 a.gallery-list-link:hover,
