@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.26
+- Core: Add Fathom analytics - https://usefathom.com/
 - Version 2020.25
 - Gallery: Add related item to Structure section in Readme
 - Version 2020.24
