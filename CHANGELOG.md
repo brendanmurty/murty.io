@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.22
+- Gallery: Implement basic lazy loading of images in the grid view
 - Version 2020.21
 - Core: Cache some items to avoid excessive file IO tasks
 - Version 2020.20
