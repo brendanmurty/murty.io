@@ -13,6 +13,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[docs](docs/)**: Documentation files in Markdown format
 - **[public](public/)**: Front-end assets that are served to visitors
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and content files
+- **[public/images/gallery](public/images/gallery/)**: Photos that populate the [Gallery website](https://murty.io/gallery)
 - **[resources/css](resources/css/)**: CSS style files
 - **[resources/views](resources/views/)**: Page templates
 - **[resources/views/layouts/app.blade.php](resources/views/layouts/app.blade.php)**: Base page layout template
