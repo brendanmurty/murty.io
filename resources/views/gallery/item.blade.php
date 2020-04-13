@@ -12,4 +12,5 @@
 
 @section('content')
     {!! $content_html !!}
+    <script src="{{ mix('/js/gallery.js') }}"></script>
 @endsection

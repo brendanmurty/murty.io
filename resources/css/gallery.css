@@ -72,6 +72,15 @@
   margin: 20px 0 0;
 }
 
+a.gallery-list-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 0px;
+  background-color: var(--secondary-colour);
+}
+
 a.gallery-list-link:hover,
 a.gallery-list-link:focus {
   border-color: transparent;

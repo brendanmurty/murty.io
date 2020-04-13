@@ -36,7 +36,7 @@ class GalleryController extends Controller
                 $image_title .= ' - ' . $image_metadata;
             }
 
-            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" src="' . $image_src . '" loading="lazy" /></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
+            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" data-src="' . $image_src . '" src="" /></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
         }
         $images_list = '<ul class="gallery-images">' . implode('', array_reverse($image_items)) . '</ul>';
         

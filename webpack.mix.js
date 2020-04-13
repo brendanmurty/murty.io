@@ -14,3 +14,8 @@ mix.styles(
     ],
     'public/css/app.css'
 ).version();
+
+mix.js(
+    'resources/js/gallery.js',
+    'public/js/gallery.js'
+).version();
