@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.25
+- Gallery: Add related item to Structure section in Readme
 - Version 2020.24
 - Gallery: Updates to styling to make it more obvious that images are loading
 - Version 2020.23
