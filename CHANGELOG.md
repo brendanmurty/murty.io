@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.27
+- Core: Ignore compiled JS file
+- Core: Upgrade Composer packages
+- Core: Upgrade Composer packages
 - Version 2020.26
 - Core: Add Fathom analytics - https://usefathom.com/
 - Version 2020.25
