@@ -36,7 +36,8 @@ DEPLOY_SSH_HOST=$(grep DEPLOY_SSH_HOST .env | cut -d '=' -f 2-)
 DEPLOY_REMOTE_DIRECTORY=$(grep DEPLOY_REMOTE_DIRECTORY .env | cut -d '=' -f 2-)
 
 if [ -z "$DEPLOY_SSH_USERNAME" ] || [ -z "$DEPLOY_SSH_HOST" ] || [ -z "$DEPLOY_REMOTE_DIRECTORY" ]; then
-  echo 'Deployment cancelled. Please set values for the "DEPLOY_" variables in ".env" first.'   
+  echo "Deployment to web server cancelled."
+  echo "This script requires appropriate values for all of the 'DEPLOY_' variables in the '.env' file."   
   exit 1
 fi
 
