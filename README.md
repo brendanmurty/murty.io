@@ -6,7 +6,6 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 
 ## Structure
 
-- **[.github/workflows/deployment.yml](.github/workflows/deployment.yml)**: GitHub Action script to deploy to the web server
 - **[app/Http/Controllers](app/Http/Controllers/)**: Page controllers
 - **[config](config/)**: Site configuration files
 - **[content](content/)**: Content files in Markdown format
@@ -18,7 +17,8 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[resources/views](resources/views/)**: Page templates
 - **[resources/views/layouts/app.blade.php](resources/views/layouts/app.blade.php)**: Base page layout template
 - **[routes/web.php](routes/web.php)**: Web routes logic including domain level redirects
-- **[deploy.sh](deploy.sh)**: A helper script to generate a new version and trigger a deployment
+- **[.env.example](.env.example)**: An environment configuration file which is used to generate the private `.env` file
+- **[deploy.sh](deploy.sh)**: A helper script to generate a new version and deploy changes to a web server
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
 - **[setup.sh](setup.sh)**: A helper script to initialise a new local environment
 
