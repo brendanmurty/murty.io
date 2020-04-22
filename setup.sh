@@ -24,7 +24,7 @@ fi
 # Install Node 10 if required
 if [ "$(uname -s)" == "Linux" ]; then
   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-  sudo apt-get install -y nodejs
+  sudo apt -y install nodejs
 else
   if [ "$(which node)" == "" ]; then
     echo "Please install Node 10 manually first: https://nodejs.org/en/download/package-manager/"
