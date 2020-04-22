@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.29
+- Deploy: Update initial confirmation wording
+- Setup: Update command to install Node on Linux machines
 - Version 2020.28
 - Deploy: Update messaging and methods for running commands on server
 - Deploy: Initial work on moving the entire deployment process to the deploy script
