@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # Ask for confirmation from the user before continuing
-read -p "Are you sure you want to create a new version ($1) and trigger a deployment? (y/n) " ANSWER
+read -p "Are you sure you want to create a new version ($1) and deploy the changes to the webserver? (y/n) " ANSWER
 if [ "$ANSWER" != "y" ]; then
   echo "Cancelled."
   exit 1
