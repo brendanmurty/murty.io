@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.30
+- Deploy: Update error message wording
 - Version 2020.29
 - Deploy: Update initial confirmation wording
 - Setup: Update command to install Node on Linux machines
