@@ -29,7 +29,7 @@ echo "Pushing the changes up..."
 git push --quiet
 git push --tags --quiet
 
-echo "Attempting to deploy to the web server..."
+echo "Checking deployment configuration..."
 
 DEPLOY_SSH_USERNAME=$(grep DEPLOY_SSH_USERNAME .env | cut -d '=' -f 2-)
 DEPLOY_SSH_HOST=$(grep DEPLOY_SSH_HOST .env | cut -d '=' -f 2-)
@@ -40,12 +40,15 @@ if [ -z "$DEPLOY_SSH_USERNAME" ] || [ -z "$DEPLOY_SSH_HOST" ] || [ -z "$DEPLOY_R
   exit 1
 fi
 
-ssh $DEPLOY_SSH_USERNAME@$DEPLOY_SSH_HOST
+echo "Connecting to the web server..."
+
+ssh $DEPLOY_SSH_USERNAME@$DEPLOY_SSH_HOST << EOF
 cd $DEPLOY_REMOTE_DIRECTORY
 git pull origin master --quiet
 composer install --no-interaction
 npm install --silent
 php artisan view:clear
 npm run production
+EOF
 
 echo "Deployment completed."
