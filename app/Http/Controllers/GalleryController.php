@@ -46,6 +46,12 @@ class GalleryController extends Controller
         )->with(
             'site',
             $this->site
+        )->with(
+            'breadcrumbs',
+            [
+                'Home' => '/',
+                'Gallery' => '/gallery'
+            ]
         );
     }
 
@@ -77,6 +83,7 @@ class GalleryController extends Controller
         )->with(
             'breadcrumbs',
             [
+                'Home' => '/',
                 'Gallery' => '/gallery',
                 $item_name => ''
             ]

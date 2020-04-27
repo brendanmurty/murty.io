@@ -9,7 +9,7 @@
 }
 
 .gallery article {
-  width: 95%;
+  width: 90%;
   padding: 0;
   margin-right: 5%;
 }
@@ -32,23 +32,11 @@
 }
 
 .gallery header {
-  padding: 30px 0 0 5%;
+  padding: 0 0 0 5%;
 }
 
-.gallery header h1 a {
-  border-bottom: none;
-  color: var(--foreground-colour);
-  display: block;
-}
-
-.gallery nav.sites {
-  color: var(--highlight-colour);
-  background-color: var(--background-colour);
-  right: 5%;
-}
-
-.gallery nav.sites .current_site img {
-  border-color: var(--highlight-colour);
+.gallery header h1 {
+  display: none;
 }
 
 /* Image List */
@@ -72,8 +60,8 @@
 }
 
 .gallery-item {
-  width: 100%;
-  margin: 20px 0 0;
+  width: 95%;
+  margin-left: 5%;
 }
 
 a.gallery-list-link {
