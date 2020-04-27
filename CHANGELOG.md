@@ -1,5 +1,11 @@
 # Change Log
 
+- Version 2020.31
+- Gallery: Use thumbnail images instead of full size images in the grid view
+- Deploy: Save new thumbnail images
+- Gallery: Add thumbnail versions of current images
+- Gallery: Updated thumbnail generation system
+- Gallery: Initial work on thumbnail generation system
 - Version 2020.30
 - Deploy: Update error message wording
 - Version 2020.29
