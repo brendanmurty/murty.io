@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.33
+- Gallery: Improve layout
+- Core: Remove site list from header bar
 - Version 2020.32
 - Gallery: Improve output of thumbnail generation script
 - Version 2020.31
