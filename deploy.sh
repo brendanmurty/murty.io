@@ -13,7 +13,7 @@ fi
 
 echo "Starting deployment..."
 
-echo "Generating gallery image thumbnails..."
+echo "Generating gallery image thumbnail images..."
 
 php "thumbnails.php"
 
@@ -25,6 +25,7 @@ git log --oneline --format="- %s" --date=iso --no-merges >> CHANGELOG.md
 echo "Committing the changes..."
 
 git add "CHANGELOG.md"
+git add "public/images/gallery/thumbs/"
 git commit -m "Version $1" --quiet
 git tag $1
 
