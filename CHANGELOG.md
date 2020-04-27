@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.32
+- Gallery: Improve output of thumbnail generation script
 - Version 2020.31
 - Gallery: Use thumbnail images instead of full size images in the grid view
 - Deploy: Save new thumbnail images
