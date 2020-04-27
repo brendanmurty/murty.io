@@ -34,7 +34,7 @@ foreach ($original_images as $original_image) {
     }
 }
 
-echo 'Generated ' . $i . ' new thumbnail images from ' . $t . ' original images.';
+echo 'Generated ' . $i . ' new thumbnail images from ' . $t . ' original images.' . PHP_EOL;
 
 function make_thumb($src, $dest, $desired_width) {
 	$source_image = imagecreatefromjpeg($src);
