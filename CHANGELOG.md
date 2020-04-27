@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.34
+- Gallery: Set alt content for images
 - Version 2020.33
 - Gallery: Improve layout
 - Core: Remove site list from header bar
