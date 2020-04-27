@@ -17,6 +17,7 @@ Based on code from:
 
 $originals_dir = join(DIRECTORY_SEPARATOR, array(dirname(__FILE__), 'public', 'images', 'gallery', ''));
 $thumbs_dir = join(DIRECTORY_SEPARATOR, array($originals_dir, 'thumbs', ''));
+$thumbs_desired_width = '400';
 
 // Find all JPG images in the original images directory
 $original_images = glob($originals_dir . '*.jpg');
@@ -28,7 +29,7 @@ foreach ($original_images as $original_image) {
 
     if (!file_exists($thumb_image)) {
         // This thumbnail image doesn't exist yet, create it
-        make_thumb($original_image, $thumb_image, '250');
+        make_thumb($original_image, $thumb_image, $thumbs_desired_width);
         $i++;
     }
 }
