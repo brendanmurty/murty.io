@@ -21,6 +21,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[deploy.sh](deploy.sh)**: A helper script to generate a new version and deploy changes to a web server
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
 - **[setup.sh](setup.sh)**: A helper script to initialise a new local environment
+- **[thumbnails.php](thumbnails.php)**: A helper script to generate thumbnail images for the [Gallery website](https://murty.io/gallery)
 
 ## License
 

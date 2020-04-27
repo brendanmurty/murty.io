@@ -93,9 +93,9 @@ class Content
     }
 
     /**
-     * Get a list of all image content files in the "public/images/gallery/" directory.
+     * Get a list of all JPG image content files in the "public/images/gallery/" directory.
      * 
-     * @param  string $content_directory_path Path to the images inside the "public/images/gallery/" directory.
+     * @param  string $content_directory_path Path to the JPG image files inside the "public/images/gallery/" directory.
      * @return array                          All Markdown files that are in the sub-directory.
      */
     public static function getImageContentInDirectory($content_directory_path)
@@ -106,7 +106,7 @@ class Content
         } else {
             // There is no cached version of the image files in this directory, query the directory itself
             $directory_path = base_path('public/images/gallery' . $content_directory_path);
-            $directory_items = glob($directory_path . '*.{jpg,png,gif}', GLOB_BRACE);
+            $directory_items = glob($directory_path . '*.jpg');
 
             // Store the metadata in the cache for 30 days
             Cache::put('content-directory-image-' . $content_directory_path, $directory_items, 2592000);
