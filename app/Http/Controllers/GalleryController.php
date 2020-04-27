@@ -36,7 +36,7 @@ class GalleryController extends Controller
                 $image_title .= ' - ' . $image_metadata;
             }
 
-            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" data-src="' . $image_src . '" src=""></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
+            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" data-src="' . $image_src . '" src="" alt="' . $image_slug . '"></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
         }
         $images_list = '<ul class="gallery-images">' . implode('', array_reverse($image_items)) . '</ul>';
         
@@ -72,7 +72,7 @@ class GalleryController extends Controller
             $image_title .= ' - ' . $image_metadata;
         }
 
-        $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" /><span class="gallery-meta">' . $image_title . '</span></div>';
+        $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" alt="' . $item_name . '"><span class="gallery-meta">' . $image_title . '</span></div>';
 
         return view('gallery.item')->with(
             'content_html',
