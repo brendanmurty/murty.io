@@ -4,10 +4,11 @@
 
 thumbnails.php
 
-Generates smaller versions of images in the Gallery directory,
-that are then used in the Gallery list view to lower the network usage.
+Generates smaller versions of Gallery images that are used by the Gallery list page to improve performance.
 
-Requires the PHP GD2 extension.
+Requirements:
+ - The "gd2" extension for PHP
+ - The "exif" extension for PHP
 
 Based on code from:
  - https://davidwalsh.name/create-image-thumbnail-php
