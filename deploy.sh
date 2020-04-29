@@ -30,6 +30,7 @@ echo "Committing the changes..."
 
 git add "CHANGELOG.md"
 git add "public/images/gallery/thumbs/"
+git add "content/index.json"
 git commit -m "Version $1" --quiet
 git tag $1
 
