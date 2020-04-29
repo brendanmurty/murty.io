@@ -16,7 +16,7 @@ Based on code from:
 
 */
 
-$originals_dir = join(DIRECTORY_SEPARATOR, array(dirname(__FILE__), 'public', 'images', 'gallery', ''));
+$originals_dir = join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'public', 'images', 'gallery', ''));
 $thumbs_dir = join(DIRECTORY_SEPARATOR, array($originals_dir, 'thumbs', ''));
 $thumbs_desired_width = '400';
 

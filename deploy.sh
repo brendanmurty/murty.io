@@ -15,7 +15,11 @@ echo "Starting deployment..."
 
 echo "Generating gallery image thumbnail images..."
 
-php "thumbnails.php"
+php "scripts/gallery-thumbnails.php"
+
+echo "Generating content search index..."
+
+php "scripts/content-search-index.php"
 
 echo "Updating changelog..."
 
