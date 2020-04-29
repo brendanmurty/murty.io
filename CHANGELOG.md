@@ -1,5 +1,11 @@
 # Change Log
 
+- Version 2020.35
+- Deploy: Add the content index file as part of the version commit
+- Search: Add content indexer script and initial content index file
+- Scripts: Update documentation
+- Core: Move helper scripts and update related documentation
+- Gallery: Update documentation for thumbnail script
 - Version 2020.34
 - Gallery: Set alt content for images
 - Version 2020.33
