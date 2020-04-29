@@ -2,9 +2,8 @@
 
 /*
 
-thumbnails.php
-
-Generates smaller versions of Gallery images that are used by the Gallery list page to improve performance.
+scripts/gallery-thumbnails.php
+ - Generates smaller versions of Gallery images that are used by the Gallery list page to improve performance.
 
 Requirements:
  - The "gd2" extension for PHP

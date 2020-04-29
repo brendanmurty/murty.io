@@ -1,5 +1,9 @@
 <?php
+
 /*
+
+scripts/content-search-index.php
+ - Generates a JSON file containing the content of each Markdown content file for use by the search feature.
 
 */
 
