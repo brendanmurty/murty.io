@@ -28,7 +28,7 @@
   "devDependencies": {
     "acorn": ">=6.4.1",
     "cross-env": "^5.2.1",
-    "laravel-mix": "^4.0.16",
+    "laravel-mix": "^5.0",
     "minimist": ">=1.2.2",
     "popper.js": "^1.16.0",
     "resolve-url-loader": "^2.3.1",
