@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.36
+- Core: Update dependencies
 - Version 2020.35
 - Deploy: Add the content index file as part of the version commit
 - Search: Add content indexer script and initial content index file
