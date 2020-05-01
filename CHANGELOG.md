@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.37
+- Core: Update more dependencies
 - Version 2020.36
 - Core: Update dependencies
 - Version 2020.35
