@@ -42,10 +42,11 @@
 /* Header */
 
 .brendan header {
-  padding: 4% 2% 2%;
+  padding: 2%;
   float: left;
   width: 100%;
   box-sizing: border-box;
+  background-color: #000;
 }
 
 .brendan header h1 {
@@ -303,6 +304,10 @@ ul.brendan_posts .post-date {
   .brendan header {
     height: 280px;
   }
+
+  .brendan_index header {
+    height: 250px;
+  }
   
   .brendan header h1 {
     line-height: 100px;
@@ -312,6 +317,13 @@ ul.brendan_posts .post-date {
     clear: right;
     display: block;
     float: none;
+  }
+  
+  .brendan nav.breadcrumbs {
+    position: relative;
+    top: 160px;
+    overflow: hidden;
+    height: 32px;
   }
 
 	ul.post-listing li.featured .image{display:none}
