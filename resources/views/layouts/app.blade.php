@@ -14,11 +14,6 @@
 
         <link rel="preload" href="{{ asset('fonts/slabo-27_latin-ext.woff2') }}" as="font" crossorigin="anonymous">
         <link rel="preload" href="{{ asset('fonts/slabo-27_latin.woff2') }}" as="font" crossorigin="anonymous">
-        <link rel="preload" href="{{ asset('images/brendan/brendan-murty.jpg') }}" as="image">
-        <link rel="preload" href="{{ asset('images/ella/ella_condon.jpg') }}" as="image">
-        <link rel="preload" href="{{ asset('images/isla/isla-murty.jpg') }}" as="image">
-        <link rel="preload" href="{{ asset('images/freya/freya-murty.jpg') }}" as="image">
-        <link rel="preload" href="{{ asset('images/common/gallery.svg') }}" as="image">
         <link rel="preconnect" href="https://cdn.usefathom.com/">
 
         <link rel="icon" sizes="192x192" href="{{ asset($site['icon']) }}">
