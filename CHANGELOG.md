@@ -1,5 +1,17 @@
 # Change Log
 
+- Version 2020.38
+- Gallery: Improve breadcrumbs placement
+- Brendan: Improve header design and breadcrumbs placement
+- Revert "Brendan: Remove breadcrumbs"
+- Brendan: Remove centering of header at smaller screen sizes
+- Gallery: Improve breadcrumbs spacing
+- Core: Remove obsolete avatar image preloading
+- Brendan: Remove breadcrumbs
+- Brendan: Update header design on smaller screens
+- Brendan: Improvements to header layout
+- Core: Update breadcrumbs design
+- Brendan: Initial work on simplifying the layout
 - Version 2020.37
 - Core: Update more dependencies
 - Version 2020.36
