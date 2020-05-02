@@ -14,7 +14,6 @@
 
         <link rel="preload" href="{{ asset('fonts/slabo-27_latin-ext.woff2') }}" as="font" crossorigin="anonymous">
         <link rel="preload" href="{{ asset('fonts/slabo-27_latin.woff2') }}" as="font" crossorigin="anonymous">
-        <link rel="preload" href="{{ asset('images/brendan/sidebar2.jpg') }}" as="image">
         <link rel="preload" href="{{ asset('images/brendan/brendan-murty.jpg') }}" as="image">
         <link rel="preload" href="{{ asset('images/ella/ella_condon.jpg') }}" as="image">
         <link rel="preload" href="{{ asset('images/isla/isla-murty.jpg') }}" as="image">
@@ -34,10 +33,6 @@
         @endif
     </head>
     <body @if(!empty($site['body_class']))class="{{ $site['body_class'] }}"@endif>
-        <section id="sidebar">
-            @yield('sidebar')
-        </section>
-
         <section id="container" @if(!empty($site['container_class']))class="{{ $site['container_class'] }}"@endif>
             <header>
                 @yield('header')
