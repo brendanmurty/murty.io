@@ -306,17 +306,19 @@ ul.brendan_posts .post-date {
   }
 
   .brendan_index header {
-    height: 250px;
+    height: 240px;
   }
   
   .brendan header h1 {
-    line-height: 100px;
+    line-height: 70px;
+    text-align: center;
   }
 
   .brendan header h1 .avatar {
     clear: right;
     display: block;
     float: none;
+    margin: 0 auto;
   }
   
   .brendan nav.breadcrumbs {
