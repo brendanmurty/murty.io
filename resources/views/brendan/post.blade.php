@@ -7,8 +7,6 @@
             <span class="name">Brendan Murty</span>
         </a>
     </h1>
-    
-    @include('sections.breadcrumbs')
 @endsection
 
 @section('content')
