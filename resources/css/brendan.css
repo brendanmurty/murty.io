@@ -306,14 +306,12 @@ ul.brendan_posts .post-date {
   
   .brendan header h1 {
     line-height: 100px;
-    text-align: center;
   }
 
   .brendan header h1 .avatar {
     clear: right;
     display: block;
     float: none;
-    margin: 0 auto;
   }
 
 	ul.post-listing li.featured .image{display:none}
