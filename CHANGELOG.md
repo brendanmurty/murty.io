@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.39
+- Brendan: Center header layout on smaller screens
 - Version 2020.38
 - Gallery: Improve breadcrumbs placement
 - Brendan: Improve header design and breadcrumbs placement
