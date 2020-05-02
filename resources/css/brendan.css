@@ -273,18 +273,7 @@ ul.brendan_posts .post-date {
 
 /* Alterations for certain screen sizes */
 
-@media only screen and (max-width:1300px) {
-  .brendan article {
-    padding-right: 35%;
-  }
-}
-
 @media only screen and (max-width:1100px) {
-  .brendan header {
-    width: 100%;
-    margin-top: 3%;
-  }
-
   .brendan article {
     width: 100%;
     padding: 2%;
