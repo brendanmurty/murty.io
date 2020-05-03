@@ -9,9 +9,13 @@
 }
 
 .gallery article {
-  width: 90%;
+  width: 95%;
   padding: 0;
-  margin-right: 5%;
+  margin: 20px 0;
+}
+
+.gallery_index article{ 
+  margin: 0;
 }
 
 .gallery a {
@@ -32,7 +36,7 @@
 }
 
 .gallery header {
-  padding: 3% 0 3% 5%;
+  padding: 20px 0 5px 5%;
   float: left;
   width: 100%;
   box-sizing: border-box;
