@@ -28,7 +28,7 @@ Route::get('/', function() {
             return Redirect::away('https://murty.io/isla');
             break;
         case 'git.murty.io':
-            return Redirect::away('https://murty.io/brendan/git');
+            return Redirect::away('https://github.com/brendanmurty?tab=repositories');
             break;
         case 'bmurty.blog':
         case 'www.bmurty.blog':
