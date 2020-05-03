@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.40
+- Brendan: Remove Git listing page, link directly to my repository list on GitHub instead
 - Version 2020.39
 - Brendan: Center header layout on smaller screens
 - Version 2020.38
