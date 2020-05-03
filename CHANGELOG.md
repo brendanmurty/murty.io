@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.41
+- Gallery: Fix breadcrumbs positioning
+- Brendan: Fix placement of name in header so it's consistent for all pages
 - Version 2020.40
 - Brendan: Remove Git listing page, link directly to my repository list on GitHub instead
 - Version 2020.39
