@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.42
+- Core: Add basic statistics for when some pages are viewed
 - Version 2020.41
 - Gallery: Fix breadcrumbs positioning
 - Brendan: Fix placement of name in header so it's consistent for all pages
