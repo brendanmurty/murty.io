@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.43
+- Core: Fix statistics identifier
 - Version 2020.42
 - Core: Add basic statistics for when some pages are viewed
 - Version 2020.41
