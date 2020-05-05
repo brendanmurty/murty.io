@@ -53,6 +53,11 @@
         })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
         fathom('set', 'siteId', 'VHORKFKF');
         fathom('trackPageview');
+        @if($site['body_class'] == 'brendan brendan_resume')
+        fathom('trackGoal', 'ZOBT07DG', 0);
+        @elseif($site['body_class'] == 'gallery gallery_index')
+        fathom('trackGoal', 'ZOBT07DG', 0);
+        @endif
         </script>
         <!-- / Fathom -->
     </body>
