@@ -56,7 +56,7 @@
         @if($site['body_class'] == 'brendan brendan_resume')
         fathom('trackGoal', 'ZOBT07DG', 0);
         @elseif($site['body_class'] == 'gallery gallery_index')
-        fathom('trackGoal', 'ZOBT07DG', 0);
+        fathom('trackGoal', 'BDCOVA7P', 0);
         @endif
         </script>
         <!-- / Fathom -->
