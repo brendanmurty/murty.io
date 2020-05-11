@@ -26,6 +26,9 @@
         @if (!empty($site['microblog_url']))
         <link rel="me" href="{{ $site['microblog_url'] }}">
         @endif
+
+        <!-- Fathom - simple website analytics - https://usefathom.com -->
+        <script src="https://cdn.usefathom.com/script.js" site="VHORKFKF" excluded-domains="localhost" defer></script>
     </head>
     <body @if(!empty($site['body_class']))class="{{ $site['body_class'] }}"@endif>
         <section id="container" @if(!empty($site['container_class']))class="{{ $site['container_class'] }}"@endif>
@@ -41,24 +44,18 @@
         </section>
 
         <!-- Fathom - simple website analytics - https://usefathom.com -->
-        <script>
-        (function(f, a, t, h, o, m){
-        a[h]=a[h]||function(){
-        (a[h].q=a[h].q||[]).push(arguments)
-        };
-        o=f.createElement('script'),
-        m=f.getElementsByTagName('script')[0];
-        o.async=1; o.src=t; o.id='fathom-script';
-        m.parentNode.insertBefore(o,m)
-        })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
-        fathom('set', 'siteId', 'VHORKFKF');
-        fathom('trackPageview');
         @if($site['body_class'] == 'brendan brendan_resume')
-        fathom('trackGoal', 'ZOBT07DG', 0);
-        @elseif($site['body_class'] == 'gallery gallery_index')
-        fathom('trackGoal', 'BDCOVA7P', 0);
-        @endif
+        <script>
+        window.addEventListener('load', (event) => {
+            fathom.trackGoal('ZOBT07DG', 0);
+        });
         </script>
-        <!-- / Fathom -->
+        @elseif($site['body_class'] == 'gallery gallery_index')
+        <script>
+        window.addEventListener('load', (event) => {
+            fathom.trackGoal('BDCOVA7P', 0);
+        });
+        </script>
+        @endif
     </body>
 </html>
