@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.44
+- Core: Update Fathom Analytics embed code
 - Version 2020.43
 - Core: Fix statistics identifier
 - Version 2020.42
