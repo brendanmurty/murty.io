@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.45
+- Core: Update dependencies
 - Version 2020.44
 - Core: Update Fathom Analytics embed code
 - Version 2020.43
