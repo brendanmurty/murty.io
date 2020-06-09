@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.46
+- Core: Update dependencies
+- Bump websocket-extensions from 0.1.3 to 0.1.4
 - Version 2020.45
 - Core: Update dependencies
 - Version 2020.44
