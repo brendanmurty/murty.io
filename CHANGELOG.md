@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.48
+- Brendan: Improve CSS code style
+- Brendan: Remove obsolete styling
+- Brendan: Improve display of social links at smaller screen sizes
 - Version 2020.47
 - Brendan: Remove breadcrumb navigation bar
 - Brendan: Remove obsolete Git page styling
