@@ -5,11 +5,11 @@
 .gallery {
   background-color: var(--background-colour);
   color: var(--foreground-colour);
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .gallery article {
-  width: 95%;
+  width: 90%;
   padding: 0;
   margin: 20px 0;
 }
