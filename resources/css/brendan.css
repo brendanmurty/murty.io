@@ -5,7 +5,7 @@
 .brendan {
   background-color: var(--background-colour);
   color: var(--foreground-colour);
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .brendan a {
@@ -140,6 +140,7 @@ ul.brendan_posts .post-date {
   width: 22%;
   min-width: 140px;
   height: 100px;
+  box-sizing: border-box;
 }
 
 .brendan ul.social a {
@@ -184,7 +185,11 @@ ul.brendan_posts .post-date {
 
 /* Alterations for certain screen sizes */
 
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:800px) {
+  .brendan ul.social li {
+    width: 30%;
+  }
+
 	ul.brendan_posts .post-date {
     display: block;
     width: auto;
@@ -216,6 +221,10 @@ ul.brendan_posts .post-date {
 	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
 	article img{max-width:100%}
 	footer .about{margin:0 0 5%}
+  
+  .brendan ul.social li {
+    width: 45%;
+  }
 }
 
 /* Print styles */
