@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.50
+- Brendan: Show two columns of social icons on smaller screens
+- Brendan: Set a more suitable minimum layout width
 - Version 2020.49
 - Brendan: Add screenshot of a previous version of the Basecamp 2 Extras page
 - Brendan: Ensure images in content aren't wider than the container
