@@ -34,9 +34,11 @@
   width: 100%;
   padding: 2%;
   box-sizing: border-box;
-  float: left;
+  float: none;
   height: 100%;
   overflow-y: auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -52,9 +54,13 @@
 .brendan header h1 {
   font-size: 45px;
   line-height: 150px;
-  height: 60px;
-  margin: 0;
-  padding: 0;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+  padding: 0 2%;
+  max-width: 1000px;
+  box-sizing: border-box;
 }
 
 .brendan header h1 a {
@@ -69,6 +75,15 @@
   width: 150px;
   height: 150px;
   border-radius: 150px;
+}
+
+.brendan nav.breadcrumbs {
+  width: 100%;
+  margin: 2% auto 0;
+  float: none;
+  padding: 0 2%;
+  max-width: 1000px;
+  box-sizing: border-box;
 }
 
 /* Content */
@@ -274,20 +289,6 @@ ul.brendan_posts .post-date {
 
 /* Alterations for certain screen sizes */
 
-@media only screen and (max-width:1100px) {
-  .brendan article {
-    width: 100%;
-    padding: 2%;
-    box-sizing: border-box;
-    float: left;
-    position: static;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-y: auto;
-  }
-}
-
 @media only screen and (max-width:760px) {
 	ul.brendan_posts .post-date {
     display: block;
@@ -301,10 +302,6 @@ ul.brendan_posts .post-date {
 
 @media only screen and (max-width:600px) {
   .brendan header {
-    height: 280px;
-  }
-
-  .brendan_index header {
     height: 240px;
   }
   
@@ -321,10 +318,7 @@ ul.brendan_posts .post-date {
   }
   
   .brendan nav.breadcrumbs {
-    position: relative;
-    top: 160px;
-    overflow: hidden;
-    height: 32px;
+    display: none;
   }
 
 	ul.post-listing li.featured .image{display:none}
