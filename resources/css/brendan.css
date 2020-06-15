@@ -5,7 +5,7 @@
 .brendan {
   background-color: var(--background-colour);
   color: var(--foreground-colour);
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .brendan a {
