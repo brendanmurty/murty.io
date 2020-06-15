@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.51
+- Gallery: Improve layout and minimum width
 - Version 2020.50
 - Brendan: Show two columns of social icons on smaller screens
 - Brendan: Set a more suitable minimum layout width
