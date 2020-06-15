@@ -118,6 +118,10 @@ ul.brendan_posts .post-date {
   background-color: #000;
 }
 
+.brendan article img {
+  max-width: 100%
+}
+
 /* Footer */
 
 .brendan footer {
@@ -295,10 +299,6 @@ ul.brendan_posts .post-date {
     display: block;
     float: none;
     margin: 0 auto;
-  }
-
-	article img {
-    max-width: 100%
   }
   
   .brendan ul.social li {
