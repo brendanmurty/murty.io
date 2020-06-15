@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.49
+- Brendan: Add screenshot of a previous version of the Basecamp 2 Extras page
+- Brendan: Ensure images in content aren't wider than the container
 - Version 2020.48
 - Brendan: Improve CSS code style
 - Brendan: Remove obsolete styling
