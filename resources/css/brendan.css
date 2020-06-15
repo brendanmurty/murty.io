@@ -217,10 +217,7 @@ ul.brendan_posts .post-date {
     margin: 0 auto;
   }
 
-	ul.post-listing li.featured .image{display:none}
-	ul.post-listing li.featured .info{max-width:100%;margin-left:0}
 	article img{max-width:100%}
-	footer .about{margin:0 0 5%}
   
   .brendan ul.social li {
     width: 45%;
