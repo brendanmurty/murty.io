@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.52
+- Gallery: Use more of the screen width
+- Core: Update dependencies
 - Version 2020.51
 - Gallery: Improve layout and minimum width
 - Version 2020.50
