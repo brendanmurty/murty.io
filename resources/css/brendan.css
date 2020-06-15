@@ -77,15 +77,6 @@
   border-radius: 150px;
 }
 
-.brendan nav.breadcrumbs {
-  width: 100%;
-  margin: 2% auto 0;
-  float: none;
-  padding: 0 2%;
-  max-width: 1000px;
-  box-sizing: border-box;
-}
-
 /* Content */
 
 .brendan_index p:first-child {
@@ -219,10 +210,6 @@ ul.brendan_posts .post-date {
     display: block;
     float: none;
     margin: 0 auto;
-  }
-  
-  .brendan nav.breadcrumbs {
-    display: none;
   }
 
 	ul.post-listing li.featured .image{display:none}

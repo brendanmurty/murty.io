@@ -51,12 +51,6 @@ class BrendanController extends Controller
         )->with(
             'site',
             $this->site
-        )->with(
-            'breadcrumbs',
-            [
-                'Brendan' => '/brendan',
-                $page_title => ''
-            ]
         );
     }
 
@@ -140,12 +134,6 @@ class BrendanController extends Controller
             )->with(
                 'site',
                 $this->site
-            )->with(
-                'breadcrumbs',
-                [
-                    'Brendan' => '/brendan',
-                    'Posts' => ''
-                ]
             );
         }
     }
@@ -173,13 +161,6 @@ class BrendanController extends Controller
         )->with(
             'site',
             $this->site
-        )->with(
-            'breadcrumbs',
-            [
-                'Brendan' => '/brendan',
-                'Posts' => '/brendan/posts',
-                $post_title => ''
-            ]
         );
     }
 }
