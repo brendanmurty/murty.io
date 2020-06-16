@@ -59,7 +59,7 @@ git pull origin master --quiet
 composer install --no-interaction
 npm install --silent
 php artisan view:clear
-npm run production
+gulp
 EOF
 
 echo "Deployment completed."

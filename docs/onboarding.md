@@ -23,10 +23,10 @@ vim .env
 
 ## Local Server
 
-To watch front-end assets for changes:
+To build front-end assets:
 
 ```
-npm run watch
+gulp
 ```
 
 To run a local server:

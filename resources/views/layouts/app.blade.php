@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://cdn.usefathom.com/">
 
         <link rel="icon" sizes="192x192" href="{{ asset($site['icon']) }}">
-        <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}">
 
         @if (!empty($site['feed_url']))
         <link rel="alternate" title="{{ $site['feed_title'] }}" type="application/json" href="{{ $site['feed_url'] }}">

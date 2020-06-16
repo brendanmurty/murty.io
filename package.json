@@ -16,22 +16,20 @@
     "npm": "6.1.x",
     "node": "10.7.x"
   },
-  "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
   "devDependencies": {
-    "acorn": "^7.2.0",
+    "acorn": "^7.3.1",
     "cross-env": "^5.2.1",
-    "laravel-mix": "^5.0",
     "minimist": ">=1.2.2",
     "popper.js": "^1.16.0",
     "resolve-url-loader": "^2.3.1",
     "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0"
   }
 }

@@ -21,6 +21,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[scripts](scripts/)**: Helper scripts
 - **[.env.example](.env.example)**: An environment configuration file which is used to generate the private `.env` file
 - **[deploy.sh](deploy.sh)**: Generates a new version and deploys the changes to a web server
+- **[gulpfile.js](gulpfile.js)**: Configures Gulp to optimise front-end assets
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
 - **[setup.sh](setup.sh)**: Initialises a new local environment
 
