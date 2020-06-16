@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.54
+- Core: Ensure Gulp is installed
 - Version 2020.53
 - Core: Move from Laravel Mix to Gulp for front-end asset compilation
 - Core: Update dependencies
