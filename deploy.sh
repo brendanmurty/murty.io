@@ -58,8 +58,9 @@ cd $DEPLOY_REMOTE_DIRECTORY
 git pull origin master --quiet
 composer install --no-interaction
 npm install --silent
-php artisan view:clear
+npm install --global gulp-cli
 gulp
+php artisan view:clear
 EOF
 
 echo "Deployment completed."

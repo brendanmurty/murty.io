@@ -33,7 +33,7 @@ else
 fi
 
 # Install the required global packages
-npm install --global cross-env unzip
+npm install --global cross-env unzip gulp-cli
 
 # Install Composer 1.8 globally if required
 if [ "$(which composer)" == "" ]; then
