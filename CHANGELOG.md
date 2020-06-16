@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.53
+- Core: Move from Laravel Mix to Gulp for front-end asset compilation
+- Core: Update dependencies
 - Version 2020.52
 - Gallery: Use more of the screen width
 - Core: Update dependencies
