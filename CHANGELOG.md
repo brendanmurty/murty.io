@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.55
+- Deploy: Use coloured status messages and minimise excessive output from install processes
 - Version 2020.54
 - Core: Ensure Gulp is installed
 - Version 2020.53
