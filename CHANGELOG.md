@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.56
+- Core: Update dependencies
 - Version 2020.55
 - Deploy: Use coloured status messages and minimise excessive output from install processes
 - Version 2020.54
