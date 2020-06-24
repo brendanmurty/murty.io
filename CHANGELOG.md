@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.57
+- Gallery: Add note about cache clearing when new thumbnails are generated
+- Gallery: Update images
+- Deploy: Clear cache as part of deployment
 - Version 2020.56
 - Core: Update dependencies
 - Version 2020.55
