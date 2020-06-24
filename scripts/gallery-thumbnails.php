@@ -36,6 +36,10 @@ foreach ($original_images as $original_image) {
 
 echo 'Generated ' . $i . ' new thumbnail images from ' . $t . ' original images.' . PHP_EOL;
 
+if ($i > 0) {
+    echo 'You will need to clear the cache to see the new images: php artisan cache:clear' . PHP_EOL;
+}
+
 function make_thumb($src, $dest, $desired_width) {
 	$source_image = imagecreatefromjpeg($src);
 
