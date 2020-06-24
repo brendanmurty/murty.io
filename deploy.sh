@@ -66,6 +66,7 @@ npm install --silent --no-progress --no-fund
 npm install --silent --no-progress --global gulp-cli
 gulp --silent
 php artisan view:clear
+php artisan cache:clear
 EOF
 
 echo -e "${blue}Deployment completed.${end}"
