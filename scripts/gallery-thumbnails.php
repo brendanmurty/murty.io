@@ -17,7 +17,7 @@ Based on code from:
 
 $originals_dir = join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'public', 'images', 'gallery', ''));
 $thumbs_dir = join(DIRECTORY_SEPARATOR, array($originals_dir, 'thumbs', ''));
-$thumbs_desired_width = '400';
+$thumbs_desired_width = '700';
 
 // Find all JPG images in the original images directory
 $original_images = glob($originals_dir . '*.jpg');

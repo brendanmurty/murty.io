@@ -8,13 +8,13 @@
   min-width: 350px;
 }
 
-.gallery article {
-  width: 95%;
-  padding: 0;
-  margin: 20px 0;
+.gallery #container {
+  overflow-x: visible;
 }
 
-.gallery_index article{ 
+.gallery article {
+  width: 95%;
+  padding: 0 2.5%;
   margin: 0;
 }
 
@@ -36,9 +36,9 @@
 }
 
 .gallery header {
-  padding: 20px 0 5px 5%;
+  width: 95%;
+  padding: 30px 2.5%;
   float: left;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -53,35 +53,30 @@
 /* Image List */
 
 .gallery-images {
-  width: 95%;
-  margin: 2% 0 0 5%;
+  margin: 0;
   padding: 0;
-  list-style: none outside none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-content: flex-start;
 }
 
 .gallery-list-item {
-  float: left;
-  margin: 0 5% 5% 0;
-  width: 30%;
-  max-width: 400px;
-}
-
-.gallery-list-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.gallery-item {
-  width: 95%;
-  margin-left: 5%;
-}
-
-a.gallery-list-link {
-  display: block;
+  list-style: none outside none;
   margin: 0;
   padding: 0;
-  border: 0;
-  line-height: 0px;
-  min-height: 150px;
+  height: 35vh;
+  flex-grow: 1;
+  position: relative;
+  background-size: 100%;
+  outline: 10px solid #000;
+  overflow: hidden;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .gallery-list-item {
+    height: 30vh;
+  }
 }
 
 a.gallery-list-link:hover,
@@ -89,13 +84,27 @@ a.gallery-list-link:focus {
   border-color: transparent;
 }
 
-a.gallery-list-link:hover .gallery-image,
-a.gallery-list-link:focus .gallery-image {
-  opacity: 0.6;
+.gallery-list-item .gallery-image {
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.gallery-image {
-  width: 100%;
+.gallery-item {
+  margin: 0 0 30px;
+}
+
+.gallery-item .gallery-image {
+  max-width: 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .gallery-meta {
@@ -103,11 +112,9 @@ a.gallery-list-link:focus .gallery-image {
   clear: both;
   width: 100%;
   color: var(--secondary-colour);
-  font-size: 80%;
+  margin-bottom: 30px;
 }
 
-@media only screen and (max-width:1000px) {
-  .gallery-list-item .gallery-meta {
-    display: none;
-  }
+.gallery-list-item .gallery-meta {
+  display: none;
 }

@@ -72,7 +72,7 @@ class GalleryController extends Controller
             $image_title .= ' - ' . $image_metadata;
         }
 
-        $image_detail = '<div class="gallery-item"><img class="gallery-image" src="' . $image_src . '" alt="' . $item_name . '"><span class="gallery-meta">' . $image_title . '</span></div>';
+        $image_detail = '<div class="gallery-item"><span class="gallery-meta">' . $image_title . '</span><img class="gallery-image" src="' . $image_src . '" alt="' . $item_name . '"></div>';
 
         return view('gallery.item')->with(
             'content_html',
