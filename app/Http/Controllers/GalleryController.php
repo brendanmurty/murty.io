@@ -20,6 +20,7 @@ class GalleryController extends Controller
 
     public function index() {
         $image_items = array();
+
         foreach (Content::getImageContentInDirectory('/') as $image_file_path) {
             $image_src = str_replace(
                 base_path('public/images/gallery/'),
@@ -30,14 +31,9 @@ class GalleryController extends Controller
             $image_slug = Content::getSlugWithExtension($image_file_path);
             $image_detail_url = '/gallery/' . $image_slug;
 
-            $image_metadata = Content::getImageMetadata($image_file_path);
-            $image_title = $image_slug;
-            if (!empty($image_metadata)) {
-                $image_title .= ' - ' . $image_metadata;
-            }
-
-            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_title . '"><img class="gallery-image" data-src="' . $image_src . '" src="" alt="' . $image_slug . '"></a><span class="gallery-meta">' . $image_metadata . '</span></li>';
+            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_slug . '"><img class="gallery-image" data-src="' . $image_src . '" src="" alt="' . $image_slug . '"></a></li>';
         }
+
         $images_list = '<ul class="gallery-images">' . implode('', array_reverse($image_items)) . '</ul>';
         
         return view('gallery.index')->with(

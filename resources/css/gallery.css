@@ -114,7 +114,3 @@ a.gallery-list-link:focus {
   color: var(--secondary-colour);
   margin-bottom: 30px;
 }
-
-.gallery-list-item .gallery-meta {
-  display: none;
-}
