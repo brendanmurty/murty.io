@@ -32,4 +32,5 @@
 .listing.avatars ul, .murty_index header { text-align: center; }
 .listing.avatars li { margin: 0 0 50px; }
 .listing.avatars img { width: 200px; border-radius: 200px; clear: both; display: block; margin: 0 auto 10px; }
+.listing.avatars img[alt=GAL] { border-radius: 0; }
 .listing.avatars a { font-size: 24px; }
