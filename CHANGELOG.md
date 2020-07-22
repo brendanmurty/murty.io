@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.59
+- Gallery: Remove metadata content from list view
 - Version 2020.58
 - Gallery: Improve icon display on sites listing page
 - Gallery: Layout improvements
