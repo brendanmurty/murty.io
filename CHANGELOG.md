@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.58
+- Gallery: Improve icon display on sites listing page
+- Gallery: Layout improvements
 - Version 2020.57
 - Gallery: Add note about cache clearing when new thumbnails are generated
 - Gallery: Update images
