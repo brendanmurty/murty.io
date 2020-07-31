@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.60
+- Gallery: Remove file name from metadata line
 - Version 2020.59
 - Gallery: Remove metadata content from list view
 - Version 2020.58
