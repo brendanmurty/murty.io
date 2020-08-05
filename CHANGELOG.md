@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.61
+- Gallery: Use built-in image lazy loading instead of custom methods
 - Version 2020.60
 - Gallery: Remove file name from metadata line
 - Version 2020.59
