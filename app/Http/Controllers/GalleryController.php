@@ -31,7 +31,7 @@ class GalleryController extends Controller
             $image_slug = Content::getSlugWithExtension($image_file_path);
             $image_detail_url = '/gallery/' . $image_slug;
 
-            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_slug . '"><img class="gallery-image" data-src="' . $image_src . '" src="" alt="' . $image_slug . '"></a></li>';
+            $image_items[] = '<li class="gallery-list-item"><a class="gallery-list-link" href="' . $image_detail_url . '" title="' . $image_slug . '"><img class="gallery-image" src="' . $image_src . '" alt="' . $image_slug . '" loading="lazy"></a></li>';
         }
 
         $images_list = '<ul class="gallery-images">' . implode('', array_reverse($image_items)) . '</ul>';

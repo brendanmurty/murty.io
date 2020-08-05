@@ -19,11 +19,4 @@ function styles() {
         .pipe(gulp.dest('public/css/'));
 }
 
-function scripts() {
-    return gulp.src('resources/js/gallery.js')
-        .pipe(uglify())
-        .pipe(rename('gallery.min.js'))
-        .pipe(gulp.dest('public/js/'));
-}
-
-exports.default = gulp.series(styles, scripts);
+exports.default = styles;

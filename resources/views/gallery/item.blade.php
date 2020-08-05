@@ -10,5 +10,4 @@
 
 @section('content')
     {!! $content_html !!}
-    <script src="{{ asset('js/gallery.min.js') }}"></script>
 @endsection
