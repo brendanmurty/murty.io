@@ -11,8 +11,8 @@
 	"settings": { 
 		"telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "workbench.colorTheme": "Horizon Bold",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "vs-minimal",
     "files.eol": "\n",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
@@ -69,13 +69,10 @@
     "window.menuBarVisibility": "toggle",
     "search.location": "panel",
     "workbench.list.openMode": "doubleClick",
+		"workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.shell.linux": "/bin/bash",
     "javascript.validate.enable": false,
     "php.validate.enable": false,
     "css.validate": false
-	},
-	"extensions": [
-		"jolaleye.horizon-theme-vscode",
-		"PKief.material-icon-theme"
-	]
+	}
 }
