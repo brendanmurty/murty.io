@@ -68,6 +68,7 @@
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredHighContrastColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
+		"window.autoDetectColorScheme": true,
 		"editor.fontSize": 18,
     "debug.console.fontSize": 18,
     "markdown.preview.fontSize": 18,
