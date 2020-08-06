@@ -74,5 +74,8 @@
     "php.validate.enable": false,
     "css.validate": false
 	},
-	"extensions": []
+	"extensions": [
+		"jolaleye.horizon-theme-vscode",
+		"PKief.material-icon-theme"
+	]
 }
