@@ -68,12 +68,16 @@
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredHighContrastColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
+		"editor.fontSize": 18,
+    "debug.console.fontSize": 18,
+    "markdown.preview.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
     "terminal.integrated.shell.linux": "/bin/bash",
     "javascript.validate.enable": false,
     "php.validate.enable": false,
     "css.validate": false
 	},
 	"extensions": [
-		"GitHub.github-vscode-theme",
+		"github.github-vscode-theme",
 	]
 }
