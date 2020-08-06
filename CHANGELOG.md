@@ -1,5 +1,15 @@
 # Change Log
 
+- Version 2020.62
+- Core: Move deployment to GitHub Actions
+- Core: Update Codespaces theme setup
+- Core: Increase font sizes used in Codespaces
+- Core: Updated Codespaces configuration
+- Core: Updated Codespaces theme and startup behaviour settings
+- Core: Add theme and icon extensions to Codespaces configuration
+- Core: Add Codespaces configuration from my dotfiles
+- Core: Clean up Codespaces configuration
+- Core: Initial GitHub Codespaces setup
 - Version 2020.61
 - Gallery: Use built-in image lazy loading instead of custom methods
 - Version 2020.60
