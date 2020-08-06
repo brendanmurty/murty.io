@@ -11,8 +11,6 @@
 	"settings": { 
 		"telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.iconTheme": "vs-minimal",
     "files.eol": "\n",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
@@ -24,11 +22,6 @@
       "strings": false
     },
     "editor.quickSuggestionsDelay": 300,
-    "debug.console.fontSize": 18,
-    "markdown.preview.fontSize": 18,
-    "terminal.integrated.fontSize": 18,
-    "workbench.fontAliasing": "antialiased",
-    "markdown.preview.fontFamily": "'Fira Code', monospace",
     "editor.tokenColorCustomizations": {
       "comments": "#666",
       "textMateRules": [
@@ -69,10 +62,18 @@
     "window.menuBarVisibility": "toggle",
     "search.location": "panel",
     "workbench.list.openMode": "doubleClick",
-		"workbench.startupEditor": "newUntitledFile",
+		"workbench.colorTheme": "GitHub Dark",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredHighContrastColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
     "terminal.integrated.shell.linux": "/bin/bash",
     "javascript.validate.enable": false,
     "php.validate.enable": false,
     "css.validate": false
-	}
+	},
+	"extensions": [
+		"GitHub.github-vscode-theme",
+	]
 }
