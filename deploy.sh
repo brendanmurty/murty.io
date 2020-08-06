@@ -44,29 +44,4 @@ echo -e "${blue}Pushing the changes up...${end}"
 git push --quiet
 git push --tags --quiet
 
-echo -e "${blue}Checking deployment configuration...${end}"
-
-DEPLOY_SSH_USERNAME=$(grep DEPLOY_SSH_USERNAME .env | cut -d '=' -f 2-)
-DEPLOY_SSH_HOST=$(grep DEPLOY_SSH_HOST .env | cut -d '=' -f 2-)
-DEPLOY_REMOTE_DIRECTORY=$(grep DEPLOY_REMOTE_DIRECTORY .env | cut -d '=' -f 2-)
-
-if [ -z "$DEPLOY_SSH_USERNAME" ] || [ -z "$DEPLOY_SSH_HOST" ] || [ -z "$DEPLOY_REMOTE_DIRECTORY" ]; then
-  echo "Deployment to web server cancelled."
-  echo "This script requires appropriate values for all of the 'DEPLOY_' variables in the '.env' file."   
-  exit 1
-fi
-
-echo -e "${blue}Connecting to the web server...${end}"
-
-ssh $DEPLOY_SSH_USERNAME@$DEPLOY_SSH_HOST << EOF
-cd $DEPLOY_REMOTE_DIRECTORY
-git pull origin master --quiet
-composer install --quiet --no-interaction
-npm install --silent --no-progress --no-fund
-npm install --silent --no-progress --global gulp-cli
-gulp --silent
-php artisan view:clear
-php artisan cache:clear
-EOF
-
-echo -e "${blue}Deployment completed.${end}"
+echo "${blue}The deployment process will now continue here:${end} https://github.com/brendanmurty/murty.io/actions"
