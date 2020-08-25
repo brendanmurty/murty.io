@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.64
+- Core: Add an update script
+- Core: Fix deployment script text formatting
 - Version 2020.63
 - Core: Update dependencies
 - Core: Fix deployment completed formatting
