@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.63
+- Core: Update dependencies
+- Core: Fix deployment completed formatting
 - Version 2020.62
 - Core: Move deployment to GitHub Actions
 - Core: Update Codespaces theme setup
