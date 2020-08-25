@@ -17,12 +17,12 @@
     "node": "10.7.x"
   },
   "devDependencies": {
-    "acorn": "^7.3.1",
+    "acorn": "^7.4.0",
     "cross-env": "^5.2.1",
     "minimist": ">=1.2.2",
     "popper.js": "^1.16.0",
     "resolve-url-loader": "^2.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
     "gulp": "^4.0.2",
