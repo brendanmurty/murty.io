@@ -34,3 +34,9 @@ To run a local server:
 ```
 php artisan serve
 ```
+
+## Update dependencies
+
+```
+bash update.sh
+```

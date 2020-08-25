@@ -25,6 +25,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[gulpfile.js](gulpfile.js)**: Configures Gulp to optimise front-end assets
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
 - **[setup.sh](setup.sh)**: Initialises a new local environment
+- **[update.sh](update.sh)**: Update dependencies, commit these changes and push them up to the remote repository
 
 ## License
 
