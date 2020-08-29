@@ -53,6 +53,9 @@
     "post-autoload-dump": [
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
       "@php artisan package:discover"
+    ],
+    "todo": [
+      "grep -ri --exclude-dir={node_modules,vendor,.git} --exclude=composer.json \"TODO\" ."
     ]
   },
   "config": {

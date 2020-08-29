@@ -40,3 +40,9 @@ php artisan serve
 ```
 bash update.sh
 ```
+
+## Find TODOs
+
+```
+composer run todo
+```
