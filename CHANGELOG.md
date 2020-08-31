@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.65
+- Core: Move to self-hosted Fathom analytics - https://github.com/usefathom/fathom
+- Deploy: Renew SSL certificates as part of the deployment process
+- Core: Add TODO find command
 - Version 2020.64
 - Core: Add an update script
 - Core: Fix deployment script text formatting
