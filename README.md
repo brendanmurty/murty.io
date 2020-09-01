@@ -22,13 +22,13 @@ For detailed documentation on how to setup and manage this website, please visit
 - **[resources/views](resources/views/)**: Page templates
 - **[resources/views/layouts/app.blade.php](resources/views/layouts/app.blade.php)**: Base page layout template
 - **[routes/web.php](routes/web.php)**: Web routes logic including domain level redirects
-- **[scripts](scripts/)**: Helper scripts
 - **[.env.example](.env.example)**: An environment configuration file which is used to generate the private `.env` file
-- **[deploy.sh](deploy.sh)**: Generates a new version and triggers the deployment process
 - **[gulpfile.js](gulpfile.js)**: Configures Gulp to optimise front-end assets
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
-- **[setup.sh](setup.sh)**: Initialises a new local environment
-- **[update.sh](update.sh)**: Update dependencies, commit these changes and push them up to the remote repository
+- **[scripts](scripts/)**: Helper scripts
+- **[scripts/deploy.sh](scripts/deploy.sh)**: Generates a new version and triggers the deployment process
+- **[scripts/setup.sh](scripts/setup.sh)**: Initialises a new local environment
+- **[scripts/update.sh](scripts/update.sh)**: Update dependencies, commit these changes and push them up to the remote repository
 
 ## License
 
