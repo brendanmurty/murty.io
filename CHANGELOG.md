@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.68
+- Core: Move management scripts
+- Core: Update dependencies
+- Core: Cleanup obsolete configuration values
 - Version 2020.67
 - Core: Add a console message about where to find the website's code
 - Core: Remove unused Codespaces configuration
