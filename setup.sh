@@ -1,5 +1,5 @@
-# Initialise the environment configuration file
-cp .env.example .env
+# Create an environment configuration file if it doesn't already exist
+cp -n .env.example .env
 
 # Fix folder permissions
 if [ "$(uname -s)" == "Linux" ]; then
