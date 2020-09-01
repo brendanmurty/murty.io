@@ -56,4 +56,7 @@
             </footer>
         </section>
     </body>
+    <script>
+    console.log("%c View this website's code on GitHub: https://github.com/brendanmurty/murty.io", "background-color:#000; color:#23c5b0;padding:10px;font-size:18px;line-height:25px;");
+    </script>
 </html>
