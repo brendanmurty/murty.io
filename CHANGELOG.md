@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.67
+- Core: Add a console message about where to find the website's code
+- Core: Remove unused Codespaces configuration
 - Version 2020.66
 - Core: When setting up, only create an environment configuration file if it doesn't already exist
 - Docs: Move to external system
