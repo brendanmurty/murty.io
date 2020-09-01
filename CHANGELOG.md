@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.66
+- Core: When setting up, only create an environment configuration file if it doesn't already exist
+- Docs: Move to external system
 - Version 2020.65
 - Core: Move to self-hosted Fathom analytics - https://github.com/usefathom/fathom
 - Deploy: Renew SSL certificates as part of the deployment process
