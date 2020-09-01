@@ -4,6 +4,10 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 
 [![Brendan](/public/images/brendan/brendan-murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla-murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya-murty.jpg)](https://murty.io/freya)
 
+## Documentation
+
+For detailed documentation on how to setup and manage this website, please visit [docs.murty.io/public/murty-website](https://docs.murty.io/public/murty-website).
+
 ## Structure
 
 - **[.github/workflows/deployment.yml](.github/workflows/deployment.yml)**: GitHub Action that deploys to the webserver when a new Git Tag is pushed up
@@ -11,7 +15,6 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[app/Content.php](app/Content.php)**: Common content and gallery related functions
 - **[config](config/)**: Site configuration files
 - **[content](content/)**: Content files in Markdown format
-- **[docs](docs/)**: Documentation files in Markdown format
 - **[public](public/)**: Front-end assets that are served to visitors
 - **[public/images](public/images/)**: Icons, images and photos used in the layout and content files
 - **[public/images/gallery](public/images/gallery/)**: Photos that populate the [Gallery website](https://murty.io/gallery)
@@ -30,7 +33,3 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 ## License
 
 Please refer to [LICENSE.md](LICENSE.md) for rights and limitations when using the code here in your own projects.
-
-## Documentation
-
-To view more documentation, refer to the files in the [docs](docs/) directory.
