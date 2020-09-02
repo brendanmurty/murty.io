@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2020.69
+- Core: Remove unused dependencies
+- Core: Update dependencies
+- Core: Update dependencies
+- Core: Remove obsolete Git configuration file
 - Version 2020.68
 - Core: Move management scripts
 - Core: Update dependencies
