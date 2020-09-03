@@ -3,7 +3,9 @@ License
 
 *Based on the [CSS-Tricks License](http://css-tricks.com/license/) by [Chris Coyier](https://github.com/chriscoyier/).*
 
-I don't give two hoots what you do with any of the design or code you find here.
+All files in the [content](content) and [images](public/images) directories contain private content which is not allowed to be re-used on other websites.
+
+I don't give two hoots what you do with any of the [design](resources/css) or [code](app) you find here.
 
 Actually, I do. I hope you take it and use it, uncredited, on a super commercial website and get wicked rich off it. I hope you use it at work and your boss is impressed and you get a big promotion. I hope it helps you design a website and that website impresses somebody you think is super hot and you get married and have smart, chill babies. I hope you use the code in a blog post you write elsewhere and that website gets way more popular and awesome than this one.
 
