@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2020.70
+- Docs: Add link to security file
+- Docs: Update license content
+- Docs: Move technical documentation back
+- Docs: Create security
 - Version 2020.69
 - Core: Remove unused dependencies
 - Core: Update dependencies
