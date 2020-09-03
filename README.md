@@ -22,7 +22,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[gulpfile.js](gulpfile.js)**: Configures Gulp to optimise front-end assets
 - **[LICENSE.md](LICENSE.md)**: Review how you can use the code here in your own projects
 - **[package.json](package.json)**: Dependency configuration and shortcut commands
-- **[scripts](scripts/)**: Helper scripts
+- **[SECURITY.md](SECURITY.md)**: Details about what to do if you find any security issues in this code
 - **[scripts/deploy.sh](scripts/deploy.sh)**: Generates a new version and triggers the deployment process
 - **[scripts/setup.sh](scripts/setup.sh)**: Initialises a new local environment
 - **[scripts/update.sh](scripts/update.sh)**: Update dependencies, commit these changes and push them up to the remote repository
