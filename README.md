@@ -64,7 +64,7 @@ gulp
 
 ### Update dependencies
 
-A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/update.sh)) will simplify the process of updating dependencies and pushing any changes up to the remote repository.
+A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/update.sh)) simplifies the process of updating dependencies and pushing any changes up to the remote repository. This can be run with the following command:
 
 ```
 bash scripts/update.sh
@@ -115,7 +115,7 @@ Add new secrets here:
 
 After testing locally, commit and push your changes up to the remote repository.
 
-Then run [deploy.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/deploy.sh) to make a new version and deploy it:
+Then run [scripts/deploy.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/deploy.sh) to make a new version and deploy it:
 
 ```
 bash scripts/deploy.sh "YYYY.xxx"
@@ -128,4 +128,4 @@ This script will:
 - Update the content in [CHANGELOG.md](https://github.com/brendanmurty/murty.io/blob/master/CHANGELOG.md)
 - Create a new Git Tag (`YYYY.xxx` as detailed above)
 - Push changes up to the origin repository
-- This will then trigger a deployment using GitHub Actions via [.github/workflows/deployment.yml](https://github.com/brendanmurty/murty.io/blob/master/.github/workflows/deployment.yml)
+- This will then trigger an automated deployment process with GitHub Actions via [.github/workflows/deployment.yml](https://github.com/brendanmurty/murty.io/blob/master/.github/workflows/deployment.yml)
