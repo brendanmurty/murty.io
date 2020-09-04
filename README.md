@@ -36,7 +36,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 
 ## Initial Setup
 
-Make a local clone of this repository and then run [setup.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/deploy.sh) to complete the initial installation process:
+Make a local clone of this repository and then run [scripts/setup.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/setup.sh) to complete the initial installation process:
 
 ```
 bash scripts/setup.sh
@@ -63,6 +63,8 @@ gulp
 ```
 
 ### Update dependencies
+
+A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/update.sh)) will simplify the process of updating dependencies and pushing any changes up to the remote repository.
 
 ```
 bash scripts/update.sh
