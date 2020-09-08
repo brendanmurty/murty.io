@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2020.71
+- Core: Update dependencies
+- Core: Upgrade to Laravel 8
+- Docs: Improve wording
+- Docs: Update script reference and explain update script
 - Version 2020.70
 - Docs: Add link to security file
 - Docs: Update license content
