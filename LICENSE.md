@@ -3,7 +3,7 @@ License
 
 *Based on the [CSS-Tricks License](http://css-tricks.com/license/) by [Chris Coyier](https://github.com/chriscoyier/).*
 
-All files in the [content](content) and [images](public/images) directories contain private content which is not allowed to be re-used on other websites.
+All files in the [content](content) and [public/images](public/images) directories contain private content which is not allowed to be re-used on other websites.
 
 I don't give two hoots what you do with any of the [design](resources/css) or [code](app) you find here.
 
