@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.72
+- Core: Update dependencies
+- Docs: Simplify license
+- Docs: Update link to private images folder in license file
 - Version 2020.71
 - Core: Update dependencies
 - Core: Upgrade to Laravel 8
