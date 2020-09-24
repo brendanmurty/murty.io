@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Preparing
+    - name: Running
       uses: brendanmurty/github-action-ssh@release
       with:
         command: |
@@ -22,7 +22,6 @@ jobs:
           gulp --silent
           php artisan view:clear
           php artisan cache:clear
-          cd /var/www/html/ && sudo ./certbot-auto renew --force-renewal --no-random-sleep-on-renew
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
