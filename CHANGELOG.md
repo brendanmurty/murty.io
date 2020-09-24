@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.73
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2020.72
 - Core: Update dependencies
 - Docs: Simplify license
