@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.74
+- Core: Add server maintenance scheduled action
 - Version 2020.73
 - Core: Update dependencies
 - Core: Update dependencies
