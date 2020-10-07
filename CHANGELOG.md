@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.75
+- Core: Move back to Google Analytics
 - Version 2020.74
 - Core: Add server maintenance scheduled action
 - Version 2020.73
