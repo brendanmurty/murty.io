@@ -27,21 +27,14 @@
         <link rel="me" href="{{ $site['microblog_url'] }}">
         @endif
 
-        <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179938672-1"></script>
         <script>
-        (function(f, a, t, h, o, m){
-        	a[h]=a[h]||function(){
-        		(a[h].q=a[h].q||[]).push(arguments)
-        	};
-        	o=f.createElement('script'),
-        	m=f.getElementsByTagName('script')[0];
-        	o.async=1; o.src=t; o.id='fathom-script';
-        	m.parentNode.insertBefore(o,m)
-        })(document, window, '//stats.murty.io/tracker.js', 'fathom');
-        fathom('set', 'siteId', 'UTUOD');
-        fathom('trackPageview');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-179938672-1');
         </script>
-        <!-- / Fathom -->
     </head>
     <body @if(!empty($site['body_class']))class="{{ $site['body_class'] }}"@endif>
         <section id="container" @if(!empty($site['container_class']))class="{{ $site['container_class'] }}"@endif>
