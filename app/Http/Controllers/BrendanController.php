@@ -40,7 +40,7 @@ class BrendanController extends Controller
             abort(404);
         }
 
-        $page_title = ucwords(str_replace(['-', 'resume'], [' ', 'resumé'], $page_name));
+        $page_title = ucwords(str_replace('-', ' ', $page_name));
 
         $this->site['title'] = $page_title . ' - Brendan Murty';
         $this->site['body_class'] = 'brendan brendan_' . $page_name;
