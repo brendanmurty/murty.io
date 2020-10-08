@@ -6,8 +6,8 @@ I'm a Lead Web Developer with varied commercial experience in web-based developm
 
 ### Work Experience
 
-- __Technical Lead__ *[Jomablue](https://jomablue.com) &mdash; Mar 2020 - Nov 2020* I work closely with the CTO to lead a team of developers and help them work efficiently on our product. This includes running daily stand-up meetings, sprint planning meetings, assessing incoming tickets, validating bug reports and scoping out new feature requests.
-- __Dev Lead__ *[4mation](https://4mation.com.au) &mdash; May 2019 - Mar 2020* I led technical decisions for a team's projects, mentored other developers, produced detailed technical documentation and ensured our projects followed the company's technical guidelines.
+- __Technical Lead__ *[Jomablue](https://jomablue.com) &mdash; Mar 2020 - Nov 2020* I worked closely with the CTO to lead a team of developers and helped them work efficiently on the product. This included running daily stand-up meetings, assessing bug reports, scoping out new feature requests and testing code changes.
+- __Dev Lead__ *[4mation](https://4mation.com.au) &mdash; May 2019 - Mar 2020* I led technical decisions for a team's projects, mentored other developers, produced detailed technical documentation and ensured the team's projects followed the company's technical guidelines.
 - __Web Developer__ *[4mation](https://4mation.com.au) &mdash; Dec 2017 - May 2019* I worked with a team of developers on varied web projects using modern techniques and frameworks. I helped drive technical improvements and managed development tasks on some major projects.
 - __ACT Project Manager__ *[Sentral Education](https://sentral.com.au) &mdash; Sep 2016 - Dec 2017* I managed a large development project which included scoping out requirements, organising development tasks for the team and managing expectations internally and externally. Another important part of this role was to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
 - __Web Developer__ *[Sentral Education](https://sentral.com.au) &mdash; Jan 2015 - Sep 2016* I worked in the development team assisting with maintenance and development of new features for various software products using various front-end and back-end frameworks and languages.
@@ -28,13 +28,13 @@ I'm a Lead Web Developer with varied commercial experience in web-based developm
 
 ### Reference
 
-- __Brett Daniels__ *[Solutions Outsourced](http://solutionsoutsourced.com.au) &mdash; Lead Web Developer, 2014*
+- __Brett Daniels__ *[Solutions Outsourced](https://solutionsoutsourced.com.au) &mdash; Lead Web Developer, 2014*
 
 > Brendan has developed the skill to look at tasks objectively, keeping calm under pressure while aiming to achieve the best results for clients. Brendan's eye for detail, in particular with regard to thorough planning and documentation, is also highly noteworthy.
 
 ### Contact
 
 - __[Email: b@murty.io](mailto:b@murty.io)__
-- __[Website: b.murty.io](https://b.murty.io/)__
-- __[GitHub: brendanmurty](https://github.com/brendanmurty/)__
-- __[LinkedIn: brendanmurty](https://www.linkedin.com/in/brendanmurty/)__
+- __[Website: b.murty.io](https://b.murty.io)__
+- __[GitHub: brendanmurty](https://github.com/brendanmurty)__
+- __[LinkedIn: brendanmurty](https://www.linkedin.com/in/brendanmurty)__
