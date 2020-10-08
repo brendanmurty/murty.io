@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.76
+- Brendan: Content update
+- Brendan: Update spelling of "Resume"
 - Version 2020.75
 - Core: Move back to Google Analytics
 - Version 2020.74
