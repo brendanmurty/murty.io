@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.79
+- Brendan: Content updates
 - Version 2020.78
 - Brendan: Fix Resume page title
 - Version 2020.77
