@@ -21,12 +21,12 @@
         </a>
     </li>
     <li>
-        <a href="/brendan/resume" title="View my Resumé">
+        <a href="/brendan/resume" title="View my Resume">
             <svg xmlns="http://www.w3.org/2000/svg" role="img" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
             </svg>
-            <span>Resumé</span>
+            <span>Resume</span>
         </a>
     </li>
     <li>

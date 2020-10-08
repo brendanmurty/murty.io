@@ -1,4 +1,4 @@
-# Resumé
+# Resume
 
 <h3 class="nomargin">Summary</h3>
 
