@@ -6,7 +6,7 @@ I'm a Lead Web Developer with varied commercial experience in web-based developm
 
 ### Work Experience
 
-- __Technical Lead__ *[Jomablue](https://jomablue.com) &mdash; Mar 2020 - Nov 2020* I worked closely with the CTO to lead a team of developers and helped them work efficiently on the product. This included running daily stand-up meetings, assessing bug reports, scoping out new feature requests and testing code changes.
+- __Technical Lead__ *[Jomablue](https://jomablue.com) &mdash; Mar 2020 - Nov 2020* I worked closely with the CTO to lead a team of developers so that they could work efficiently on the product. This role included running daily stand-up meetings, assessing bug reports, scoping out new feature requests, testing code changes and building releases.
 - __Dev Lead__ *[4mation](https://4mation.com.au) &mdash; May 2019 - Mar 2020* I led technical decisions for a team's projects, mentored other developers, produced detailed technical documentation and ensured the team's projects followed the company's technical guidelines.
 - __Web Developer__ *[4mation](https://4mation.com.au) &mdash; Dec 2017 - May 2019* I worked with a team of developers on varied web projects using modern techniques and frameworks. I helped drive technical improvements and managed development tasks on some major projects.
 - __ACT Project Manager__ *[Sentral Education](https://sentral.com.au) &mdash; Sep 2016 - Dec 2017* I managed a large development project which included scoping out requirements, organising development tasks for the team and managing expectations internally and externally. Another important part of this role was to organise meetings with clients and business partners and then translate these discussions in to actionable items for the development team.
