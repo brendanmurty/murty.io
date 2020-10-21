@@ -17,6 +17,16 @@ I'm a Lead Web Developer with varied commercial experience in web-based developm
 - __Web Developer__ *[Solutions Outsourced](https://solutionsoutsourced.com.au) &mdash; Sep 2009 - May 2012* I contributed to the development team by implementing websites on the Siteflex Classic platform, assisted with customer support and planned and maintained a training system for Siteflex.
 - __Field Assistant__ *PBA Surveyors &mdash; Apr 2004 - Sep 2009* I worked with a team of Cadastral and Construction Surveyors around Sydney. I also developed their company website in my free time.
 
+### References
+
+- __Hamish Songsmith__ *Team Lead at [4mation](https://4mation.com.au)*
+
+> I was fortunate to work with Brendan at 4mation. He became an exceptionally reliable go-to dev who often went above and beyond his role leading and supporting his peers. Always hungry to learn, seeing the projects he was working on outside of his 9-5 were always interesting. One of the traits I appreciated most from Brendan was his ability to work through problems instead of letting them overwhelm him and block progress. Here’s hoping our professional paths cross again.
+
+- __Brett Daniels__ *Lead Developer at [Solutions Outsourced](https://solutionsoutsourced.com.au)*
+
+> I have been most impressed with Brendan's passion, which goes hand in hand with his ability to listen and learn. Thanks to this, Brendan's skills have grown at an impressive rate during his employment. Brendan has developed the skill to look at tasks objectively, keeping calm under pressure while aiming to achieve the best results for clients. Brendan's eye for detail, in particular with regard to thorough planning and documentation, is also highly noteworthy.
+
 ### Skills
 
 - __PHP__ *11 years experience* I've been creating and maintaining commercial web services and websites using PHP for over ten years. I'm continually improving my skills including learning new OOP methods and participating in discussions on Twitter and contributing to open-source projects on GitHub.
@@ -25,12 +35,6 @@ I'm a Lead Web Developer with varied commercial experience in web-based developm
 - __Linux__ *8 years experience* I've configured and maintained various web-based systems on Linux servers and can manage them comfortably via the command line.
 - __Git__ *5 years experience* I have solid knowledge of managing software with Git, including branch management, creating releases and resolving conflicts.
 - __Project Management__ *3 years experience* I've managed development on web-based platforms, including feature scoping, task delegation, code reviews and client consultations. I believe that constant communication, honesty and transparency is important at all stages of the software development process.
-
-### Reference
-
-- __Brett Daniels__ *[Solutions Outsourced](https://solutionsoutsourced.com.au) &mdash; Lead Web Developer, 2014*
-
-> Brendan has developed the skill to look at tasks objectively, keeping calm under pressure while aiming to achieve the best results for clients. Brendan's eye for detail, in particular with regard to thorough planning and documentation, is also highly noteworthy.
 
 ### Contact
 
