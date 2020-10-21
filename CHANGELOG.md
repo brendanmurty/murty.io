@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.83
+- Core: Update dependencies
 - Version 2020.82
 - Core: Update dependencies
 - Brendan: Content updates
