@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.84
+- Core: Change the default code branch to 'main'
 - Version 2020.83
 - Core: Update dependencies
 - Version 2020.82
