@@ -36,7 +36,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 
 ## Initial Setup
 
-Make a local clone of this repository and then run [scripts/setup.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/setup.sh) to complete the initial installation process:
+Make a local clone of this repository and then run [scripts/setup.sh](https://github.com/brendanmurty/murty.io/blob/main/scripts/setup.sh) to complete the initial installation process:
 
 ```
 bash scripts/setup.sh
@@ -64,7 +64,7 @@ gulp
 
 ### Update dependencies
 
-A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/update.sh)) simplifies the process of updating dependencies and pushing any changes up to the remote repository. This can be run with the following command:
+A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/blob/main/scripts/update.sh)) simplifies the process of updating dependencies and pushing any changes up to the remote repository. This can be run with the following command:
 
 ```
 bash scripts/update.sh
@@ -115,7 +115,7 @@ Add new secrets here:
 
 After testing locally, commit and push your changes up to the remote repository.
 
-Then run [scripts/deploy.sh](https://github.com/brendanmurty/murty.io/blob/master/scripts/deploy.sh) to make a new version and deploy it:
+Then run [scripts/deploy.sh](https://github.com/brendanmurty/murty.io/blob/main/scripts/deploy.sh) to make a new version and deploy it:
 
 ```
 bash scripts/deploy.sh "YYYY.xxx"
@@ -125,7 +125,7 @@ Where `YYYY` is the current year, and `xxx` is the revision number for that year
 
 This script will:
 
-- Update the content in [CHANGELOG.md](https://github.com/brendanmurty/murty.io/blob/master/CHANGELOG.md)
+- Update the content in [CHANGELOG.md](https://github.com/brendanmurty/murty.io/blob/main/CHANGELOG.md)
 - Create a new Git Tag (`YYYY.xxx` as detailed above)
 - Push changes up to the origin repository
-- This will then trigger an automated deployment process with GitHub Actions via [.github/workflows/deployment.yml](https://github.com/brendanmurty/murty.io/blob/master/.github/workflows/deployment.yml)
+- This will then trigger an automated deployment process with GitHub Actions via [.github/workflows/deployment.yml](https://github.com/brendanmurty/murty.io/blob/main/.github/workflows/deployment.yml)
