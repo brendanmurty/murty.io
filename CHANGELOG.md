@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2020.85
+- Brendan: Simplify the layout of the Resume page and apply related content updates
+- Core: Update dependencies
+- Core: Update dependencies
+- Brendan: Update link to dotfiles repository
 - Version 2020.84
 - Core: Change the default code branch to 'main'
 - Version 2020.83
