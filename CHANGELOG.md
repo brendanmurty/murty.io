@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.86
+- Core: Update browser theme colours for some sites
 - Version 2020.85
 - Brendan: Simplify the layout of the Resume page and apply related content updates
 - Core: Update dependencies
