@@ -174,83 +174,18 @@ ul.brendan_posts .post-date {
 
 /* Resume page */
 
-.brendan_resume article h3 {
-  margin: 30px 0 0;
-  width: 180px;
-  float: left;
-  display: table-cell;
-  clear: left;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold;
+.brendan_resume p {
+  padding-left: 20px;
 }
 
-.brendan_resume article h3.nomargin,
-.brendan_resume article h4 {
-  margin: 0;
-}
-
-.brendan_resume article ul {
-  margin: 0;
-  padding: 0;
-  display: table-cell;
-}
-
-.brendan_resume article p {
-  clear: none;
-  margin: 0;
-  padding: 0 0 20px;
-  display: table-cell;
-}
-
-.brendan_resume article li {
-  color: var(--secondary-colour);
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-  display: table-row;
-}
-
-.brendan_resume article strong {
-  color: var(--foreground-colour);
-  font-style: normal;
-  clear: right;
-  display: block;
-  margin: 30px 0 10px;
-}
-
-.brendan_resume article em {
-  color: var(--foreground-colour);
-  clear: right;
-  display: block;
-  font-size: 16px;
-  font-style: normal;
-  margin: -5px 0 10px;
-}
-
-.brendan_resume article em a,
-.brendan_resume article em a:active,
-.brendan_resume article em a:focus,
-.brendan_resume article em a:hover {
-  color: var(--foreground-colour);
-}
-
-.brendan_resume article em a:focus,
-.brendan_resume article em a:hover {
-  border-color: var(--foreground-colour);
-}
-
-.brendan_resume article blockquote {
-  padding: 0;
-  margin: 0;
-  width: auto;
-  display: table-row;
+.brendan_resume blockquote {
   background-color: transparent;
+  color: var(--secondary-colour);
   font-style: italic;
 }
 
-.brendan_resume article blockquote p:last-child {
-  padding-bottom: 0;
+.brendan_resume blockquote p {
+  padding-left: 0;
 }
 
 /* Alterations for certain screen sizes */
@@ -263,24 +198,6 @@ ul.brendan_posts .post-date {
 	ul.brendan_posts .post-date {
     display: block;
     width: auto;
-  }
-
-	.brendan_resume article h3,
-  .brendan_resume article p,
-  .brendan_resume article ul {
-    display: block;
-    width: auto;
-    clear: both;
-  }
-
-	.brendan_resume article p {
-    margin-top: 30px;
-    padding: 0;
-    float: left;
-  }
-
-	.brendan_resume article blockquote p {
-    margin-top: 0
   }
 }
 
