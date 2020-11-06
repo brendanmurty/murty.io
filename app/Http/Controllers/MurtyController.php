@@ -9,7 +9,7 @@ class MurtyController extends Controller
         'title_short' => 'MUR',
         'author' => 'Brendan Murty',
         'description' => 'Murty websites',
-        'theme' => '#00549d',
+        'theme' => '#23c5b0',
         'icon' => 'images/common/murty-192.png',
         'icon_large' => 'images/common/murty-192.png',
         'body_class' => 'murty murty_index',

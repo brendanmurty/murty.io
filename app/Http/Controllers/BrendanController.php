@@ -14,7 +14,7 @@ class BrendanController extends Controller
         'title_short' => 'BCM',
         'author' => 'Brendan Murty',
         'description' => 'Brendan is Lead Developer with varied commercial experience in web-based development, mentorship, training and project management',
-        'theme' => '#00549d',
+        'theme' => '#23c5b0',
         'icon' => 'images/brendan/icon-192.png',
         'icon_large' => 'images/brendan/brendan-murty.jpg',
         'feed_title' => 'Posts by Brendan Murty',
