@@ -41,7 +41,7 @@ if ($i > 0) {
 }
 
 function make_thumb($src, $dest, $desired_width) {
-	$source_image = imagecreatefromjpeg($src);
+    $source_image = imagecreatefromjpeg($src);
 
     // Check the image metadata for it's orientation and retain that
     $exif = exif_read_data($src);
@@ -70,18 +70,18 @@ function make_thumb($src, $dest, $desired_width) {
     }
 
     // Get the correct dimensions of this image
-	$width = imagesx($source_image);
-	$height = imagesy($source_image);
+    $width = imagesx($source_image);
+    $height = imagesy($source_image);
 
     // Find the "desired height" of this thumbnail, relative to the desired width
-	$desired_height = floor($height * ($desired_width / $width));
-	
-	// Create a new, "virtual" image
-	$virtual_image = imagecreatetruecolor($desired_width, $desired_height);
+    $desired_height = floor($height * ($desired_width / $width));
 
-	// Copy source image at a resized size
-	imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $desired_height, $width, $height);
-	
-	// Save the physical thumbnail image to the destination directory
-	imagejpeg($virtual_image, $dest);
+    // Create a new, "virtual" image
+    $virtual_image = imagecreatetruecolor($desired_width, $desired_height);
+
+    // Copy source image at a resized size
+    imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $desired_height, $width, $height);
+
+    // Save the physical thumbnail image to the destination directory
+    imagejpeg($virtual_image, $dest);
 }
