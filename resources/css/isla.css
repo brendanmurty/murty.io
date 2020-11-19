@@ -46,6 +46,3 @@
   background-color: var(--highlight-colour);
   padding: 10px 20px;
 }
-
-.isla nav.sites { color: var(--highlight-colour); }
-.isla nav.sites .current_site img { border-color: var(--highlight-colour); }

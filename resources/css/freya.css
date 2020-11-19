@@ -51,6 +51,3 @@
   background-color: var(--highlight-colour);
   padding: 10px 20px;
 }
-
-.freya nav.sites { color: var(--highlight-colour) }
-.freya nav.sites .current_site img { border-color: var(--highlight-colour) }
