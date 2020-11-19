@@ -1,7 +1,9 @@
+#!/bin/bash
+
 # Setup the message colour characters
-blue='\033[0;34m'
-red='\033[0;31m'
-end='\033[0m'
+blue="\033[0;34m"
+red="\033[0;31m"
+end="\033[0m"
 
 # Exit if the version is not specified as a parameter
 if [ $# -eq 0 ]; then

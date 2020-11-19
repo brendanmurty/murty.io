@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Create an environment configuration file if it doesn't already exist
 cp -n .env.example .env
 
