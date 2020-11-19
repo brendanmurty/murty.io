@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.88
+- Core: Apply image sizes to HTML tags to avoid layout issues when loading pages
 - Version 2020.87
 - Style: Fix tabs in thumbnails script
 - CSS: Remove unused breadcrumbs and sites list code
