@@ -32,7 +32,7 @@
 .gallery ::selection {
   background: var(--highlight-colour);
   color: var(--secondary-colour);
-  text-shadow: none
+  text-shadow: none;
 }
 
 .gallery header {

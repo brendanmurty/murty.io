@@ -14,13 +14,13 @@
 .freya ::-moz-selection {
   background: var(--highlight-colour);
   color: var(--secondary-colour);
-  text-shadow: none
+  text-shadow: none;
 }
 
 .freya ::selection {
   background: var(--highlight-colour);
   color: var(--secondary-colour);
-  text-shadow: none
+  text-shadow: none;
 }
 
 /* Layout */
