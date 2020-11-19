@@ -15,12 +15,12 @@ class Content
     /**
      * Check if a certain Markdown content file exists in the top-level "content" directory.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return bool                      Whether this content file exists or not.
      */
-    public static function markdownExists($content_file_path)
+    public static function markdownExists($content_file)
     {
-        $page_file = base_path('content/' . $content_file_path);
+        $page_file = base_path('content/' . $content_file);
 
         return file_exists($page_file);
     }
@@ -28,7 +28,7 @@ class Content
     /**
      * Check if a certain image file exists in the "public/images/gallery/" directory.
      * 
-     * @param  string $content_file_path Path to the file inside the "public/images/gallery/" directory.
+     * @param  string $content_file Path to the file inside the "public/images/gallery/" directory.
      * @return bool                      Whether this content file exists or not.
      */
     public static function imageExists($image_file_path)
@@ -41,12 +41,12 @@ class Content
     /**
      * Get the contents of a content file in Markdown format.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return string                    Contents of this file in Markdown format.
      */
-    public static function getMarkdownContent($content_file_path)
+    public static function getMarkdownContent($content_file)
     {
-        $page_file = base_path('content/' . $content_file_path);
+        $page_file = base_path('content/' . $content_file);
 
         // Correct the image URLs in the content
         $page_content = File::get($page_file);
@@ -58,12 +58,12 @@ class Content
     /**
      * Get the contents of a content file in HTML format.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return string                    Contents of this file in HTML format.
      */
-    public static function getMarkdownContentAsHTML($content_file_path)
+    public static function getMarkdownContentAsHTML($content_file)
     {
-        $page_content = self::getMarkdownContent($content_file_path);
+        $page_content = self::getMarkdownContent($content_file);
         $page_content = Markdown::convertToHtml($page_content);
         
         return $page_content;
@@ -72,21 +72,21 @@ class Content
     /**
      * Get a list of all Markdown content files in a specific sub-directory of the top-level "content" directory.
      * 
-     * @param  string $content_directory_path Path to the content sub-directory.
+     * @param  string $content_directory Path to the content sub-directory.
      * @return array                          All Markdown files that are in the sub-directory.
      */
-    public static function getMarkdownContentInDirectory($content_directory_path)
+    public static function getMarkdownContentInDirectory($content_directory)
     {
-        if (Cache::has('content-directory-markdown-' . $content_directory_path)) {
+        if (Cache::has('content-directory-markdown-' . $content_directory)) {
             // A cached version of the Markdown files in this directory was found, use this instead
-            return Cache::get('content-directory-markdown-' . $content_directory_path);
+            return Cache::get('content-directory-markdown-' . $content_directory);
         } else {
             // There is no cached version of the Markdown files in this directory, query the directory itself
-            $directory_path = base_path('content/' . $content_directory_path);
+            $directory_path = base_path('content/' . $content_directory);
             $directory_items = glob($directory_path . '*.md');
 
             // Store the metadata in the cache for 30 days
-            Cache::put('content-directory-markdown-' . $content_directory_path, $directory_items, 2592000);
+            Cache::put('content-directory-markdown-' . $content_directory, $directory_items, 2592000);
 
             return $directory_items;
         }
@@ -95,21 +95,21 @@ class Content
     /**
      * Get a list of all JPG image content files in the "public/images/gallery/" directory.
      * 
-     * @param  string $content_directory_path Path to the JPG image files inside the "public/images/gallery/" directory.
+     * @param  string $content_directory Path to the JPG image files inside the "public/images/gallery/" directory.
      * @return array                          All Markdown files that are in the sub-directory.
      */
-    public static function getImageContentInDirectory($content_directory_path)
+    public static function getImageContentInDirectory($content_directory)
     {
-        if (Cache::has('content-directory-image-' . $content_directory_path)) {
+        if (Cache::has('content-directory-image-' . $content_directory)) {
             // A cached version of the image files in this directory was found, use this instead
-            return Cache::get('content-directory-image-' . $content_directory_path);
+            return Cache::get('content-directory-image-' . $content_directory);
         } else {
             // There is no cached version of the image files in this directory, query the directory itself
-            $directory_path = base_path('public/images/gallery' . $content_directory_path);
+            $directory_path = base_path('public/images/gallery' . $content_directory);
             $directory_items = glob($directory_path . '*.jpg');
 
             // Store the metadata in the cache for 30 days
-            Cache::put('content-directory-image-' . $content_directory_path, $directory_items, 2592000);
+            Cache::put('content-directory-image-' . $content_directory, $directory_items, 2592000);
 
             return $directory_items;
         }
@@ -118,12 +118,12 @@ class Content
     /**
      * Get a URL slug using a specified file path.
      * 
-     * @param  string $content_file_path Path to the file.
+     * @param  string $content_file Path to the file.
      * @return string                    The related URL slug.
      */
-    public static function getSlug($content_file_path)
+    public static function getSlug($content_file)
     {
-        $content_path_parts = pathinfo($content_file_path);
+        $content_path_parts = pathinfo($content_file);
 
         return $content_path_parts['filename'];
     }
@@ -131,12 +131,12 @@ class Content
     /**
      * Get a URL slug (including a file extension) using a specified file path.
      * 
-     * @param  string $content_file_path Path to the file.
+     * @param  string $content_file Path to the file.
      * @return string                    The related URL slug.
      */
-    public static function getSlugWithExtension($content_file_path)
+    public static function getSlugWithExtension($content_file)
     {
-        $content_path_parts = pathinfo($content_file_path);
+        $content_path_parts = pathinfo($content_file);
 
         return $content_path_parts['basename'];
     }
@@ -144,12 +144,12 @@ class Content
     /**
      * Generate a title for a post using a specified content file path.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return string                    The related generated post title.
      */
-    public static function getPostTitleFromFilename($content_file_path)
+    public static function getPostTitleFromFilename($content_file)
     {
-        $post_slug = self::getSlug($content_file_path);
+        $post_slug = self::getSlug($content_file);
 
         $post_title = ucwords(
             str_replace(
@@ -162,7 +162,7 @@ class Content
             )
         );
 
-        if (self::postIsDraft($content_file_path)) {
+        if (self::postIsDraft($content_file)) {
             $post_title = 'DRAFT - ' . $post_title;
         }
 
@@ -172,12 +172,12 @@ class Content
     /**
      * Extract the short date for a post (YYYYMMDD) using a specified content file path.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return string                    The short date for the post file.
      */
-    public static function getPostDateShortFromFilename($content_file_path)
+    public static function getPostDateShortFromFilename($content_file)
     {
-        $post_slug = self::getSlug($content_file_path);
+        $post_slug = self::getSlug($content_file);
 
         return substr($post_slug, 0, 8);
     }
@@ -185,12 +185,12 @@ class Content
     /**
      * Extract the human-friendly date for a post (DD MMM YYYY) using a specified content file path.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return string                    The human-friendly date for the post file.
      */
-    public static function getPostDateHumanFromFilename($content_file_path)
+    public static function getPostDateHumanFromFilename($content_file)
     {
-        $post_date = DateTime::createFromFormat('Ymd', self::getPostDateShortFromFilename($content_file_path));
+        $post_date = DateTime::createFromFormat('Ymd', self::getPostDateShortFromFilename($content_file));
 
         return $post_date->format('j M Y');
     }
@@ -198,12 +198,12 @@ class Content
     /**
      * Extract the RSS supported date for a post using a specified content file path.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return string                    The RSS supported date for the post file.
      */
-    public static function getPostDatePublishedFromFilename($content_file_path)
+    public static function getPostDatePublishedFromFilename($content_file)
     {
-        $post_date = DateTime::createFromFormat('Ymd', self::getPostDateShortFromFilename($content_file_path));
+        $post_date = DateTime::createFromFormat('Ymd', self::getPostDateShortFromFilename($content_file));
 
         return $post_date->format('Y-m-d') . 'T09:00:00.000Z';
     }
@@ -211,12 +211,12 @@ class Content
     /**
      * Determine whether a post is a draft given a specified content file path.
      * 
-     * @param  string $content_file_path Path to the file inside the top-level "content" directory.
+     * @param  string $content_file Path to the file inside the top-level "content" directory.
      * @return bool                    Whether the post is a draft or not.
      */
-    public static function postIsDraft($content_file_path)
+    public static function postIsDraft($content_file)
     {
-        return self::getPostDateShortFromFilename($content_file_path) == '999DRAFT';
+        return self::getPostDateShortFromFilename($content_file) == '999DRAFT';
     }
 
     /**
