@@ -3,7 +3,7 @@
 @section('header')
     <h1>
         <a href="/brendan">
-            <img class="avatar" alt="BCM" src="/{{ $site['icon_large'] }}">
+            <img class="avatar" alt="BCM" width="150" height="150" src="/{{ $site['icon_large'] }}">
             <span class="name">Brendan Murty</span>
         </a>
     </h1>
