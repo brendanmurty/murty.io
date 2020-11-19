@@ -1,5 +1,16 @@
 # Change Log
 
+- Version 2020.87
+- Style: Fix tabs in thumbnails script
+- CSS: Remove unused breadcrumbs and sites list code
+- Style: Improve CSS code style
+- Style: Improve variable names in App\Content
+- Core: Rename configuration file for security analysis
+- Core: Rename GitHub Action for security analysis
+- Core: Code style improvements in Bash scripts
+- Core: Add Codacy security analysis action
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2020.86
 - Core: Update browser theme colours for some sites
 - Version 2020.85
