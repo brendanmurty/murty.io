@@ -12,6 +12,7 @@ function styles() {
             'resources/css/brendan.css',
             'resources/css/freya.css',
             'resources/css/isla.css',
+            'resources/css/luca.css',
             'resources/css/gallery.css'
         ])
         .pipe(concat('styles.min.css'))

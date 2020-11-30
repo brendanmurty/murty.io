@@ -28,6 +28,13 @@
   --foreground-colour: #171d1c;
 }
 
+.luca {
+  --highlight-colour: #e94e0f;
+  --background-colour: #191919;
+  --foreground-colour: #fff;
+  --secondary-colour: #fff;
+}
+
 .gallery {
   --highlight-colour: #23c5b0;
   --background-colour: #000000;

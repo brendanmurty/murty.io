@@ -27,6 +27,12 @@ Route::get('/', function() {
         case 'www.islamurty.com':
             return Redirect::away('https://murty.io/isla');
             break;
+        case 'luca.murty.io':
+        case 'l.murty.io':
+        case 'lucamurty.com':
+        case 'www.lucamurty.com':
+            return Redirect::away('https://murty.io/luca');
+            break;
         case 'git.murty.io':
             return Redirect::away('https://github.com/brendanmurty?tab=repositories');
             break;
@@ -80,6 +86,10 @@ Route::get('/freya', 'FreyaController@index');
 // Routes: Isla
 
 Route::get('/isla', 'IslaController@index');
+
+// Routes: Luca
+
+Route::get('/luca', 'LucaController@index');
 
 // Routes: Gallery
 

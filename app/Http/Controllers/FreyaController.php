@@ -10,7 +10,7 @@ class FreyaController extends Controller
         'title' => 'Freya Murty',
         'title_short' => 'FJM',
         'author' => 'Freya Murty',
-        'description' => 'The latest addition to the family.',
+        'description' => 'A keen Classic Wiggles and blueberries fan.',
         'theme' => '#981ceb',
         'icon' => 'images/freya/icon-192.png',
         'icon_large' => 'images/freya/freya-murty.jpg',

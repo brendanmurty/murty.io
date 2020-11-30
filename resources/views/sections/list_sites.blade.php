@@ -23,6 +23,12 @@
             <span>Freya Murty</span>
         </a>
     </li>
+    <li>
+        <a href="/luca" @if(isset($site) && $site['title_short'] == 'LJM')class="current_site"@endif>
+            <img height="200" width="200" src="{{ asset('images/luca/luca-murty.jpg') }}" alt="LJM" title="Visit Luca Murty's website">
+            <span>Luca Murty</span>
+        </a>
+    </li>
     <li class="last">
         <a href="/gallery" @if(isset($site) && $site['title_short'] == 'GAL')class="current_site"@endif>
             <img height="200" width="200" src="{{ asset('images/common/gallery.svg') }}" alt="GAL" title="Visit the gallery website">
