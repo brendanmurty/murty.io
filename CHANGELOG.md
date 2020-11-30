@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2020.89
+- Content: Add Luca's website, blog post and gallery image
+- Core: Update dependencies
 - Version 2020.88
 - Core: Apply image sizes to HTML tags to avoid layout issues when loading pages
 - Version 2020.87
