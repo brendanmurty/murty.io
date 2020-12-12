@@ -1,5 +1,10 @@
 # Change Log
 
+- Version 2020.90
+- Core: Update dependencies
+- Bump ini from 1.3.5 to 1.3.8
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2020.89
 - Content: Add Luca's website, blog post and gallery image
 - Core: Update dependencies
