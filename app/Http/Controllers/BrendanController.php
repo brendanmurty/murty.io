@@ -111,15 +111,15 @@ class BrendanController extends Controller
                 'title' => 'Posts by Brendan Murty',
                 'home_page_url' => 'https://murty.io/brendan',
                 'feed_url' => 'https://murty.io/brendan/posts.json',
-                'user_comment' => 'This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL — https://murty.io/brendan/posts.json — and add it your reader.',
+                'user_comment' => 'This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, add the following URL to your feed reader — https://murty.io/brendan/posts.json',
                 'author' => [
                     'name' => 'Brendan Murty',
                     'url' => 'https://murty.io/brendan',
-                    'avatar' => 'https://murty.io/images/brendan/avatar.jpg'
+                    'avatar' => 'https://murty.io/images/brendan/brendan-murty.jpg'
                 ],
                 'items' => array_reverse($post_items)
             ];
-            
+
             return Response::json($feed_array, 200);
         } else {
             // Return a view using a HTML string of newest to oldest posts
