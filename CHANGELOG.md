@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2020.91
+- Core: Update dependencies
+- Brendan: Cache the post list HTML to improve performance
+- Brendan: Update JSON feed content intro
 - Version 2020.90
 - Core: Update dependencies
 - Bump ini from 1.3.5 to 1.3.8
