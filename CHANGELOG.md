@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2020.92
+- Core: Update dependencies
 - Version 2020.91
 - Core: Update dependencies
 - Brendan: Cache the post list HTML to improve performance
