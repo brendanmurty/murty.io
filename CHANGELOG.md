@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.1
+- Brendan: Content updates
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2020.93
 - Core: Remove stash restore in update script
 - Brendan: Re-order items in social links section of index page
