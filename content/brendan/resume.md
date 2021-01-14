@@ -22,7 +22,7 @@ Documented a complicated release process so that it could be completed by any de
 
 Led development on a complicated Ecommerce site with a short deadline and varied advanced features while integrating a third-party shipping and tax management plugin.
 
-Released a third-party Basecamp 2 client with a focus on quick use on mobile devices.
+Released a third-party Basecamp 2 client with a focus on quick use via mobile devices.
 
 Improved a legacy in-house CMS by adding a new dynamic content plugin system.
 
@@ -82,11 +82,11 @@ I worked with a team of Cadastral and Construction Surveyors around Sydney. I al
 
 ### PHP
 
-I have been creating and maintaining commercial web services and websites using PHP for over ten years. I'm continually improving my skills including learning new OOP methods and participating in discussions on Twitter and contributing to open-source projects on GitHub.
+I have been creating and maintaining commercial web services and websites using PHP for over ten years. I'm continually improving my skills including learning about new development methods and frameworks.
 
 ### HTML & CSS
 
-My HTML and CSS skills have evolved since I first started building websites in 2007. I use my website to try out new techniques as they become supported by major modern browsers.
+My HTML and CSS skills have evolved since I first started building websites in 2007. I use my website as a test bed to try out new techniques as they become supported by major modern browsers.
 
 ### JavaScript
 
@@ -98,7 +98,7 @@ I have solid knowledge of managing software with Git, including implementing app
 
 ### Technical Management
 
-I have managed development teams of varied skill levels and ensured that they collaborated on important features so that they all improved their skills and celebrated their successess and learnt from their mistakes.
+I have managed development teams of varied skill levels and ensured that they collaborated on important features. This way they all broadened their skills, celebrated their successess and learnt from their mistakes together.
 
 ### Project Management
 
