@@ -1,8 +1,8 @@
 # murty.io
 
-This repository contains the [Murty website](https://murty.io/) which is built with [Laravel](https://laravel.com/) and uses some icons from the [Feather](http://feathericons.com/) icon pack.
+This repository contains the website for the [Murty family](https://murty.io/). It's built on the [Laravel](https://laravel.com/) framework, contains [PHPUnit](https://phpunit.de/) tests and uses some [Feather](http://feathericons.com/) SVG icons.
 
-[![Brendan](/public/images/brendan/brendan-murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla-murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya-murty.jpg)](https://murty.io/freya)
+[![Brendan](/public/images/brendan/brendan-murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla-murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya-murty.jpg)](https://murty.io/freya) [![Luca](/public/images/luca/luca-murty.jpg)](https://murty.io/luca)
 
 ## Structure
 
