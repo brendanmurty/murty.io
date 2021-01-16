@@ -29,7 +29,7 @@ class BrendanControllerTest extends TestCase {
 
     public function testBrendanPostList()
     {
-        $response = $this->get('posts');
+        $response = $this->get('brendan/posts');
 
         $this->assertTrue(
             $response->headers->get('content-type') == 'text/html; charset=UTF-8' &&
