@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.3
+- Docs: Simplify readme
+- Docs: Add Luca to image list and expand intro text in readme
+- Tests: Add link to folder in readme
 - Version 2021.2
 - Tests: Fix URL of Brendan's post list page
 - Tests: Add unit tests via PHPUnit (#3)
