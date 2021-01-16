@@ -32,5 +32,22 @@
     "gulp-uglify-es": "^2.0.0",
     "object-path": ">=0.11.5",
     "yargs-parser": "^20.2.4"
-  }
+  },
+  "autoload": {
+      "files": [
+        "src/Illuminate/Collections/helpers.php",
+        "src/Illuminate/Events/functions.php",
+        "src/Illuminate/Foundation/helpers.php",
+        "src/Illuminate/Support/helpers.php"
+      ],
+      "psr-4": {
+        "Illuminate\\": "src/Illuminate/",
+        "Illuminate\\Support\\": ["src/Illuminate/Macroable/", "src/Illuminate/Collections/"]
+      }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Illuminate\\Tests\\": "tests/"
+    }
+  },
 }

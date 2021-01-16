@@ -22,3 +22,5 @@ $RECYCLE.BIN/
 /.vscode
 .tags
 .tags_swap
+
+.phpunit.result.cache

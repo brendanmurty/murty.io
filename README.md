@@ -62,6 +62,12 @@ php artisan serve
 gulp
 ```
 
+### Run tests
+
+```
+php artisan test
+```
+
 ### Update dependencies
 
 A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/blob/main/scripts/update.sh)) simplifies the process of updating dependencies and pushing any changes up to the remote repository. This can be run with the following command:

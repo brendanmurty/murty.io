@@ -20,6 +20,18 @@ fi
 
 echo -e "${blue}Starting deployment...${end}"
 
+echo -e "${blue}Running tests...${end}"
+
+php artisan test
+
+if [ $? -eq 0 ]
+then
+  echo -e "Tests passed."
+else
+  echo -e "${red}Tests failed, exiting.${end}"
+  exit 1
+fi
+
 echo -e "${blue}Generating gallery image thumbnail images...${end}"
 
 php "scripts/gallery-thumbnails.php"
