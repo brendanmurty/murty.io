@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.2
+- Tests: Fix URL of Brendan's post list page
+- Tests: Add unit tests via PHPUnit (#3)
 - Version 2021.1
 - Brendan: Content updates
 - Core: Update dependencies
