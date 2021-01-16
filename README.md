@@ -2,8 +2,6 @@
 
 This repository contains the website for the [Murty family](https://murty.io/). It's built on the [Laravel](https://laravel.com/) framework, contains [PHPUnit](https://phpunit.de/) tests and uses some [Feather](http://feathericons.com/) SVG icons.
 
-[![Brendan](/public/images/brendan/brendan-murty.jpg)](https://murty.io/brendan) [![Ella](/public/images/ella/ella_condon.jpg)](https://ellacondon.com/) [![Isla](/public/images/isla/isla-murty.jpg)](https://murty.io/isla) [![Freya](/public/images/freya/freya-murty.jpg)](https://murty.io/freya) [![Luca](/public/images/luca/luca-murty.jpg)](https://murty.io/luca)
-
 ## Structure
 
 - **[.github/workflows/deployment.yml](.github/workflows/deployment.yml)**: GitHub Action that deploys to the webserver when a new Git Tag is pushed up
@@ -63,7 +61,7 @@ php artisan serve
 gulp
 ```
 
-### Run tests
+### Run unit tests
 
 ```
 php artisan test
@@ -75,12 +73,6 @@ A helper script ([scripts/update.sh](https://github.com/brendanmurty/murty.io/bl
 
 ```
 bash scripts/update.sh
-```
-
-### Find TODOs
-
-```
-composer run todo
 ```
 
 ## Managing Content
