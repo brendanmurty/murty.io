@@ -26,6 +26,7 @@ This repository contains the [Murty website](https://murty.io/) which is built w
 - **[scripts/deploy.sh](scripts/deploy.sh)**: Generates a new version and triggers the deployment process
 - **[scripts/setup.sh](scripts/setup.sh)**: Initialises a new local environment
 - **[scripts/update.sh](scripts/update.sh)**: Update dependencies, commit these changes and push them up to the remote repository
+- **[tests](tests)**: PHPUnit test scripts to check my custom back-end classes
 
 ## Requirements
 
