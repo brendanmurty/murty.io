@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.4
+- Core: Update dependencies
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2021.3
 - Docs: Simplify readme
 - Docs: Add Luca to image list and expand intro text in readme
