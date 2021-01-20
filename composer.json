@@ -11,7 +11,7 @@
     "fruitcake/laravel-cors": "^2.0",
     "graham-campbell/markdown": "^13.1",
     "guzzlehttp/guzzle": "^7.0.1",
-    "laravel/framework": "^8.0",
+    "laravel/framework": "^8.23",
     "laravel/helpers": "^1.3",
     "laravel/tinker": "^2.0"
   },
