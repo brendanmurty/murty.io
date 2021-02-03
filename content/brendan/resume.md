@@ -30,7 +30,7 @@ Improved a legacy in-house CMS by adding a new dynamic content plugin system.
 
 ### Software Engineer at [Deputy](https://www.deputy.com) (Feb 2021 - Present)
 
-I build features on top of Deputy’s core product and also build reports and custom features for our clients.
+I build features on top of Deputy’s core product, build reports and add custom features for our clients.
 
 I also build custom integrations with third-party systems.
 
