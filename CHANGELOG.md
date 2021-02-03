@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.8
+- Brendan: Content updates
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2021.7
 - Core: Update Composer configuration
 - Version 2021.6
