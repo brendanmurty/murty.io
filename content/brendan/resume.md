@@ -28,6 +28,16 @@ Improved a legacy in-house CMS by adding a new dynamic content plugin system.
 
 ## Work Experience
 
+### Software Engineer at [Deputy](https://www.deputy.com) (Feb 2021 - Present)
+
+I build features on top of Deputy’s core product and also build reports and custom features for our clients.
+
+I also build custom integrations with third-party systems.
+
+### Dad at [Home](https://murty.io) (Nov 2020 - Feb 2021)
+
+Following the birth of my third child, I took some time off work to spend more time with family.
+
 ### Technical Lead at [Jomablue](https://jomablue.com) (Mar 2020 - Nov 2020)
 
 I worked closely with the CTO to lead a team of developers so that they could work efficiently on the product. This role included running daily stand-up meetings, assessing bug reports, scoping out new feature requests, testing code changes and building releases.
