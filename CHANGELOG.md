@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.9
+- Brendan: Content updates
 - Version 2021.8
 - Brendan: Content updates
 - Core: Update dependencies
