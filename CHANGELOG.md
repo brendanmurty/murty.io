@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.10
+- Brendan: New blog post - Nonno
+- Core: Update dependencies
 - Version 2021.9
 - Brendan: Content updates
 - Version 2021.8
