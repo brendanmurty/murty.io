@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.12
+- Core: Update dependencies
+- Core: Update PHP version requirements
+- Core: Update dependencies to be appropriate for the environment type
 - Version 2021.11
 - Actions: Update composer install command in deployment workflow
 - Core: Update dependencies
