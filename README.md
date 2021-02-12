@@ -29,7 +29,7 @@ This repository contains the website for the [Murty family](https://murty.io/). 
 ## Requirements
 
 - [Node 10.7.x](https://nodejs.org/en/download/package-manager/)
-- [PHP 7.3](https://www.php.net/manual/en/install.php)
+- [PHP 7.4](https://www.php.net/manual/en/install.php)
 - [PHP Exif library](https://www.php.net/manual/en/exif.installation.php)
 - [Composer 1.8](https://getcomposer.org/download/)
 

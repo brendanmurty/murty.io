@@ -6,7 +6,7 @@
   "license": "SEE LICENSE IN license.md",
   "type": "project",
   "require": {
-    "php": "^7.3|^8.0",
+    "php": "^7.3|^7.4|^8.0",
     "facade/ignition": "^2.3.6",
     "fideloper/proxy": "^4.2",
     "fruitcake/laravel-cors": "^2.0",
