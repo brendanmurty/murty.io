@@ -16,7 +16,7 @@ jobs:
         command: |
           cd ${{ secrets.REMOTE_DIRECTORY }}
           git pull origin main --quiet
-          composer install --quiet --no-interaction
+          composer install --quiet --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader
           npm install --silent --no-progress --no-fund
           npm install --silent --no-progress --global gulp-cli
           gulp --silent
