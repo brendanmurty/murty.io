@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.11
+- Actions: Update composer install command in deployment workflow
+- Core: Update dependencies
+- Core: Update dependencies
 - Version 2021.10
 - Brendan: New blog post - Nonno
 - Core: Update dependencies
