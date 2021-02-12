@@ -35,7 +35,7 @@ This repository contains the website for the [Murty family](https://murty.io/). 
 
 ## Initial Setup
 
-Make a local clone of this repository and then run [scripts/setup.sh](https://github.com/brendanmurty/murty.io/blob/main/scripts/setup.sh) to complete the initial installation process:
+To setup a new local development environment, make a local clone of this repository and then run [scripts/setup.sh](https://github.com/brendanmurty/murty.io/blob/main/scripts/setup.sh) to complete the initial installation process:
 
 ```
 bash scripts/setup.sh
