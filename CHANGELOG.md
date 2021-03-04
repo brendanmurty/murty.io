@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.15
+- Core: Update dependencies
 - Version 2021.14
 - Core: Update dependencies
 - Version 2021.13
