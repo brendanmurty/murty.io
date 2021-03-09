@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.16
+- Brendan: Replace Feather icons with Font Awesome 5 Pro icons
+- Core: Update dependencies
 - Version 2021.15
 - Core: Update dependencies
 - Version 2021.14
