@@ -1,5 +1,9 @@
 # Change Log
 
+- Version 2021.18
+- Brendan: Re-order icon links list items
+- Core: Improve SVG image styling performance
+- Actions: Specify a more specific Ubuntu version
 - Version 2021.17
 - Brendan: Content updates
 - Version 2021.16
