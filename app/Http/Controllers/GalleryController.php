@@ -12,8 +12,8 @@ class GalleryController extends Controller
         'author' => 'Brendan Murty',
         'description' => 'Murty family photo gallery.',
         'theme' => '#000000',
-        'icon' => 'images/common/gallery.svg',
-        'icon_large' => 'images/common/gallery.svg',
+        'icon' => 'svg/gallery.svg',
+        'icon_large' => 'svg/gallery.svg',
         'body_class' => 'gallery gallery_index',
         'container_class' => ''
     ];

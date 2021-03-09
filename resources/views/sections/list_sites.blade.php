@@ -31,7 +31,7 @@
     </li>
     <li class="last">
         <a href="/gallery" @if(isset($site) && $site['title_short'] == 'GAL')class="current_site"@endif>
-            <img height="200" width="200" class="svg" src="{{ asset('images/common/gallery.svg') }}" alt="GAL" title="Visit the gallery website">
+            <img height="200" width="200" class="svg" src="{{ asset('svg/gallery.svg') }}" alt="GAL" title="Visit the gallery website">
             <span>Gallery</span>
         </a>
     </li>
