@@ -1,6 +1,6 @@
 Father, Partner of [Ella](http://ellacondon.com/),
 Schnitzel Reviewer at [SchnitMyDadSays](http://schnitmydadsays.com/) and
-Lead Web Developer.
+Software Engineer at [Deputy](https://www.deputy.com/).
 
 I share my thoughts on [Twitter](https://twitter.com/brendanmurty),
 manage code on [GitHub](https://github.com/brendanmurty?tab=repositories)
