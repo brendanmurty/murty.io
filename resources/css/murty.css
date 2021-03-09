@@ -47,9 +47,6 @@
 
 .listing.avatars .svg {
   filter: invert(100%);
-}
-
-.listing.avatars img[alt="GAL"] {
   border-radius: 0;
 }
 
