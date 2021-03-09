@@ -6,9 +6,21 @@
         </a>
     </li>
     <li>
+        <a href="/gallery" title="View some of my photos">
+            <img height="40" width="40" class="svg" src="/images/common/gallery.svg">
+            <span>Gallery</span>
+        </a>
+    </li>
+    <li>
         <a href="/brendan/resume" title="View my Resume">
             <img height="40" width="40" class="svg" src="/images/common/briefcase.svg">
             <span>Resume</span>
+        </a>
+    </li>
+    <li>
+        <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
+            <img height="40" width="40" class="svg" src="/images/common/envelope.svg">
+            <span>Email</span>
         </a>
     </li>
     <li>
@@ -24,21 +36,9 @@
         </a>
     </li>
     <li>
-        <a href="mailto:b@murty.io" title="Send me an email at b@murty.io">
-            <img height="40" width="40" class="svg" src="/images/common/envelope.svg">
-            <span>Email</span>
-        </a>
-    </li>
-    <li>
         <a href="https://twitter.com/brendanmurty" title="View my Twitter profile">
             <img height="40" width="40" class="svg" src="/images/common/twitter.svg">
             <span>Twitter</span>
-        </a>
-    </li>
-    <li>
-        <a href="/gallery" title="View some of my photos">
-            <img height="40" width="40" class="svg" src="/images/common/gallery.svg">
-            <span>Photos</span>
         </a>
     </li>
     <li>
