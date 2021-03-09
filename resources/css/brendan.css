@@ -172,7 +172,7 @@ ul.brendan_posts .post-date {
   float: left;
 }
 
-.brendan ul.social img[src$=".svg"] {
+.brendan ul.social .svg {
   filter: invert(100%);
 }
 

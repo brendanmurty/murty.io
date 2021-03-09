@@ -45,7 +45,7 @@
   margin: 0 auto 10px;
 }
 
-.listing.avatars img[src$=".svg"] {
+.listing.avatars .svg {
   filter: invert(100%);
 }
 
