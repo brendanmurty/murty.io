@@ -1,6 +1,6 @@
 # murty.io
 
-This repository contains the website for the [Murty family](https://murty.io/). It's built on the [Laravel](https://laravel.com/) framework, contains [PHPUnit](https://phpunit.de/) tests and uses some [Feather](http://feathericons.com/) SVG icons.
+This repository contains the website for the [Murty family](https://murty.io/). It's built on the [Laravel](https://laravel.com/) framework, contains [PHPUnit](https://phpunit.de/) tests and uses [Font Awesome 5 Pro](https://fontawesome.com/pro) SVG icons.
 
 ## Structure
 

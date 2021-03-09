@@ -45,7 +45,11 @@
   margin: 0 auto 10px;
 }
 
-.listing.avatars img[alt=GAL] {
+.listing.avatars img[src$=".svg"] {
+  filter: invert(100%);
+}
+
+.listing.avatars img[alt="GAL"] {
   border-radius: 0;
 }
 

@@ -166,10 +166,14 @@ ul.brendan_posts .post-date {
   border-color: var(--highlight-colour);
 }
 
-.brendan ul.social svg {
+.brendan ul.social img {
   width: 40px;
   height: 40px;
   float: left;
+}
+
+.brendan ul.social img[src$=".svg"] {
+  filter: invert(100%);
 }
 
 /* Resume page */
