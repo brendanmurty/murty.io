@@ -1,5 +1,8 @@
 # Change Log
 
+- Version 2021.19
+- Core: Simplify site listing styling for SVG items
+- Core: Move SVG files to a more suitable directory
 - Version 2021.18
 - Brendan: Re-order icon links list items
 - Core: Improve SVG image styling performance
