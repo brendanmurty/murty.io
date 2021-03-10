@@ -6,7 +6,6 @@ use \DateTime;
 use Response;
 use Storage;
 use Content;
-use Cache;
 
 class BrendanController extends Controller
 {
@@ -58,62 +57,51 @@ class BrendanController extends Controller
     public function posts($output_type) {
         // Construct a list of Brendan's Posts
         $post_items = [];
-        $content_directory = 'brendan/posts/';
+        foreach (Content::getMarkdownContentInDirectory('brendan/posts/') as $post_file) {
+            $post_slug = Content::getSlug($post_file);
+            $post_url_relative = '/brendan/post/' . $post_slug;
+            $post_url_full = 'https://murty.io' . $post_url_relative;
+            $post_date_short = Content::getPostDateShortFromFilename($post_file);
 
-        if (Cache::has('content-directory-html-' . $content_directory)) {
-            // A cached version of the constructed HTML list of the content in this directory was found, use this instead
-            $post_items = Cache::get('content-directory-html-' . $content_directory);
-        } else {
-            // Construct the HTML list of the content in this directory
-            foreach (Content::getMarkdownContentInDirectory($content_directory) as $post_file) {
-                $post_slug = Content::getSlug($post_file);
-                $post_url_relative = '/brendan/post/' . $post_slug;
-                $post_url_full = 'https://murty.io' . $post_url_relative;
-                $post_date_short = Content::getPostDateShortFromFilename($post_file);
+            if ($post_date_short == '999DRAFT') {
+                // This is a draft post
 
-                if ($post_date_short == '999DRAFT') {
-                    // This is a draft post
-
-                    // Draft posts should only be visible on local environments
-                    if (env('APP_ENV', 'production') != 'local') {
-                        continue;
-                    }
-
-                    $post_date_short = 'DRAFT';
-                    $post_date_human = 'DRAFT';
-                    $post_date_published = false;
-                } else {
-                    // This is a published post
-
-                    $post_date_human = Content::getPostDateHumanFromFilename($post_file);
-                    $post_date_published = Content::getPostDatePublishedFromFilename($post_file);
+                // Draft posts should only be visible on local environments
+                if (env('APP_ENV', 'production') != 'local') {
+                    continue;
                 }
 
-                $post_title = Content::getPostTitleFromFilename($post_file);
+                $post_date_short = 'DRAFT';
+                $post_date_human = 'DRAFT';
+                $post_date_published = false;
+            } else {
+                // This is a published post
 
-                if ($output_type == 'json') {
-                    // Construct a JSON Feed Item for this post
-                    if ($post_date_published) {
-                        $post_items[] = [
-                            'id' => $post_url_full,
-                            'url' => $post_url_full,
-                            '_murty' => [
-                                'date_short' => $post_date_short
-                            ],
-                            'date_published' => $post_date_published,
-                            'content_text' => 'Read this post on murty.io',
-                            'content_html' => '<p>Read this post on <a href="' . $post_url_full . '">murty.io</a></p>',
-                            'title' => $post_title
-                        ];
-                    }
-                } else {
-                    // Construct a HTML List Item for this post
-                    $post_items[] = '<li><span class="post-date">' . $post_date_human . '</span><a class="post-link" href="' . $post_url_relative . '">' . $post_title . '</a></li>';
-                }
+                $post_date_human = Content::getPostDateHumanFromFilename($post_file);
+                $post_date_published = Content::getPostDatePublishedFromFilename($post_file);
             }
 
-            // Store the constructed HTML list in the cache for 30 days
-            Cache::put('content-directory-html-' . $content_directory, $post_items, 2592000);
+            $post_title = Content::getPostTitleFromFilename($post_file);
+
+            if ($output_type == 'json') {
+                // Construct a JSON Feed Item for this post
+                if ($post_date_published) {
+                    $post_items[] = [
+                        'id' => $post_url_full,
+                        'url' => $post_url_full,
+                        '_murty' => [
+                            'date_short' => $post_date_short
+                        ],
+                        'date_published' => $post_date_published,
+                        'content_text' => 'Read this post on murty.io',
+                        'content_html' => '<p>Read this post on <a href="' . $post_url_full . '">murty.io</a></p>',
+                        'title' => $post_title
+                    ];
+                }
+            } else {
+                // Construct a HTML List Item for this post
+                $post_items[] = '<li><span class="post-date">' . $post_date_human . '</span><a class="post-link" href="' . $post_url_relative . '">' . $post_title . '</a></li>';
+            }
         }
 
         if ($output_type == 'json') {
