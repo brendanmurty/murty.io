@@ -1,5 +1,7 @@
 # Change Log
 
+- Version 2021.20
+- Brendan: Undo the caching of the post list to fix a bug loading the page
 - Version 2021.19
 - Core: Simplify site listing styling for SVG items
 - Core: Move SVG files to a more suitable directory
